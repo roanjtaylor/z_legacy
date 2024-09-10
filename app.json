@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Kick Off NI Mk.3 Alpha.1",
+    "slug": "kick-off-ni-mk3-alpha1",
+    "description": "This is the first functional version of KickOffNI, it is not incredibly user-friendly but it works!",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/loading/AppLogo.png",
+    "splash": {
+      "image": "./assets/loading/SplashLogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#231F20"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/loading/AppLogo.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/loading/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2fe949a5-96fb-474d-b086-953641514419"
+      }
+    },
+    "owner": "roanjtaylor"
+  }
+}

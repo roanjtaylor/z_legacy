@@ -1,0 +1,339 @@
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+import {
+  Text,
+  View,
+  StyleSheet,
+  ScrollView,
+  TextInput,
+  TouchableOpacity,
+  Image,
+  Button,
+  Alert,
+} from "react-native";
+
+// Libraries for specific components
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"; // Bottom tab navigator
+import DateTimePicker from "@react-native-community/datetimepicker"; // Date Time picker
+
+// Imports for Firestore uploading
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../firebaseConfig"; // Reference to the Firestore database
+
+// Screens for the other tabs
+import ManageScreen from "./manage";
+import ProfileScreen from "./profile";
+
+// Green Arrow for "Upload" button
+import GreenArrow from "../../assets/global/GreenArrow.png";
+
+// Navigation defined
+export default Create = ({ navigation }) => {
+  // Bottom tab navigator for admin navigation
+  const BottomTabNav = createBottomTabNavigator();
+
+  return (
+    // Tab Navigator for the admin's screens
+    <BottomTabNav.Navigator
+      screenOptions={() => ({
+        headerShown: false, // Hide header ("Create")
+        tabBarStyle: {
+          backgroundColor: "rgba(34,36,40,1)", // Grey background of the tabNavigator
+          borderTopWidth: 0, // Removes the little white line above the tabs
+        },
+        tabBarActiveTintColor: "rgb(0,225,130)", // Turqoise green for the Active Tab
+        tabBarInactiveTintColor: "grey",
+      })}
+    >
+      <BottomTabNav.Screen name="Create" component={CreateScreen} />
+      <BottomTabNav.Screen name="Manage" component={ManageScreen} />
+      <BottomTabNav.Screen name="Profile" component={ProfileScreen} />
+    </BottomTabNav.Navigator>
+  );
+};
+
+function CreateScreen() {
+  // Event handlers for input fields
+  const [name, setName] = React.useState();
+  const [address, setAddress] = React.useState();
+  const [totalPlayers, setTotalPlayers] = React.useState();
+  const [pricePerPlayer, setPricePerPlayer] = React.useState();
+  const [description, setDescription] = React.useState();
+
+  // Date Time picker =============
+  const [date, setDate] = React.useState(new Date(1724991730000)); // Number sets default time, the epoch time (seconds since 1/1/1970) **T&E to get current date 30/8/24**
+  const [mode, setMode] = React.useState("date");
+  const [show, setShow] = React.useState(false);
+
+  const onChange = (event, selectedDate) => {
+    const currentDate = selectedDate;
+    setShow(false);
+    setDate(currentDate);
+  };
+
+  const showMode = (currentMode) => {
+    setShow(true);
+    setMode(currentMode);
+  };
+
+  const showDatepicker = () => {
+    showMode("date");
+  };
+
+  const showTimepicker = () => {
+    showMode("time");
+  };
+
+  // ==============================
+
+  const clear = () => {
+    // set all input fields to initial states (blank/default value)
+    setName("");
+    setAddress("");
+    setDate(new Date(1724991730000)); // reset to 30/8/24 5:22:10 lol
+    setPricePerPlayer("");
+    setTotalPlayers("");
+    setDescription("");
+  };
+
+  const upload = async () => {
+    // Validate all input fields.
+    if (name.length > 0 && address.length > 0 && totalPlayers.length > 0) {
+      // Key fields have been entered.
+      // Upload data to Firestore, creating a new Document in the UpcomingMatches Collection.
+      try {
+        // For customID, / messes up the logic (as then thinks the date is the data)
+        // To prevent this, replace / with . and that should fix it.
+        // Format: DateTime.Name.Capacity. (So organises itself chronologically in the Firestore)
+        var customID = date
+          .toLocaleString()
+          .concat(".", name, ".", totalPlayers, "players")
+          .replaceAll("/", ".")
+          .replaceAll(" ", "");
+
+        // An array is also made to store the booked users
+        const bookedUsers = new Array();
+
+        // Logic to write to the Firestore database
+        const docRef = await setDoc(doc(db, "upcoming_matches", customID), {
+          Name: name,
+          Location: address,
+          DateAndTime: date.toLocaleString(),
+          MaxPlayers: totalPlayers,
+          PricePerPlayer: pricePerPlayer,
+          Description: description,
+          BookedUsers: bookedUsers,
+          Active: true, // Default set to active as just uploaded
+        });
+        console.log("Upload successful!");
+      } catch (error) {
+        console.error("Error adding document: ", error);
+      }
+
+      Alert.alert("Match Uploaded!", "You successfully uploaded that match.", {
+        text: "OK",
+      });
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+      {/* Header */}
+      <View style={styles.header}>
+        <Text style={styles.title}>Hello ADMIN!</Text>
+        <Text style={styles.subtitle}>
+          Create a new game for users to join.
+        </Text>
+        {/* Scrollview, input fields + labels, two buttons- reset + upload- add event listeners to handle variables and ensure 
+        ensure all reasonable inputs before uploading to database. E.G. Description = 100 chars. */}
+      </View>
+      <ScrollView style={styles.scrollable}>
+        {/* Location section */}
+        <Text style={styles.scrollTitle}>Location:</Text>
+
+        <Text style={styles.scrollLabel}>Name:</Text>
+        <TextInput
+          style={styles.textInput}
+          onChangeText={setName}
+          value={name}
+          placeholder="Enter name of the venue."
+        />
+
+        <Text style={styles.scrollLabel}>Address:</Text>
+        <TextInput
+          // GEOPOINT FIELD! TO ADD ADDRESS- Later, for now just copy in address.
+          style={styles.textInput}
+          onChangeText={setAddress}
+          value={address}
+          placeholder="Paste in the address of the venue."
+        />
+
+        {/* Match section */}
+        <Text style={styles.scrollTitle}>Match:</Text>
+
+        <Text style={styles.scrollLabel}>Date & Time:</Text>
+        <Button onPress={showDatepicker} title="Show date picker!" />
+        <Button onPress={showTimepicker} title="Show time picker!" />
+        <Text
+          style={{
+            textAlign: "center",
+            margin: "5%",
+            textDecorationLine: "underline",
+          }}
+        >
+          Chosen Date and Time:
+        </Text>
+        <Text style={{ textAlign: "center", fontWeight: "800" }}>
+          {date.toLocaleString()}
+        </Text>
+        {show && (
+          <DateTimePicker
+            testID="dateTimePicker"
+            value={date}
+            mode={mode}
+            is24Hour={true}
+            onChange={onChange}
+          />
+        )}
+
+        <Text style={styles.scrollLabel}>Total players:</Text>
+        <TextInput
+          // Drop down menu for numbers, or input field for number of players
+          style={styles.textInput}
+          onChangeText={setTotalPlayers}
+          value={totalPlayers}
+          placeholder="Enter the number of players."
+          keyboardType="number-pad"
+        />
+
+        <Text style={styles.scrollLabel}>Price per Player:</Text>
+        <TextInput
+          // Drop down menu for numbers, or input field for price
+          style={styles.textInput}
+          onChangeText={setPricePerPlayer}
+          value={pricePerPlayer}
+          placeholder="Enter the price per player (£ xx.yy)."
+          keyboardType="decimal-pad" // So can add point for prices
+        />
+
+        <Text style={styles.scrollLabel}>Description:</Text>
+        <TextInput
+          style={styles.textInput}
+          onChangeText={setDescription}
+          value={description}
+          placeholder="Enter any extra info, e.g. rules, directions."
+        />
+
+        {/* Buttons- Clear/Reset and Upload */}
+        <TouchableOpacity style={styles.clear} onPress={() => clear()}>
+          <Text style={styles.buttonText}>Clear screen.</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.upload} onPress={() => upload()}>
+          <Text style={styles.buttonText}>
+            Upload match. <Image source={GreenArrow} style={styles.gArrow} />
+          </Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    height: "100%",
+    paddingLeft: "7%", // Space that is not the screen- blank space for ease of layouts
+    paddingRight: "7%",
+    alignItems: "center", // Horizontally centers all content
+    backgroundColor: "rgb(35, 31, 32)", // Charcoal grey
+  },
+
+  header: {
+    width: "117%",
+    height: "15%", // Needs checked and clarified.
+    paddingTop: "7%",
+    backgroundColor: "rgb(35, 31, 32)", // charcoal grey
+    // backgroundColor: "red",
+    borderBottomColor: "#a4a3a3", // Light gray, as from Figma
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+
+  title: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "#a4a3a3", // Light gray, as from Figma
+    paddingLeft: "7%", // Matching component padding in container
+  },
+
+  subtitle: {
+    fontSize: 18,
+    fontWeight: "400",
+    color: "white",
+    paddingLeft: "7%",
+  },
+
+  scrollable: {
+    width: "117%",
+    backgroundColor: "#a4a3a3", // Light gray
+  },
+
+  scrollTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "blue",
+    paddingLeft: "7%",
+    textDecorationLine: "underline",
+    marginTop: "7%",
+  },
+
+  scrollLabel: {
+    fontSize: 18,
+    fontWeight: "400",
+    color: "green",
+    paddingLeft: "7%",
+    marginTop: "7%",
+  },
+
+  textInput: {
+    height: 40,
+    margin: "7%",
+    borderWidth: 1,
+    padding: "7%",
+  },
+
+  // Buttons
+  clear: {
+    alignSelf: "center",
+    marginTop: "7%",
+    width: "86%", // so 7% margin either side, lining up with above components
+    padding: "5%",
+    backgroundColor: "rgb(225, 0, 95)", // complimentary pinky red
+    borderRadius: "100%",
+  },
+
+  upload: {
+    alignSelf: "center",
+    marginTop: "7%",
+    marginBottom: "7%",
+    width: "86%",
+    padding: "5%",
+    backgroundColor: "rgb(0,225,130)", // turqoise green
+    borderRadius: "100%",
+  },
+
+  buttonText: {
+    fontSize: 24,
+    textAlign: "center",
+    fontWeight: "700",
+    color: "white",
+  },
+
+  gArrow: {
+    width: 24,
+    height: 24,
+    backgroundColor: "white",
+    borderRadius: "100%",
+  },
+});
