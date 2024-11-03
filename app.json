@@ -29,6 +29,27 @@
         "projectId": "2fe949a5-96fb-474d-b086-953641514419"
       }
     },
-    "owner": "roanjtaylor"
+    "owner": "roanjtaylor",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2fe949a5-96fb-474d-b086-953641514419"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          // apple pay to configure soon--> "merchantIdentifier": "yourMerchantIdentifier",
+          "enableGooglePay": true
+        }
+      ]
+    ]
   }
 }

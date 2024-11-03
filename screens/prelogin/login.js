@@ -54,16 +54,12 @@ export default function LoginScreen({ navigation }) {
     } else {
       // User login
       signInWithEmailAndPassword(auth, email, password)
-        .then((response) =>
-          Alert.alert("Success!", "Account successfully logged in.", [
-            { text: "OK", onPress: () => loginUser() },
-          ])
-        )
+        .then((response) => loginUser())
         .catch((error) =>
           // Error produced if login attempt fails
           Alert.alert(
-            "Error!",
-            "Those login details don't match our records, please try again.",
+            "Login Error",
+            "Those details do not match our records. Please try again.",
             [{ text: "OK" }]
           )
         );
@@ -100,15 +96,15 @@ export default function LoginScreen({ navigation }) {
       />
 
       {/* "Forgot password?" button */}
-      <TouchableOpacity
+      {/* <TouchableOpacity
         style={styles.fpOpacity}
         onPress={() => forgotPasswordClicked()}
       >
         <Text style={styles.fpText}>Forgot password?</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
       {/* Google Sign In Option */}
-      <Text style={styles.alternativeGoogleText}>
+      {/* <Text style={styles.alternativeGoogleText}>
         Alternatively, sign in with Google:
       </Text>
       <TouchableOpacity
@@ -116,7 +112,7 @@ export default function LoginScreen({ navigation }) {
         onPress={() => googleClicked()}
       >
         <Image source={GoogleSignIn} style={styles.googleSIImage} />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
       {/* "Sign In" button */}
       <TouchableOpacity style={styles.siOpacity} onPress={() => loginClicked()}>

@@ -31,6 +31,11 @@ export default function RegisterScreen({ navigation }) {
     // Google sign up call to Firebase!!!
   };
 
+  const tcClicked = () => {
+    // Load Terms and Conditions
+    navigation.navigate("TandCs"); // Pushes Login screen onto stack
+  };
+
   const registerClicked = () => {
     // Check passwords match
     if (password1 === password2) {
@@ -101,7 +106,7 @@ export default function RegisterScreen({ navigation }) {
       />
 
       {/* Google Sign Up Option */}
-      <Text style={styles.alternativeGoogleText}>
+      {/* <Text style={styles.alternativeGoogleText}>
         Alternatively, sign up with Google:
       </Text>
       <TouchableOpacity
@@ -109,6 +114,12 @@ export default function RegisterScreen({ navigation }) {
         onPress={() => googleClicked()}
       >
         <Image source={GoogleSignUp} style={styles.googleSUImage} />
+      </TouchableOpacity> */}
+
+      {/* Terms and Conditions */}
+      <Text style={styles.tcTitle}>By Registering, you agree to our T&Cs.</Text>
+      <TouchableOpacity style={styles.tcOpacity} onPress={() => tcClicked()}>
+        <Text style={styles.tcText}>Click to read T&Cs.</Text>
       </TouchableOpacity>
 
       {/* "Create Account" button */}
@@ -182,6 +193,28 @@ const styles = StyleSheet.create({
   googleSUImage: {
     width: "100%", // Fills the opacity (as parent component)
     height: "100%",
+  },
+
+  // Terms and Conditions
+  tcTitle: {
+    color: "white",
+    marginTop: "7%",
+    textDecorationLine: "underline",
+  },
+
+  tcOpacity: {
+    width: "60%",
+    marginTop: "5%",
+    padding: "5%",
+    backgroundColor: "cyan",
+    borderRadius: 100,
+  },
+
+  tcText: {
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "500",
+    color: "grey",
   },
 
   // "Create Account" button

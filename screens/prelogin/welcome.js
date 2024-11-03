@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
 
   logo: {
     marginTop: "50%",
-    objectFit: "fill",
     width: "50%",
     height: "35%",
+    resizeMode: "contain",
   },
 
   gsOpacity: {

@@ -20,12 +20,28 @@ import DateTimePicker from "@react-native-community/datetimepicker"; // Date Tim
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../firebaseConfig"; // Reference to the Firestore database
 
+// Imports for Firebase Storage
+import {
+  getStorage,
+  ref,
+  uploadBytesResumable,
+  getDownloadURL,
+} from "firebase/storage";
+
 // Screens for the other tabs
 import ManageScreen from "./manage";
 import ProfileScreen from "./profile";
 
 // Green Arrow for "Upload" button
 import GreenArrow from "../../assets/global/GreenArrow.png";
+
+// Imports for navigation bar icons
+import AntDesign from "@expo/vector-icons/AntDesign"; // Create
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"; // Manage
+import MaterialIcons from "@expo/vector-icons/MaterialIcons"; // Profile
+
+// Image picker
+import * as ImagePicker from "expo-image-picker";
 
 // Navigation defined
 export default Create = ({ navigation }) => {
@@ -45,9 +61,45 @@ export default Create = ({ navigation }) => {
         tabBarInactiveTintColor: "grey",
       })}
     >
-      <BottomTabNav.Screen name="Create" component={CreateScreen} />
-      <BottomTabNav.Screen name="Manage" component={ManageScreen} />
-      <BottomTabNav.Screen name="Profile" component={ProfileScreen} />
+      <BottomTabNav.Screen
+        name="Create"
+        component={CreateScreen}
+        options={() => ({
+          tabBarIcon: ({ focused }) => (
+            <AntDesign
+              name="pluscircleo"
+              size={24}
+              color={focused ? "rgb(0,225,130)" : "grey"}
+            /> // Changes icon's colour, turquoise green if active, grey if not.
+          ),
+        })}
+      />
+      <BottomTabNav.Screen
+        name="Manage"
+        component={ManageScreen}
+        options={() => ({
+          tabBarIcon: ({ focused }) => (
+            <MaterialCommunityIcons
+              name="clipboard-edit-outline"
+              size={24}
+              color={focused ? "rgb(0,225,130)" : "grey"}
+            />
+          ),
+        })}
+      />
+      <BottomTabNav.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={() => ({
+          tabBarIcon: ({ focused }) => (
+            <MaterialIcons
+              name="account-circle"
+              size={24}
+              color={focused ? "rgb(0,225,130)" : "grey"}
+            />
+          ),
+        })}
+      />
     </BottomTabNav.Navigator>
   );
 };
@@ -57,13 +109,30 @@ function CreateScreen() {
   const [name, setName] = React.useState();
   const [address, setAddress] = React.useState();
   const [totalPlayers, setTotalPlayers] = React.useState();
-  const [pricePerPlayer, setPricePerPlayer] = React.useState();
+  // const [pricePerPlayer, setPricePerPlayer] = React.useState();
   const [description, setDescription] = React.useState();
 
   // Date Time picker =============
   const [date, setDate] = React.useState(new Date(1724991730000)); // Number sets default time, the epoch time (seconds since 1/1/1970) **T&E to get current date 30/8/24**
   const [mode, setMode] = React.useState("date");
   const [show, setShow] = React.useState(false);
+
+  // Image picker =================
+  const [image, setImage] = React.useState(true);
+
+  const pickImage = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    if (!result.canceled) {
+      setImage(result.assets[0].uri);
+    }
+  };
 
   const onChange = (event, selectedDate) => {
     const currentDate = selectedDate;
@@ -91,16 +160,17 @@ function CreateScreen() {
     setName("");
     setAddress("");
     setDate(new Date(1724991730000)); // reset to 30/8/24 5:22:10 lol
-    setPricePerPlayer("");
+    // setPricePerPlayer("");
     setTotalPlayers("");
     setDescription("");
+    setImage(null);
   };
 
   const upload = async () => {
     // Validate all input fields.
     if (name.length > 0 && address.length > 0 && totalPlayers.length > 0) {
       // Key fields have been entered.
-      // Upload data to Firestore, creating a new Document in the UpcomingMatches Collection.
+      // Upload data to Firestore, creating a new Document in the matches collection.
       try {
         // For customID, / messes up the logic (as then thinks the date is the data)
         // To prevent this, replace / with . and that should fix it.
@@ -115,17 +185,23 @@ function CreateScreen() {
         const bookedUsers = new Array();
 
         // Logic to write to the Firestore database
-        const docRef = await setDoc(doc(db, "upcoming_matches", customID), {
+        const docRef = await setDoc(doc(db, "matches", customID), {
           Name: name,
           Location: address,
           DateAndTime: date.toLocaleString(),
           MaxPlayers: totalPlayers,
-          PricePerPlayer: pricePerPlayer,
+          PricePerPlayer: 5,
           Description: description,
           BookedUsers: bookedUsers,
           Active: true, // Default set to active as just uploaded
         });
-        console.log("Upload successful!");
+
+        // Upload the image
+        const uploadResp = await uploadToFirebase(
+          image.toLocaleString(),
+          customID,
+          (v) => console.log(v)
+        );
       } catch (error) {
         console.error("Error adding document: ", error);
       }
@@ -133,7 +209,41 @@ function CreateScreen() {
       Alert.alert("Match Uploaded!", "You successfully uploaded that match.", {
         text: "OK",
       });
+      clear();
     }
+  };
+
+  const uploadToFirebase = async (uri, name, onProgress) => {
+    // Helpful function from a tutorial for uploading images
+    const fetchResponse = await fetch(uri);
+    const theBlob = await fetchResponse.blob();
+
+    const imageRef = ref(getStorage(), `images/${name}`);
+
+    const uploadTask = uploadBytesResumable(imageRef, theBlob);
+
+    return new Promise((resolve, reject) => {
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          onProgress && onProgress(progress);
+        },
+        (error) => {
+          // Handle unsuccessful uploads
+          console.log(error);
+          reject(error);
+        },
+        async () => {
+          const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+          resolve({
+            downloadUrl,
+            metadata: uploadTask.snapshot.metadata,
+          });
+        }
+      );
+    });
   };
 
   return (
@@ -207,7 +317,7 @@ function CreateScreen() {
           keyboardType="number-pad"
         />
 
-        <Text style={styles.scrollLabel}>Price per Player:</Text>
+        {/* <Text style={styles.scrollLabel}>Price per Player:</Text>
         <TextInput
           // Drop down menu for numbers, or input field for price
           style={styles.textInput}
@@ -215,7 +325,7 @@ function CreateScreen() {
           value={pricePerPlayer}
           placeholder="Enter the price per player (£ xx.yy)."
           keyboardType="decimal-pad" // So can add point for prices
-        />
+        /> */}
 
         <Text style={styles.scrollLabel}>Description:</Text>
         <TextInput
@@ -224,6 +334,10 @@ function CreateScreen() {
           value={description}
           placeholder="Enter any extra info, e.g. rules, directions."
         />
+
+        {/* Image uploader */}
+        <Button title="Pick an image from camera roll" onPress={pickImage} />
+        {image && <Image source={{ uri: image }} style={styles.image} />}
 
         {/* Buttons- Clear/Reset and Upload */}
         <TouchableOpacity style={styles.clear} onPress={() => clear()}>
@@ -335,5 +449,12 @@ const styles = StyleSheet.create({
     height: 24,
     backgroundColor: "white",
     borderRadius: "100%",
+  },
+
+  image: {
+    // For selected image
+    width: 200,
+    height: 200,
+    alignSelf: "center",
   },
 });

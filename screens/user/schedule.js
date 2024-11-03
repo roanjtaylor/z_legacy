@@ -8,16 +8,22 @@ import {
   TouchableOpacity,
   Alert,
   RefreshControl,
+  Image,
 } from "react-native";
 
 // Global variables from discover with user details
-import { globalEmail, globalMatches } from "./discover";
+var globalEmail;
+import { globalMatches } from "./discover"; // Require cycle- not ideal but not harmful for now. Future refactor.
 
 // Imports for Firestore reading
 import { doc, updateDoc, arrayRemove } from "firebase/firestore";
 import { db } from "../../firebaseConfig"; // Reference to the Firestore database
 
 export default Schedule = ({ navigation, route }) => {
+  // Get email from parameters
+  const { email } = route.params;
+  globalEmail = email;
+
   // Adjust array to include only the matches the user has booked
   var bookedMatches = globalMatches.filter(userSignedUp);
 
@@ -26,34 +32,34 @@ export default Schedule = ({ navigation, route }) => {
     return match.users.includes(globalEmail);
   }
 
-  // Remove user from match (and match from user) once sign-out button is pressed
-  const removeUserFromMatch = async (match) => {
-    // Remove the user from the match's booked users
-    try {
-      const docRef = await updateDoc(doc(db, "upcoming_matches", match.id), {
-        BookedUsers: arrayRemove(globalEmail),
-      });
-      console.log("User removed from match's bookedUsers.");
-    } catch (error) {
-      console.error("Error removing user: ", error);
-    }
+  // // Remove user from match (and match from user) once sign-out button is pressed
+  // const removeUserFromMatch = async (match) => {
+  //   // Remove the user from the match's booked users
+  //   try {
+  //     const docRef = await updateDoc(doc(db, "upcoming_matches", match.id), {
+  //       BookedUsers: arrayRemove(globalEmail),
+  //     });
+  //     console.log("User removed from match's bookedUsers.");
+  //   } catch (error) {
+  //     console.error("Error removing user: ", error);
+  //   }
 
-    // Remove the match from the user's matches
-    try {
-      const docRef = await updateDoc(doc(db, "users", globalEmail), {
-        Matches: arrayRemove(match.id),
-      });
-      console.log("Match removed from user's booked matches.");
-    } catch (error) {
-      console.error("Error removing match: ", error);
-    }
+  //   // Remove the match from the user's matches
+  //   try {
+  //     const docRef = await updateDoc(doc(db, "users", globalEmail), {
+  //       Matches: arrayRemove(match.id),
+  //     });
+  //     console.log("Match removed from user's booked matches.");
+  //   } catch (error) {
+  //     console.error("Error removing match: ", error);
+  //   }
 
-    Alert.alert(
-      "Match Removed!",
-      "You were successfully removed from that match.",
-      { text: "OK" }
-    );
-  };
+  //   Alert.alert(
+  //     "Match Removed!",
+  //     "You were successfully removed from that match.",
+  //     { text: "OK" }
+  //   );
+  // };
 
   // Pull to Refresh
   const [refreshing, setRefreshing] = React.useState(false);
@@ -61,6 +67,8 @@ export default Schedule = ({ navigation, route }) => {
   const onRefresh = React.useCallback(() => {
     setRefreshing(true);
     bookedMatches = globalMatches.filter(userSignedUp); // Refreshes the booked match data
+
+    // console.log(globalMatches[0].name);
 
     setTimeout(() => {
       setRefreshing(false);
@@ -91,9 +99,16 @@ export default Schedule = ({ navigation, route }) => {
           marginTop: 10,
         }}
       >
-        <Text style={styles.subtitle}>
-          Pull to refresh... (Refresh discover to save changes)
-        </Text>
+        <View
+          style={{
+            alignItems: "center",
+            backgroundColor: "yellow",
+            padding: 10,
+            margin: 10,
+          }}
+        >
+          <Text>You have no booked matches.</Text>
+        </View>
       </View>
     );
   };
@@ -135,7 +150,11 @@ export default Schedule = ({ navigation, route }) => {
                 Cost per Player: £{item.pricepp}.
               </Text>
               <Text style={styles.subtitle}>{item.description}</Text>
-              <TouchableOpacity
+              <Image
+                source={{ uri: item.imageURL }}
+                style={{ alignSelf: "center", width: 300, height: 300 }}
+              />
+              {/* <TouchableOpacity
                 style={{
                   alignItems: "center",
                   backgroundColor: "pink",
@@ -146,7 +165,7 @@ export default Schedule = ({ navigation, route }) => {
                 onPress={() => removeUserFromMatch(item)}
               >
                 <Text>Sign-Out of this Match.</Text>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
           )}
           keyExtractor={(item) => item.id}
@@ -181,12 +200,12 @@ const styles = StyleSheet.create({
 
   header: {
     width: "117%",
-    height: "20%", // Looks about ~1/4 of screen. Needs checked and clarified.
+    height: "15%",
     paddingTop: "7%",
     backgroundColor: "rgb(35, 31, 32)", // charcoal grey
-    // backgroundColor: "red",
     borderBottomColor: "#a4a3a3", // Light gray, as from Figma
     borderBottomWidth: StyleSheet.hairlineWidth,
+    marginTop: 20, // so visible on IPhone X
   },
 
   title: {

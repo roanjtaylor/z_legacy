@@ -5,8 +5,10 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"; // 
 // Screens for Stack Navigator
 import Welcome from "./screens/prelogin/welcome";
 import Register from "./screens/prelogin/register";
+import TandCs from "./screens/prelogin/t&cs";
 import Login from "./screens/prelogin/login";
 import Discover from "./screens/user/discover";
+import PayHandler from "./components/payHandler";
 import AdminTest from "./screens/admin/create";
 
 const Stack = createNativeStackNavigator();
@@ -32,6 +34,14 @@ export default function App() {
           }}
         />
         <Stack.Screen
+          name="TandCs"
+          component={TandCs}
+          options={{
+            headerShown: false,
+            presentation: "modal",
+          }}
+        />
+        <Stack.Screen
           name="Login"
           component={Login}
           options={{
@@ -45,6 +55,14 @@ export default function App() {
           options={{
             headerShown: false,
             // presentation: "modal",
+          }}
+        />
+        <Stack.Screen
+          name="PayHandler"
+          component={PayHandler}
+          options={{
+            headerShown: false,
+            presentation: "modal",
           }}
         />
         <Stack.Screen

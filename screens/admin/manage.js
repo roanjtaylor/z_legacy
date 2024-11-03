@@ -28,9 +28,9 @@ const retrieveData = async () => {
   // Reset the array to only show what is currently in the store (no duplicates)
   globalMatches = new Array();
 
-  // Retrieve all upcoming matches in the (same named) collection
+  // Retrieve all matches in the (same named) collection
   globalQuery = await getDocs(
-    query(collection(db, "upcoming_matches"), where("Active", "==", true))
+    query(collection(db, "matches"), where("Active", "==", true))
   );
   globalQuery.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
@@ -55,7 +55,7 @@ const retrieveData = async () => {
 const deactivateMatch = async (match) => {
   // Set Active to false, and refresh screent to show changes (as this match has been removed)
   try {
-    const docRef = await updateDoc(doc(db, "upcoming_matches", match.id), {
+    const docRef = await updateDoc(doc(db, "matches", match.id), {
       Active: false,
     });
     console.log("Match deactivated.");
