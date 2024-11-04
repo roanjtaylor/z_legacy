@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const port = 3000; //add your port here
+const port = process.env.PORT || 3000; //add your port here
 const PUBLISHABLE_KEY =
   "pk_live_51Q1loc1Q7y4yydlCjTjFHYnVSwOgyoij5VbmZ0flHj5e8VGDzzObioZYpyi9JzW0xX4iFInk2pnW9diP2C0P2uS800wY41yR3x";
 const SECRET_KEY =
@@ -10,6 +10,13 @@ import Stripe from "stripe";
 
 // Confirm the API version from your stripe dashboard
 const stripe = Stripe(SECRET_KEY, { apiVersion: "2024-06-20" });
+
+// Server URL (hosted on Render): https://kickoffni-payment-server.onrender.com
+// Display Hello World
+app.get("/", (req, res) => {
+  // Sends a HTML response to the client (laptop)
+  res.send("<h1> Hello World! </h1>");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
