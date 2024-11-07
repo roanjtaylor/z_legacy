@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "releaseChannel": "development"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "releaseChannel": "production",
+      "artifactPath": "dist/_expo/static/js/builds", // Directory for storing the builds (.apk and .ipa)
+      "ios": {
+        "buildType": "app-store"
+      },
+      "android": {
+        "buildType": "apk" // "app-bundle" for Play Store releases
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

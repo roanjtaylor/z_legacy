@@ -11,20 +11,8 @@ import {
 } from "react-native";
 
 // Imports for Firestore reading
-import {
-  collection,
-  getDocs,
-  doc,
-  updateDoc,
-  getDoc,
-  setDoc,
-  query,
-  where,
-} from "firebase/firestore";
+import { doc, updateDoc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // Reference to the Firestore database
-
-// Imports for Firebase Storage
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 // Stripe payment
 import {
@@ -33,8 +21,11 @@ import {
   useConfirmPayment,
 } from "@stripe/stripe-react-native";
 
+// Use Environment variables to keep sensistive data hidden.
+import Constants from "expo-constants";
+
 //ADD localhost address of your server
-const API_URL = "http://192.168.0.4:3000"; // http://<IP address>:<port>
+const API_URL = Constants.expoConfig?.extra?.serverURL || ""; // For local testing: http://<IP address>:<port>
 
 export default function PayHandler({ navigation, route }) {
   const { match, email } = route.params;
@@ -42,14 +33,19 @@ export default function PayHandler({ navigation, route }) {
   const [cardDetails, setCardDetails] = useState();
   const { confirmPayment, loading } = useConfirmPayment();
 
+  const [isProcessing, setIsProcessing] = useState(false); // New state to track loading
+
   const handlePay = async () => {
-    //1. Gather the customer's billing information (e.g., email)
+    // Prevent multiple clicks by checking if already processing
+    if (isProcessing) return;
+
+    // 1. Gather the customer's billing information (e.g., email)
     if (!cardDetails?.complete) {
       Alert.alert("Please enter correct card details.");
       return;
     }
 
-    //2. Check user bookings
+    // 2. Check user bookings
     if (match.users.length == match.capacity) {
       // Match is Full, so user cannot sign up for it
       Alert.alert(
@@ -61,7 +57,7 @@ export default function PayHandler({ navigation, route }) {
     }
 
     // Space is available, so can sign up the user!
-    //3. Check if user is in the booked users
+    // 3. Check if user is in the booked users
     if (match.users.includes(email)) {
       // User already signed up, Alert the user.
       // TESTING NOTE: includes() is case sensitive- may need to adjust email login so that all lowercase as uppercase start changes the value
@@ -73,22 +69,28 @@ export default function PayHandler({ navigation, route }) {
       return;
     }
 
-    //4. Fetch the intent client secret from the backend
+    // 4. Fetch the intent client secret from the backend
+    // Start processing payment
+    setIsProcessing(true);
+
     try {
       const { clientSecret, error } = await fetchPaymentIntentClientSecret();
 
-      //5. Confirm the payment with the card details
+      // 5. Confirm the payment with the card details
       if (error) {
-        console.log("Unable to process payment");
+        Alert.alert("Error", "Unable to process payment.");
+        setIsProcessing(false); // Reset processing state on error
       } else {
         const { paymentIntent, error } = await confirmPayment(clientSecret, {
           paymentMethodType: "Card",
           billingDetails: email,
+          receipt_email: email,
         });
         if (error) {
           Alert.alert(`Payment Confirmation Error ${error.message}`);
+          setIsProcessing(false); // Reset processing state on error
         } else if (paymentIntent) {
-          //6. Write user to match and match to user (Storing change in database)
+          // 6. Write user to match and match to user (Storing change in database)
           // Write user to DB (Alert if already in, or if successful)
           // User not signed up yet, write user to the database.
           // Write the username into the bookedUsers array in this match
@@ -101,6 +103,7 @@ export default function PayHandler({ navigation, route }) {
             });
           } catch (error) {
             console.error("Error adding document: ", error);
+            setIsProcessing(false);
           }
 
           // Write the match ID into the user's bookedMatches
@@ -121,7 +124,8 @@ export default function PayHandler({ navigation, route }) {
               Alert.alert("Payment success! See you at the match!");
               navigation.goBack(); // Successful, thus return to discover screen.
             } catch (error) {
-              console.error("Error adding document: ", error);
+              console.error("Error updating user document: ", error);
+              setIsProcessing(false);
             }
           } else {
             // If not, write a new document with email, matches array (+ this match)
@@ -134,7 +138,8 @@ export default function PayHandler({ navigation, route }) {
               Alert.alert("Payment success! See you at the match!");
               navigation.goBack(); // Successful, thus return to discover screen.
             } catch (error) {
-              console.error("Error adding document: ", error);
+              console.error("Error creating user document: ", error);
+              setIsProcessing(false);
             }
             console.log("User not found, so written.");
           }
@@ -142,6 +147,9 @@ export default function PayHandler({ navigation, route }) {
       }
     } catch (e) {
       console.log(e);
+      setIsProcessing(false); // Reset processing state on exception
+    } finally {
+      setIsProcessing(false); // Reset processing state
     }
   };
 
@@ -157,7 +165,9 @@ export default function PayHandler({ navigation, route }) {
   };
 
   return (
-    <StripeProvider publishableKey="pk_live_51Q1loc1Q7y4yydlCjTjFHYnVSwOgyoij5VbmZ0flHj5e8VGDzzObioZYpyi9JzW0xX4iFInk2pnW9diP2C0P2uS800wY41yR3x">
+    <StripeProvider
+      publishableKey={Constants.expoConfig?.extra?.publishableKey || ""}
+    >
       <ScrollView style={styles.container}>
         <StatusBar style="auto" />
         {/* Header */}
@@ -175,9 +185,9 @@ export default function PayHandler({ navigation, route }) {
           <Text style={styles.subtitle}>Cost per Player: £5.00.</Text>
           <Text style={styles.subtitle}>Description: {match.description}</Text>
 
-          <Text style={styles.subtitleRed}>
-            For now, KickOffNI cannot facilitate refunds or cancellations. Only
-            pay for a ticket if you know you can attend.
+          <Text style={styles.subtitleCyan}>
+            For now, we cannot facilitate refunds or cancellations. Only pay for
+            a ticket if you know you can attend.
           </Text>
 
           <Image
@@ -199,15 +209,20 @@ export default function PayHandler({ navigation, route }) {
           <TouchableOpacity
             style={{
               alignItems: "center",
-              backgroundColor: "cyan",
+              backgroundColor: isProcessing ? "gray" : "cyan",
               padding: 10,
               margin: 10,
               marginBottom: 300,
               borderRadius: 100,
             }}
             onPress={handlePay} // Call function, passing in necessary parameters, to carry out the money management????
+            disabled={isProcessing}
           >
-            <Text>Click to confirm payment.</Text>
+            <Text>
+              {isProcessing
+                ? "Processing..."
+                : "Click to confirm payment of £5."}
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -254,12 +269,13 @@ const styles = StyleSheet.create({
     paddingTop: "1%",
   },
 
-  subtitleRed: {
+  subtitleCyan: {
     fontSize: 18,
     fontWeight: "400",
-    color: "red",
+    color: "cyan",
     paddingTop: "4%",
     paddingBottom: "4%",
+    textAlign: "center",
   },
 
   scrollView: {

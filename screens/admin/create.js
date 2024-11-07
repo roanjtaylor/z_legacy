@@ -113,7 +113,7 @@ function CreateScreen() {
   const [description, setDescription] = React.useState();
 
   // Date Time picker =============
-  const [date, setDate] = React.useState(new Date(1724991730000)); // Number sets default time, the epoch time (seconds since 1/1/1970) **T&E to get current date 30/8/24**
+  const [date, setDate] = React.useState(new Date(1732125600000)); // Number sets default time, the epoch time (seconds since 1/1/1970)
   const [mode, setMode] = React.useState("date");
   const [show, setShow] = React.useState(false);
 
@@ -156,10 +156,10 @@ function CreateScreen() {
   // ==============================
 
   const clear = () => {
-    // set all input fields to initial states (blank/default value)
+    // Reset all input fields to initial states (blank/default value)
     setName("");
     setAddress("");
-    setDate(new Date(1724991730000)); // reset to 30/8/24 5:22:10 lol
+    setDate(new Date(1732125600000)); // reset to 20/11/24 18:00:00
     // setPricePerPlayer("");
     setTotalPlayers("");
     setDescription("");
@@ -267,7 +267,7 @@ function CreateScreen() {
           style={styles.textInput}
           onChangeText={setName}
           value={name}
-          placeholder="Enter name of the venue."
+          placeholder="Paste in the name of the venue."
         />
 
         <Text style={styles.scrollLabel}>Address:</Text>
@@ -304,6 +304,7 @@ function CreateScreen() {
             mode={mode}
             is24Hour={true}
             onChange={onChange}
+            style={{ marginTop: "7%", alignSelf: "center" }}
           />
         )}
 
@@ -332,7 +333,7 @@ function CreateScreen() {
           style={styles.textInput}
           onChangeText={setDescription}
           value={description}
-          placeholder="Enter any extra info, e.g. rules, directions."
+          placeholder="Paste in any extra info, e.g. directions."
         />
 
         {/* Image uploader */}
@@ -366,12 +367,12 @@ const styles = StyleSheet.create({
 
   header: {
     width: "117%",
-    height: "15%", // Needs checked and clarified.
+    height: "20%", // Needs checked and clarified.
     paddingTop: "7%",
     backgroundColor: "rgb(35, 31, 32)", // charcoal grey
-    // backgroundColor: "red",
     borderBottomColor: "#a4a3a3", // Light gray, as from Figma
     borderBottomWidth: StyleSheet.hairlineWidth,
+    marginTop: 20,
   },
 
   title: {
@@ -415,6 +416,7 @@ const styles = StyleSheet.create({
     margin: "7%",
     borderWidth: 1,
     padding: "7%",
+    backgroundColor: "white",
   },
 
   // Buttons

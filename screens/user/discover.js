@@ -6,7 +6,6 @@ import {
   StyleSheet,
   FlatList,
   TouchableOpacity,
-  Alert,
   RefreshControl,
   Image,
 } from "react-native";
@@ -18,25 +17,14 @@ import { NavigationContainer } from "@react-navigation/native"; // identify navi
 import { createNativeStackNavigator } from "@react-navigation/native-stack"; // create stack
 
 // Screens for the other tabs
-import PitchScreen from "./pitch";
-import CommunityScreen from "./community";
+// import PitchScreen from "./pitch";
+// import CommunityScreen from "./community";
 import ScheduleScreen from "./schedule";
 import ProfileScreen from "./profile";
 import PayHandler from "../../components/payHandler";
 
 // Imports for Firestore reading
-import {
-  collection,
-  getDocs,
-  doc,
-  updateDoc,
-  getDoc,
-  setDoc,
-  query,
-  where,
-  orderBy,
-  documentId,
-} from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../firebaseConfig"; // Reference to the Firestore database
 
 // Imports for Firebase Storage
@@ -44,7 +32,7 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 // Imports for navigation bar icons
 import FontAwesome from "@expo/vector-icons/FontAwesome"; // Search + Calendar
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"; // Pitch
+// import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"; // Pitch
 import MaterialIcons from "@expo/vector-icons/MaterialIcons"; // Profile
 
 // Global variables for storing the user's details
@@ -139,39 +127,32 @@ const retrieveData = async () => {
 
   // Retrieve all upcoming matches in the (same named) collection
   globalQuery = await getDocs(
-    query(
-      collection(db, "matches"),
-      where("Active", "==", true),
-      orderBy("DateAndTime")
-    )
+    query(collection(db, "matches"), where("Active", "==", true))
   );
-  globalQuery.forEach(async (doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    // console.log(doc.id, " => ", doc.data()); // Prints all the data found.
 
-    // Get image, store in match
-    var storage = getStorage();
-    var storageRef = ref(storage, "images/" + doc.id);
-    var url = await getDownloadURL(storageRef);
+  // Create an array of promises to fetch image URLs and create Match objects
+  const matchPromises = globalQuery.docs.map(async (doc) => {
+    // Get image URL for each match
+    const storage = getStorage();
+    const storageRef = ref(storage, "images/" + doc.id);
+    const url = await getDownloadURL(storageRef);
 
-    console.log("DOCUMENT FETCHED: ", doc.id);
-
-    // Make a match object, add to global array
-    globalMatches.push(
-      new Match(
-        doc.data().BookedUsers,
-        doc.data().DateAndTime,
-        doc.data().Description,
-        doc.data().Location,
-        doc.data().MaxPlayers,
-        doc.data().PricePerPlayer,
-        doc.data().Name,
-        doc.id,
-        url
-      )
+    // Create a Match object with the image URL
+    return new Match(
+      doc.data().BookedUsers,
+      doc.data().DateAndTime,
+      doc.data().Description,
+      doc.data().Location,
+      doc.data().MaxPlayers,
+      doc.data().PricePerPlayer,
+      doc.data().Name,
+      doc.id,
+      url
     );
   });
-  console.log("===");
+
+  // Wait for all promises to resolve and populate globalMatches in a consistent order
+  globalMatches = await Promise.all(matchPromises);
 };
 
 const Stack = createNativeStackNavigator();
@@ -231,23 +212,30 @@ function DiscoverScreen({ navigation }) {
 
   const myListEmpty = () => {
     return (
-      <View
-        style={{
-          width: "100%",
-          backgroundColor: "brown",
-          marginTop: 10,
-        }}
-      >
+      <View style={{ flex: 1, width: "100%", justifyContent: "center" }}>
         <TouchableOpacity
           style={{
+            flex: 1,
+            justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "yellow",
-            padding: 10,
-            margin: 10,
+            backgroundColor: "white",
+            width: "100%",
+            paddingVertical: 20,
+            paddingHorizontal: 10,
+            marginTop: "7%",
           }}
           onPress={() => onRefresh()}
         >
-          <Text>Click to load, or scroll this page!</Text>
+          <Text
+            style={{
+              color: "#0000EE",
+              fontSize: 16,
+            }}
+          >
+            {refreshing
+              ? "Loading..."
+              : "Click here, or scroll, to load/refresh!"}
+          </Text>
         </TouchableOpacity>
       </View>
     );

@@ -1,6 +1,6 @@
 // Libraries for Stack Navigator
-import { NavigationContainer } from "@react-navigation/native"; // identify navigator
-import { createNativeStackNavigator } from "@react-navigation/native-stack"; // create stack
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 // Screens for Stack Navigator
 import Welcome from "./screens/prelogin/welcome";
@@ -56,6 +56,7 @@ export default function App() {
             headerShown: false,
             // presentation: "modal",
           }}
+          lazy={true} // Enable lazy loading for this screen
         />
         <Stack.Screen
           name="PayHandler"
@@ -64,6 +65,7 @@ export default function App() {
             headerShown: false,
             presentation: "modal",
           }}
+          lazy={true} // Enable lazy loading for this screen
         />
         <Stack.Screen
           name="Admin"
@@ -72,6 +74,7 @@ export default function App() {
             headerShown: false,
             // presentation: "modal",
           }}
+          lazy={true} // Enable lazy loading for this screen
         />
       </Stack.Navigator>
     </NavigationContainer>

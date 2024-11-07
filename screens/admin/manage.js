@@ -101,14 +101,31 @@ export default Manage = ({ navigation }) => {
 
   const myListEmpty = () => {
     return (
-      <View
-        style={{
-          width: "100%",
-          backgroundColor: "brown",
-          marginTop: 10,
-        }}
-      >
-        <Text style={styles.subtitle}>Pull to refresh...</Text>
+      <View style={{ flex: 1, width: "100%", justifyContent: "center" }}>
+        <TouchableOpacity
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "white",
+            width: "100%",
+            paddingVertical: 20,
+            paddingHorizontal: 10,
+            marginTop: "7%",
+          }}
+          onPress={() => onRefresh()}
+        >
+          <Text
+            style={{
+              color: "#0000EE",
+              fontSize: 16,
+            }}
+          >
+            {refreshing
+              ? "Loading..."
+              : "Click here, or scroll, to load/refresh!"}
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   };
@@ -120,7 +137,7 @@ export default Manage = ({ navigation }) => {
       <View style={styles.header}>
         <Text style={styles.title}>Manage bookings:</Text>
         <Text style={styles.subtitle}>
-          Click on the bookings to view their information.
+          Control live match bookings, and remove them once complete.
         </Text>
       </View>
 
@@ -232,9 +249,9 @@ const styles = StyleSheet.create({
     height: "20%", // Looks about ~1/4 of screen. Needs checked and clarified.
     paddingTop: "7%",
     backgroundColor: "rgb(35, 31, 32)", // charcoal grey
-    // backgroundColor: "red",
     borderBottomColor: "#a4a3a3", // Light gray, as from Figma
     borderBottomWidth: StyleSheet.hairlineWidth,
+    marginTop: 20,
   },
 
   title: {
@@ -246,7 +263,7 @@ const styles = StyleSheet.create({
 
   scrollView: {
     width: "100%",
-    flex: 1, // Does the job to ensure all are visible
+    flex: 1,
     paddingTop: "7%",
     backgroundColor: "rgb(35, 31, 32)", // Charcoal grey
     // BGCOLOUR FOR MATCH CLICKABLES "#413C3D", // Lighter gray

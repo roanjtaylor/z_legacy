@@ -1,27 +1,34 @@
+// Server URL (hosted on Render): See components/payHandler.js
 import express from "express";
 
+// Use Environment variables to keep sensistive data hidden.
+import Constants from "expo-constants";
+
 const app = express();
-const port = process.env.PORT || 3000; //add your port here
-const PUBLISHABLE_KEY =
-  "pk_live_51Q1loc1Q7y4yydlCjTjFHYnVSwOgyoij5VbmZ0flHj5e8VGDzzObioZYpyi9JzW0xX4iFInk2pnW9diP2C0P2uS800wY41yR3x";
-const SECRET_KEY =
-  "REMOVED_STRIPE_SECRET";
+const port = process.env.PORT || 4000;
+const PUBLISHABLE_KEY = Constants.expoConfig?.extra?.publishableKey || "";
+const SECRET_KEY = Constants.expoConfig?.extra?.secretKey || "";
 import Stripe from "stripe";
+import cors from "cors";
 
 // Confirm the API version from your stripe dashboard
 const stripe = Stripe(SECRET_KEY, { apiVersion: "2024-06-20" });
 
-// Server URL (hosted on Render): https://kickoffni-payment-server.onrender.com
-// Display Hello World
+// Middleware
+app.use(cors());
+
+// Start Server.
+app.listen(port, () => {
+  console.log(`Server running at port ${port}`);
+});
+
+// Basic route to display Hello World
 app.get("/", (req, res) => {
   // Sends a HTML response to the client (laptop)
   res.send("<h1> Hello World! </h1>");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
-
+// Create Payment Intent Route
 app.post("/create-payment-intent", async (req, res) => {
   try {
     const paymentIntent = await stripe.paymentIntents.create({

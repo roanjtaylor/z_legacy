@@ -5,8 +5,6 @@ import {
   Text,
   StyleSheet,
   FlatList,
-  TouchableOpacity,
-  Alert,
   RefreshControl,
   Image,
 } from "react-native";
@@ -94,21 +92,27 @@ export default Schedule = ({ navigation, route }) => {
     return (
       <View
         style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "white",
           width: "100%",
-          backgroundColor: "brown",
-          marginTop: 10,
+          paddingVertical: 20,
+          paddingHorizontal: 10,
+          marginTop: "7%",
         }}
       >
-        <View
+        <Text
           style={{
-            alignItems: "center",
-            backgroundColor: "yellow",
-            padding: 10,
-            margin: 10,
+            color: "#0000EE",
+            fontSize: 16,
+            textAlign: "center",
           }}
         >
-          <Text>You have no booked matches.</Text>
-        </View>
+          {refreshing
+            ? "Loading..."
+            : "You have no booked matches, or haven't refreshed the discover screen."}
+        </Text>
       </View>
     );
   };
@@ -120,7 +124,7 @@ export default Schedule = ({ navigation, route }) => {
       <View style={styles.header}>
         <Text style={styles.title}>Schedule:</Text>
         <Text style={styles.subtitle}>
-          View the matches that you have booked!
+          View the matches that you have booked.
         </Text>
       </View>
 

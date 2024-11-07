@@ -17,7 +17,7 @@ export default Profile = ({ navigation }) => {
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.title}>Profile:</Text>
-        <Text style={styles.subtitle}>Coming soon!</Text>
+        <Text style={styles.subtitle}>Sign out of Admin Account.</Text>
       </View>
 
       {/* Details */}
@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
 
   header: {
     width: "117%",
-    height: "15%", // Looks about ~1/4 of screen. Needs checked and clarified.
+    height: "20%", // Looks about ~1/4 of screen. Needs checked and clarified.
     paddingTop: "7%",
     backgroundColor: "rgb(35, 31, 32)", // charcoal grey
-    // backgroundColor: "red",
     borderBottomColor: "#a4a3a3", // Light gray, as from Figma
     borderBottomWidth: StyleSheet.hairlineWidth,
+    marginTop: 20,
   },
 
   title: {
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   // "Sign Out" button
   signOut: {
     alignSelf: "center",
-    marginTop: "7%",
+    marginTop: "50%",
     width: "100%",
     padding: "5%",
     backgroundColor: "rgb(0,225,130)", // turqoise green
