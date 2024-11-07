@@ -1,13 +1,10 @@
 // Server URL (hosted on Render): See components/payHandler.js
 import express from "express";
 
-// Use Environment variables to keep sensistive data hidden.
-import Constants from "expo-constants";
-
 const app = express();
 const port = process.env.PORT || 4000;
-const PUBLISHABLE_KEY = Constants.expoConfig?.extra?.publishableKey || "";
-const SECRET_KEY = Constants.expoConfig?.extra?.secretKey || "";
+const PUBLISHABLE_KEY = process.env.PUBLISHABLE_KEY || ""; // Env variable stored on Render
+const SECRET_KEY = process.env.SECRET_KEY || ""; // Env variable stored on Render
 import Stripe from "stripe";
 import cors from "cors";
 
