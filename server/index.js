@@ -6,13 +6,9 @@ const port = process.env.PORT || 4000;
 const PUBLISHABLE_KEY = process.env.PUBLISHABLE_KEY || ""; // Env variable stored on Render
 const SECRET_KEY = process.env.SECRET_KEY || ""; // Env variable stored on Render
 import Stripe from "stripe";
-import cors from "cors";
 
 // Confirm the API version from your stripe dashboard
 const stripe = Stripe(SECRET_KEY, { apiVersion: "2024-06-20" });
-
-// Middleware
-app.use(cors());
 
 // Start Server.
 app.listen(port, () => {
