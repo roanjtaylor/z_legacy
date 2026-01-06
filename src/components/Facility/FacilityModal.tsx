@@ -140,6 +140,11 @@ export function FacilityModal() {
               </div>
             )}
 
+            <div className="facility-info-row">
+              <span className="facility-label">Next Interaction</span>
+              <span className="facility-value">{formatDate(selectedFacility.nextInteractionDate)}</span>
+            </div>
+
             {selectedFacility.todoNotes && (
               <div className="facility-info-row">
                 <span className="facility-label">To-Do</span>

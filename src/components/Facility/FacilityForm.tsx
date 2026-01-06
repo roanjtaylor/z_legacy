@@ -19,6 +19,7 @@ const initialFormData: FacilityFormData = {
   // Sales details
   recentInteractionDate: getTodayDate(),
   presentState: '',
+  nextInteractionDate: '',
   todoNotes: '',
   // Filters
   council_run: false,
@@ -54,6 +55,7 @@ export function FacilityForm() {
           lng: editingFacility.lng,
           recentInteractionDate: editingFacility.recentInteractionDate,
           presentState: editingFacility.presentState,
+          nextInteractionDate: editingFacility.nextInteractionDate || '',
           todoNotes: editingFacility.todoNotes,
           council_run: editingFacility.council_run,
           pilot_progress: editingFacility.pilot_progress,
@@ -200,6 +202,13 @@ export function FacilityForm() {
             onChange={e => updateField('presentState', e.target.value)}
             placeholder="Current status of the sales relationship..."
             rows={2}
+          />
+
+          <Input
+            label="Approx. Next Interaction"
+            type="date"
+            value={formData.nextInteractionDate}
+            onChange={e => updateField('nextInteractionDate', e.target.value)}
           />
 
           <Textarea

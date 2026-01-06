@@ -1,13 +1,14 @@
-import { useState, useRef } from 'react';
-import { Map } from '@vis.gl/react-google-maps';
+import { useState, useRef, useEffect } from 'react';
+import { Map, useMap } from '@vis.gl/react-google-maps';
 import { useFacilityContext } from '../../context/FacilityContext';
 import { FacilityMarker } from './FacilityMarker';
-import { FilterState } from '../../types/facility';
+import { Facility, FilterState } from '../../types/facility';
 import { Button } from '../UI';
 import './MapContainer.css';
 
 const NORTHERN_IRELAND_CENTER = { lat: 54.6, lng: -6.9 };
 const DEFAULT_ZOOM = 9;
+const FOCUSED_ZOOM = 14;
 
 // Two Map IDs: normal view and clean view (no labels)
 const MAP_ID_NORMAL = import.meta.env.VITE_GOOGLE_MAPS_MAP_ID;
@@ -20,7 +21,25 @@ const filterOptions: { key: keyof FilterState; label: string; color: string }[] 
   { key: 'customer_secured', label: 'Secured Customer', color: '#22C55E' }
 ];
 
-export function MapContainer() {
+// Component to handle map centering
+function MapCenterHandler({ focusedFacility }: { focusedFacility: Facility | null }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (map && focusedFacility && focusedFacility.lat && focusedFacility.lng) {
+      map.panTo({ lat: focusedFacility.lat, lng: focusedFacility.lng });
+      map.setZoom(FOCUSED_ZOOM);
+    }
+  }, [map, focusedFacility]);
+
+  return null;
+}
+
+interface MapContainerProps {
+  focusedFacility?: Facility | null;
+}
+
+export function MapContainer({ focusedFacility = null }: MapContainerProps) {
   const { filteredFacilities, facilities, setSelectedFacility, openForm, filters, toggleFilter, exportData, importData } = useFacilityContext();
   const [showLabels, setShowLabels] = useState(false);
   const [panelExpanded, setPanelExpanded] = useState(false);
@@ -57,6 +76,7 @@ export function MapContainer() {
         gestureHandling="greedy"
         disableDefaultUI={false}
       >
+        <MapCenterHandler focusedFacility={focusedFacility} />
         {filteredFacilities.map(facility => (
           <FacilityMarker
             key={facility.id}

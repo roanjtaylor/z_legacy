@@ -78,6 +78,7 @@ export function useFacilities(): UseFacilitiesReturn {
       // Sales details
       recentInteractionDate: data.recentInteractionDate,
       presentState: data.presentState,
+      nextInteractionDate: data.nextInteractionDate,
       todoNotes: data.todoNotes,
       // Filters
       council_run: data.council_run,

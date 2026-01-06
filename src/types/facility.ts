@@ -12,6 +12,7 @@ export interface Facility {
   // Sales details
   recentInteractionDate: string;
   presentState: string;
+  nextInteractionDate: string;
   todoNotes: string;
   // Filters
   council_run: boolean;
@@ -35,6 +36,7 @@ export interface FacilityFormData {
   // Sales details
   recentInteractionDate: string;
   presentState: string;
+  nextInteractionDate: string;
   todoNotes: string;
   // Filters
   council_run: boolean;
