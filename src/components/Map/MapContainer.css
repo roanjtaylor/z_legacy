@@ -1,0 +1,42 @@
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+  background: #F9FAFB;
+}
+
+.map-error h2 {
+  color: #DC2626;
+  font-size: 1.5rem;
+}
+
+.map-error p {
+  color: #6B7280;
+}
+
+.map-error code {
+  background: #1F2937;
+  color: #22C55E;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.add-facility-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  z-index: 100;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

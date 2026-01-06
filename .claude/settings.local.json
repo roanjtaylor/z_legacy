@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(\"C:\\\\Users\\\\roanj\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\":*)",
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.IO.Compression; $xlsx = ''C:\\\\Users\\\\roanj\\\\Squadova-Sales\\\\Facilities.xlsx''; $temp = [System.IO.Path]::GetTempPath\\(\\) + ''xlsx_extract''; if \\(Test-Path $temp\\) { Remove-Item -Recurse -Force $temp }; [System.IO.Compression.ZipFile]::ExtractToDirectory\\($xlsx, $temp\\); Get-ChildItem \"\"$temp\\\\xl\\\\worksheets\"\" | Select-Object Name\")",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(npm create:*)",
+      "Bash(dir:*)",
+      "Bash(npm install)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
