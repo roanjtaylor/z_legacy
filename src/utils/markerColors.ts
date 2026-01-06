@@ -24,9 +24,9 @@ export const PIN_COLORS = {
 } as const;
 
 export function getFacilityStatus(facility: Facility): FacilityStatus {
-  if (facility.squadova_customer) return 'customer';
-  if (facility.pilot_in_progress) return 'pilot';
-  if (facility.needs_public_contract) return 'council';
+  if (facility.customer_secured) return 'customer';
+  if (facility.pilot_progress) return 'pilot';
+  if (facility.council_run) return 'council';
   return 'default';
 }
 
@@ -37,8 +37,8 @@ export function getPinColors(facility: Facility) {
 
 export function getStatusLabel(status: FacilityStatus): string {
   switch (status) {
-    case 'customer': return 'Squadova Customer';
-    case 'pilot': return 'Pilot in Progress';
+    case 'customer': return 'Secured Paying Customer';
+    case 'pilot': return 'Pilot Progress';
     case 'council': return 'Council Run';
     default: return 'Prospect';
   }

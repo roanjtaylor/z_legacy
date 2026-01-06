@@ -5,17 +5,99 @@
   gap: 1rem;
 }
 
-.facility-image-container {
+/* Image Carousel */
+.facility-carousel {
+  position: relative;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
   background: #F3F4F6;
 }
 
+.carousel-image-container {
+  width: 100%;
+  height: 220px;
+}
+
 .facility-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev {
+  left: 8px;
+}
+
+.carousel-next {
+  right: 8px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.carousel-dot.active {
+  background: white;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Facility Sections */
+.facility-section {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.facility-section:last-of-type {
+  border-bottom: none;
+}
+
+.facility-section-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .facility-status-badge {
@@ -133,4 +215,42 @@
   margin-top: 0.5rem;
   padding-top: 1rem;
   border-top: 1px solid #E5E7EB;
+}
+
+/* Form Sections */
+.form-section {
+  padding: 1rem;
+  background: #F9FAFB;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.form-image-urls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-image-urls .form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
 }

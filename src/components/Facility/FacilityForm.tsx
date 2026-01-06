@@ -4,16 +4,26 @@ import { FacilityFormData } from '../../types/facility';
 import { Modal, Button, Input, Textarea, Checkbox, AddressAutocomplete } from '../UI';
 import './Facility.css';
 
+const getTodayDate = () => new Date().toISOString().split('T')[0];
+
 const initialFormData: FacilityFormData = {
+  // Facility details
   name: '',
   googleMapsAddress: '',
-  imageUrl: '',
-  needs_public_contract: false,
-  pilot_in_progress: false,
-  squadova_customer: false,
+  imageUrl1: '',
+  imageUrl2: '',
+  imageUrl3: '',
   contactDetails: '',
   lat: null,
-  lng: null
+  lng: null,
+  // Sales details
+  recentInteractionDate: getTodayDate(),
+  presentState: '',
+  todoNotes: '',
+  // Filters
+  council_run: false,
+  pilot_progress: false,
+  customer_secured: false
 };
 
 export function FacilityForm() {
@@ -36,16 +46,21 @@ export function FacilityForm() {
         setFormData({
           name: editingFacility.name,
           googleMapsAddress: editingFacility.googleMapsAddress,
-          imageUrl: editingFacility.imageUrl,
-          needs_public_contract: editingFacility.needs_public_contract,
-          pilot_in_progress: editingFacility.pilot_in_progress,
-          squadova_customer: editingFacility.squadova_customer,
+          imageUrl1: editingFacility.imageUrl1,
+          imageUrl2: editingFacility.imageUrl2,
+          imageUrl3: editingFacility.imageUrl3,
           contactDetails: editingFacility.contactDetails,
           lat: editingFacility.lat,
-          lng: editingFacility.lng
+          lng: editingFacility.lng,
+          recentInteractionDate: editingFacility.recentInteractionDate,
+          presentState: editingFacility.presentState,
+          todoNotes: editingFacility.todoNotes,
+          council_run: editingFacility.council_run,
+          pilot_progress: editingFacility.pilot_progress,
+          customer_secured: editingFacility.customer_secured
         });
       } else {
-        setFormData(initialFormData);
+        setFormData({ ...initialFormData, recentInteractionDate: getTodayDate() });
       }
     }
   }, [isFormOpen, editingFacility]);
@@ -108,63 +123,114 @@ export function FacilityForm() {
       isOpen={isFormOpen}
       onClose={handleClose}
       title={editingFacility ? 'Edit Facility' : 'Add New Facility'}
-      size="md"
+      size="lg"
     >
       <form onSubmit={handleSubmit} className="facility-form">
-        <Input
-          label="Facility Name *"
-          value={formData.name}
-          onChange={e => updateField('name', e.target.value)}
-          placeholder="e.g., Belfast Leisure Centre"
-          required
-        />
+        {/* Facility Details Section */}
+        <div className="form-section">
+          <h3 className="form-section-title">Facility Details</h3>
 
-        <AddressAutocomplete
-          label="Address *"
-          value={formData.googleMapsAddress}
-          onChange={handleAddressChange}
-          placeholder="Start typing to search for an address..."
-          required
-        />
-
-        {hasValidCoordinates && (
-          <p className="coordinates-status">
-            Location captured: {formData.lat?.toFixed(4)}, {formData.lng?.toFixed(4)}
-          </p>
-        )}
-
-        <Input
-          label="Image URL"
-          value={formData.imageUrl}
-          onChange={e => updateField('imageUrl', e.target.value)}
-          placeholder="https://..."
-          type="url"
-        />
-
-        <Textarea
-          label="Contact Details"
-          value={formData.contactDetails}
-          onChange={e => updateField('contactDetails', e.target.value)}
-          placeholder="Manager's name, email, phone number, and any notes..."
-          rows={4}
-        />
-
-        <div className="form-checkboxes">
-          <Checkbox
-            label="Council Run (needs public contract)"
-            checked={formData.needs_public_contract}
-            onChange={e => updateField('needs_public_contract', e.target.checked)}
+          <Input
+            label="Name *"
+            value={formData.name}
+            onChange={e => updateField('name', e.target.value)}
+            placeholder="e.g., Belfast Leisure Centre"
+            required
           />
-          <Checkbox
-            label="Pilot in Progress"
-            checked={formData.pilot_in_progress}
-            onChange={e => updateField('pilot_in_progress', e.target.checked)}
+
+          <AddressAutocomplete
+            label="Address *"
+            value={formData.googleMapsAddress}
+            onChange={handleAddressChange}
+            placeholder="Start typing to search for an address..."
+            required
           />
-          <Checkbox
-            label="Squadova Customer"
-            checked={formData.squadova_customer}
-            onChange={e => updateField('squadova_customer', e.target.checked)}
+
+          {hasValidCoordinates && (
+            <p className="coordinates-status">
+              Location captured: {formData.lat?.toFixed(4)}, {formData.lng?.toFixed(4)}
+            </p>
+          )}
+
+          <div className="form-image-urls">
+            <label className="form-label">Images (URLs)</label>
+            <Input
+              value={formData.imageUrl1}
+              onChange={e => updateField('imageUrl1', e.target.value)}
+              placeholder="Image 1 URL (https://...)"
+              type="url"
+            />
+            <Input
+              value={formData.imageUrl2}
+              onChange={e => updateField('imageUrl2', e.target.value)}
+              placeholder="Image 2 URL (https://...)"
+              type="url"
+            />
+            <Input
+              value={formData.imageUrl3}
+              onChange={e => updateField('imageUrl3', e.target.value)}
+              placeholder="Image 3 URL (https://...)"
+              type="url"
+            />
+          </div>
+
+          <Textarea
+            label="Contact"
+            value={formData.contactDetails}
+            onChange={e => updateField('contactDetails', e.target.value)}
+            placeholder="Manager's name, email, phone number, and any notes..."
+            rows={3}
           />
+        </div>
+
+        {/* Sales Details Section */}
+        <div className="form-section">
+          <h3 className="form-section-title">Sales Details</h3>
+
+          <Input
+            label="Recent Interaction Date"
+            type="date"
+            value={formData.recentInteractionDate}
+            onChange={e => updateField('recentInteractionDate', e.target.value)}
+          />
+
+          <Textarea
+            label="Present State"
+            value={formData.presentState}
+            onChange={e => updateField('presentState', e.target.value)}
+            placeholder="Current status of the sales relationship..."
+            rows={2}
+          />
+
+          <Textarea
+            label="To-Do"
+            value={formData.todoNotes}
+            onChange={e => updateField('todoNotes', e.target.value)}
+            placeholder="Next actions to take with this facility..."
+            rows={2}
+          />
+        </div>
+
+        {/* Filters Section */}
+        <div className="form-section">
+          <h3 className="form-section-title">Filters</h3>
+          <div className="form-checkboxes">
+            <Checkbox
+              label="Council Run"
+              checked={formData.council_run}
+              onChange={e => updateField('council_run', e.target.checked)}
+            />
+            <Checkbox
+              label="Pilot Progress"
+              checked={formData.pilot_progress}
+              onChange={e => updateField('pilot_progress', e.target.checked)}
+            />
+            <Checkbox
+              label="Secured Paying Customer"
+              checked={formData.customer_secured}
+              onChange={e => updateField('customer_secured', e.target.checked)}
+            />
+          </div>
         </div>
 
         {isGeocoding && (

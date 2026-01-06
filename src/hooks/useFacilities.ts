@@ -21,9 +21,9 @@ interface UseFacilitiesReturn {
 }
 
 const initialFilters: FilterState = {
-  needs_public_contract: false,
-  pilot_in_progress: false,
-  squadova_customer: false
+  council_run: false,
+  pilot_progress: false,
+  customer_secured: false
 };
 
 export function useFacilities(): UseFacilitiesReturn {
@@ -66,15 +66,24 @@ export function useFacilities(): UseFacilitiesReturn {
     const now = new Date().toISOString();
     const newFacility: Facility = {
       id: generateId(),
+      // Facility details
       name: data.name,
       googleMapsAddress: data.googleMapsAddress,
-      imageUrl: data.imageUrl,
-      needs_public_contract: data.needs_public_contract,
-      pilot_in_progress: data.pilot_in_progress,
-      squadova_customer: data.squadova_customer,
+      imageUrl1: data.imageUrl1,
+      imageUrl2: data.imageUrl2,
+      imageUrl3: data.imageUrl3,
       contactDetails: data.contactDetails,
       lat,
       lng,
+      // Sales details
+      recentInteractionDate: data.recentInteractionDate,
+      presentState: data.presentState,
+      todoNotes: data.todoNotes,
+      // Filters
+      council_run: data.council_run,
+      pilot_progress: data.pilot_progress,
+      customer_secured: data.customer_secured,
+      // Metadata
       createdAt: now,
       updatedAt: now
     };

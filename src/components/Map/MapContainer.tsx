@@ -6,7 +6,7 @@ import './MapContainer.css';
 
 const NORTHERN_IRELAND_CENTER = { lat: 54.6, lng: -6.9 };
 const DEFAULT_ZOOM = 9;
-const MAP_ID = 'squadova-sales-map';
+const MAP_ID = import.meta.env.VITE_GOOGLE_MAPS_MAP_ID || 'squadova-sales-map';
 
 export function MapContainer() {
   const { filteredFacilities, setSelectedFacility, openForm } = useFacilityContext();

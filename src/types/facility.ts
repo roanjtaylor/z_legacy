@@ -1,34 +1,51 @@
 export interface Facility {
   id: string;
+  // Facility details
   name: string;
   googleMapsAddress: string;
-  imageUrl: string;
-  needs_public_contract: boolean;
-  pilot_in_progress: boolean;
-  squadova_customer: boolean;
+  imageUrl1: string;
+  imageUrl2: string;
+  imageUrl3: string;
   contactDetails: string;
   lat: number | null;
   lng: number | null;
+  // Sales details
+  recentInteractionDate: string;
+  presentState: string;
+  todoNotes: string;
+  // Filters
+  council_run: boolean;
+  pilot_progress: boolean;
+  customer_secured: boolean;
+  // Metadata
   createdAt: string;
   updatedAt: string;
 }
 
 export interface FacilityFormData {
+  // Facility details
   name: string;
   googleMapsAddress: string;
-  imageUrl: string;
-  needs_public_contract: boolean;
-  pilot_in_progress: boolean;
-  squadova_customer: boolean;
+  imageUrl1: string;
+  imageUrl2: string;
+  imageUrl3: string;
   contactDetails: string;
   lat: number | null;
   lng: number | null;
+  // Sales details
+  recentInteractionDate: string;
+  presentState: string;
+  todoNotes: string;
+  // Filters
+  council_run: boolean;
+  pilot_progress: boolean;
+  customer_secured: boolean;
 }
 
 export type FacilityStatus = 'default' | 'council' | 'pilot' | 'customer';
 
 export interface FilterState {
-  needs_public_contract: boolean;
-  pilot_in_progress: boolean;
-  squadova_customer: boolean;
+  council_run: boolean;
+  pilot_progress: boolean;
+  customer_secured: boolean;
 }

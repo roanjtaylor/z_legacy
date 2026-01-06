@@ -11,9 +11,9 @@ interface FilterOption {
 }
 
 const filterOptions: FilterOption[] = [
-  { key: 'needs_public_contract', label: 'Council Run', color: '#F97316' },
-  { key: 'pilot_in_progress', label: 'Pilot Progress', color: '#3B82F6' },
-  { key: 'squadova_customer', label: 'Squadova Customer', color: '#22C55E' }
+  { key: 'council_run', label: 'Council Run', color: '#F97316' },
+  { key: 'pilot_progress', label: 'Pilot Progress', color: '#3B82F6' },
+  { key: 'customer_secured', label: 'Secured Paying Customer', color: '#22C55E' }
 ];
 
 export function FilterToolbox() {
