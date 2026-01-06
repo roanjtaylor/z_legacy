@@ -1,7 +1,6 @@
 import { APIProvider } from '@vis.gl/react-google-maps';
 import { FacilityProvider } from './context/FacilityContext';
 import { MapContainer } from './components/Map';
-import { FilterToolbox } from './components/Filter';
 import { FacilityModal, FacilityForm } from './components/Facility';
 import './App.css';
 
@@ -23,7 +22,6 @@ function App() {
       <FacilityProvider>
         <div className="app">
           <MapContainer />
-          <FilterToolbox />
           <FacilityModal />
           <FacilityForm />
         </div>
