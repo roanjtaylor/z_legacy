@@ -10,15 +10,15 @@
       "contactDetails": "Joe Black - Bookings manager (Current setup = PitchBooking)\n\n-Phone\n-WhatsApp",
       "lat": 54.5944143,
       "lng": -5.9439306,
-      "recentInteractionDate": "2026-01-05",
-      "presentState": "2nd December = Onboarding bugs.\n18th December = Christmas chaos.\n\n5th January = Tried calling, texted, awaiting answer.",
-      "todoNotes": "Call - talk/voicemail.\n\nUnderstand workload, check for launch & testing 30min meeting, needs feedback- then Website/Bookings/OtherBookings.",
+      "recentInteractionDate": "2026-01-08",
+      "presentState": "2nd December = Onboarding bugs.\n18th December = Christmas chaos.\n\n8th January = Left voicemail- he's MIA again.",
+      "todoNotes": "Give space if still no reply- need to ensure this works for him too (equal trade).\n\nI get: First facility, feedback, proof for more clients.\nHe gets: Grosvenor website, Squadova improved system (& cheaper than PitchBooking), increased bookings from Social platform.",
       "council_run": false,
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T13:35:30.161Z",
-      "updatedAt": "2026-01-07T14:37:15.447Z",
-      "nextInteractionDate": "2026-01-08"
+      "updatedAt": "2026-01-08T09:41:32.359Z",
+      "nextInteractionDate": "2026-01-15"
     },
     {
       "id": "cefb5f0c-0771-4730-916d-f14fe9064f94",
@@ -112,13 +112,13 @@
       "lng": -5.934008,
       "recentInteractionDate": "2026-01-07",
       "presentState": "Call to find out if they have pitches.",
-      "nextInteractionDate": "2026-01-07",
-      "todoNotes": "Sales is a learning curve- keep initial ask low, to gauge the customer's interest/situation.\n\nCalls still failing- try again later, then drive over @ 7:15 (they close @ 8) to find if they have pitches.",
+      "nextInteractionDate": "2026-01-09",
+      "todoNotes": "Walk in- ask about football pitches (phone not working).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T17:57:33.708Z",
-      "updatedAt": "2026-01-07T14:48:26.689Z"
+      "updatedAt": "2026-01-08T09:35:45.658Z"
     },
     {
       "id": "c9a4dc38-f326-46d2-95da-f57eb4aaa708",
@@ -192,13 +192,13 @@
       "lng": -5.8254416,
       "recentInteractionDate": "2026-01-05",
       "presentState": "Called reception, got email for learning more about their setup.\n\nEmail to general.hanwood@gmail.com",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "Call/Drive over to introduce myself & get contacts warmed up.\n\nPitch of student/booking-software/better-system (more bookings, easier to use).",
+      "nextInteractionDate": "2026-01-12",
+      "todoNotes": "Call again to get an answer (Yes/No) for meeting.\n\nPitch- Student, better booking software, open-minded to solve their specific problems.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:16:24.051Z",
-      "updatedAt": "2026-01-06T18:16:24.051Z"
+      "updatedAt": "2026-01-08T09:43:03.483Z"
     },
     {
       "id": "a38fcbe0-790c-47fe-86cd-f228a4b21d1f",
@@ -207,18 +207,18 @@
       "imageUrl1": "https://haffeysportsgrounds.co.uk/wp-content/uploads/2022/07/Blyth-Street-MUGA-Belfast-1024x576.jpg",
       "imageUrl2": "",
       "imageUrl3": "",
-      "contactDetails": "Angela Johnston (?)",
+      "contactDetails": "Angela Johnston.",
       "lat": 54.5900776,
       "lng": -5.943751199999999,
-      "recentInteractionDate": "2026-01-05",
-      "presentState": "Emailed Angela, unsure if she received (& lengthy- could just have binned it).",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "Call to get booking officer (Angela?)- office is open 0830-1600.",
+      "recentInteractionDate": "2026-01-08",
+      "presentState": "Lots of businesses reach out to sell their software.\n\nI must do the best- as cheap/free as I can for the long-term goal of growth & widespread usage.\n\nLike building a fire, I must add the smallest ask (free booking software) to get things growing, then can add logs (paid booking + social platform).",
+      "nextInteractionDate": "2026-01-15",
+      "todoNotes": "Meet @ 2pm! All-star performance, show I am not the average guy (nor sleezy businessman)- I'm genuine & mean well & innovative.\n\nShe's in!! Like Wolf of Wall Street- improving my closing skills.\n\nMeeting being setup next week- free for the facility to use, get feedback & real bookings, launch social platform, start building momentum.\n\nKey = First successful testimonial.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:18:11.325Z",
-      "updatedAt": "2026-01-07T18:35:47.418Z"
+      "updatedAt": "2026-01-08T11:29:37.869Z"
     },
     {
       "id": "02349672-ad36-451d-8cbd-498f79d96560",
@@ -227,18 +227,18 @@
       "imageUrl1": "https://static.wixstatic.com/media/621270_b6f66d0a49c047ec9080fd0e267c2ba6~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/621270_b6f66d0a49c047ec9080fd0e267c2ba6~mv2_d_3264_2448_s_4_2.jpg",
       "imageUrl2": "",
       "imageUrl3": "",
-      "contactDetails": "TBC",
+      "contactDetails": "Anne McCorry - Call the school, put through to pitch bookings.",
       "lat": 54.6105276,
       "lng": -5.9406403,
-      "recentInteractionDate": "2026-01-07",
-      "presentState": "Strong football school- could increase earnings & simplify admin.\n\nhttps://www.irishfa.com/news/2024/january/st-malachy-s-off-to-flying-start-in-translink-competition",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "Call during AM to find football bookings contact (Roan/UU Student/Booking software/Meeting?).",
+      "recentInteractionDate": "2026-01-08",
+      "presentState": "Called Anne McCorry.\n\nUseful info- school pretty set with block bookings.\n\nApplications open in the Summer, ~5 clubs take most of them (open 6pm-10pm), often the 9-10pm slots are empty- open to ad-hoc bookings.\n\nUse a word-doc & excel to handle the schedule.",
+      "nextInteractionDate": "2026-04-06",
+      "todoNotes": "Call again to checkin- joining Squadova to advertise empty slots & bring more revenue into the school.\n\nUnderstand what they want & what they could have, as currently set with word/excel so would need a great reason to join Squadova.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:23:12.290Z",
-      "updatedAt": "2026-01-07T18:38:11.279Z"
+      "updatedAt": "2026-01-08T10:07:51.293Z"
     },
     {
       "id": "6bbdd7ca-36e6-470a-8db8-91fcb285308b",
@@ -372,13 +372,13 @@
       "lng": -5.683561999999999,
       "recentInteractionDate": "2026-01-08",
       "presentState": "TBC",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "TBC\n\nCall to find out - PitchBooking past?",
+      "nextInteractionDate": "2026-01-12",
+      "todoNotes": "TBC\n\nAwait John Barber advice on football clubs.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T15:41:39.736Z",
-      "updatedAt": "2026-01-07T15:41:39.736Z"
+      "updatedAt": "2026-01-08T10:47:31.589Z"
     },
     {
       "id": "32b15aee-4a08-4a38-9b7c-afb29bd3cd1f",
@@ -467,18 +467,18 @@
       "imageUrl1": "https://focus.belfasttelegraph.co.uk/thumbor/m6aM_hK-APmmQqO0vS6qQPydfsY=/0x239:6384x3760/960x640/prod-mh-ireland/8b55c94e-9203-11ed-8e14-0210609a3fe2.jpg",
       "imageUrl2": "",
       "imageUrl3": "",
-      "contactDetails": "Ring-a-ring.",
+      "contactDetails": "Ring-a-ring.\n\nCalled Queen's Sportsplex.",
       "lat": 54.6392402,
       "lng": -5.8394856,
       "recentInteractionDate": "2026-01-08",
-      "presentState": "TBC",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "Ring-a-ring",
+      "presentState": "Called. Have a booking system that they're happy with.\n\nCold-call, didn't explain the social side of things, key sell should be increasing bookings (hard to get across on a first call).\n\nGood reminder- sales is an art, have to be able to dispel concerns & not condescend & be clear on my ask. \"Not just a booking system- it's a new platform started in Belfast to connect players to play more- would love to chat- will increase bookings.\"\n\nKey lesson- Sell different things to different people, and in this case I only have the booking system to sell (thus smaller facilities, lower budgets, that cannot afford great booking systems)- as I grow & develop the social platform, then I can sell to larger facilities (bigger budget, but empty slots- can get filled via social platform).",
+      "nextInteractionDate": "2026-02-02",
+      "todoNotes": "Call up again, or email, to be clear on Squadova.\n\nNot just a booking system- it will have the social app to increase bookings.\n\nHowever, need momentum from smaller facilities (proving bookings work great, and social side creating lobbies) before I return back (to explain properly- not just a booking system- the complete football [soon sport] experience- full bookings and team matchmaking = maximal bookings).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T15:51:38.744Z",
-      "updatedAt": "2026-01-07T15:51:38.744Z"
+      "updatedAt": "2026-01-08T11:27:48.873Z"
     },
     {
       "id": "d2868a67-32b3-49c9-9dc0-80d5c57542bb",
@@ -532,13 +532,13 @@
       "lng": -5.9321948,
       "recentInteractionDate": "2026-01-08",
       "presentState": "TBC",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "Ring up- might be by GLL (competitor? check for football pitch bookings- careful they don't squeeze me out, like how they squeezed out leisure centre staff with their own; could replace Squadova with their own system thus self-made competitor).",
+      "nextInteractionDate": "2026-02-02",
+      "todoNotes": "GLL, thus unlikely to onboard, but try.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T15:57:13.204Z",
-      "updatedAt": "2026-01-07T15:57:13.204Z"
+      "updatedAt": "2026-01-08T10:56:36.986Z"
     },
     {
       "id": "61aab254-be29-49e0-a77d-7128fbebfefa",
@@ -952,13 +952,13 @@
       "lng": -5.8068852,
       "recentInteractionDate": "2026-01-08",
       "presentState": "TBC",
-      "nextInteractionDate": "2026-01-08",
-      "todoNotes": "TBC",
+      "nextInteractionDate": "2026-02-02",
+      "todoNotes": "Only open Sat/Sun, PitchBooking secured, to try get in once Social momentum (Need 1 facility, as then can prove how well it works, then easier to build momentum- like getting the groove for sawing wood).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:32:52.974Z",
-      "updatedAt": "2026-01-07T18:39:46.657Z"
+      "updatedAt": "2026-01-08T10:59:08.725Z"
     },
     {
       "id": "8bfc95e3-8b85-4a76-85db-5ab78f9eba2b",
@@ -1061,6 +1061,6 @@
       "updatedAt": "2026-01-07T18:39:05.821Z"
     }
   ],
-  "exportedAt": "2026-01-07T18:40:48.861Z",
+  "exportedAt": "2026-01-08T11:30:18.850Z",
   "version": "1.0.0"
 }
