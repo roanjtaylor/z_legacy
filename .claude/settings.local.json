@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.facebook.com)",
+      "WebSearch",
+      "WebFetch(domain:www.gvrt.org.uk)",
+      "WebFetch(domain:www.communityni.org)",
+      "WebFetch(domain:www.nicva.org)",
+      "WebFetch(domain:www.charitycommissionni.org.uk)"
+    ]
+  }
+}
