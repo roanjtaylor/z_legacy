@@ -17,8 +17,8 @@
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T13:35:30.161Z",
-      "updatedAt": "2026-01-08T18:46:20.549Z",
-      "nextInteractionDate": "2026-01-15"
+      "updatedAt": "2026-01-13T11:56:27.444Z",
+      "nextInteractionDate": "2026-01-22"
     },
     {
       "id": "cefb5f0c-0771-4730-916d-f14fe9064f94",
@@ -32,13 +32,13 @@
       "lng": -5.9291732,
       "recentInteractionDate": "2026-01-05",
       "presentState": "-Champion of the idea- get people playing football, not wasting time organising/coaching.\n-Keen on football clubs... e.g. South Belfast Youth League.",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "-Check on his meeting setup with Allen(?)\n-Check for warm intro to SBYL (kids league- team organisation- 1k+ kids)\n\nThen:\n-Pitch Squadova (in-person)\n-Understand their actual problems to adapt/customise (e.g. club football, team organisation, to control the full-stack of recreational football)",
+      "nextInteractionDate": "2026-01-19",
+      "todoNotes": "-Check on his meeting setup with Allen(?)\n-Check for warm intro to SBYL (kids league- team organisation- 1k+ kids)\n\nThen:\n-Understand their actual problems to adapt/customise (e.g. club football, team organisation, to control the full-stack of recreational football)\n-Pitch Squadova (in-person)",
       "council_run": false,
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T17:19:29.923Z",
-      "updatedAt": "2026-01-06T18:29:44.951Z"
+      "updatedAt": "2026-01-13T11:58:03.398Z"
     },
     {
       "id": "5d6ed619-15aa-4a77-894e-ff88f9fb8daa",
@@ -52,13 +52,13 @@
       "lng": -5.930067699999999,
       "recentInteractionDate": "2026-01-07",
       "presentState": "Met at Cafe HJem @ UUB.\n\nPilot facilities:\n-Ballymacash Rangers (own the pitch, software to run it?)\n-SBYL (£60k rev. few yrs ago, massive & hard to track, could solve it for them)\n-Brian (?) in BCC for Gov. 5-aside.\n-Contact other councils (Derry, Bangor, Lisburn, etc) as all would be open to it\n\nPublic contracts:\n-Must be at set standards to be eligible\n-Must be in the groupchats/email lists to hear about open tenders (get added to these via BCC contacts)\n-ESourcing (platform) for example contracts & valuations\n-Getting connected to be in-the-know & get strong bid (facility booking management, & player community building)--> Paddy McGrattan great to meet\n-Council takes long to decide- currently have reviewed their current setup- get in to WIN (bookings management, player social)\n\nStartup Grants:\n-TechStart (£10+k grant, no equity, to setup the tech! Meet them before application)\n-TechStars (Ormeau Labs, similar idea, free money)\n-GoSucceed (Tony key, for mentoring- Katie (?))",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Await email follow-ups, be grateful as they are being massively helpful.\n\nDearbhaile bought the coffee, so be sure to return the favour.",
+      "nextInteractionDate": "2026-01-13",
+      "todoNotes": "Email to follow up on our meeting.\n\nChase up to wrap up meeting notes (Dearbhaile connections, Tony facilities).\n\nDearbhaile bought the coffee, so be sure to return the favour.",
       "council_run": true,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T17:31:47.367Z",
-      "updatedAt": "2026-01-07T14:35:37.972Z"
+      "updatedAt": "2026-01-13T12:03:05.257Z"
     },
     {
       "id": "f60258da-20d6-4aac-bccb-10b919b05ff2",
@@ -72,13 +72,13 @@
       "lng": -5.883430499999999,
       "recentInteractionDate": "2026-01-07",
       "presentState": "Met at UUB BC foyer.\nTalked lots (adrenaline), explaining the idea & plan, understanding their situation.\n\nFor a cold intro, went amazingly. Both open to the idea, just need it to align with their overall operations (ensuring it clicks into place with the rest of their software/setup).\n\nKey things they want: Promotion tool (effectively advertise empty slots, e.g. Thursday 9pm-10pm).\n\nClear on pricing- initially £100/month- not bothered by money as need credibility. Will adjust cost based on real usage (as learned from Liam McStravick).",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Await email from them.\n-Demo the software to Gillian & Julie @ UU Jordanstown.\n-Feedback.\n-Understand overall setup, to start planning how Squadova can fit into their operations (& beat PitchBooking in everyway).\n\nGet Grosvenor/Other facilities online ASAP- once I have one, can easily bring on more- not many want to be the first.",
+      "nextInteractionDate": "2026-01-15",
+      "todoNotes": "Email to follow up on our meeting.\n-Demo the software to Gillian & Julie @ UU Jordanstown.\n-Feedback.\n-Understand overall setup, to start planning how Squadova can fit into their operations (& beat PitchBooking in everyway).\n\nGet Grosvenor/Other facilities online ASAP- once I have one, can easily bring on more- not many want to be the first.",
       "council_run": false,
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T17:46:32.514Z",
-      "updatedAt": "2026-01-07T13:09:48.199Z"
+      "updatedAt": "2026-01-14T18:37:21.840Z"
     },
     {
       "id": "7662b252-71d8-42d0-88ce-a70ca35e43d6",
@@ -87,18 +87,18 @@
       "imageUrl1": "https://www.queenssport.com/sites/media/PEC-535x356.jpeg",
       "imageUrl2": "https://www.qub.ac.uk/home/media/banner-lanyon-building-in-the-sunshine.jpg",
       "imageUrl3": "",
-      "contactDetails": "For football pitch bookings:\n\npecbookings@qub.ac.uk",
+      "contactDetails": "Currently contacted - pecbookings@qub.ac.uk\n\nRachel McDonald - PEC Bookings Officer\nrachel.mcdonald@qub.ac.uk",
       "lat": 54.5810598,
       "lng": -5.9296973,
-      "recentInteractionDate": "2026-01-07",
-      "presentState": "Emailed Rachel (?), asking for a meeting to study & pitch.",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Await email reply, beginning another University testing period.",
+      "recentInteractionDate": "2026-01-13",
+      "presentState": "Lots of 3g pitches- ideal client, plus student population access.\n\nPolite but firm rejection as overall software provider for bookings:\n\"We have a software provider which covers booking of all our facilities, not just pitches and as such would not be, at this stage, interested in a stand alone package.\"",
+      "nextInteractionDate": "2026-03-30",
+      "todoNotes": "Pursue again once testimonials shining- selling the social platform.\n\nCan have a trial- extract empty slots, get them filled by students, increase connectivity.\n\nCheck back in, as player base of QUB students would be massive- plugin to their software to advertise empty slots/teams (eventually can push out competition to run the whole show).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T17:54:53.473Z",
-      "updatedAt": "2026-01-07T13:31:06.692Z"
+      "updatedAt": "2026-01-13T16:25:17.306Z"
     },
     {
       "id": "c45a6212-c06d-4d64-a81e-f804d3a1d8fa",
@@ -132,13 +132,13 @@
       "lng": -5.6739768,
       "recentInteractionDate": "2026-01-07",
       "presentState": "Call = No answer.\nEmailed the info@... address.",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Await reply- then setup meeting.\n\nFounder mode- talk to users, build what they want, repeat.",
+      "nextInteractionDate": "2026-03-02",
+      "todoNotes": "Await reply- then setup meeting.\n\nAwait strong testimonials, as massive client (multiple pitches, and could spread into other sport management- upgrading their website).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:04:29.535Z",
-      "updatedAt": "2026-01-07T18:16:15.537Z"
+      "updatedAt": "2026-01-12T13:06:59.169Z"
     },
     {
       "id": "40cfaa58-3d74-4206-93c7-3e2043c063f3",
@@ -152,13 +152,13 @@
       "lng": -5.9465131,
       "recentInteractionDate": "2026-01-07",
       "presentState": "Hammer CC has nothing to do with the football pitch.\n\nShankill United FC run it- try to contact them (post-John for club talk advice- maybe leave clubs to focus on general facilities, avoiding TeamFeePay sniffing my activity).",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Call John Barber for update & thoughts on ringing Clubs- possibly leave Shankill United for now (to do full leagues all in 1 go- e.g. cliftonville, glentoran, linfield, bangor fc, etc).",
+      "nextInteractionDate": "2026-02-09",
+      "todoNotes": "Call John Barber to get advice on contacting clubs.\n\nReach out once testimonials stronger.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:08:09.130Z",
-      "updatedAt": "2026-01-07T18:30:01.766Z"
+      "updatedAt": "2026-01-12T13:07:34.623Z"
     },
     {
       "id": "9c6b9b79-ae0a-47e5-8827-267dfb996ffa",
@@ -171,14 +171,14 @@
       "lat": 54.3038028,
       "lng": -5.571410699999999,
       "recentInteractionDate": "2026-01-15",
-      "presentState": "TBD",
-      "nextInteractionDate": "2026-01-15",
-      "todoNotes": "Call to get a meeting- really rural area (low bookings- but scope out- facility tool & player platform- can always pause & return later).\n\nNear Newcastle- so batch this together with Newcastle/Newry facilities.",
+      "presentState": "Call to get a meeting- really rural area (low bookings- but scope out- facility tool & player platform- can always pause & return later).\n\nNear Newcastle- so batch this together with Newcastle/Newry facilities.",
+      "nextInteractionDate": "2026-02-09",
+      "todoNotes": "Reach out once testimonials solid, as further away & rural (need strong reason to join, as less potential for booking increase than in Belfast).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:10:18.575Z",
-      "updatedAt": "2026-01-06T18:12:15.458Z"
+      "updatedAt": "2026-01-12T13:19:10.547Z"
     },
     {
       "id": "9f65034a-744e-44bd-aa58-81ae6e057245",
@@ -190,15 +190,15 @@
       "contactDetails": "Paul Millar\n\nNorman Kelly",
       "lat": 54.5899025,
       "lng": -5.8254416,
-      "recentInteractionDate": "2026-01-05",
-      "presentState": "Called reception, got email for learning more about their setup.\n\nEmail to general.hanwood@gmail.com",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "Call again to get an answer (Yes/No) for meeting.\n\nPitch- Student, better booking software, open-minded to solve their specific problems.\n\nNo street-cred right now- could give for free for testing/feedback (worth £10k to me right now).",
+      "recentInteractionDate": "2026-01-13",
+      "presentState": "Re-emailed general.hanwood@gmail.com.\n\nExplaining it is free for them.",
+      "nextInteractionDate": "2026-01-19",
+      "todoNotes": "Await email response. If none, call again- get a definitive \"No\" rather than just being shrugged off.",
       "council_run": false,
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:16:24.051Z",
-      "updatedAt": "2026-01-09T11:05:33.663Z"
+      "updatedAt": "2026-01-13T12:12:01.741Z"
     },
     {
       "id": "a38fcbe0-790c-47fe-86cd-f228a4b21d1f",
@@ -211,14 +211,14 @@
       "lat": 54.5900776,
       "lng": -5.943751199999999,
       "recentInteractionDate": "2026-01-08",
-      "presentState": "Lots of businesses reach out to sell their software.\n\nI must do the best- as cheap/free as I can for the long-term goal of growth & widespread usage.\n\nLike building a fire, I must add the smallest ask (free booking software) to get things growing, then can add logs (paid booking + social platform).",
+      "presentState": "Lots of businesses reach out to sell their software.\n\nI must do the best- 100% free for them in everyway- in exchange for feedback, as key to unlock rest of the market.\n\nLike building a fire, must start small to then start adding bigger logs (giving more heat).",
       "nextInteractionDate": "2026-01-15",
-      "todoNotes": "Meet @ 2pm! All-star performance, show I am not the average guy (nor sleezy businessman)- I'm genuine & mean well & innovative.\n\nShe's in!! Like Wolf of Wall Street- improving my closing skills.\n\nMeeting being setup next week- free for the facility to use, get feedback & real bookings, launch social platform, start building momentum.\n\nKey = First successful testimonial.\n\nHave pitch deck ready, to aid the words- convey the idea & vision.",
+      "todoNotes": "Meet Thursday @ 2pm.\n\nR.Taylor/T.Stark/H.Specter- Hear them, show them, close them.\n\nCompletely free for them to use. For feedback & real bookings.\n\nExplain long-term business model (sub & fees)- ask if fee okay with them (charging the players).\n\nGoal = Successful testimonial, facility feedback, social proof.\n\nTo-Do = Pitch deck, demo, meeting goals (Them, Me, Together).",
       "council_run": false,
       "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:18:11.325Z",
-      "updatedAt": "2026-01-08T16:18:50.385Z"
+      "updatedAt": "2026-01-13T13:30:07.367Z"
     },
     {
       "id": "02349672-ad36-451d-8cbd-498f79d96560",
@@ -233,12 +233,12 @@
       "recentInteractionDate": "2026-01-08",
       "presentState": "Called Anne McCorry.\n\nUseful info- school pretty set with block bookings.\n\nApplications open in the Summer, ~5 clubs take most of them (open 6pm-10pm), often the 9-10pm slots are empty- open to ad-hoc bookings.\n\nUse a word-doc & excel to handle the schedule.",
       "nextInteractionDate": "2026-04-06",
-      "todoNotes": "Call again to checkin- joining Squadova to advertise empty slots & bring more revenue into the school.\n\nUnderstand what they want & what they could have, as currently set with word/excel so would need a great reason to join Squadova.",
+      "todoNotes": "Call again when social platform booming- to increase their usage (the tech that gives facilities more money).\n\n\"Call again anytime\"- lovely lady.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:23:12.290Z",
-      "updatedAt": "2026-01-08T10:07:51.293Z"
+      "updatedAt": "2026-01-13T12:01:43.228Z"
     },
     {
       "id": "6bbdd7ca-36e6-470a-8db8-91fcb285308b",
@@ -251,14 +251,14 @@
       "lat": 55.1315538,
       "lng": -6.653578200000001,
       "recentInteractionDate": "2026-01-14",
-      "presentState": "Whenever Jackie is back from Edinburgh.",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "-Email Jackie to check back from Edinburgh.\n\n-Call to catchup & get advice on pilot blazing pace (getting real feedback & traction now).\n\n-Get warm intro to Score FC (Ideal client- 5 5-aside pitches & PitchBooking client).",
+      "presentState": "Get contact via Jackie.",
+      "nextInteractionDate": "2026-02-16",
+      "todoNotes": "Get warm intro to Score FC (Ideal client- 5 5-aside pitches & PitchBooking client).\n\nSecure once at least 1 testimonial- their tech guy to supercharge bookings (prevent cancellations, allow leagues & leaderboards- improve the player's experience [& facility's]).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-06T18:26:09.073Z",
-      "updatedAt": "2026-01-06T18:26:09.073Z"
+      "updatedAt": "2026-01-12T13:09:52.085Z"
     },
     {
       "id": "70bec131-1267-4b9b-963d-13098b4a0e38",
@@ -591,14 +591,14 @@
       "lat": 54.6190948,
       "lng": -5.9475102,
       "recentInteractionDate": "2026-01-12",
-      "presentState": "TBC",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "TBC - Check with John Barber (could hold off on approaching Football Clubs until pilot success).",
+      "presentState": "Big football club- higher category than community centres etc, so leave it for now until credibility built up via testimonials.",
+      "nextInteractionDate": "2026-03-02",
+      "todoNotes": "TBC - Check with John Barber (hold off on Football Clubs until testimonial success starts building).",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:02:55.869Z",
-      "updatedAt": "2026-01-07T16:02:55.869Z"
+      "updatedAt": "2026-01-12T13:10:45.388Z"
     },
     {
       "id": "a4c66a38-3e3d-406d-8a95-7e9b7b08bb10",
@@ -751,14 +751,14 @@
       "lat": 54.18990729999999,
       "lng": -6.3411176,
       "recentInteractionDate": "2026-01-12",
-      "presentState": "TBC",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "TBC",
+      "presentState": "School, hesitant to join unless clear benefit (more bookings & revenue).",
+      "nextInteractionDate": "2026-03-02",
+      "todoNotes": "Reach out once testimonials start building.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:16:23.593Z",
-      "updatedAt": "2026-01-07T16:16:23.593Z"
+      "updatedAt": "2026-01-12T13:12:25.684Z"
     },
     {
       "id": "55df1962-d72d-4cf2-91c6-66771695e064",
@@ -771,14 +771,14 @@
       "lat": 54.35998679999999,
       "lng": -6.2773552,
       "recentInteractionDate": "2026-01-12",
-      "presentState": "TBC",
-      "nextInteractionDate": "2026-01-12",
-      "todoNotes": "TBC",
+      "presentState": "3g football pitch.",
+      "nextInteractionDate": "2026-03-02",
+      "todoNotes": "Established for Banbridge Hockey club. Reach out once Squadova testimonials are great (huge community presence).\n\nCould have option to advertise empty slots on Squadova, as a halfway joining option.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:17:34.937Z",
-      "updatedAt": "2026-01-07T16:17:34.937Z"
+      "updatedAt": "2026-01-12T13:13:53.546Z"
     },
     {
       "id": "67153b83-c2f0-423a-89a1-9f09ba0627c9",
@@ -911,14 +911,14 @@
       "lat": 54.5149651,
       "lng": -5.900427,
       "recentInteractionDate": "2026-01-09",
-      "presentState": "TBC",
-      "nextInteractionDate": "2026-01-09",
-      "todoNotes": "TBC",
+      "presentState": "Big 3g pitches- solid follow-on to Grosvenor.",
+      "nextInteractionDate": "2026-02-09",
+      "todoNotes": "Reach out once initial testimonial/s secured.",
       "council_run": false,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:30:32.383Z",
-      "updatedAt": "2026-01-07T16:30:32.383Z"
+      "updatedAt": "2026-01-12T13:04:10.858Z"
     },
     {
       "id": "643364e8-0960-4164-aae9-7892d115c657",
@@ -972,13 +972,13 @@
       "lng": -6.075672099999999,
       "recentInteractionDate": "2026-01-08",
       "presentState": "3g Football pitch.",
-      "nextInteractionDate": "2026-01-14",
-      "todoNotes": "https://www.ballymacashsportsacademy.org/3g-pitch-hire/\n\nIntro via Tony Kearns ?\n\nSolid facility that could be used for pilot (free- as charity & early adopter).",
+      "nextInteractionDate": "2026-01-15",
+      "todoNotes": "https://www.ballymacashsportsacademy.org/3g-pitch-hire/\n\nAwait Stephen McGarry reponse, then poke Tony if needed.\n\nGetting the pipeline filled maximally, kickstarting the engine.",
       "council_run": false,
-      "pilot_progress": false,
+      "pilot_progress": true,
       "customer_secured": false,
       "createdAt": "2026-01-07T16:36:31.524Z",
-      "updatedAt": "2026-01-12T11:10:50.122Z"
+      "updatedAt": "2026-01-14T18:37:13.332Z"
     },
     {
       "id": "e3909282-15f9-4bc7-87fe-d7e186737d88",
@@ -1032,13 +1032,13 @@
       "lng": -5.9422475,
       "recentInteractionDate": "2026-01-12",
       "presentState": "All BCC Pitches (from public contract) [Comma,separated]:\n\nMallusk Playing Fields, Belfast City Council Cherryvale playing fields, Ulidia Playing Fields, Willowbank Park MUGA pitch, Strangford Avenue Playing Fields, Woodlands Playing Fields, Alexandra Lower MUGA, Alloa Street (John Hewitt Park) MUGA, Ardoyne Pitch and Mitch, Avoniel MUGA, Black Mountain MUGA / 3G pitch** (general public use), Blanchflower Playing Fields, Boucher Road Playing Fields, Bridges Urban Sports Park, Canmore Street MUGA, Carrick Hill MUGA, Cherryvale Playing Fields, City of Belfast Playing Fields, Clara Street Kickabout, Clarendon Park Playing Fields, Cliftonville Playing Fields, Dixon Playing Fields, Dover Street Millennium Park, Dr Pitt Kickabout, Dunville Park, Falls Park (3G pitch upgraded), Finlay Park, Fullerton Park, Grove Playing Fields, Hammer Playing Fields, Henry Jones Playing Fields, Highfield MUGA, Knocknagoney Linear Park, Lenadoon Millennium Park, Loughside Playing Fields, Marrowbone Millennium Park, Mary Peters Athletics Track, McCrory Park MUGA, Moyard Parade MUGA, New Lodge MUGA, North Queen Street MUGA, Northlink/Southlink Playing Fields, Nubia MUGA, Olympia MUGA, Orangefield Park, Ormeau Park, Reverend Robert Bradford MUGA, Sally Gardens Playground & Playing Fields (3G), Shore Road Playing Fields, Springfield Avenue MUGA, Springhill Avenue MUGA, Stewart Street MUGA, Suffolk Playing Fields, Taughmonagh MUGA, The Mount MUGA, Tommy Patton MUGA, Tyndale MUGA, Victoria Park, Wedderburn Park, Westland MUGA, Woodvale Park",
-      "nextInteractionDate": "2026-01-12",
+      "nextInteractionDate": "2026-01-16",
       "todoNotes": "Await Dearbhaile & Tony update on Public contracts w/BCC.",
       "council_run": true,
       "pilot_progress": false,
       "customer_secured": false,
       "createdAt": "2026-01-07T17:07:08.376Z",
-      "updatedAt": "2026-01-07T18:39:05.821Z"
+      "updatedAt": "2026-01-12T13:15:44.541Z"
     },
     {
       "id": "982647a3-dd20-4be8-be47-926f089245ec",
@@ -1201,6 +1201,6 @@
       "updatedAt": "2026-01-12T10:50:16.745Z"
     }
   ],
-  "exportedAt": "2026-01-12T11:35:08.876Z",
+  "exportedAt": "2026-01-14T18:37:28.876Z",
   "version": "1.0.0"
 }

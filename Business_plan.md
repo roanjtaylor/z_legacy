@@ -1,5 +1,5 @@
 # Squadova Business Plan
-
+# Past - What has been done
 ## Personal Experience of the Problem
 
 In early 2025, I tried organising a game with friends and hit a wall—busy schedules, scattered groups, impossible logistics. When I travelled, I wanted to play but couldn't find available players or games in new cities.
@@ -62,7 +62,7 @@ Including Leisure Centre management:
 
 ---
 
-## Present – What I Am Doing
+# Present – What I Am Doing
 
 **Dream:** Full-stack football app (facility, full bookings, teams, clubs, leagues)
 
@@ -162,7 +162,7 @@ QR codes, posters, merchandise, referral links, all tactics in this game to scor
 
 ---
 
-## Future – What I Will Soon Do
+# Future – What I Will Soon Do
 
 ---
 
