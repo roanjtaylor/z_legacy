@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pitchbooking.com)",
+      "WebSearch",
+      "WebFetch(domain:www.yell.com)",
+      "WebFetch(domain:www.communityni.org)"
+    ]
+  }
+}
