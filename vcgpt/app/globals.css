@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f5;
+  --foreground: #1a1a2e;
+  --accent: #0d9488;
+  --accent-light: #ccfbf1;
+  --red: #dc2626;
+  --amber: #d97706;
+  --green: #059669;
+  --muted: #6b7280;
+  --border: #e5e2dd;
+  --card: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-verdict-red: var(--red);
+  --color-verdict-amber: var(--amber);
+  --color-verdict-green: var(--green);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Reset textarea appearance */
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  background-color: #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Markdown content styling */
+.analysis-output h2 {
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.analysis-output p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+.analysis-output ul,
+.analysis-output ol {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.analysis-output li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+.analysis-output strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.analysis-output blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.analysis-output table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.analysis-output th {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: left;
+  color: var(--foreground);
+  background: var(--background);
+  font-weight: 600;
+}
+
+.analysis-output td {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.analysis-output hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
