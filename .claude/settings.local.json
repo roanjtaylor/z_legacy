@@ -5,7 +5,8 @@
       "WebFetch(domain:svv.ai)",
       "Bash(npx create-next-app@latest:*)",
       "Bash(npm install:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(npx next:*)"
     ]
   }
 }
