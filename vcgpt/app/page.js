@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import PitchForm from "@/components/PitchForm";
 import ScoreCard from "@/components/ScoreCard";
+import FeedbackWidget from "@/components/FeedbackWidget";
 
 export default function Home() {
   const [analysis, setAnalysis] = useState("");
@@ -109,7 +110,12 @@ export default function Home() {
         )}
 
         {complete && analysis && (
-          <ScoreCard content={analysis} />
+          <>
+            <ScoreCard content={analysis} />
+            <div className="mt-6">
+              <FeedbackWidget />
+            </div>
+          </>
         )}
       </section>
     </main>
