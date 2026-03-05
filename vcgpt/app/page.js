@@ -61,7 +61,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 tracking-tight">
-            VCGPT
+            VC-GPT
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-xl">
             The AI That Replaced Your Investors
