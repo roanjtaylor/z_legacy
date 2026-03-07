@@ -196,6 +196,22 @@ export async function POST(request) {
     });
   } catch (error) {
     console.error("Analysis error:", error);
+
+    const isOutOfCredits =
+      error?.status === 400 &&
+      error?.error?.error?.message?.toLowerCase().includes("credit") ||
+      error?.status === 429 ||
+      error?.message?.toLowerCase().includes("credit") ||
+      error?.message?.toLowerCase().includes("billing") ||
+      error?.message?.toLowerCase().includes("insufficient");
+
+    if (isOutOfCredits) {
+      return new Response(
+        JSON.stringify({ error: "API_KEY_EXHAUSTED" }),
+        { status: 402, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     return new Response(
       JSON.stringify({ error: error.message }),
       { status: 500, headers: { "Content-Type": "application/json" } }

@@ -24,6 +24,12 @@ export default function Home() {
       });
 
       if (!response.ok) {
+        if (response.status === 402) {
+          setAnalysis("__API_KEY_EXHAUSTED__");
+          setComplete(true);
+          setLoading(false);
+          return;
+        }
         throw new Error("Analysis failed");
       }
 
@@ -109,7 +115,26 @@ export default function Home() {
           </div>
         )}
 
-        {complete && analysis && (
+        {complete && analysis === "__API_KEY_EXHAUSTED__" && (
+          <div className="bg-red-950/60 border-2 border-red-500/80 rounded-2xl p-8 md:p-10 text-center">
+            <div className="text-4xl mb-4">&#9888;&#65039;</div>
+            <h3 className="text-2xl font-bold text-red-400 mb-3">API Key Ran Out</h3>
+            <p className="text-lg text-white/80 mb-4">
+              The API credits have been exhausted. VC-GPT will be back online shortly.
+            </p>
+            <p className="text-base text-white/60 mb-6">
+              Contact me to get this topped up for free:
+            </p>
+            <a
+              href="mailto:roanjtaylor@gmail.com?subject=VC-GPT%20API%20Key%20Ran%20Out"
+              className="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors text-lg"
+            >
+              roanjtaylor@gmail.com
+            </a>
+          </div>
+        )}
+
+        {complete && analysis && analysis !== "__API_KEY_EXHAUSTED__" && (
           <>
             <ScoreCard content={analysis} />
             <div className="mt-6">
