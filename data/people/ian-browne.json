@@ -1,0 +1,75 @@
+{
+  "id": "ian-browne",
+  "name": "Ian Browne",
+  "birthYear": null,
+  "countryOfOrigin": "Northern Ireland",
+  "currentCountry": "Northern Ireland",
+  "tier": "tier1-admired",
+  "archetypeArc": ["Founder", "Investor"],
+  "confidence": "low",
+  "education": [
+    {
+      "school": "Unknown",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": "PRIORITY for v0.2 researcher."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Founder & CEO",
+      "company": "Healthcare startup (name needs verification)",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stayed in NI rather than relocating to London or SF.",
+        "Built over 8 years before exit — patience over rapid scaling."
+      ],
+      "lessons": [
+        "NI is a viable founding base if the domain (healthcare) doesn't demand SF/NYC density.",
+        "Long builds (8+ years) can still produce strong exits — speed is not the only winning strategy."
+      ],
+      "notes": "Roan's account: 8-year build to exit. Specific company name, exit value, founding year, education all need research."
+    },
+    {
+      "role": "Investor / Startup Hub Creator",
+      "company": "Northern Ireland ecosystem",
+      "archetype": "Investor",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Reinvested wealth + time into NI startup ecosystem rather than relocating post-exit.",
+        "Builds infrastructure (hubs / programs / capital) for next-generation NI founders."
+      ],
+      "lessons": [
+        "After an exit, the highest-leverage use of capital + experience in a small ecosystem is to make it easier for the next generation."
+      ],
+      "notes": "Specific funds, hubs, programs need research. May be associated with Catalyst Inc, TechFoundersNI, or similar bodies."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": null,
+    "exitEvents": [
+      { "type": "acquisition", "year": null, "valueUsd": null, "notes": "8-year build to exit per Roan's account. Buyer + value unknown to v0.1." }
+    ],
+    "currentStatus": "Northern Ireland-based investor and startup ecosystem builder."
+  },
+  "lessons": [
+    { "lesson": "You can build a real outcome from Northern Ireland if you pick the right domain.", "source": "Roan's note." },
+    { "lesson": "Post-exit, ecosystem-building in your home region is higher impact than chasing the next thing.", "source": "Inferred from Roan's description." }
+  ],
+  "sources": [
+    { "title": "Needs research — possibly NI Tech Week / Catalyst Inc / TechFoundersNI / local press", "url": null, "type": "article" }
+  ],
+  "notes": "v0.1 STUB from Roan's verbal description — minimal verified data. PRIORITY for v0.2 on-demand researcher. This is the most load-bearing NI-rooted role model in the corpus — proves the path is achievable from Roan's actual starting geography. Without solid data here, the visualization's 'NI is viable' claim is unsupported."
+}

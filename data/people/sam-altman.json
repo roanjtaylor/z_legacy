@@ -1,0 +1,126 @@
+{
+  "id": "sam-altman",
+  "name": "Sam Altman",
+  "birthYear": 1985,
+  "countryOfOrigin": "USA",
+  "currentCountry": "USA",
+  "tier": "tier2-cautionary",
+  "archetypeArc": ["Student", "Founder", "Investor", "Operator"],
+  "confidence": "high",
+  "education": [
+    {
+      "school": "John Burroughs School (St. Louis)",
+      "degree": "High school",
+      "startYear": null,
+      "endYear": 2003,
+      "notes": null
+    },
+    {
+      "school": "Stanford University",
+      "degree": "Computer Science (dropped out)",
+      "startYear": 2003,
+      "endYear": 2005,
+      "notes": "Dropped out after ~2 years to focus on Loopt — the classic 'Stanford dropout founder' narrative."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Student",
+      "company": "Stanford",
+      "archetype": "Student",
+      "startYear": 2003,
+      "endYear": 2005,
+      "estAgeStart": 18,
+      "estAgeEnd": 20,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": ["Got into Stanford CS — credentialing event for what came next."],
+      "lessons": ["The Stanford CS network was an asset he leveraged across all subsequent chapters."],
+      "notes": null
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Loopt",
+      "archetype": "Founder",
+      "startYear": 2005,
+      "endYear": 2012,
+      "estAgeStart": 19,
+      "estAgeEnd": 26,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded location-sharing app at 19, in Y Combinator's first (Summer 2005) cohort.",
+        "Raised ~$40M+ from Sequoia, NEA, and others over the company's life.",
+        "Persisted for 7 years through changing platforms (BREW → smartphone era) without finding clear PMF."
+      ],
+      "lessons": [
+        "High-profile funding does not equal product-market fit. Loopt looked successful for years while burning cash on a product nobody really needed.",
+        "Network access (YC cohort 1, top-tier VCs) bought a long runway despite a weak idea.",
+        "The exit looked like 'success' externally but was effectively flat vs total capital raised."
+      ],
+      "notes": "Acquired by Green Dot Corporation for ~$43M in March 2012 — roughly equal to total raised. Not a real financial win for investors or for Altman as founder (vs his subsequent chapters)."
+    },
+    {
+      "role": "Partner, then President",
+      "company": "Y Combinator",
+      "archetype": "Investor",
+      "startYear": 2014,
+      "endYear": 2019,
+      "estAgeStart": 28,
+      "estAgeEnd": 33,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took over YC presidency from Paul Graham — based on PG's personal trust, not Loopt's commercial success.",
+        "Pushed YC into harder-tech areas (YC Research, which spun out OpenAI in 2015).",
+        "Made angel investments that compounded significantly (Reddit, Stripe, Airbnb era)."
+      ],
+      "lessons": [
+        "The YC presidency was the highest-leverage seat in startups for a decade — and his access to it came VIA PG's trust (a Loopt-era YC relationship), NOT via Loopt's results.",
+        "This is the chapter where Altman's wealth + influence actually began compounding — not the founding chapter."
+      ],
+      "notes": "Read this carefully: if you strip out the YC presidency from Altman's career, his Loopt outcome alone would not have produced the wealth or platform he has today."
+    },
+    {
+      "role": "CEO",
+      "company": "OpenAI",
+      "archetype": "Operator",
+      "startYear": 2019,
+      "endYear": null,
+      "estAgeStart": 33,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took OpenAI from research lab to commercial powerhouse.",
+        "Engineered the Microsoft partnership (2019 → $1B initial, then $10B+).",
+        "Survived November 2023 board firing and was reinstated within a week — coalitional power play."
+      ],
+      "lessons": [
+        "Coalitional power (Microsoft, employees, media) was the actual moat in the 2023 board crisis.",
+        "Operating a frontier AI lab in the AI-revolution era is the single highest-leverage CEO seat in tech right now."
+      ],
+      "notes": "Pivotal figure in the AI revolution. Net worth has surged through OpenAI's various structures (though direct equity is famously complex — he has publicly stated he didn't take OpenAI equity for years)."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1B+",
+    "exitEvents": [
+      { "type": "acquisition", "year": 2012, "valueUsd": 43000000, "notes": "Loopt → Green Dot. Roughly flat vs ~$40M+ capital raised — not a real founder win." }
+    ],
+    "currentStatus": "CEO of OpenAI. One of the most powerful people in tech globally. Wealth + influence largely derive from his time at YC (the network) and OpenAI (the AI-revolution seat), NOT from his founding career at Loopt."
+  },
+  "lessons": [
+    { "lesson": "Headline founder success can disguise where wealth actually came from. Altman's wealth comes from network access (YC → OpenAI), not from being a great founder of Loopt.", "source": "Roan's framing — plan.md §3 Path C." },
+    { "lesson": "Funding raised is a vanity metric. Loopt raised heavily and exited flat. Do not pattern-match 'raised a lot' as success.", "source": "Public funding history." },
+    { "lesson": "Network effects compound across roles — being in the right rooms for a decade matters more than the specific job title at any one point.", "source": "Inferred." },
+    { "lesson": "Stanford CS + YC cohort 1 + PG's trust were the structural advantages. You can't replicate his path without something equivalent.", "source": "Inferred." }
+  ],
+  "sources": [
+    { "title": "Loopt → Green Dot acquisition (TechCrunch, 2012)", "url": "https://techcrunch.com/2012/03/09/loopt-green-dot", "type": "article" },
+    { "title": "Sam Altman — Wikipedia (entry point; verify primary sources)", "url": "https://en.wikipedia.org/wiki/Sam_Altman", "type": "article" },
+    { "title": "OpenAI history + Microsoft partnership coverage", "url": null, "type": "article" },
+    { "title": "November 2023 OpenAI board crisis coverage", "url": null, "type": "article" }
+  ],
+  "notes": "TIER 2 — CAUTIONARY TALE. The headline 'Altman is a successful young founder' obscures the actual mechanism (YC presidency → OpenAI CEO, both granted through network access, not Loopt's product success). Pattern-matching to him is dangerous unless you also have his network access. He is in the corpus *as the canonical example* of how to read 3D-not-2D."
+}

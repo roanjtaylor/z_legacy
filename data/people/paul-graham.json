@@ -1,0 +1,179 @@
+{
+  "id": "paul-graham",
+  "name": "Paul Graham",
+  "birthYear": 1964,
+  "countryOfOrigin": "England (raised in USA)",
+  "currentCountry": "England",
+  "tier": "tier1-admired",
+  "archetypeArc": ["Student", "Builder", "Founder", "Investor"],
+  "confidence": "high",
+  "education": [
+    {
+      "school": "Cornell University",
+      "degree": "BA Philosophy",
+      "startYear": 1982,
+      "endYear": 1986,
+      "notes": "Self-taught programming alongside formal philosophy study. Wide exploration period."
+    },
+    {
+      "school": "Harvard University",
+      "degree": "MS, PhD Computer Science",
+      "startYear": 1986,
+      "endYear": 1990,
+      "notes": null
+    },
+    {
+      "school": "Accademia di Belle Arti (Florence) + Rhode Island School of Design",
+      "degree": "Studied painting",
+      "startYear": 1989,
+      "endYear": 1992,
+      "notes": "Wide exploration BETWEEN PhD and founding. This is the canonical example of the 'wide 20s compounds' pattern in his own essays."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Student",
+      "company": "Cornell → Harvard → Italy / RISD",
+      "archetype": "Student",
+      "startYear": 1982,
+      "endYear": 1992,
+      "estAgeStart": 18,
+      "estAgeEnd": 28,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Studied philosophy first, not CS — formed a thinking-from-first-principles habit before becoming technical.",
+        "Took years to study painting AFTER finishing PhD — explicit choice to broaden rather than monetize early."
+      ],
+      "lessons": ["Width before depth in your 20s compounds.", "The right liberal arts background sharpens thinking that pure technical training doesn't."],
+      "notes": "10 years of student/exploration phase. Late entry to commercial work — but the timing aligned with the dawn of the web."
+    },
+    {
+      "role": "Consultant / Independent",
+      "company": "Various (Lisp consulting, early web experiments)",
+      "archetype": "Builder",
+      "startYear": 1992,
+      "endYear": 1995,
+      "estAgeStart": 28,
+      "estAgeEnd": 31,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stayed independent rather than joining a big company — kept optionality."
+      ],
+      "lessons": ["Pre-founding 'wandering' phase can be the period where the founding idea germinates."],
+      "notes": "Bridge period. Built deep technical chops in Lisp + early web tech."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Viaweb",
+      "archetype": "Founder",
+      "startYear": 1995,
+      "endYear": 1998,
+      "estAgeStart": 31,
+      "estAgeEnd": 34,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded at 31 — NOT in his early 20s.",
+        "Built a web-based store builder when 'web app' was barely a concept.",
+        "Co-founders: Robert Morris, Trevor Blackwell — relationships from Harvard CS."
+      ],
+      "lessons": [
+        "First-mover on a new platform compounds — they built the first real web app of its kind.",
+        "Founding age does NOT have to be 19-22. He was 31. Most successful founders aren't kids."
+      ],
+      "notes": "Acquired by Yahoo! in June 1998 for ~$49M in Yahoo stock — became Yahoo! Store."
+    },
+    {
+      "role": "Yahoo! engineer (post-acquisition)",
+      "company": "Yahoo!",
+      "archetype": "Builder",
+      "startYear": 1998,
+      "endYear": 1999,
+      "estAgeStart": 34,
+      "estAgeEnd": 35,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": ["Honored short post-acquisition tenure, then left."],
+      "lessons": ["Founders rarely thrive long inside acquirers."],
+      "notes": null
+    },
+    {
+      "role": "Essayist, builder of Hacker News, advisor",
+      "company": "Independent",
+      "archetype": "Builder",
+      "startYear": 1999,
+      "endYear": 2005,
+      "estAgeStart": 35,
+      "estAgeEnd": 41,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Wrote essays — built personal brand BEFORE founding YC.",
+        "Built Arc programming language.",
+        "Wrote 'Hackers & Painters' (2004) — became founder reading-list canon."
+      ],
+      "lessons": [
+        "Writing publicly builds a network passively. By the time YC launched, PG had a built-in audience of exactly the right people.",
+        "Six years of 'between things' is not wasted time if you're producing thought work that compounds."
+      ],
+      "notes": "This is the LOAD-BEARING period — the essays + Hackers & Painters created the conditions for YC's launch."
+    },
+    {
+      "role": "Co-founder & Partner",
+      "company": "Y Combinator",
+      "archetype": "Investor",
+      "startYear": 2005,
+      "endYear": 2014,
+      "estAgeStart": 41,
+      "estAgeEnd": 49,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded YC with Jessica Livingston (now wife), Robert Morris, Trevor Blackwell.",
+        "Invented batch-style seed accelerator model — cohort + intense mentorship + Demo Day."
+      ],
+      "lessons": [
+        "Find a model others haven't tried. Pre-YC, seed investing was bespoke and slow.",
+        "Density of founders > capital. YC's edge is the network among founders, not the cheque size."
+      ],
+      "notes": "Stepped back from active president role in 2014, handed to Sam Altman."
+    },
+    {
+      "role": "Essayist, occasional advisor",
+      "company": "Independent",
+      "archetype": "Investor",
+      "startYear": 2014,
+      "endYear": null,
+      "estAgeStart": 49,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": ["Moved back to England with family."],
+      "lessons": ["After accumulating power and wealth, the long-tail value is in the writing — not in the operating role."],
+      "notes": "Continues writing influential essays on paulgraham.com. Lives in England."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "100M+",
+    "exitEvents": [
+      { "type": "acquisition", "year": 1998, "valueUsd": 49000000, "notes": "Viaweb → Yahoo! (paid in Yahoo stock at peak dot-com values)." }
+    ],
+    "currentStatus": "Investor, essayist, cultural architect of the startup world. Y Combinator has incubated companies worth $600B+ in aggregate."
+  },
+  "lessons": [
+    { "lesson": "Make something people want.", "source": "YC motto, PG essays" },
+    { "lesson": "Best founders are determined and flexible.", "source": "What We Look For in Founders" },
+    { "lesson": "Wide exploration in your 20s compounds — don't optimize too early.", "source": "How to Lose Time and Money / various essays" },
+    { "lesson": "Write to clarify your thinking.", "source": "Putting Ideas Into Words" },
+    { "lesson": "Live in the right city — ambition is contagious.", "source": "Cities and Ambition" },
+    { "lesson": "Schlep blindness: the most valuable startup ideas hide in unglamorous problems.", "source": "Schlep Blindness essay" }
+  ],
+  "sources": [
+    { "title": "Paul Graham's essays", "url": "https://www.paulgraham.com/articles.html", "type": "article" },
+    { "title": "Hackers & Painters (book, 2004)", "url": null, "type": "book" },
+    { "title": "Y Combinator history", "url": "https://www.ycombinator.com/about", "type": "article" }
+  ],
+  "notes": "Older-era role model — pre-AI tech revolution. His structural lessons (write, build optionality, found later than you think) translate well to the AI era. His tactical timing (web in 1995, YC in 2005) was decisively era-specific and should not be naively pattern-matched. Weight: HIGH for principles, MODERATE for tactical timing."
+}

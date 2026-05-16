@@ -1,0 +1,78 @@
+{
+  "id": "roan-taylor",
+  "name": "Roan Taylor",
+  "birthYear": 2004,
+  "currentAge": 21,
+  "asOfDate": "2026-05-16",
+  "countryOfOrigin": "Northern Ireland",
+  "currentCountry": "Northern Ireland",
+  "education": [
+    {
+      "school": "Ulster University Belfast",
+      "degree": "BEng Mechatronic Engineering",
+      "startYear": 2022,
+      "endYear": 2027,
+      "notes": "Placement/gap year (year 3) was spent building the startup. One year remaining."
+    }
+  ],
+  "currentSituation": {
+    "primary": "Building a SaaS startup that has landed its first paying customer.",
+    "treatment": "High-EV bet AND a deep apprenticeship in how the startup world actually works. Not yet betting life on it.",
+    "constraints": [
+      "One year of BEng to finish",
+      "Based in Northern Ireland — small ecosystem, planning to leave for some years",
+      "No safety net of a trust fund — financial freedom has to be earned"
+    ],
+    "strengths": [
+      "Engineering background — can ship",
+      "Already past one of the hardest filters: someone paid him money at 21",
+      "Well-read on startup ecosystem (Paul Graham, YC patterns)",
+      "Comfortable with risk + ambiguity"
+    ]
+  },
+  "northStar": "A personal wealth engine — enough recurring income or savings to be free to do what he wants (travel, food & drink, learn deeply) — while doing meaningful work that creates real value for real people.",
+  "currentQuestion": "What should I optimize for in the next 2-3 years to maximize the probability of reaching financial freedom + meaningful work by my early 30s — while keeping all three paths (Builder / Hustler / Founder) open as long as possible?",
+  "consideringPaths": [
+    {
+      "archetype": "Builder",
+      "description": "Senior IC role at a great tech company (Anthropic, Stripe, Figma, deep-tech startup). High pay, real engineering, lower variance.",
+      "weight": 0.33
+    },
+    {
+      "archetype": "Hustler",
+      "description": "VC / accelerator / deal-driven role. Investment fluency, founder network, optionality.",
+      "weight": 0.33
+    },
+    {
+      "archetype": "Founder",
+      "description": "Build his own company. Probably not the current startup — more likely a second attempt with sharpened domain insight.",
+      "weight": 0.34
+    }
+  ],
+  "operatingPrinciples": [
+    "Don't bank life on the startup yet — finish the degree.",
+    "Use 21-24 to tip-toe down all paths — width before depth.",
+    "Elite branding is currency (Cambridge MPhil, top internship name, known company on CV).",
+    "Read history in 3D not 2D — decode mechanics, not headlines.",
+    "Get out of NI for some years (London / Cambridge / SF / Singapore).",
+    "Until ~24: optimize for learning rate. From 24: income + optionality. From 27+: ownership.",
+    "Domain insight > raw talent. Best founders are 22-24+, not 19-20.",
+    "Enjoy being young (PG's law). Exploration, character, worldview — not just résumé."
+  ],
+  "currentHypothesis": {
+    "year1_now_to_mid_2027": "Finish degree + scale or sunset startup. Goal: 5-10 paying customers. Apply to Cambridge MPhil (primary) + Oxford/ICL backups for 2027 entry as optionality. Apply to elite tech + VC internships for summer 2027.",
+    "year2_mid_2027_to_mid_2028": "Width. Branch A: Cambridge MPhil + summer at top VC + side-building. Branch B: Full-time on startup if it hit threshold (£200k+ ARR). Branch C: Full-time elite seat (Builder at Anthropic/Stripe OR Hustler at Index/Atomico/EF). Get out of NI regardless.",
+    "year3_mid_2028_to_mid_2029": "Commit. By 24, pick Builder, Hustler, or Founder with conviction from 3 years of width behind."
+  },
+  "openQuestions": [
+    "Realistic salary trajectory per path, 21 → 30",
+    "Founder survival rates at age 21-22 — what fraction reach financial freedom by 30",
+    "Credential vs experience — Cambridge MPhil vs top internship + full-time",
+    "Geography — can each path work from London, or do some need SF/NYC",
+    "The off-ramp if startup dies — what 'Plan B' jobs do failed founders take",
+    "Trader vs tech compounding over 15 years (Merricks-style elite-employee vs founder path)",
+    "Which tech companies + VCs have the best 'alumni-become-founders' track record",
+    "Cofounder strategy for second-attempt founders"
+  ],
+  "emotionalAnchor": "Wants to look at his close friend (just landed £150k commodity-trader role at Merricks Capital, rotating Singapore/London/Mozambique/Brazil at age 20) and feel PROUD of him — not jealous — because Roan is confident and focused on his own path. The tool's success is measured by groundedness, not just analytical accuracy."
+}

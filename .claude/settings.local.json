@@ -9,7 +9,8 @@
       "Bash(mv plan.md ../cm-plan.bkp)",
       "Bash(mv data *)",
       "Bash(mv ../cm-plan.bkp plan.md)",
-      "Bash(mv ../cm-data.bkp data)"
+      "Bash(mv ../cm-data.bkp data)",
+      "WebFetch(domain:docs.anthropic.com)"
     ]
   }
 }

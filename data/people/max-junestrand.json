@@ -1,0 +1,83 @@
+{
+  "id": "max-junestrand",
+  "name": "Max Junestrand",
+  "birthYear": null,
+  "countryOfOrigin": "Sweden",
+  "currentCountry": "Sweden (Stockholm)",
+  "tier": "tier1-admired",
+  "archetypeArc": ["Student", "Hustler", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Unknown (Sweden — likely KTH Royal Institute of Technology or Stockholm School of Economics)",
+      "degree": "Bachelor's (CS or Engineering)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "PRIORITY for v0.2 researcher to verify."
+    },
+    {
+      "school": "Unknown",
+      "degree": "MSc Computer Science",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Per Roan's research: he has an MSc CS. Specifics need verification."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "VC intern (multiple positions during studies)",
+      "company": "Various VC firms",
+      "archetype": "Hustler",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": 19,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stacked multiple VC internships during studies — accumulated market view + founder network BEFORE founding.",
+        "Treated investor-side experience as the prerequisite, not the destination."
+      ],
+      "lessons": [
+        "VC internships are a fast way to acquire pattern recognition for what wins in tech.",
+        "Founders who first worked in venture have a structural advantage in fundraising — they already know the questions investors will ask."
+      ],
+      "notes": "PRIORITY: identify which specific VC firms. This is the 'earn the right to found' pattern Roan most wants to study."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Legora",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 23,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Picked legal AI — vertical with clear willingness-to-pay and underserved by AI-native tools as of 2023.",
+        "Built in Stockholm — proved frontier AI startups don't require SF (though European legal market is the explicit go-to-market)."
+      ],
+      "lessons": [
+        "Vertical AI (specific profession) > horizontal AI for early capture.",
+        "Founding at 23 with VC-side experience > founding at 19 without it."
+      ],
+      "notes": "Legora is an AI assistant for legal professionals. Reported to be backed by Index Ventures and Benchmark (per public coverage 2024-2025). Rapid growth in European law-firm market."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": null,
+    "exitEvents": [],
+    "currentStatus": "Building Legora. Backed by tier-1 VCs (Index, Benchmark per public reporting). No exit yet — paper wealth depends on stake size + future valuation. Real test is sustained growth + eventual liquidity."
+  },
+  "lessons": [
+    { "lesson": "Earn the right to found by working on the capital/strategy side first.", "source": "Roan's framing — needs primary-source verification." },
+    { "lesson": "Vertical AI for specific professions captures faster than horizontal AI in 2023-2026 era.", "source": "Inferred from Legora's positioning + market data." },
+    { "lesson": "European legal-tech is a viable AI-revolution founding market.", "source": "Inferred from traction." }
+  ],
+  "sources": [
+    { "title": "Legora company website", "url": "https://www.legora.com", "type": "article" },
+    { "title": "Index Ventures portfolio (needs specific Legora announcement URL)", "url": "https://www.indexventures.com/perspectives/", "type": "article" }
+  ],
+  "notes": "v0.1 STUB — biographical details partially uncertain. Use career-mapper on-demand researcher (v0.2) to enrich. The structural story (VC internships → MSc CS → found at 23 in an AI vertical) is exactly the recent-era pattern Roan finds compelling, which is why he's in the seed set despite the data being thin."
+}
