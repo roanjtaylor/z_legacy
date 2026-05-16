@@ -4,6 +4,7 @@
   "birthYear": 1999,
   "countryOfOrigin": "Sweden",
   "currentCountry": "Sweden (Stockholm)",
+  "imageUrl": "https://www.hhs.se/contentassets/731ef448980b4be8ae5bdebb82dbfcc4/max-legora-1080.jpg?width=782&mode=crop&format=jpg&quality=90",
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -29,26 +30,6 @@
   ],
   "careerSteps": [
     {
-      "role": "VC intern (multiple positions during studies)",
-      "company": "Various VC firms",
-      "archetype": "Hustler",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": 19,
-      "estAgeEnd": 22,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [
-        "Stacked multiple VC internships during studies — accumulated market view + founder network BEFORE founding.",
-        "Treated investor-side experience as the prerequisite, not the destination."
-      ],
-      "lessons": [
-        "VC internships are a fast way to acquire pattern recognition for what wins in tech.",
-        "Founders who first worked in venture have a structural advantage in fundraising — they already know the questions investors will ask."
-      ],
-      "notes": "PRIORITY: identify which specific VC firms. This is the 'earn the right to found' pattern Roan most wants to study."
-    },
-    {
       "role": "Bachelor's (CS or Engineering) / MSc Computer Science",
       "company": "Unknown (Sweden — likely KTH Royal Institute of Technology or Stockholm School of Economics) → Unknown",
       "archetype": "Student",
@@ -61,6 +42,26 @@
       "keyDecisions": [],
       "lessons": [],
       "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "VC intern (multiple positions during studies)",
+      "company": "Various VC firms",
+      "archetype": "Hustler",
+      "startYear": 2021,
+      "endYear": 2023,
+      "estAgeStart": 22,
+      "estAgeEnd": 23,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stacked multiple VC internships during studies — accumulated market view + founder network BEFORE founding.",
+        "Treated investor-side experience as the prerequisite, not the destination."
+      ],
+      "lessons": [
+        "VC internships are a fast way to acquire pattern recognition for what wins in tech.",
+        "Founders who first worked in venture have a structural advantage in fundraising — they already know the questions investors will ask."
+      ],
+      "notes": "PRIORITY: identify which specific VC firms. This is the 'earn the right to found' pattern Roan most wants to study."
     },
     {
       "role": "Co-founder & CEO",

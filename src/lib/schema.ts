@@ -12,12 +12,6 @@ export const ArchetypeSchema = z.enum([
   "Other",
 ]);
 
-export const TierSchema = z.enum([
-  "tier1-admired",
-  "tier2-cautionary",
-  "adjacent-benchmark",
-]);
-
 export const EducationSchema = z.object({
   school: z.string(),
   degree: z.string().nullable(),
@@ -82,7 +76,7 @@ export const PersonSchema = z.object({
   birthYear: z.number().nullable(),
   countryOfOrigin: z.string(),
   currentCountry: z.string().nullable(),
-  tier: TierSchema,
+  imageUrl: z.string().nullable().optional().transform((v) => v ?? null),
   archetypeArc: z.array(ArchetypeSchema),
   confidence: ConfidenceSchema,
   education: z.array(EducationSchema),

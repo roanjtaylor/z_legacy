@@ -19,8 +19,6 @@ export const ARCHETYPE_LANES: Archetype[] = [
   "Student",
 ];
 
-export type Tier = "tier1-admired" | "tier2-cautionary" | "adjacent-benchmark";
-
 export type Era = "pre-pc" | "pc" | "web" | "mobile-cloud" | "ai-revolution";
 
 export const ERAS: {
@@ -91,7 +89,7 @@ export type Person = {
   birthYear: number | null;
   countryOfOrigin: string;
   currentCountry: string | null;
-  tier: Tier;
+  imageUrl: string | null;
   archetypeArc: Archetype[];
   confidence: Confidence;
   education: Education[];

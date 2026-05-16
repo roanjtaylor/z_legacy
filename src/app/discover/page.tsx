@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { ERAS, type Era } from "@/lib/types";
 
 type DiscoveredName = {
   name: string;
@@ -19,19 +20,21 @@ type BatchResult = {
   searchCount?: number;
 };
 
-const EXAMPLE_QUERIES = [
-  "Under-known European founders aged 25-35 who raised $20M+ Series A in 2020-2024, weighted toward UK and Ireland",
-  "Y Combinator European alumni from S20 onwards who built SaaS or developer-tools companies",
-  "Atomico portfolio founders post-2020 whose paths started in engineering before founding",
-  "European AI founders post-2022 who have prior experience at a VC firm or accelerator",
-  "Founders from EF (Entrepreneur First) cohorts who built dev-tools or B2B SaaS",
-];
+const ERA_BLURBS: Record<Era, string> = {
+  "pre-pc": "pre-1980 · mainframe / industrial",
+  pc: "1980–1994 · personal computers, early software",
+  web: "1995–2006 · the web, dot-com, early SaaS",
+  "mobile-cloud": "2007–2018 · iPhone, AWS, mobile-first SaaS",
+  "ai-revolution": "2019–present · transformers, GPT, frontier labs",
+};
 
 export default function DiscoverPage() {
   const [step, setStep] = useState<
     "query" | "review" | "researching" | "done"
   >("query");
-  const [query, setQuery] = useState("");
+  const [selectedEras, setSelectedEras] = useState<Set<Era>>(
+    new Set(["ai-revolution"])
+  );
   const [count, setCount] = useState(15);
   const [overwrite, setOverwrite] = useState(false);
   const [names, setNames] = useState<DiscoveredName[]>([]);
@@ -39,12 +42,20 @@ export default function DiscoverPage() {
   const [discoverSearchCount, setDiscoverSearchCount] = useState<number | null>(
     null
   );
+  const [excludedCount, setExcludedCount] = useState<number | null>(null);
   const [results, setResults] = useState<BatchResult[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [working, setWorking] = useState(false);
 
+  const toggleEra = (era: Era) => {
+    const next = new Set(selectedEras);
+    if (next.has(era)) next.delete(era);
+    else next.add(era);
+    setSelectedEras(next);
+  };
+
   const handleDiscover = async () => {
-    if (!query.trim() || working) return;
+    if (selectedEras.size === 0 || working) return;
     setWorking(true);
     setError(null);
     setNames([]);
@@ -53,7 +64,7 @@ export default function DiscoverPage() {
       const res = await fetch("/api/discover", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query, count }),
+        body: JSON.stringify({ eras: Array.from(selectedEras), count }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Discovery failed");
@@ -61,6 +72,7 @@ export default function DiscoverPage() {
       setNames(ns);
       setSelected(new Set(ns.map((n) => n.suggestedId)));
       setDiscoverSearchCount(data.searchCount);
+      setExcludedCount(data.excludedCount ?? null);
       setStep("review");
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
@@ -114,6 +126,7 @@ export default function DiscoverPage() {
     setResults([]);
     setError(null);
     setDiscoverSearchCount(null);
+    setExcludedCount(null);
   };
 
   return (
@@ -142,37 +155,50 @@ export default function DiscoverPage() {
         </div>
       )}
 
-      {/* STEP 1: query */}
+      {/* STEP 1: era selection */}
       {step === "query" && (
-        <section className="space-y-3 p-5 border border-neutral-200 rounded-xl bg-white">
+        <section className="space-y-4 p-5 border border-neutral-200 rounded-xl bg-white">
           <div>
-            <label className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500 block mb-1.5">
-              Discovery query
+            <label className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500 block mb-2">
+              Eras to discover from
             </label>
-            <textarea
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Describe the kind of people you want to surface…"
-              className="w-full p-3 border border-neutral-300 rounded-lg text-sm min-h-[100px] resize-y focus:outline-none focus:ring-2 focus:ring-neutral-900"
-              disabled={working}
-            />
-          </div>
-          <div>
-            <label className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500 block mb-1.5">
-              Example queries (click to use)
-            </label>
-            <ul className="space-y-1.5 text-xs">
-              {EXAMPLE_QUERIES.map((q, i) => (
-                <li key={i}>
+            <p className="text-xs text-neutral-600 mb-3">
+              Pick one or more eras. Discovery surfaces under-known founders
+              whose flagship work landed in those periods. People already in
+              your dataset are automatically excluded so each round expands
+              coverage.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {ERAS.map((era) => {
+                const isOn = selectedEras.has(era.id);
+                return (
                   <button
-                    onClick={() => setQuery(q)}
-                    className="text-left text-neutral-700 hover:text-neutral-900 hover:underline"
+                    key={era.id}
+                    onClick={() => toggleEra(era.id)}
+                    disabled={working}
+                    className={
+                      "text-left p-3 border rounded-lg transition " +
+                      (isOn
+                        ? "border-neutral-900 bg-neutral-50"
+                        : "border-neutral-300 hover:bg-neutral-50")
+                    }
                   >
-                    · {q}
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        checked={isOn}
+                        readOnly
+                        className="pointer-events-none"
+                      />
+                      <span className="text-sm font-medium">{era.label}</span>
+                    </div>
+                    <div className="text-xs text-neutral-600 mt-1 ml-6">
+                      {ERA_BLURBS[era.id]}
+                    </div>
                   </button>
-                </li>
-              ))}
-            </ul>
+                );
+              })}
+            </div>
           </div>
           <div className="flex items-center justify-between gap-3 pt-2">
             <label className="text-xs text-neutral-700 flex items-center gap-2">
@@ -193,7 +219,7 @@ export default function DiscoverPage() {
             </label>
             <button
               onClick={handleDiscover}
-              disabled={working || !query.trim()}
+              disabled={working || selectedEras.size === 0}
               className="px-4 py-2 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800 disabled:opacity-40 text-sm font-medium"
             >
               {working ? "Discovering… (30-90s)" : "Discover names"}
@@ -215,6 +241,13 @@ export default function DiscoverPage() {
                 <p className="text-xs text-neutral-500 mt-1">
                   Used {discoverSearchCount} web search
                   {discoverSearchCount === 1 ? "" : "es"} to assemble this list.
+                  {excludedCount !== null && excludedCount > 0 && (
+                    <>
+                      {" "}
+                      Excluded {excludedCount} person
+                      {excludedCount === 1 ? "" : "s"} already in your dataset.
+                    </>
+                  )}{" "}
                   Uncheck any you don&apos;t want before bulk research.
                 </p>
               )}

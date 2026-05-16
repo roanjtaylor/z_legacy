@@ -78,7 +78,7 @@ export const SCHEMA_REFERENCE = `{
   "birthYear": 1980,                                     // number | null
   "countryOfOrigin": "Sweden",                           // string
   "currentCountry": "Sweden",                            // string | null
-  "tier": "tier1-admired",                               // "tier1-admired" | "tier2-cautionary" | "adjacent-benchmark"
+  "imageUrl": null,                                      // string | null (URL to a headshot if easily found, else null)
   "archetypeArc": ["Student", "Founder"],                // ordered array of archetypes
   "confidence": "medium",                                // "high" | "medium" | "low"
   "education": [
@@ -147,10 +147,6 @@ ${SCHEMA_REFERENCE}
   - **Investor** — full-time investor (partner, fund manager). Angel-on-the-side doesn't count — keep them in their primary role.
   - **Operator** — senior exec at a company they did NOT found (CEO/COO/President)
   - **Other** — use sparingly (writer, academic, gap year)
-- **Tier.**
-  - 'tier1-admired' (DEFAULT) — proven path worth decoding
-  - 'tier2-cautionary' (RARE) — only if person represents misleading/lucky-outlier pattern (e.g., headline founder whose wealth came from network access not founding skill). Explicitly explain the mechanism in 'notes'.
-  - 'adjacent-benchmark' — elite NON-founder paths (e.g., commodity trader, hedge-fund PM, top AI researcher)
 - **Recency in 'notes'.**
   - Pre-2005 founder: caveat that tactical timing is era-specific (pre-cloud, pre-mobile, pre-AI).
   - Post-2018: these lessons are most directly applicable to the current AI-revolution era.
@@ -164,7 +160,6 @@ ${SCHEMA_REFERENCE}
 ## TONE
 
 - Sober, factual. No hype. No "visionary genius" language.
-- For Tier 2 cautionary: explicitly explain the MECHANISM, don't just label.
 - Lessons should be specific to this person, not generic platitudes.
 - For European founders especially: note European-specific context (education-heavy paths, smaller exits, government grants, etc.) if relevant.
 

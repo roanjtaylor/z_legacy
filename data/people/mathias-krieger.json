@@ -4,6 +4,7 @@
   "birthYear": 1994,
   "countryOfOrigin": "Germany",
   "currentCountry": "United Kingdom",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -30,7 +31,7 @@
     {
       "role": "Junior-CEO",
       "company": "Lust Auf Lebensart",
-      "archetype": "Operator",
+      "archetype": "Student",
       "startYear": 2013,
       "endYear": 2019,
       "estAgeStart": 19,

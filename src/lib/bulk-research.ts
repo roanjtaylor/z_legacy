@@ -67,7 +67,8 @@ export type DiscoveredName = {
 
 export async function discoverPeople(
   query: string,
-  count: number
+  count: number,
+  excludeNames: string[] = []
 ): Promise<{
   names: DiscoveredName[];
   searchCount: number;
@@ -75,9 +76,14 @@ export async function discoverPeople(
 }> {
   const client = getClient();
 
+  const excludeBlock =
+    excludeNames.length > 0
+      ? `\n\n## ALREADY IN THE DATASET — DO NOT RETURN THESE\n\nThe following people are already in the user's corpus. You MUST exclude every one of them (and obvious variants/aliases). Surface NEW names only:\n\n${excludeNames.map((n) => `- ${n}`).join("\n")}\n`
+      : "";
+
   const userMessage = `Find ${count} people matching this query: ${query}
 
-Remember: bias toward the UNDER-KNOWN. The user wants to discover people they wouldn't have named themselves.`;
+Remember: bias toward the UNDER-KNOWN. The user wants to discover people they wouldn't have named themselves.${excludeBlock}`;
 
   const response = await client.messages.create({
     model: MODEL,
@@ -145,8 +151,8 @@ ${SCHEMA_REFERENCE}
 - **'notes' field: ONE sentence on era context — e.g., "AI-revolution era founder, lessons directly applicable" or "Pre-2005 founder, tactical timing era-specific."**
 - **DO NOT skip required fields** — every field in the schema must be present with at least null/empty default.
 - **Archetypes:** Student | Builder | Hustler | Founder | Investor | Operator | Other
-- **Tier:** default "tier1-admired" unless person is obviously cautionary or adjacent.
 - **id:** lowercase kebab-case from name.
+- **imageUrl:** include a public headshot URL if you find one easily; otherwise null.
 
 ## OUTPUT FORMAT
 
