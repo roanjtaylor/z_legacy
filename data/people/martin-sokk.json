@@ -1,0 +1,129 @@
+{
+  "id": "martin-sokk",
+  "name": "Martin Sokk",
+  "birthYear": 1988,
+  "countryOfOrigin": "Estonia",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Estonian Information Technology College",
+      "degree": "BSc Information Systems Analysis",
+      "startYear": 2007,
+      "endYear": 2010,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Product / Analyst roles",
+      "company": "Swedbank",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Early career at one of the region's biggest banks."
+    },
+    {
+      "role": "Product role",
+      "company": "Eesti Energia",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Traditional Estonian energy giant before fintech move."
+    },
+    {
+      "role": "Head of Product (first product hire)",
+      "company": "Wise (TransferWise)",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2020,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "First product hire at Wise (formerly TransferWise)"
+    },
+    {
+      "role": "BSc Information Systems Analysis",
+      "company": "Estonian Information Technology College",
+      "archetype": "Student",
+      "startYear": 2007,
+      "endYear": 2010,
+      "estAgeStart": 19,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step from education[] entries."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Lightyear",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Founded October 2020 with Mihkel Aamer (CTO); raised $25M Series A led by Lightspeed in 2022; Richard Branson among investors; FCA license acquired 2024 with Wander Rutgers as UK CEO while Sokk remains group CEO."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "CEO & co-founder of Lightyear, a pan-European neobroker operating in 25 countries; raised additional $23M in summer 2025 for expansion."
+  },
+  "lessons": [
+    {
+      "lesson": "Customer-centric product thinking and technology-driven cost reduction (Wise playbook) can be applied to underserved adjacent verticals like retail investing.",
+      "source": "https://www.startupday.ee/news/combining-wise-lessons-and-lightyear-ambitions-martin-sokk-s-mission-to-make-investing-simple-for-everyone"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lightyear blog: Why I joined Lightyear",
+      "url": "https://lightyear.com/en-eu/blog/why-i-joined-lightyear",
+      "type": "article"
+    },
+    {
+      "title": "sTARTUp Day interview with Martin Sokk",
+      "url": "https://www.startupday.ee/news/combining-wise-lessons-and-lightyear-ambitions-martin-sokk-s-mission-to-make-investing-simple-for-everyone",
+      "type": "interview"
+    },
+    {
+      "title": "FX News Group: Wander Rutgers replaces Sokk as UK CEO",
+      "url": "https://fxnewsgroup.com/forex-news/retail-forex/wander-rutgers-replaces-martin-sokk-as-ceo-as-neobroker-lightyear-gets-fca-license/",
+      "type": "article"
+    },
+    {
+      "title": "Crunchbase profile",
+      "url": "https://www.crunchbase.com/person/martin-sokk",
+      "type": "article"
+    }
+  ],
+  "notes": "Fintech-era founder (2020+); lessons on product-led fintech, regulated-market patience, and Wise alumni network directly applicable to modern European startups."
+}

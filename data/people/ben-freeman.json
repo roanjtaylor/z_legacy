@@ -1,0 +1,108 @@
+{
+  "id": "ben-freeman",
+  "name": "Ben Freeman",
+  "birthYear": 1988,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Warwick",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": null
+    },
+    {
+      "school": "King's College London",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "US GM and Head of International Growth",
+      "company": "Tessian",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2022,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Experienced procurement challenges firsthand as US GM and Head of International Growth at cybersecurity leader Tessian, which was later acquired by Proofpoint in 2023."
+    },
+    {
+      "role": "Student",
+      "company": "University of Warwick → King's College London",
+      "archetype": "Student",
+      "startYear": 2006,
+      "endYear": 2010,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Omnea",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Omnea was founded in 2022 by Ben Freeman and Ben Allen to fix the broken procurement process with a scalable procurement platform."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "CEO of Omnea, which raised $50M Series B in September 2025 led by Insight Partners and Khosla Ventures (with Accel, Point Nine, First Round, Prosus), bringing total funding to over $75M; revenue grew 5x and headcount tripled in 12 months, with customers including Spotify, Wise, MongoDB, Adecco and Albertsons."
+  },
+  "lessons": [
+    {
+      "lesson": "Hire missionaries not mercenaries — obsess over talent density and a lean team of high performers.",
+      "source": "https://source.procuretech.ai/posts/procuretech-stars-with-ben-allen-co-founder-ceo-of-omnea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Omnea raises $20M Series A | Omnea press release",
+      "url": "https://www.omnea.co/press-releases/series-a-announcement",
+      "type": "article"
+    },
+    {
+      "title": "Omnea raises $50M Series B | Omnea blog",
+      "url": "https://www.omnea.co/blog/series-b-announcement",
+      "type": "article"
+    },
+    {
+      "title": "ProcureTech STARS with Ben Freeman, Co-Founder & CEO of Omnea",
+      "url": "https://source.procuretech.ai/posts/procuretech-stars-with-ben-allen-co-founder-ceo-of-omnea",
+      "type": "interview"
+    },
+    {
+      "title": "Startups 100 2026 — #1 Omnea",
+      "url": "https://startups.co.uk/startups-100/2026/omnea/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era B2B SaaS founder (2022-present); lessons on talent density, category creation (AI-SRM), and operator-to-founder transition directly applicable to modern UK/EU enterprise software builders."
+}

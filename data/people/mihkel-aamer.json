@@ -1,0 +1,116 @@
+{
+  "id": "mihkel-aamer",
+  "name": "Mihkel Aamer",
+  "birthYear": 1989,
+  "countryOfOrigin": "Estonia",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Builder",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Bristol",
+      "degree": "MEng Engineering Design (First Class Honours)",
+      "startYear": 2007,
+      "endYear": 2012,
+      "notes": "MEng in Engineering Design with First Class Honours from the University of Bristol"
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "Hewlett-Packard Laboratories / Motorola / UBS",
+      "archetype": "Builder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Early-career internships and software engineering roles at HP Labs, Motorola, and UBS"
+    },
+    {
+      "role": "MEng Engineering Design (First Class Honours)",
+      "company": "University of Bristol",
+      "archetype": "Student",
+      "startYear": 2007,
+      "endYear": 2012,
+      "estAgeStart": 18,
+      "estAgeEnd": 23,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step from education[] entries."
+    },
+    {
+      "role": "Engineering Lead / Head of Engineering",
+      "company": "Wise (formerly TransferWise)",
+      "archetype": "Operator",
+      "startYear": 2013,
+      "endYear": 2019,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Served as Head of Engineering at Wise"
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Lightyear",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Co-founded London-based Lightyear with Martin Sokk; platform lets users invest in over 5,000 stocks, ETFs, and money market funds across 25 countries"
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CTO of Lightyear, a commission-free European retail investment platform that raised $23M in 2025 and expanded across European markets with backing from Richard Branson, Taavet Hinrikus, Jaan Tallinn, and Markus Villig."
+  },
+  "lessons": [
+    {
+      "lesson": "Identifying personal frustration as a market signal — Aamer's friends asking for investment platform recommendations he couldn't make exposed a real European retail-investing gap.",
+      "source": "https://techround.co.uk/startups/startup-of-the-week-lightyear/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mihkel Aamer - Crunchbase Profile",
+      "url": "https://www.crunchbase.com/person/mihkel-aamer",
+      "type": "article"
+    },
+    {
+      "title": "Startup Of The Week: Lightyear - TechRound",
+      "url": "https://techround.co.uk/startups/startup-of-the-week-lightyear/",
+      "type": "article"
+    },
+    {
+      "title": "Lightyear raises $23M to challenge Robinhood in Europe",
+      "url": "https://techstartups.com/2025/07/25/lightyear-raises-23m-to-challenge-robinhood-in-europe-with-ai-powered-investing-backed-by-estonias-tech-elite/",
+      "type": "article"
+    },
+    {
+      "title": "Ex-Wise employees found commission-free trading app Lightyear",
+      "url": "https://www.fintechfutures.com/job-cuts-new-hires/ex-wise-employees-found-commission-free-trading-app-lightyear",
+      "type": "article"
+    }
+  ],
+  "notes": "Post-2020 European fintech founder; Wise-mafia alumnus building in the retail-investing/neobroker era — lessons on regulatory-heavy multi-market expansion are highly applicable to current EU fintech."
+}

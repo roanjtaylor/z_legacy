@@ -1,0 +1,198 @@
+{
+  "id": "siavash-mahdavi",
+  "name": "Siavash Mahdavi",
+  "birthYear": 1980,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Founder",
+    "Operator",
+    "Investor"
+  ],
+  "confidence": "low",
+  "education": [
+    {
+      "school": "King's College London",
+      "degree": "B.Eng Mechatronics",
+      "startYear": 1998,
+      "endYear": 2001,
+      "notes": null
+    },
+    {
+      "school": "University College London (UCL)",
+      "degree": "MSc Machine Learning",
+      "startYear": 2001,
+      "endYear": 2002,
+      "notes": null
+    },
+    {
+      "school": "University College London (UCL)",
+      "degree": "PhD Evolutionary Robotics",
+      "startYear": 2002,
+      "endYear": 2006,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "B.Eng Mechatronics / MSc Machine Learning / PhD Evolutionary Robotics",
+      "company": "King's College London → University College London (UCL) → University College London (UCL)",
+      "archetype": "Student",
+      "startYear": 1998,
+      "endYear": 2006,
+      "estAgeStart": 18,
+      "estAgeEnd": 26,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step from education[] entries."
+    },
+    {
+      "role": "Founder & CEO",
+      "company": "Within (generative design / 3D printing software)",
+      "archetype": "Founder",
+      "startYear": 2006,
+      "endYear": 2015,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Within harnessed AI to generatively design complex forms that could then be 3D printed; the team made breakthroughs in lightweight aircraft components, customised running shoes, and orthopaedic implants."
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Digital Forming",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Co-founded Digital Forming to spearhead mass customisation of consumer products, raising seed investment from EOS, a 3D printing industry leader."
+    },
+    {
+      "role": "Founder & CEO",
+      "company": "GROW Software",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Heads up Grow, an independent company spun out of Within, specialising in distributed manufacturing."
+    },
+    {
+      "role": "Partner",
+      "company": "Newlab",
+      "archetype": "Investor",
+      "startYear": 2015,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": null
+    },
+    {
+      "role": "Honorary Lecturer",
+      "company": "University College London (UCL)",
+      "archetype": "Other",
+      "startYear": 2016,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": null
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "AI Music",
+      "archetype": "Founder",
+      "startYear": 2016,
+      "endYear": 2022,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "AI Music is an acqui-hired company based in London, founded in 2016 by Siavash Mahdavi, Inderjit Birdee and Andy Khavand, providing AI-based music creation solutions. It raised $7.16M over 2 rounds from 4 investors, valued at £17.6M."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Ossia Studio",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Co-Founder & CEO at Ossia Studio alongside Andy Khavand and Inderjit Birdee."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [
+      {
+        "type": "acquisition",
+        "year": null,
+        "valueUsd": null,
+        "notes": "AI Music reported as acqui-hired (TikTok/ByteDance per public reports)"
+      }
+    ],
+    "currentStatus": "Serial AI/deep-tech founder based in London; co-founder & CEO of Ossia Studio, Partner at Newlab, UCL Honorary Lecturer, and angel investor. NOTE: Research brief stated he is a co-founder of Wordsmith (Edinburgh/London legal AI), but public sources identify Wordsmith's founders as Ross McNairn (CEO), Robbie Falkenthal (COO), and Volodymyr Giginiak (CTO) — no public confirmation of Mahdavi's involvement found."
+  },
+  "lessons": [
+    {
+      "lesson": "Reapply deep technical foundations (AI, robotics, generative methods) across multiple domains — design, manufacturing, music — to ride successive technology waves.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siavash Mahdavi — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/siavash-mahdani",
+      "type": "article"
+    },
+    {
+      "title": "Siavash Mahdavi — about.me bio",
+      "url": "https://about.me/siavash_mahdavi",
+      "type": "article"
+    },
+    {
+      "title": "AI Music — Tracxn Company Profile",
+      "url": "https://tracxn.com/d/companies/ai-music/",
+      "type": "article"
+    },
+    {
+      "title": "Ossia Studio — Tracxn Founders",
+      "url": "https://tracxn.com/d/companies/ossia-studio/",
+      "type": "article"
+    },
+    {
+      "title": "MTF Podcast 102: Siavash Mahdavi – AI Music",
+      "url": "https://mtflabs.net/podcast102/",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI-era serial founder with deep technical (PhD Evolutionary Robotics) background; lessons on applying frontier AI across verticals are directly applicable. IMPORTANT CAVEAT: The research brief identifies him as a Wordsmith co-founder, but public sources (Tech.eu, The Legal Wire, Microsoft, Crunchbase) consistently list Wordsmith's founders as Ross McNairn, Robbie Falkenthal, and Volodymyr Giginiak — Mahdavi's link to Wordsmith could not be verified in light-touch search and may be an error in the brief, or he may be an undisclosed advisor/early backer. Confidence set to low pending clarification."
+}

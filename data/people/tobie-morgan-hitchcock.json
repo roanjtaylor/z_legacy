@@ -1,0 +1,108 @@
+{
+  "id": "tobie-morgan-hitchcock",
+  "name": "Tobie Morgan Hitchcock",
+  "birthYear": 1988,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Builder",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University College London (UCL School of Management)",
+      "degree": "BSc Information Management for Business",
+      "startYear": null,
+      "endYear": 2010,
+      "notes": "Graduated from UCL School of Management's BSc Information Management for Business programme in 2010"
+    },
+    {
+      "school": "University of Oxford",
+      "degree": "MSc Software Engineering",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Thesis focused on the use of versioning within distributed databases"
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "BSc Information Management for Business / MSc Software Engineering",
+      "company": "University College London (UCL School of Management) → University of Oxford",
+      "archetype": "Student",
+      "startYear": 2006,
+      "endYear": 2010,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-founder (SaaS / golf-course analytics venture)",
+      "company": "Pre-SurrealDB SaaS venture (with brother Jaime)",
+      "archetype": "Builder",
+      "startYear": 2015,
+      "endYear": 2021,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Built golf-course analytics platform using multiple databases (InfluxDB, OrientDB, DynamoDB, MySQL); pain from managing disparate stores seeded SurrealDB idea."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "SurrealDB",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Rust-based multi-model database (document, graph, time-series, relational). $6M seed Nov 2022 led by FirstMark; subsequent rounds totaling ~$26M+ from FirstMark, Georgian, Crew Capital, Alumni Ventures."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "<1M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CEO of SurrealDB, London-based Rust multi-model database company; well-funded venture-backed startup positioning for the AI-data infrastructure wave."
+  },
+  "lessons": [
+    {
+      "lesson": "Build the tool you needed yourself — SurrealDB came directly from the pain of stitching together four databases for an earlier product.",
+      "source": "https://medium.com/authority-magazine/the-future-is-now-tobie-morgan-hitchcock-of-surrealdb-on-how-their-technological-innovations-will-de8926375fb6"
+    }
+  ],
+  "sources": [
+    {
+      "title": "UCL SoM alumnus secures $20 million investment for SurrealDB",
+      "url": "https://www.mgmt.ucl.ac.uk/news/ucl-som-alumnus-raises-staggering-20-million-tech-start-surrealdb",
+      "type": "article"
+    },
+    {
+      "title": "Meet Tobie Morgan Hitchcock, CEO & Co-Founder of SurrealDB - TechRound",
+      "url": "https://techround.co.uk/interviews/meet-tobie-morgan-hitchcock-ceo-co-founder-of-surrealdb/",
+      "type": "interview"
+    },
+    {
+      "title": "The Future Is Now: Tobie Morgan Hitchcock of SurrealDB - Authority Magazine",
+      "url": "https://medium.com/authority-magazine/the-future-is-now-tobie-morgan-hitchcock-of-surrealdb-on-how-their-technological-innovations-will-de8926375fb6",
+      "type": "interview"
+    },
+    {
+      "title": "Tobie Morgan Hitchcock Speaker Profile - Sessionize",
+      "url": "https://sessionize.com/tobie-morgan-hitchcock/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era infra/database founder; lessons on developer-tools and multi-model database positioning directly applicable to today's builders."
+}

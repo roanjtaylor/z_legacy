@@ -1,0 +1,104 @@
+{
+  "id": "daniel-gibney",
+  "name": "Daniel Gibney",
+  "birthYear": 1979,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Institute of Chartered Accountants in England and Wales",
+      "degree": "ACA (Chartered Accountant)",
+      "startYear": 2001,
+      "endYear": 2004,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "ACA (Chartered Accountant)",
+      "company": "Institute of Chartered Accountants in England and Wales",
+      "archetype": "Student",
+      "startYear": 2001,
+      "endYear": 2004,
+      "estAgeStart": 22,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step from education[] entries."
+    },
+    {
+      "role": "Executive Director, Restructuring",
+      "company": "Moelis & Company",
+      "archetype": "Operator",
+      "startYear": 2009,
+      "endYear": 2022,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": [
+        500000,
+        1500000
+      ],
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Executive Director, Restructuring at Moelis & Company"
+    },
+    {
+      "role": "Co-founder & CFO",
+      "company": "Ferovinum (rebranded Fero in 2025)",
+      "archetype": "Founder",
+      "startYear": 2018,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Gave up well-paid role in corporate finance to co-found Ferovinum with Mitchel Fowler in 2018, starting in stealth mode using their own money before raising private equity in 2020."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder and CFO of Ferovinum (now Fero), a funding and supply chain platform for drinks businesses; secured a $550m asset-backed securitisation programme from private credit investors and commercial banks."
+  },
+  "lessons": [
+    {
+      "lesson": "Domain-adjacent expertise (commodity-style structured finance) can be transplanted into a fragmented, under-financed sector (wine & spirits) to create a defensible category.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ferovinum - About us",
+      "url": "https://www.ferovinum.com/about",
+      "type": "article"
+    },
+    {
+      "title": "The Buyer - How Ferovinum has tech & funding to transform the drinks industry",
+      "url": "https://www.the-buyer.net/insight/how-ferovinum-has-tech-and-funding-to-transform-the-drinks-industry",
+      "type": "article"
+    },
+    {
+      "title": "Linklaters advises Ferovinum on world's first asset-backed securitisation of wine and spirits",
+      "url": "https://www.linklaters.com/en-us/about-us/news-and-deals/deals/2025/june/linklaters-advises-ferovinum-on-the-worlds-first-asset-backed-securitisation-of-wine-and-spirits",
+      "type": "article"
+    },
+    {
+      "title": "Ferovinum announces £17.5m Series A funding round",
+      "url": "https://www.ferodrinks.com/posts/ferovinum-announces-the-completion-of-its-ps17-5m-series-a-funding-round",
+      "type": "article"
+    }
+  ],
+  "notes": "Modern fintech-era founder (post-2018); lessons on category-creation, structured finance applied to niche industries, and stealth-mode bootstrapping are directly applicable. Career arc still in build phase — no exit yet."
+}

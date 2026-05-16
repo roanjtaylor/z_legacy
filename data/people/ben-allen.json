@@ -1,0 +1,93 @@
+{
+  "id": "ben-allen",
+  "name": "Ben Allen",
+  "birthYear": 1988,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "low",
+  "education": [],
+  "careerSteps": [
+    {
+      "role": "Senior Executive (pre-Omnea)",
+      "company": "Tessian",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2022,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Former senior executive at cybersecurity company Tessian, where he saw firsthand how turgid procurement looked both from the inside at their own company and from the outside as a vendor"
+    },
+    {
+      "role": "Student",
+      "company": "Undergraduate",
+      "archetype": "Student",
+      "startYear": 2006,
+      "endYear": 2010,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Omnea",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "CTO of Omnea, AI-powered procurement orchestration platform founded in 2022 via Entrepreneur First, backed by Insight Partners"
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CTO of Omnea, which has raised $138M across 7 funding rounds, with latest Series B in July 2025"
+  },
+  "lessons": [
+    {
+      "lesson": "Founders with deep operator experience in adjacent domains (cybersecurity at Tessian) can credibly enter B2B SaaS verticals where they have lived the customer pain.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Omnea raises $25M to tackle the painfully annoying procurement market - TechCrunch",
+      "url": "https://techcrunch.com/2024/10/14/omnea-raises-25m-to-tackle-the-painfully-annoying-procurement-market/",
+      "type": "article"
+    },
+    {
+      "title": "Omnea | Portfolio | Entrepreneurs First",
+      "url": "https://www.joinef.com/companies/omnea/",
+      "type": "article"
+    },
+    {
+      "title": "Omnea - Crunchbase Company Profile",
+      "url": "https://www.crunchbase.com/organization/omnea-2c90",
+      "type": "article"
+    },
+    {
+      "title": "Omnea tops London-dominated 2026 Startups 100 Index - BusinessCloud",
+      "url": "https://businesscloud.co.uk/news/omnea-tops-london-dominated-2026-startups-100-index/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era B2B SaaS founder (2022-present); EF alum, vertical SaaS playbook with strong operator-to-founder pedigree from Tessian; lessons directly applicable to modern founder journeys."
+}

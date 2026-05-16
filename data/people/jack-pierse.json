@@ -1,0 +1,116 @@
+{
+  "id": "jack-pierse",
+  "name": "Jack Pierse",
+  "birthYear": 1992,
+  "countryOfOrigin": "Ireland",
+  "currentCountry": "Ireland",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder",
+    "Investor"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Chartered Accountants Ireland",
+      "degree": "ACA (Chartered Accountant)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Member of Chartered Accountants Ireland"
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "ACA (Chartered Accountant)",
+      "company": "Chartered Accountants Ireland",
+      "archetype": "Student",
+      "startYear": 2010,
+      "endYear": 2014,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-Founder & CFO",
+      "company": "Wayflyer",
+      "archetype": "Founder",
+      "startYear": 2019,
+      "endYear": 2023,
+      "estAgeStart": 27,
+      "estAgeEnd": 31,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Came up with original idea for Wayflyer; revenue-based financing for e-commerce; reached unicorn status in ~20 months, $1.6B valuation in early 2022."
+    },
+    {
+      "role": "Angel Investor",
+      "company": "Independent (e.g., Arc)",
+      "archetype": "Investor",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": 30,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Backed US fintech Arc's $20m Series A among other investments."
+    },
+    {
+      "role": "Founder (new venture)",
+      "company": "Undisclosed",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 31,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Left Wayflyer in July 2023 to pursue new venture."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "100M+",
+    "exitEvents": [],
+    "currentStatus": "Departed Wayflyer in 2023 to pursue new venture; active angel investor in fintech."
+  },
+  "lessons": [
+    {
+      "lesson": "Domain insight + accountant rigor can unlock novel financing products in booming markets (e-commerce + COVID tailwind).",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wayflyer co-founder Jack Pierse to leave the tech unicorn — Silicon Republic",
+      "url": "https://www.siliconrepublic.com/business/wayflyer-jack-pierse-irish-tech-unicorn",
+      "type": "article"
+    },
+    {
+      "title": "Wayflyer — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wayflyer",
+      "type": "article"
+    },
+    {
+      "title": "A way to the top — Acuity magazine",
+      "url": "https://www.acuitymag.com/business/a-way-to-the-top",
+      "type": "interview"
+    },
+    {
+      "title": "In their own words: How Aidan Corbett and Jack Pierse grew Wayflyer to unicorn status — The Currency",
+      "url": "https://thecurrency.news/articles/73013/in-their-own-words-how-aidan-corbett-and-jack-pierse-grew-wayflyer-to-unicorn-status-in-just-29-months/",
+      "type": "article"
+    }
+  ],
+  "notes": "Post-2020 fintech/e-commerce era founder; COVID tailwind specific but revenue-based financing playbook and ACA-to-founder path remain relevant."
+}

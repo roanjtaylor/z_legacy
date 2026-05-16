@@ -1,0 +1,93 @@
+{
+  "id": "harry-wetherald",
+  "name": "Harry Wetherald",
+  "birthYear": 1990,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [],
+  "careerSteps": [
+    {
+      "role": "Product Management Lead",
+      "company": "Tessian",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2024,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Led Product Management at Tessian before founding Maze"
+    },
+    {
+      "role": "Student",
+      "company": "Undergraduate",
+      "archetype": "Student",
+      "startYear": 2008,
+      "endYear": 2012,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Maze",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Founded Maze in 2024 with Adrian Jozwik and Santiago Castineira; raised $6M seed led by Cherry Ventures, then $25M Series A led by Theory Ventures 9 months later, bringing total to $31M within first year."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "<1M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CEO of Maze, AI-native cloud security startup with agents deployed in production at 10+ organizations including two Fortune 200 companies."
+  },
+  "lessons": [
+    {
+      "lesson": "Deep customer discovery (hundreds of interviews) before building can shape a sharper wedge into a crowded market like vulnerability management.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Maze Launches With $31 Million for Its AI Agents (BusinessWire)",
+      "url": "https://www.businesswire.com/news/home/20250610372428/en/Maze-Launches-With-$31-Million-for-Its-AI-Agents-That-Stop-Cloud-Security-Breaches",
+      "type": "article"
+    },
+    {
+      "title": "London-based Maze secures €22.5M (Silicon Canals)",
+      "url": "https://siliconcanals.com/london-based-maze-secures-22-5m/",
+      "type": "article"
+    },
+    {
+      "title": "Security Tales - Substack About page",
+      "url": "https://harrywetherald.substack.com/about",
+      "type": "article"
+    },
+    {
+      "title": "Unsupervised Learning podcast interview",
+      "url": "https://omny.fm/shows/unsupervised-learning/a-conversation-with-harry-wetherald-co-founder-ceo-at-maze",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI-revolution era founder (2024+), agentic AI applied to cybersecurity; lessons directly applicable to current AI-native B2B founders. ~10 years in cyber/AI/startups prior to founding suggests operator-to-founder path."
+}

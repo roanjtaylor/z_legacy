@@ -1,0 +1,121 @@
+{
+  "id": "mathias-krieger",
+  "name": "Mathias Krieger",
+  "birthYear": 1994,
+  "countryOfOrigin": "Germany",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Kardinal-von-Galen Gymnasium Mettingen",
+      "degree": "Abitur",
+      "startYear": null,
+      "endYear": 2013,
+      "notes": null
+    },
+    {
+      "school": "King's College London",
+      "degree": "BSc Economics & Management",
+      "startYear": 2014,
+      "endYear": 2018,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Junior-CEO",
+      "company": "Lust Auf Lebensart",
+      "archetype": "Operator",
+      "startYear": 2013,
+      "endYear": 2019,
+      "estAgeStart": 19,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": null
+    },
+    {
+      "role": "CEO & Co-Founder",
+      "company": "Vanvas Ltd",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Outdoor advertising startup that utilizes innovative signage and data-driven targeting."
+    },
+    {
+      "role": "Abitur / BSc Economics & Management",
+      "company": "Kardinal-von-Galen Gymnasium Mettingen → King's College London",
+      "archetype": "Student",
+      "startYear": 2014,
+      "endYear": 2018,
+      "estAgeStart": 20,
+      "estAgeEnd": 24,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-Founder & CPO",
+      "company": "HIVED",
+      "archetype": "Founder",
+      "startYear": 2019,
+      "endYear": null,
+      "estAgeStart": 25,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "London-based sustainable parcel delivery startup using 100% electric fleet; raised $56.8M total including $42M Series B in July 2025."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & CPO of HIVED, a London-based sustainable parcel delivery network. Company has raised $56.8M including a $42M Series B in July 2025 and serves brands like Zara, John Lewis, and Nespresso."
+  },
+  "lessons": [
+    {
+      "lesson": "Building proprietary tech-driven logistics infrastructure can differentiate in a commoditized delivery market while serving sustainability mandates.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "HIVED - Crunchbase Company Profile",
+      "url": "https://www.crunchbase.com/organization/hived",
+      "type": "article"
+    },
+    {
+      "title": "Mathias Krieger - Co-CEO & Co-Founder at HIVED | The Org",
+      "url": "https://theorg.com/org/hived/org-chart/mathias-krieger",
+      "type": "article"
+    },
+    {
+      "title": "Marunouchi Innovation Partners invests in HIVED",
+      "url": "https://marunouchi-innovation.com/en/news/detail/20250703.html",
+      "type": "article"
+    },
+    {
+      "title": "Hived - Tracxn Company Profile",
+      "url": "https://tracxn.com/d/companies/hived",
+      "type": "article"
+    }
+  ],
+  "notes": "Post-2020 climate-tech / sustainable logistics era founder; lessons on EV fleet operations and B2B enterprise sales to retail brands directly applicable to current market."
+}

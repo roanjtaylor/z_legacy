@@ -1,0 +1,124 @@
+{
+  "id": "murvah-iqbal",
+  "name": "Murvah Iqbal",
+  "birthYear": 1996,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Builder",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "King's College London",
+      "degree": "BA Development Economics and International Development",
+      "startYear": 2014,
+      "endYear": 2017,
+      "notes": "Awarded North West Student of the Year by Young Enterprise Scheme"
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Youth Footballer",
+      "company": "Manchester City Women's Football Club",
+      "archetype": "Other",
+      "startYear": 2006,
+      "endYear": 2013,
+      "estAgeStart": 10,
+      "estAgeEnd": 17,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Captain of youth team; competitive sports background shaped resilience."
+    },
+    {
+      "role": "Head of Brand Marketing",
+      "company": "Archie's",
+      "archetype": "Operator",
+      "startYear": 2010,
+      "endYear": 2015,
+      "estAgeStart": 14,
+      "estAgeEnd": 19,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Family/early business exposure — working-class entrepreneurial roots."
+    },
+    {
+      "role": "BA Development Economics and International Development",
+      "company": "King's College London",
+      "archetype": "Student",
+      "startYear": 2014,
+      "endYear": 2017,
+      "estAgeStart": 18,
+      "estAgeEnd": 21,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step from education[] entries."
+    },
+    {
+      "role": "Co-CEO & Co-Founder",
+      "company": "Vanvas Ltd",
+      "archetype": "Founder",
+      "startYear": 2019,
+      "endYear": 2020,
+      "estAgeStart": 23,
+      "estAgeEnd": 24,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "First venture selling advertising on delivery vans; surfaced logistics inefficiencies that led to HIVED pivot."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "HIVED",
+      "archetype": "Founder",
+      "startYear": 2021,
+      "endYear": null,
+      "estAgeStart": 25,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Zero-emission parcel delivery network in London, serving ASOS, Zara, Nespresso; raised $12.4M Series A then $42M Series B; co-founded with Mathias Krieger met on 2016 university trip to Silicon Valley."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & CEO of HIVED; named to Times 30-under-30; scaling electric last-mile delivery across UK."
+  },
+  "lessons": [
+    {
+      "lesson": "First venture (van advertising) surfaced the real logistics-pain insight that became HIVED — pivot from adjacent observation.",
+      "source": "https://me.sh/profile/murvah-iqbal"
+    }
+  ],
+  "sources": [
+    {
+      "title": "City AM — Meet the zero-emission parcel delivery start-up",
+      "url": "https://www.cityam.com/meet-the-zero-emission-parcel-delivery-start-up-on-a-mission-to-change-the-industry/",
+      "type": "article"
+    },
+    {
+      "title": "Founders Everywhere: Murvah Iqbal",
+      "url": "https://ideas.everywhere.vc/p/hived-murvah-iqbal-founders-everywhere",
+      "type": "interview"
+    },
+    {
+      "title": "The BAE HQ Profile",
+      "url": "https://www.thebaehq.com/profiles/murvah-iqbal",
+      "type": "article"
+    }
+  ],
+  "notes": "Climate-tech / last-mile logistics era founder (2021+); lessons on cold-outreach VC fundraising without warm intros and pivot-from-adjacent-business are directly applicable to modern founders."
+}

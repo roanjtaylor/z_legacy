@@ -1,0 +1,130 @@
+{
+  "id": "conor-sheridan",
+  "name": "Conor Sheridan",
+  "birthYear": 1988,
+  "countryOfOrigin": "Ireland",
+  "currentCountry": "Ireland",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Dublin City University",
+      "degree": "BA Economics, Politics, and Law",
+      "startYear": null,
+      "endYear": null,
+      "notes": null
+    },
+    {
+      "school": "Imperial College London",
+      "degree": "MSc Economics and Strategy for Business",
+      "startYear": null,
+      "endYear": null,
+      "notes": null
+    },
+    {
+      "school": "Stanford University Graduate School of Business",
+      "degree": "Executive Program",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Dy/Dx executive program"
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Strategic Consultant / Quantitative Trader & Investment Strategist",
+      "company": "Davy / FAT Capital / YPO",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2017,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Started in strategic consulting then moved into quantitative finance doing automated fund management for Irish asset-management firms"
+    },
+    {
+      "role": "BA Economics, Politics, and Law / MSc Economics and Strategy for Business / Executive Program",
+      "company": "Dublin City University → Imperial College London → Stanford University Graduate School of Business",
+      "archetype": "Student",
+      "startYear": 2006,
+      "endYear": 2010,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "Co-founder",
+      "company": "Mad Egg",
+      "archetype": "Founder",
+      "startYear": 2018,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Launched Ireland's first fried-chicken-sandwich restaurant in 2018 with immediate PMF; expanded to multiple locations rapidly. Still a director."
+    },
+    {
+      "role": "Founder & CEO",
+      "company": "Nory",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Raised $16M Series A in May 2024 led by Accel; raised $37M Series B in September 2025 led by Kinnevik, bringing total funding to approximately $62.6M."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Founder & CEO of Nory; AI-native restaurant operating system with ~300 clients across US, Europe and Middle East, ~$5M ARR, $62.6M raised."
+  },
+  "lessons": [
+    {
+      "lesson": "Operator-founders building tools they wished they had during a prior business often have unique product insight (Nory was born from Mad Egg pain).",
+      "source": "https://www.hospitalityireland.com/features/hunky-nory-which-came-first-202540"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Conor Sheridan Discusses Nory - Hospitality Ireland",
+      "url": "https://www.hospitalityireland.com/features/hunky-nory-which-came-first-202540",
+      "type": "interview"
+    },
+    {
+      "title": "Conor Sheridan Of Nory On His $62.6m Bet On Smarter Restaurant Operations",
+      "url": "https://www.hospitalityireland.com/features/conor-sheridan-of-nory-on-his-62-6m-bet-on-smarter-restaurant-operations-215524",
+      "type": "interview"
+    },
+    {
+      "title": "Nory | Re-defining hospitality with an intelligent system of action - Samaipata Podcast",
+      "url": "https://www.samaipata.vc/podcast/nory-re-defining-hospitality-with-an-intelligent-system-of-action",
+      "type": "podcast"
+    },
+    {
+      "title": "Who Owns Nory AI Company? - CanvasBusinessModel",
+      "url": "https://canvasbusinessmodel.com/blogs/owners/nory-ai-who-owns",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era vertical SaaS founder; lessons directly applicable to modern operator-founders building AI tools for legacy industries."
+}

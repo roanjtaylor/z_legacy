@@ -1,11 +1,15 @@
 {
   "id": "max-junestrand",
   "name": "Max Junestrand",
-  "birthYear": null,
+  "birthYear": 1999,
   "countryOfOrigin": "Sweden",
   "currentCountry": "Sweden (Stockholm)",
   "tier": "tier1-admired",
-  "archetypeArc": ["Student", "Hustler", "Founder"],
+  "archetypeArc": [
+    "Student",
+    "Hustler",
+    "Founder"
+  ],
   "confidence": "medium",
   "education": [
     {
@@ -45,6 +49,20 @@
       "notes": "PRIORITY: identify which specific VC firms. This is the 'earn the right to found' pattern Roan most wants to study."
     },
     {
+      "role": "Bachelor's (CS or Engineering) / MSc Computer Science",
+      "company": "Unknown (Sweden — likely KTH Royal Institute of Technology or Stockholm School of Economics) → Unknown",
+      "archetype": "Student",
+      "startYear": 2017,
+      "endYear": 2021,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
       "role": "Co-founder & CEO",
       "company": "Legora",
       "archetype": "Founder",
@@ -71,13 +89,30 @@
     "currentStatus": "Building Legora. Backed by tier-1 VCs (Index, Benchmark per public reporting). No exit yet — paper wealth depends on stake size + future valuation. Real test is sustained growth + eventual liquidity."
   },
   "lessons": [
-    { "lesson": "Earn the right to found by working on the capital/strategy side first.", "source": "Roan's framing — needs primary-source verification." },
-    { "lesson": "Vertical AI for specific professions captures faster than horizontal AI in 2023-2026 era.", "source": "Inferred from Legora's positioning + market data." },
-    { "lesson": "European legal-tech is a viable AI-revolution founding market.", "source": "Inferred from traction." }
+    {
+      "lesson": "Earn the right to found by working on the capital/strategy side first.",
+      "source": "Roan's framing — needs primary-source verification."
+    },
+    {
+      "lesson": "Vertical AI for specific professions captures faster than horizontal AI in 2023-2026 era.",
+      "source": "Inferred from Legora's positioning + market data."
+    },
+    {
+      "lesson": "European legal-tech is a viable AI-revolution founding market.",
+      "source": "Inferred from traction."
+    }
   ],
   "sources": [
-    { "title": "Legora company website", "url": "https://www.legora.com", "type": "article" },
-    { "title": "Index Ventures portfolio (needs specific Legora announcement URL)", "url": "https://www.indexventures.com/perspectives/", "type": "article" }
+    {
+      "title": "Legora company website",
+      "url": "https://www.legora.com",
+      "type": "article"
+    },
+    {
+      "title": "Index Ventures portfolio (needs specific Legora announcement URL)",
+      "url": "https://www.indexventures.com/perspectives/",
+      "type": "article"
+    }
   ],
   "notes": "v0.1 STUB — biographical details partially uncertain. Use career-mapper on-demand researcher (v0.2) to enrich. The structural story (VC internships → MSc CS → found at 23 in an AI vertical) is exactly the recent-era pattern Roan finds compelling, which is why he's in the seed set despite the data being thin."
 }

@@ -1,0 +1,143 @@
+{
+  "id": "thomas-kinsella",
+  "name": "Thomas Kinsella",
+  "birthYear": 1986,
+  "countryOfOrigin": "Ireland",
+  "currentCountry": "Ireland",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Gonzaga College SJ",
+      "degree": "Secondary",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Dublin secondary school"
+    },
+    {
+      "school": "Trinity College Dublin",
+      "degree": "Management Science and Information Systems Studies",
+      "startYear": null,
+      "endYear": null,
+      "notes": null
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "IT Security & Forensics Specialist",
+      "company": "Deloitte",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2011,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Early career in IT security and forensics."
+    },
+    {
+      "role": "Secondary / Management Science and Information Systems Studies",
+      "company": "Gonzaga College SJ → Trinity College Dublin",
+      "archetype": "Student",
+      "startYear": 2004,
+      "endYear": 2008,
+      "estAgeStart": 18,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+    },
+    {
+      "role": "eCrime Team Lead",
+      "company": "eBay",
+      "archetype": "Operator",
+      "startYear": 2011,
+      "endYear": 2015,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Led eCrime team addressing high-impact threats and collaborated closely with law enforcement agencies globally."
+    },
+    {
+      "role": "Senior Director of Security Operations",
+      "company": "DocuSign",
+      "archetype": "Operator",
+      "startYear": 2015,
+      "endYear": 2019,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Rose to Senior Director of Security Operations; experienced manual security workload pain points firsthand."
+    },
+    {
+      "role": "Co-founder & Chief Customer Officer",
+      "company": "Tines",
+      "archetype": "Founder",
+      "startYear": 2018,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [],
+      "lessons": [],
+      "notes": "Co-founded Tines with Eoin Hinchy in 2018; no-code automation platform for security teams; co-headquartered Dublin and Boston; raised $125M at $1.125B valuation."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [
+      {
+        "type": "funding",
+        "year": 2024,
+        "valueUsd": 1125000000,
+        "notes": "Tines raised $125M Series C at $1.125B valuation (unicorn status)"
+      }
+    ],
+    "currentStatus": "Co-founder and CCO of Tines; hosts The Future of Security Operations podcast; recognized voice in cybersecurity."
+  },
+  "lessons": [
+    {
+      "lesson": "Founders with deep operator experience in the problem domain (15+ years in security ops) build more credible and useful tools than outsiders.",
+      "source": "inferred"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tines About page",
+      "url": "https://www.tines.com/about/",
+      "type": "article"
+    },
+    {
+      "title": "Dark Reading author bio - Thomas Kinsella",
+      "url": "https://www.darkreading.com/author/thomas-kinsella",
+      "type": "article"
+    },
+    {
+      "title": "TheOrg - Thomas Kinsella profile",
+      "url": "https://theorg.com/org/tines/org-chart/thomas-kinsella",
+      "type": "article"
+    },
+    {
+      "title": "VentureFizz Podcast Episode 384",
+      "url": "https://venturefizz.com/insights/episode-384-thomas-tk-kinsella-co-founder-chief-customer-officer-of-tines/",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI/automation-era cybersecurity founder; operator-turned-founder archetype, lessons directly applicable to modern B2B SaaS founders building from domain expertise."
+}
