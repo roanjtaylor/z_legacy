@@ -4,6 +4,7 @@
   "birthYear": 1992,
   "countryOfOrigin": "Ireland",
   "currentCountry": "Ireland",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -14,27 +15,60 @@
   "confidence": "medium",
   "education": [
     {
+      "school": "University College Dublin (UCD)",
+      "degree": "Accounting (undergraduate)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "UCD graduate in accounting per Acuity magazine / Crunchbase / Business Post coverage. Exact years not disclosed publicly; assuming standard 3–4 year programme ending around 2013–2014 given a 1992 birth year."
+    },
+    {
       "school": "Chartered Accountants Ireland",
       "degree": "ACA (Chartered Accountant)",
       "startYear": null,
       "endYear": null,
-      "notes": "Member of Chartered Accountants Ireland"
+      "notes": "ACA via Chartered Accountants Ireland, trained at PwC Dublin (graduate programme)."
     }
   ],
   "careerSteps": [
     {
-      "role": "ACA (Chartered Accountant)",
-      "company": "Chartered Accountants Ireland",
+      "role": "Graduate / ACA Trainee",
+      "company": "PwC Dublin",
       "archetype": "Student",
-      "startYear": 2010,
-      "endYear": 2014,
-      "estAgeStart": 18,
-      "estAgeEnd": 22,
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": 21,
+      "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "keyDecisions": [
+        "Took the PwC Dublin graduate programme straight out of UCD to qualify as a Chartered Accountant (ACA) — a structured 3-ish year apprenticeship rather than going direct into a startup or VC.",
+        "Chose audit-track financial rigour as a foundation rather than chasing a brand-name finance job in London immediately."
+      ],
+      "lessons": [
+        "ACA training at a Big Four is a rare combination: it pays you to learn financial-statement literacy, it ages you into rooms with CFOs, and it ports anywhere in the world.",
+        "In Ireland the ACA → fintech founder path is now well-trodden; the qualification is closer to an MBA-equivalent in credential weight than people outside Ireland realise."
+      ],
+      "notes": "Confirmed PwC Dublin graduate / chartered accountant per multiple sources (Acuity, Crunchbase, Barden). Exact start year not disclosed; consistent with c.2013–2017 for a 1992-born UCD grad."
+    },
+    {
+      "role": "Operator at Highway1 / VC-adjacent roles",
+      "company": "Highway1 (San Francisco hardware accelerator) and others",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2019,
+      "estAgeStart": null,
+      "estAgeEnd": 27,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Post-ACA, took venture-adjacent roles (including Highway1 — PCH's hardware accelerator in SF) rather than staying on the audit / finance track.",
+        "Used the venture-side stint to build the network and pattern-recognition that fed directly into Wayflyer."
+      ],
+      "lessons": [
+        "ACA → VC-adjacent operator is a high-leverage pivot: you arrive with financial credibility AND get founder pattern matching.",
+        "Even a short stint inside an accelerator is enough to learn the shape of a fundraise from the other side of the table."
+      ],
+      "notes": "Per Crunchbase / TechCrunch, Pierse worked at Highway1 (the SF-based hardware accelerator run by PCH) before Wayflyer. researchLinks specifically references the TechCrunch Highway1 tag. Exact tenure dates not disclosed."
     },
     {
       "role": "Co-Founder & CFO",
@@ -46,13 +80,22 @@
       "estAgeEnd": 31,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Came up with original idea for Wayflyer; revenue-based financing for e-commerce; reached unicorn status in ~20 months, $1.6B valuation in early 2022."
+      "keyDecisions": [
+        "Co-founded Wayflyer (revenue-based financing for e-commerce) with Aidan Corbett in 2019 — Pierse came up with the original idea.",
+        "Took the CFO seat rather than CEO — clean split with a commercial CEO co-founder.",
+        "Rode the 2020–2021 e-commerce / COVID tailwind aggressively, scaling capital deployment via debt facilities (Left Lane $76M Series A May 2021; DST $150M Series B Feb 2022 at >$1.6B valuation; JPMorgan $300M debt May 2022).",
+        "Departed Wayflyer in July 2023 at peak rather than coasting — chose another founding cycle over a CFO sinecure."
+      ],
+      "lessons": [
+        "ACA-trained CFO + commercial CEO is a defensible role split for a fintech — regulators, banks and LPs all expect a real numbers person.",
+        "Macro tailwinds compress timelines — Wayflyer reached unicorn status in roughly 29 months.",
+        "A first unicorn doesn't have to be a destination; some founders treat them as a learning lap."
+      ],
+      "notes": "Wayflyer reached $1.6B+ valuation in Feb 2022; 2023 revenue €62.5M, 2024 €95.2M. Pierse held Co-Founder & CFO, later titled Co-Founder & President (Inventory Sourcing) before departing July 2023."
     },
     {
       "role": "Angel Investor",
-      "company": "Independent (e.g., Arc)",
+      "company": "Independent",
       "archetype": "Investor",
       "startYear": 2022,
       "endYear": null,
@@ -60,13 +103,19 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Backed US fintech Arc's $20m Series A among other investments."
+      "keyDecisions": [
+        "Began angel investing while still operating at Wayflyer — backed US fintech Arc's Series A (~$20M).",
+        "Concentrated picks in fintech where his ACA + Wayflyer pattern recognition is highest-signal."
+      ],
+      "lessons": [
+        "Operator-investor overlap accelerates network density and dealflow.",
+        "Angel investing while still operating is a legitimate way to start a track record before going full-time investor."
+      ],
+      "notes": "Public reporting links him to Arc's ~$20M Series A among other fintech bets."
     },
     {
-      "role": "Founder (new venture)",
-      "company": "Undisclosed",
+      "role": "Founder / CEO",
+      "company": "HappyStack",
       "archetype": "Founder",
       "startYear": 2023,
       "endYear": null,
@@ -74,20 +123,38 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Left Wayflyer in July 2023 to pursue new venture."
+      "keyDecisions": [
+        "Launched HappyStack — Dublin-based e-commerce intelligence / software solutions — as his second founding rather than going full-time investor.",
+        "Also launched an internship programme aimed at developing 1,000 new entrepreneurs — invests in the Irish founder funnel itself."
+      ],
+      "lessons": [
+        "A second venture can be smaller-stack and more software-flavoured than the first — capital-heavy fintech is not the only viable path once you have liquidity.",
+        "Ireland is a viable founding base for back-to-back ventures; domicile is not the bottleneck."
+      ],
+      "notes": "HappyStack referenced in researchLinks (happystack.com) and confirmed via Silicon Republic coverage."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "100M+",
     "exitEvents": [],
-    "currentStatus": "Departed Wayflyer in 2023 to pursue new venture; active angel investor in fintech."
+    "currentStatus": "Departed Wayflyer in July 2023. Building HappyStack (Dublin, e-commerce intelligence) and active angel investor in fintech."
   },
   "lessons": [
     {
-      "lesson": "Domain insight + accountant rigor can unlock novel financing products in booming markets (e-commerce + COVID tailwind).",
-      "source": "inferred"
+      "lesson": "UCD accounting → PwC Dublin ACA → VC-adjacent operator (Highway1) → fintech CFO co-founder is one of the cleanest Irish-founder ladders of the 2010s–2020s.",
+      "source": "Synthesised from Acuity, Crunchbase, Silicon Republic and Business Post coverage."
+    },
+    {
+      "lesson": "Accountant-rigor + adjacency to capital markets unlocks a novel financing product when a wave (e-commerce, COVID) hits.",
+      "source": "Inferred from Wayflyer trajectory."
+    },
+    {
+      "lesson": "Co-founder role specialisation (commercial CEO + finance CFO) is a defensible structure for regulated / financial products.",
+      "source": "Inferred."
+    },
+    {
+      "lesson": "Ireland is a viable founding base for global fintech — domicile is not the bottleneck.",
+      "source": "Wayflyer (Dublin HQ) reaching $1.6B+ valuation."
     }
   ],
   "sources": [
@@ -110,7 +177,31 @@
       "title": "In their own words: How Aidan Corbett and Jack Pierse grew Wayflyer to unicorn status — The Currency",
       "url": "https://thecurrency.news/articles/73013/in-their-own-words-how-aidan-corbett-and-jack-pierse-grew-wayflyer-to-unicorn-status-in-just-29-months/",
       "type": "article"
+    },
+    {
+      "title": "Wayflyer cofounder Jack Pierse to leave company to pursue new ventures — The Irish Times",
+      "url": "https://www.irishtimes.com/business/2023/07/04/wayflyer-cofounder-jack-pierse-to-leave-tech-company-to-pursue-new-ventures/",
+      "type": "article"
+    },
+    {
+      "title": "Wayflyer founder launches e-commerce platform HappyStack — Silicon Republic",
+      "url": "https://www.siliconrepublic.com/start-ups/wayflyer-happystack-ecommerce-fintech-software-solutions",
+      "type": "article"
+    },
+    {
+      "title": "Jack Pierse — Crunchbase",
+      "url": "https://www.crunchbase.com/person/jack-pierse",
+      "type": "article"
     }
   ],
-  "notes": "Post-2020 fintech/e-commerce era founder; COVID tailwind specific but revenue-based financing playbook and ACA-to-founder path remain relevant."
+  "notes": "Post-2020 fintech / e-commerce era founder. The COVID tailwind is cycle-specific, but the UCD → PwC ACA → Highway1 → CFO co-founder → angel → second founder arc is the repeatable Irish-fintech ladder of the 2010s–2020s. Highly relevant for a NI student weighing finance-credential vs straight-to-startup routes.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/jack-pierse-53b51155/",
+    "company": "https://www.happystack.com/",
+    "others": [
+      "https://techcrunch.com/tag/highway1/"
+    ],
+    "cluster": "",
+    "hint": "Seemed to get started by working in VC environments, then had enough money/market understanding to found his own companies... Super cool Irish founder - succeeds at entrepreneurship (certain initial ingredients to get there- certain age? environment? job? money? investment? unsure- but then a highly interesting and unique career of investment/founding companies - super cool."
+  }
 }

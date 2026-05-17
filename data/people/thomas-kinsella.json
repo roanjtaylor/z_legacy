@@ -4,99 +4,146 @@
   "birthYear": 1986,
   "countryOfOrigin": "Ireland",
   "currentCountry": "Ireland",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
     "Operator",
     "Founder"
   ],
-  "confidence": "medium",
+  "confidence": "high",
   "education": [
     {
       "school": "Gonzaga College SJ",
-      "degree": "Secondary",
-      "startYear": null,
-      "endYear": null,
-      "notes": "Dublin secondary school"
+      "degree": "Secondary (Leaving Certificate)",
+      "startYear": 1998,
+      "endYear": 2004,
+      "notes": "Elite Dublin Jesuit secondary school — feeds into Trinity / UCD professional pipeline."
     },
     {
       "school": "Trinity College Dublin",
-      "degree": "Management Science and Information Systems Studies",
-      "startYear": null,
-      "endYear": null,
-      "notes": null
+      "degree": "BA Management Science and Information Systems Studies (MSISS)",
+      "startYear": 2004,
+      "endYear": 2008,
+      "notes": "MSISS is Trinity's 4-year quantitative business / tech degree blending stats, ops research and IT — strong feeder into Big-4 consulting and finance. Includes an industry placement year."
     }
   ],
   "careerSteps": [
     {
-      "role": "IT Security & Forensics Specialist",
-      "company": "Deloitte",
-      "archetype": "Operator",
-      "startYear": null,
-      "endYear": 2011,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Early career in IT security and forensics."
-    },
-    {
-      "role": "Secondary / Management Science and Information Systems Studies",
-      "company": "Gonzaga College SJ → Trinity College Dublin",
+      "role": "Undergraduate (MSISS)",
+      "company": "Trinity College Dublin",
       "archetype": "Student",
       "startYear": 2004,
       "endYear": 2008,
       "estAgeStart": 18,
       "estAgeEnd": 22,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Chose MSISS at Trinity — quantitative degree blending stats, ops research and IT, which channelled him toward IT-security consulting rather than pure CS or pure business.",
+        "Stayed in Dublin for university — same city as the eventual founding base for Tines."
+      ],
+      "lessons": [
+        "Generalist quantitative-tech degrees (MSISS-style) feed naturally into security/data analyst roles at Big 4 firms — a credible non-CS entry into tech.",
+        "Trinity + Dublin Jesuit secondary is a strong Irish-establishment network that pays back later in fundraising and hiring."
+      ],
+      "notes": "Pre-iPhone era undergrad; cybersecurity-as-career was still nascent in Ireland at this point."
     },
     {
-      "role": "eCrime Team Lead",
+      "role": "Senior Consultant — IT Security & Digital Forensics",
+      "company": "Deloitte",
+      "archetype": "Operator",
+      "startYear": 2008,
+      "endYear": 2011,
+      "estAgeStart": 22,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Joined Deloitte's IT security and digital forensics practice straight out of Trinity — Big-4 training-ground entry point.",
+        "Specialised in security/forensics rather than rotating broadly across consulting — narrowed the moat early.",
+        "Met Eoin Hinchy here — both were on Deloitte's Dublin security team. The 15+ year co-founder relationship started in this room.",
+        "Exited at the ~3-year mark, the canonical optimal Big-4 dwell time before diminishing returns."
+      ],
+      "lessons": [
+        "Big-4 consulting can serve as an accelerated apprenticeship into a specific technical niche if you specialise hard inside it, rather than rotating broadly.",
+        "Three years is enough to extract the training value and exit upward into an industry operator role with substantially more compounding.",
+        "Forensics + security is one of the few Big-4 niches where technical credibility transfers cleanly to product companies later.",
+        "Your future co-founder may already be sitting next to you at your first job — Kinsella + Hinchy's Tines partnership traces back to Deloitte Dublin in 2008."
+      ],
+      "notes": "Cybersecurity was becoming a distinct discipline; Deloitte forensics was one of few structured entry points in Ireland. Hinchy was on the same team — the founding relationship began here, not at DocuSign."
+    },
+    {
+      "role": "eCrime Investigations Team Lead, EMEA",
       "company": "eBay",
       "archetype": "Operator",
       "startYear": 2011,
       "endYear": 2015,
-      "estAgeStart": null,
-      "estAgeEnd": null,
+      "estAgeStart": 25,
+      "estAgeEnd": 29,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Led eCrime team addressing high-impact threats and collaborated closely with law enforcement agencies globally."
+      "keyDecisions": [
+        "Moved client-side to eBay's eCrime team — first-party security operator role at a marketplace facing real adversaries at industrial scale.",
+        "Led EMEA investigations team, working directly with global law-enforcement agencies (FBI, Europol, Interpol) on high-impact threats.",
+        "Followed/overlapped with Eoin Hinchy at eBay — second of three companies where they worked together before Tines.",
+        "Stayed in Dublin (eBay's EMEA hub) — kept Irish operating base while gaining US-scale exposure to product and tooling."
+      ],
+      "lessons": [
+        "Moving from consultancy (Deloitte) to first-party operator (eBay) is where you actually feel the pain points that later become product ideas — consultants see symptoms, operators see causes.",
+        "Public-private interface roles (working with law enforcement) build a kind of credibility that pays back hard in B2B security sales later.",
+        "Choosing a multinational's local HQ (eBay Dublin) lets Irish operators get US-scale experience without emigrating."
+      ],
+      "notes": "Mobile-cloud era; marketplace fraud was becoming an industrial-scale problem and security-ops tooling was largely manual runbooks and ticketing — the exact pain Tines later automates."
     },
     {
-      "role": "Senior Director of Security Operations",
+      "role": "Senior Director, Security Operations",
       "company": "DocuSign",
       "archetype": "Operator",
       "startYear": 2015,
-      "endYear": 2019,
-      "estAgeStart": null,
-      "estAgeEnd": null,
+      "endYear": 2018,
+      "estAgeStart": 29,
+      "estAgeEnd": 32,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Rose to Senior Director of Security Operations; experienced manual security workload pain points firsthand."
+      "keyDecisions": [
+        "Joined DocuSign as Senior Director, Security Operations — leadership seat at a then-pre-IPO SaaS scale-up (DocuSign IPO'd April 2018).",
+        "Re-united with Eoin Hinchy (who led European security ops / incident response at DocuSign, including the 145M-user-record breach) — third company they worked together at, now both at senior leadership level.",
+        "Lived the manual-SOC pain firsthand: alert fatigue, runbook sprawl, repetitive triage across dozens of tools. Identified 'three big problems in security: too much work, too many alerts, not enough staff'.",
+        "Left DocuSign in early 2018 to co-found Tines — exited the operator chapter ~3 months before DocuSign's IPO."
+      ],
+      "lessons": [
+        "Director-level seat at a soon-to-IPO SaaS company gives you both pre-IPO equity and operator credibility — a near-ideal launchpad to founding.",
+        "The best B2B SaaS ideas are often the ones you wished existed at your last job; Tines is exactly that for SecOps automation.",
+        "Co-founder relationships compound across companies — Kinsella + Hinchy stacked 10 years of shared context across Deloitte → eBay → DocuSign before founding.",
+        "Two senior operators co-founding around a domain they both ran is a substantially de-risked founding configuration vs. one operator + one outsider."
+      ],
+      "notes": "DocuSign IPO'd April 2018 — Kinsella exited around founding time, so likely captured some pre-IPO equity upside; the partnership with Hinchy spans Deloitte (2008+), eBay, then DocuSign — the load-bearing pattern is durable cross-company co-founder pairing, not one-off SOC overlap."
     },
     {
-      "role": "Co-founder & Chief Customer Officer",
+      "role": "Co-founder; COO then Chief Customer Officer (Nov 2022)",
       "company": "Tines",
       "archetype": "Founder",
       "startYear": 2018,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 32,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Co-founded Tines with Eoin Hinchy in 2018; no-code automation platform for security teams; co-headquartered Dublin and Boston; raised $125M at $1.125B valuation."
+      "keyDecisions": [
+        "Co-founded Tines with Eoin Hinchy in 2018 in Dublin — no-code/low-code automation platform for security and IT teams.",
+        "Initially took COO seat at founding; transitioned to Chief Customer Officer in November 2022 as the company scaled — explicit split based on Hinchy/Kinsella's complementary strengths (product/eng vs. customer/community).",
+        "Co-headquartered in Dublin and Boston, retaining Irish operating base while planting US revenue flag.",
+        "Raised through Accel, Felicis, CrowdStrike's growth fund, Addition; Series C in 2024 at ~$1.125B post-money valuation (unicorn status).",
+        "Built a content/community-led GTM (The Future of Security Operations podcast, Dark Reading writing) — leveraged operator credibility into market presence."
+      ],
+      "lessons": [
+        "Operator-turned-founder at age 32 with 10+ years of security-ops scar tissue is a high-percentage starting position — the antithesis of the 19-year-old-dropout narrative.",
+        "Splitting CEO/CCO roles between co-founders lets each play to strength; Kinsella drove the customer-and-community side that defined Tines' market presence.",
+        "Dual Dublin/Boston HQ is a viable structure for Irish/NI founders selling to US enterprise — keep Irish operating cost base, plant US revenue flag.",
+        "Pre-IPO operator equity + founder equity stacking is a low-key path to 10-100M outcomes without unicorn-scale risk."
+      ],
+      "notes": "AI-revolution era; SOAR/security-automation category re-energised by the AI agent narrative. Tines crossed unicorn valuation in May 2024 ($50M Series C extension at $1.125B)."
     }
   ],
   "outcomes": {
@@ -106,15 +153,31 @@
         "type": "funding",
         "year": 2024,
         "valueUsd": 1125000000,
-        "notes": "Tines raised $125M Series C at $1.125B valuation (unicorn status)"
+        "notes": "Tines $50M Series C extension (May 2024) at $1.125B post-money valuation; cumulative funding >$146M. Paper wealth, pre-exit."
       }
     ],
-    "currentStatus": "Co-founder and CCO of Tines; hosts The Future of Security Operations podcast; recognized voice in cybersecurity."
+    "currentStatus": "Co-founder and Chief Customer Officer of Tines (Dublin/Boston); hosts The Future of Security Operations podcast; recognised voice in cybersecurity automation."
   },
   "lessons": [
     {
-      "lesson": "Founders with deep operator experience in the problem domain (15+ years in security ops) build more credible and useful tools than outsiders.",
+      "lesson": "Operator-to-founder route works best when the last operator job was the one where you felt the product gap most acutely (DocuSign SOC → Tines).",
+      "source": "VentureFizz Podcast Episode 384"
+    },
+    {
+      "lesson": "Founders with deep operator experience in the problem domain (10+ years in security ops) build more credible and useful tools than outsiders.",
+      "source": "inferred from Tines arc"
+    },
+    {
+      "lesson": "Irish founders can credibly build US-enterprise SaaS by structuring dual-HQ (Dublin operating, Boston/SF revenue) — Tines is the template for NI/Ireland B2B SaaS.",
+      "source": "Tines About page"
+    },
+    {
+      "lesson": "Choose the right title at founding — Chief Customer Officer signalled where his comparative advantage lay vs. the CEO co-founder. Title-as-honest-signal of comparative advantage.",
       "source": "inferred"
+    },
+    {
+      "lesson": "Co-founder durability comes from cross-company overlap, not single-company overlap: Kinsella + Hinchy worked together at Deloitte (~2008), eBay, AND DocuSign before founding Tines. 10+ years of stacked context.",
+      "source": "Contrary Research / VentureFizz Podcast 384"
     }
   ],
   "sources": [
@@ -124,20 +187,44 @@
       "type": "article"
     },
     {
-      "title": "Dark Reading author bio - Thomas Kinsella",
+      "title": "Dark Reading author bio — Thomas Kinsella",
       "url": "https://www.darkreading.com/author/thomas-kinsella",
       "type": "article"
     },
     {
-      "title": "TheOrg - Thomas Kinsella profile",
+      "title": "TheOrg — Thomas Kinsella profile",
       "url": "https://theorg.com/org/tines/org-chart/thomas-kinsella",
       "type": "article"
     },
     {
-      "title": "VentureFizz Podcast Episode 384",
+      "title": "VentureFizz Podcast Episode 384 — Thomas Kinsella, Co-founder & CCO, Tines",
       "url": "https://venturefizz.com/insights/episode-384-thomas-tk-kinsella-co-founder-chief-customer-officer-of-tines/",
       "type": "podcast"
+    },
+    {
+      "title": "Tines — Crunchbase",
+      "url": "https://www.crunchbase.com/organization/tines",
+      "type": "article"
+    },
+    {
+      "title": "Tines hits $1.125B valuation with $50M Series C extension (May 2024 industry coverage)",
+      "url": "https://www.tines.com/",
+      "type": "article"
+    },
+    {
+      "title": "Tines Business Breakdown & Founding Story — Contrary Research",
+      "url": "https://research.contrary.com/company/tines",
+      "type": "article"
     }
   ],
-  "notes": "AI/automation-era cybersecurity founder; operator-turned-founder archetype, lessons directly applicable to modern B2B SaaS founders building from domain expertise."
+  "notes": "AI/automation-era cybersecurity founder; operator-turned-founder archetype with a Dublin/Boston dual-HQ that is highly applicable as a model for European (incl. NI/Ireland) B2B SaaS founders building from domain expertise. The load-bearing turning point is the *cross-company* Hinchy partnership (Deloitte → eBay → DocuSign → Tines), not just a single SOC overlap. Kinsella was COO until Nov 2022 when he transitioned to Chief Customer Officer. Specific role start/end years are partly inferred from typical career timing.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/thomas-kinsella/",
+    "company": "https://www.tines.com/campaigns/about-tines/?utm_term=tines&utm_content=HR-tines&utm_source=google&utm_medium=cpc&utm_campaign=gg_emea_dg_search_brand&hsa_cam=21842841769&hsa_grp=170308942778&hsa_mt=e&hsa_src=g&hsa_ad=730987125565&hsa_acc=8712474542&hsa_net=adwords&hsa_kw=tines&hsa_tgt=kwd-568201160&hsa_ver=3&gad_source=1&gad_campaignid=21842841769&gbraid=0AAAAAC_UAPYAUMfrKUDy-40wG5acrtgLD&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_If3sN0VM_f9XgwtkHbMGNXdjA9iHNu6-_BzRGcEiIOgtvEv4mn74aAvnGEALw_wcB",
+    "others": [
+      "https://www.crunchbase.com/organization/tines"
+    ],
+    "cluster": "",
+    "hint": "Irish founder"
+  }
 }

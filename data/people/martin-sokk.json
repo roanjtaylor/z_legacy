@@ -4,6 +4,7 @@
   "birthYear": 1988,
   "countryOfOrigin": "Estonia",
   "currentCountry": "United Kingdom",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -13,94 +14,119 @@
   "confidence": "medium",
   "education": [
     {
-      "school": "Estonian Information Technology College",
+      "school": "Estonian Information Technology College (IT Kolledž), Tallinn",
       "degree": "BSc Information Systems Analysis",
       "startYear": 2007,
       "endYear": 2010,
-      "notes": null
+      "notes": "Confirmed across multiple sources (LinkedIn-derived summaries, Crunchbase). Vocational/applied tech degree rather than a research university — typical Estonian product-engineer path."
     }
   ],
   "careerSteps": [
     {
-      "role": "Product / Analyst roles",
-      "company": "Swedbank",
-      "archetype": "Operator",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Early career at one of the region's biggest banks."
-    },
-    {
-      "role": "Product role",
+      "role": "Product / Analyst",
       "company": "Eesti Energia",
       "archetype": "Operator",
       "startYear": null,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 22,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Traditional Estonian energy giant before fintech move."
+      "keyDecisions": [
+        "Took a first job inside Estonia's flagship energy utility post-degree rather than chasing a startup role — built product/process discipline inside a slow-moving incumbent."
+      ],
+      "lessons": [
+        "Estonia's small market lets an ambitious operator rotate through the country's flagship incumbents in their early 20s and still be at a fintech rocket-ship by 27.",
+        "Time inside a non-tech incumbent forces you to learn the unsexy mechanics of regulated industries — useful preparation for later building regulated fintech."
+      ],
+      "notes": "Per sTARTUp Day interview and search-derived summaries: Sokk worked at Eesti Energia (state energy utility) before Swedbank. Exact dates not publicly disclosed."
     },
     {
-      "role": "Head of Product (first product hire)",
-      "company": "Wise (TransferWise)",
+      "role": "Product / Analyst",
+      "company": "Swedbank (Baltic operations)",
       "archetype": "Operator",
       "startYear": null,
-      "endYear": 2020,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "First product hire at Wise (formerly TransferWise)"
-    },
-    {
-      "role": "BSc Information Systems Analysis",
-      "company": "Estonian Information Technology College",
-      "archetype": "Student",
-      "startYear": 2007,
-      "endYear": 2010,
-      "estAgeStart": 19,
-      "estAgeEnd": 22,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step from education[] entries."
-    },
-    {
-      "role": "Co-founder & CEO",
-      "company": "Lightyear",
-      "archetype": "Founder",
-      "startYear": 2020,
       "endYear": null,
       "estAgeStart": null,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Founded October 2020 with Mihkel Aamer (CTO); raised $25M Series A led by Lightspeed in 2022; Richard Branson among investors; FCA license acquired 2024 with Wander Rutgers as UK CEO while Sokk remains group CEO."
+      "keyDecisions": [
+        "Moved from an energy incumbent to a banking incumbent — got close to consumer financial products from inside the system he'd eventually build alternatives to."
+      ],
+      "lessons": [
+        "Time inside an incumbent in your eventual disruption target is a cheap MBA in what's actually broken.",
+        "Banking-incumbent product reps are surprisingly portable into fintech — the regulated-product vocabulary is the same."
+      ],
+      "notes": "Swedbank is one of the largest banks in the Baltic region. Exact dates not publicly disclosed; sequence is pre-Wise per the founder's own framing."
+    },
+    {
+      "role": "First Product Hire / Head of Product",
+      "company": "TransferWise (now Wise)",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2020,
+      "estAgeStart": null,
+      "estAgeEnd": 32,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Joined TransferWise as the first product person — bet on the Estonia-to-global fintech playbook before it was obvious.",
+        "Built and ran Wise's product organisation through hypergrowth — direct apprenticeship under a generational founding team.",
+        "Left Wise in 2020 (before the July 2021 direct listing) to start a consumer-facing fintech rather than waiting for IPO liquidity."
+      ],
+      "lessons": [
+        "Being the first product hire at a generational company is the closest thing to a founder apprenticeship — you absorb the operating system without bearing the founding risk.",
+        "Liquidity from IPO is not always worth the opportunity cost of two more years inside someone else's company.",
+        "The Wise alumni network is now a structural advantage for Estonian fintech founders — the 'Wise-mafia' is real."
+      ],
+      "notes": "Sokk describes himself in Lightyear's own blog as 'a lifelong product builder in the finance world having joined Wise as the first product person.' Specific dates not publicly disclosed; he reconnected with co-founder Mihkel Aamer (also Wise alumnus) in summer 2020."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "Lightyear",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": 32,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Lightyear in October 2020 with Mihkel Aamer (CTO) — applied the Wise customer-centric / transparent-pricing playbook to retail investing.",
+        "Headquartered in London for FCA / regulatory access while keeping core team Estonian — classic Wise-style dual geography.",
+        "Took a patient regulatory path — operated for years before securing UK FCA licence in 2024.",
+        "At the FCA-licence milestone in 2024, brought in Wander Rutgers as UK CEO and stepped back into a group-CEO role."
+      ],
+      "lessons": [
+        "Applying a proven fintech playbook (Wise's transparent-pricing customer-centricity) to an adjacent regulated vertical is a tractable second-act for Wise alumni.",
+        "Regulated fintech rewards patience — FCA licensing in 2024 came four years after founding.",
+        "Hire your replacement at the regulatory-milestone moment; group CEO + local CEO is a sustainable structure for pan-European fintech."
+      ],
+      "notes": "Raised ~$25M Series A led by Lightspeed in 2022 with Richard Branson as angel; reportedly raised a further ~$23M in 2025. Now operates across ~25 European countries."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "10-100M",
     "exitEvents": [],
-    "currentStatus": "CEO & co-founder of Lightyear, a pan-European neobroker operating in 25 countries; raised additional $23M in summer 2025 for expansion."
+    "currentStatus": "Group CEO and co-founder of Lightyear, a pan-European neobroker operating in ~25 countries. Based in London with core team in Tallinn."
   },
   "lessons": [
     {
-      "lesson": "Customer-centric product thinking and technology-driven cost reduction (Wise playbook) can be applied to underserved adjacent verticals like retail investing.",
+      "lesson": "Customer-centric product thinking + technology-driven cost reduction (Wise playbook) can be applied to underserved adjacent verticals like retail investing.",
       "source": "https://www.startupday.ee/news/combining-wise-lessons-and-lightyear-ambitions-martin-sokk-s-mission-to-make-investing-simple-for-everyone"
+    },
+    {
+      "lesson": "IT Kolledž → incumbents (Eesti Energia, Swedbank) → first product hire at Wise → own fintech is a repeatable Estonian fintech ladder.",
+      "source": "Inferred from career sequence."
+    },
+    {
+      "lesson": "Estonia → London is a repeatable European fintech path: small-country product discipline + UK regulatory access.",
+      "source": "Inferred."
+    },
+    {
+      "lesson": "Hire your replacement at the regulatory-milestone moment; group CEO + local CEO is a sustainable structure for pan-European fintech.",
+      "source": "Inferred from 2024 UK CEO transition."
     }
   ],
   "sources": [
@@ -115,15 +141,34 @@
       "type": "interview"
     },
     {
-      "title": "FX News Group: Wander Rutgers replaces Sokk as UK CEO",
+      "title": "Martin and Mihkel: The Wise Guys changing European Brokerage — Risksave",
+      "url": "https://risksave.com/fintech-interviews/2022/3/22/martin-and-mihkel-the-wise-guys-changing-european-brokerage",
+      "type": "interview"
+    },
+    {
+      "title": "FX News Group: Wander Rutgers replaces Sokk as UK CEO as Lightyear gets FCA license",
       "url": "https://fxnewsgroup.com/forex-news/retail-forex/wander-rutgers-replaces-martin-sokk-as-ceo-as-neobroker-lightyear-gets-fca-license/",
       "type": "article"
     },
     {
-      "title": "Crunchbase profile",
+      "title": "Crunchbase — Martin Sokk",
       "url": "https://www.crunchbase.com/person/martin-sokk",
+      "type": "article"
+    },
+    {
+      "title": "EY Entrepreneur Of The Year — Estonia 2026 class",
+      "url": "https://www.ey.com/en_id/weoy/class-of-2026/estonia",
       "type": "article"
     }
   ],
-  "notes": "Fintech-era founder (2020+); lessons on product-led fintech, regulated-market patience, and Wise alumni network directly applicable to modern European startups."
+  "notes": "Fintech-era founder (2020+). The IT Kolledž → Estonian incumbents → first product hire at Wise → own fintech path is one of the most repeatable European founder arcs of the 2020s and directly relevant to small-country EU founders like a NI student.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/martinsokk/",
+    "company": "https://lightyear.com/en-gb/about",
+    "others": [
+      "https://www.ey.com/en_id/weoy/class-of-2026/estonia"
+    ],
+    "cluster": "",
+    "hint": "Seemed to got started in sales/product jobs, then launched & raised investment for his own company. Maybe lower barriers to launching now with AI (less VC needed for product & initial testing - ie. preseed??)"
+  }
 }

@@ -1,9 +1,10 @@
 {
   "id": "daniel-gibney",
   "name": "Daniel Gibney",
-  "birthYear": 1979,
+  "birthYear": null,
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -13,34 +14,39 @@
   "confidence": "medium",
   "education": [
     {
-      "school": "Institute of Chartered Accountants in England and Wales",
+      "school": "Institute of Chartered Accountants in England and Wales (ICAEW)",
       "degree": "ACA (Chartered Accountant)",
       "startYear": 2001,
       "endYear": 2004,
-      "notes": null
+      "notes": "ACA qualification reported as 2001-2004 (secondary source). Professional qualification rather than a university degree; he took the standard route of training in audit/finance before moving into corporate finance."
     }
   ],
   "careerSteps": [
     {
-      "role": "ACA (Chartered Accountant)",
-      "company": "Institute of Chartered Accountants in England and Wales",
-      "archetype": "Student",
+      "role": "Corporate finance / debt advisory roles (early career)",
+      "company": "ACA training firm + corporate finance teams",
+      "archetype": "Operator",
       "startYear": 2001,
-      "endYear": 2004,
-      "estAgeStart": 22,
-      "estAgeEnd": 25,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step from education[] entries."
+      "keyDecisions": [
+        "Trained as an ACA chartered accountant before specialising in corporate finance and debt advisory — the standard high-credibility UK path into investment banking restructuring"
+      ],
+      "lessons": [
+        "An ACA gives you working-capital and balance-sheet literacy that pure-finance-grad bankers often lack",
+        "Debt and restructuring exposes you to fragmented, capital-starved industries that mainstream finance avoids"
+      ],
+      "notes": "15+ years cumulative in corporate finance and debt advisory before founding Ferovinum. Specific employer details not surfaced from public sources beyond the Moelis role."
     },
     {
       "role": "Executive Director, Restructuring",
       "company": "Moelis & Company",
       "archetype": "Operator",
-      "startYear": 2009,
-      "endYear": 2022,
+      "startYear": null,
+      "endYear": 2018,
       "estAgeStart": null,
       "estAgeEnd": null,
       "estCompUsd": [
@@ -48,13 +54,21 @@
         1500000
       ],
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Executive Director, Restructuring at Moelis & Company"
+      "keyDecisions": [
+        "Built a senior career in corporate-finance restructuring at a top US boutique investment bank",
+        "Restructuring work brought him into direct contact with wine importers, where he observed their capital management challenges — the seed of Ferovinum",
+        "Walked away from a well-paid Executive Director restructuring role to start a company in a fragmented, under-financed sector"
+      ],
+      "lessons": [
+        "Restructuring trains you to value assets that mainstream finance ignores — a useful lens for fragmented physical-goods industries",
+        "Structured finance expertise is highly portable into sectors no fintech founder is competing for",
+        "The right time to leave a high-comp seat is when you have proprietary insight (wine importers' capital pain) that nobody else does"
+      ],
+      "notes": "Executive Director-level role at Moelis London. Comp range is a low-confidence estimate for London restructuring at that level."
     },
     {
       "role": "Co-founder & CFO",
-      "company": "Ferovinum (rebranded Fero in 2025)",
+      "company": "Ferovinum (rebranded Fero, 2025)",
       "archetype": "Founder",
       "startYear": 2018,
       "endYear": null,
@@ -62,31 +76,59 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Gave up well-paid role in corporate finance to co-found Ferovinum with Mitchel Fowler in 2018, starting in stealth mode using their own money before raising private equity in 2020."
+      "keyDecisions": [
+        "Co-founded Ferovinum with Mitchel Fowler in 2018 — they met over poker games, where Fowler says: 'You get to know somebody pretty well over a poker table.' Gibney adds that poker's emphasis on 'skill, risk and judgement' was a good read on character.",
+        "Paired his debt-restructuring lens with Fowler's commodity-trading/structured-finance background (energy, metals, agriculture) — both independently saw the opportunity to 'get money into the wine industry'",
+        "Stayed in stealth and self-funded for the first ~2 years rather than raising early",
+        "Raised £17.5m Series A in 2022, then secured a $550m asset-backed securitisation programme — the world's first ABS of wine and spirits",
+        "Rebranded to Fero in 2025 to broaden beyond wine"
+      ],
+      "lessons": [
+        "Bootstrapping in stealth is viable when the product is structured finance — you don't need to be loud to validate it",
+        "Bringing commodity-style structured finance into a fragmented industry (drinks) is a defensible category-creation move",
+        "Domain-adjacent expertise beats domain-native expertise when the gap is financial sophistication, not industry knowledge",
+        "Co-founder fit can be sourced outside the office — poker, sport, side communities often surface better signal than LinkedIn"
+      ],
+      "notes": "Ferovinum/Fero finances and warehouses wine & spirits inventory for drinks businesses, using structured-finance plumbing rather than pure software. Linklaters-advised $550m ABS programme is positioned as a category first. Now serves 600+ producers, distributors, retailers across 30+ markets."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "10-100M",
     "exitEvents": [],
-    "currentStatus": "Co-founder and CFO of Ferovinum (now Fero), a funding and supply chain platform for drinks businesses; secured a $550m asset-backed securitisation programme from private credit investors and commercial banks."
+    "currentStatus": "Co-founder & CFO of Fero (formerly Ferovinum). Operates a $550m asset-backed securitisation programme funded by private credit and commercial banks; 600+ clients across 30+ markets."
   },
   "lessons": [
     {
-      "lesson": "Domain-adjacent expertise (commodity-style structured finance) can be transplanted into a fragmented, under-financed sector (wine & spirits) to create a defensible category.",
+      "lesson": "Domain-adjacent expertise (structured finance) transplanted into a fragmented industry (wine & spirits) creates a defensible category.",
+      "source": "https://www.the-buyer.net/insight/how-ferovinum-has-tech-and-funding-to-transform-the-drinks-industry"
+    },
+    {
+      "lesson": "Stealth + self-funded for ~2 years can be the right path when the product is financial infrastructure, not consumer software.",
+      "source": "https://www.ferovinum.com/about"
+    },
+    {
+      "lesson": "Leaving a high-comp restructuring role late-career has higher opportunity cost but much higher credibility with lenders.",
       "source": "inferred"
+    },
+    {
+      "lesson": "Co-founder selection from outside professional networks (poker games) produced better signal than recruiting from within Moelis would have.",
+      "source": "https://www.the-buyer.net/insight/how-ferovinum-has-tech-and-funding-to-transform-the-drinks-industry"
     }
   ],
   "sources": [
     {
-      "title": "Ferovinum - About us",
+      "title": "Ferovinum — About us",
       "url": "https://www.ferovinum.com/about",
       "type": "article"
     },
     {
-      "title": "The Buyer - How Ferovinum has tech & funding to transform the drinks industry",
+      "title": "The Buyer — How Ferovinum has tech & funding to transform the drinks industry",
       "url": "https://www.the-buyer.net/insight/how-ferovinum-has-tech-and-funding-to-transform-the-drinks-industry",
+      "type": "article"
+    },
+    {
+      "title": "Fero — About Us",
+      "url": "https://www.ferodrinks.com/about-us",
       "type": "article"
     },
     {
@@ -98,7 +140,21 @@
       "title": "Ferovinum announces £17.5m Series A funding round",
       "url": "https://www.ferodrinks.com/posts/ferovinum-announces-the-completion-of-its-ps17-5m-series-a-funding-round",
       "type": "article"
+    },
+    {
+      "title": "Edible Planet Ventures — Ferovinum breaks the mold with $550m securitisation for the drinks industry",
+      "url": "https://www.edibleplanetventures.com/post/ferovinum-breaks-the-mold-with-550m-securitisation-for-the-drinks-industry",
+      "type": "article"
     }
   ],
-  "notes": "Modern fintech-era founder (post-2018); lessons on category-creation, structured finance applied to niche industries, and stealth-mode bootstrapping are directly applicable. Career arc still in build phase — no exit yet."
+  "notes": "Modern fintech-era founder. Unusual UK example of a non-software, structured-finance-first venture — closer to commodities trading and asset-backed lending than to typical SaaS. European context: London restructuring background + ABS expertise is hard for US founders to replicate, giving an EU-native moat in drinks finance. Birth year and university degree (if any, pre-ACA) not surfaced from public sources. No exit yet; net worth is largely paper.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/daniel-gibney-5b22783a/",
+    "company": "https://www.ferodrinks.com/about-us",
+    "others": [
+      "https://www.edibleplanetventures.com/post/ferovinum-breaks-the-mold-with-550m-securitisation-for-the-drinks-industry"
+    ],
+    "cluster": "",
+    "hint": "AI for drinks industry"
+  }
 }

@@ -5,9 +5,12 @@
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
   "tier": "tier1-admired",
+  "imageUrl": null,
   "archetypeArc": [
     "Student",
+    "Operator",
     "Hustler",
+    "Student",
     "Founder"
   ],
   "confidence": "medium",
@@ -15,85 +18,155 @@
     {
       "school": "London School of Economics",
       "degree": "BSc Philosophy and Economics",
-      "startYear": null,
-      "endYear": null,
-      "notes": null
+      "startYear": 2009,
+      "endYear": 2012,
+      "notes": "Start/end years inferred from typical UK undergrad timing and known later milestones (trader job 2012, MSc 2016)."
     },
     {
       "school": "University College London (UCL)",
       "degree": "MSc Machine Learning",
-      "startYear": null,
+      "startYear": 2016,
       "endYear": 2017,
-      "notes": "Won a Computer Science prize among all MSc students; thesis on generative AI applied to structured text/legal contracts."
+      "notes": "Won a CS prize among all MSc students; thesis on generative AI applied to structured legal text — predates the public GPT moment by ~5 years."
     }
   ],
   "careerSteps": [
     {
-      "role": "Bond and Derivatives Trader",
-      "company": "Japanese Investment Bank",
-      "archetype": "Operator",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Worked by day as a bond and derivatives trader for a Japanese investment bank while building a side business by night."
-    },
-    {
-      "role": "Founder",
-      "company": "Viral Charity Donation Startup",
-      "archetype": "Hustler",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Side-project tech startup with his flatmate that accrued 10,000 users and provided £50,000 in donations."
-    },
-    {
-      "role": "BSc Philosophy and Economics / MSc Machine Learning",
-      "company": "London School of Economics → University College London (UCL)",
+      "role": "BSc Philosophy and Economics student",
+      "company": "London School of Economics",
       "archetype": "Student",
+      "startYear": 2009,
+      "endYear": 2012,
+      "estAgeStart": 19,
+      "estAgeEnd": 22,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Chose philosophy + economics rather than CS — kept a reasoning-and-incentives lens before going technical.",
+        "Picked LSE specifically — optimised for the finance recruiting pipeline rather than tech."
+      ],
+      "lessons": [
+        "A non-CS undergrad doesn't block a deep-tech founding path if you re-enter via a quantitative masters later.",
+        "Optimise your undergrad for the next step you actually want — for him, that was a London trading desk, not a CS career."
+      ],
+      "notes": "Years estimated, not directly confirmed."
+    },
+    {
+      "role": "Bond and derivatives trader",
+      "company": "Japanese investment bank (London)",
+      "archetype": "Operator",
+      "startYear": 2012,
+      "endYear": 2016,
+      "estAgeStart": 22,
+      "estAgeEnd": 26,
+      "estCompUsd": [80000, 200000],
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a high-paying graduate finance job — bought himself runway and credibility before founding.",
+        "Used the day job to fund the night project — explicit hustler pattern rather than dropping out at 22.",
+        "Quit at 26 to retrain rather than stack two more years of bonus — refused the golden-handcuff trap."
+      ],
+      "lessons": [
+        "A trader role builds tolerance for asymmetric risk and rapid decision-making under uncertainty — directly useful for founding.",
+        "Day-job runway lets you build a serious side project without burning savings or signing bad SAFE terms.",
+        "Bank salaries are an option you should exercise then exit — staying past the second bonus is usually a value-destroying trade."
+      ],
+      "notes": "Years estimated from interview accounts that he worked by day at a Japanese investment bank while building a side business by night. Comp range is a UK trader-band estimate, not directly confirmed."
+    },
+    {
+      "role": "Side-project co-founder",
+      "company": "Viral charity-donation startup (with flatmate)",
+      "archetype": "Hustler",
       "startYear": 2013,
-      "endYear": 2017,
+      "endYear": 2016,
       "estAgeStart": 23,
+      "estAgeEnd": 26,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Picked a project that could go viral without paid acquisition — chose distribution-first design.",
+        "Built with a flatmate — minimised coordination cost when the day job was eating most of his bandwidth.",
+        "Wound it down rather than forcing it into a venture — kept it as a learning, not an identity."
+      ],
+      "lessons": [
+        "A successful-but-small side project (10k users, £50k donations) is a credential — proves you can ship and grow without proving you have to commit to that idea.",
+        "Side projects work best when you can pull the plug guilt-free — wedded-to-it side projects become bad founderships.",
+        "Pick side projects with viral mechanics so your scarcity resource (time) isn't also the growth lever."
+      ],
+      "notes": "Reported reach: ~10,000 users, ~£50,000 raised for charity."
+    },
+    {
+      "role": "MSc Machine Learning student",
+      "company": "University College London",
+      "archetype": "Student",
+      "startYear": 2016,
+      "endYear": 2017,
+      "estAgeStart": 26,
       "estAgeEnd": 27,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Left a trader salary to re-skill into ML — explicit bet on AI before it was obvious (pre-Transformer, pre-GPT).",
+        "Chose a thesis on generative AI applied to legal contracts — vertical-specific, not generic.",
+        "Picked UCL specifically — adjacent to the London EF pipeline he would join immediately after."
+      ],
+      "lessons": [
+        "Going back to a one-year technical masters in your mid-20s is a high-leverage reset if it lines you up with a forming wave.",
+        "Pick a thesis topic that doubles as a startup hypothesis — the year of research becomes a year of free customer-discovery.",
+        "Reset moves are cheaper than they look — one year of foregone bank comp is the price of a decade of right-wave positioning."
+      ],
+      "notes": "Won a CS prize across the MSc cohort. Met co-founder Nitish Mutha during the MSc — both specialised in deep learning and NLP, programme taught in conjunction with Google DeepMind."
     },
     {
       "role": "Co-founder & CEO",
-      "company": "Genie AI",
+      "company": "Genie AI (via Entrepreneur First, EF cohort EF9)",
       "archetype": "Founder",
       "startYear": 2017,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 27,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "First generative AI company focusing on the legal industry, started ~2017; raised £13.3M Series A led by Google Ventures with participation from Khosla Ventures (Oct 2024)."
+      "keyDecisions": [
+        "Joined Entrepreneur First (Europe's talent-investor model) rather than bootstrapping alone — replaced a missing co-founder network with a structured one.",
+        "Started in 2017 — generative AI applied to legal, years before LLMs went mainstream. Held the conviction through pre-LLM 'cold winter' (2018-2022) when the field looked unsexy.",
+        "Stuck with the same vertical (legal contracts) for years — earned the right to ride the 2023+ LLM wave with existing domain trust and data.",
+        "Raised £13.3M Series A in Oct 2024 led by Google Ventures with Khosla Ventures participating — chose a strategic lead (GV) over a generalist for the post-LLM regulatory landscape."
+      ],
+      "lessons": [
+        "Conviction in a wave before it is obvious is mostly a function of having technical skin in the game (the MSc thesis) — not vibes.",
+        "Vertical AI > horizontal AI for non-incumbents: pick a regulated, document-heavy vertical (law) where domain trust is the moat once the model commodity arrives.",
+        "Talent-investor programmes (EF) are a viable substitute for a strong existing co-founder network — especially in Europe where YC's network effects don't fully reach.",
+        "Surviving the trough between thesis and wave is the actual edge — most founders who chose generative AI in 2017 quit before 2022."
+      ],
+      "notes": "EF9 cohort Oct 2017 - Mar 2018. Genie AI co-founded Nov 2017. Raised £2M seed (Jul 2019), then £13.3M Series A (Oct 2024) led by Google Ventures with Khosla Ventures participating. Genie AI reports 130,000+ companies using the platform with ~250 new companies joining daily as of recent press. Co-founder Nitish Mutha (CTO) met during the UCL MSc Machine Learning programme."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "1-10M",
     "exitEvents": [],
-    "currentStatus": "Leading Genie AI, one of the world's most advanced legal AI agents for business professionals and in-house lawyers, with over 130,000 companies using the platform globally and 250+ new companies joining daily."
+    "currentStatus": "Co-founder & CEO of Genie AI, a legal-AI agent for in-house lawyers and business professionals. No exit; equity value paper-only."
   },
   "lessons": [
     {
-      "lesson": "Cross-pollinate skills from adjacent industries (finance, trading) into underserved verticals (law) to find disruptive angles.",
-      "source": "inferred"
+      "lesson": "Cross-pollinate skills from one industry (trading: pricing, risk, speed) into an underserved vertical (legal) to find a disruptive angle.",
+      "source": "inferred from Tech Funding News and Fintech Times interviews"
+    },
+    {
+      "lesson": "Use a high-paying job as runway for a serious side project rather than dropping out prematurely.",
+      "source": "Tech Funding News interview"
+    },
+    {
+      "lesson": "A one-year quantitative masters in your mid-20s is a credible reset path into deep tech.",
+      "source": "EF profile and interviews"
+    },
+    {
+      "lesson": "Pick the wave (generative AI) before it is consensus, and stay in your vertical long enough for the wave to arrive.",
+      "source": "inferred from 2017-2024 Genie AI arc"
+    },
+    {
+      "lesson": "Entrepreneur First is the European structural substitute for YC — especially valuable if your existing network is finance-not-tech.",
+      "source": "EF cohort EF9 reporting"
     }
   ],
   "sources": [
@@ -103,20 +176,39 @@
       "type": "interview"
     },
     {
-      "title": "In Profile: Rafie Faruq, CEO of Genie | The Fintech Times",
+      "title": "In Profile: Rafie Faruq, CEO of Genie — The Fintech Times",
       "url": "https://thefintechtimes.com/in-profile-rafie-faruq-genie-ai/",
       "type": "interview"
     },
     {
-      "title": "Rafie Faruq — Entrepreneur First",
+      "title": "Rafie Faruq — Entrepreneur First profile",
       "url": "https://www.joinef.com/people/rafie-faruq/",
       "type": "article"
     },
     {
-      "title": "GenieAI Founders",
+      "title": "Genie AI — founders page",
       "url": "https://www.genieai.co/our-founders",
       "type": "article"
+    },
+    {
+      "title": "Genie AI raises £2m seed funding — UKTN (Jul 2019)",
+      "url": "https://www.uktech.news/funding/genie-ai-raises-2m-seed-funding-20190723",
+      "type": "article"
+    },
+    {
+      "title": "Founder spotlight: Rafie Faruq, Genie AI — Barclays Eagle Labs",
+      "url": "https://labs.uk.barclays/learning-and-insights/news-and-insights/founder-stories/founder-spotlight-rafie-faruq-genie-ai/",
+      "type": "interview"
     }
   ],
-  "notes": "AI-revolution era founder (2017 thesis pre-dated GPT); lessons on early conviction in generative AI and vertical-specific applications directly applicable to current AI founders."
+  "notes": "AI-revolution-era founder; 2017 MSc thesis pre-dated the public GPT moment by years and Genie AI survived the pre-LLM trough to ride the 2023+ wave. Highly relevant template for a European technical-ish founder going through Entrepreneur First rather than YC, especially one entering tech from a non-CS undergrad via a quantitative masters. Caveat: undergrad and trader-job years are inferred from interview context and the typical UK education timeline rather than directly verified; treat dates as ±1 year. No exit yet — path validated to Series A only.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/rfaruq",
+    "company": "https://www.genieai.co/about-us",
+    "others": [
+      "n/a"
+    ],
+    "cluster": "",
+    "hint": "UCL, EF9 cohort - seems like the European version of YC?? Maybe good to get stuck into - pushing my career to maximise chance of startup success by following similar paths to these role models."
+  }
 }

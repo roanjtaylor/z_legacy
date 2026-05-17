@@ -1,44 +1,45 @@
 {
   "id": "conor-sheridan",
   "name": "Conor Sheridan",
-  "birthYear": 1988,
+  "birthYear": null,
   "countryOfOrigin": "Ireland",
   "currentCountry": "Ireland",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
     "Operator",
-    "Founder",
+    "Hustler",
     "Founder"
   ],
   "confidence": "medium",
   "education": [
     {
       "school": "Dublin City University",
-      "degree": "BA Economics, Politics, and Law",
+      "degree": "BA Economics, Politics and Law",
       "startYear": null,
       "endYear": null,
-      "notes": null
+      "notes": "Listed on LinkedIn; exact years not pinned down from public sources. Worked in restaurants during school and university."
     },
     {
       "school": "Imperial College London",
       "degree": "MSc Economics and Strategy for Business",
       "startYear": null,
       "endYear": null,
-      "notes": null
+      "notes": "Postgraduate degree that bridged him from undergraduate economics into finance/consulting."
     },
     {
-      "school": "Stanford University Graduate School of Business",
-      "degree": "Executive Program",
+      "school": "Stanford Graduate School of Business",
+      "degree": "Executive Program (Dy/Dx)",
       "startYear": null,
       "endYear": null,
-      "notes": "Dy/Dx executive program"
+      "notes": "Short executive program rather than a degree."
     }
   ],
   "careerSteps": [
     {
-      "role": "Strategic Consultant / Quantitative Trader & Investment Strategist",
-      "company": "Davy / FAT Capital / YPO",
+      "role": "Strategic consultant, then quantitative trader / investment strategist / fund manager",
+      "company": "Davy / FAT Capital / YPO (Ireland)",
       "archetype": "Operator",
       "startYear": null,
       "endYear": 2017,
@@ -46,41 +47,42 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Started in strategic consulting then moved into quantitative finance doing automated fund management for Irish asset-management firms"
-    },
-    {
-      "role": "BA Economics, Politics, and Law / MSc Economics and Strategy for Business / Executive Program",
-      "company": "Dublin City University → Imperial College London → Stanford University Graduate School of Business",
-      "archetype": "Student",
-      "startYear": 2006,
-      "endYear": 2010,
-      "estAgeStart": 18,
-      "estAgeEnd": 22,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "keyDecisions": [
+        "Started in strategic consulting, then moved into quantitative finance / automated fund management for Irish asset managers",
+        "Researched franchise opportunities from the trading desk for years, dreaming of getting into restaurants — never let go of the hospitality itch he developed working in restaurants through school and university"
+      ],
+      "lessons": [
+        "Quant finance trains pattern-recognition and data discipline that transfer to operating data-heavy businesses",
+        "A 'side passion' that survives a full finance career is a signal — not noise"
+      ],
+      "notes": "Pre-founder career in Irish financial services (incl. fund manager role at Davy). Built capital, network and analytical rigour before stepping into hospitality."
     },
     {
       "role": "Co-founder",
       "company": "Mad Egg",
-      "archetype": "Founder",
+      "archetype": "Hustler",
       "startYear": 2018,
       "endYear": null,
       "estAgeStart": null,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Launched Ireland's first fried-chicken-sandwich restaurant in 2018 with immediate PMF; expanded to multiple locations rapidly. Still a director."
+      "keyDecisions": [
+        "Chose to build a new concept rather than buy a franchise: 'Instead of opening a franchise like Subway, which would've been the normal decision, I decided to build something new. It came down to control — creative and entrepreneurial control.'",
+        "Launched Ireland's first dedicated fried-chicken-sandwich restaurant on Camden Street, Dublin in 2018",
+        "Scaled to a second location within four months, third within eleven months — ~€5M revenue and 90 staff inside year one",
+        "Stayed on as director while building Nory in parallel"
+      ],
+      "lessons": [
+        "Operating a real-world business in person is the cheapest way to discover the actual pain points of an industry",
+        "Painful, manual back-office work in hospitality (rostering, stock, forecasting) is the wedge that became Nory",
+        "Surviving COVID via takeaway/delivery taught operational resilience that no consultant could simulate"
+      ],
+      "notes": "Mad Egg's PMF was almost immediate; the operational complexity of scaling it directly inspired Nory."
     },
     {
       "role": "Founder & CEO",
-      "company": "Nory",
+      "company": "Nory (originally Skueeze)",
       "archetype": "Founder",
       "startYear": 2020,
       "endYear": null,
@@ -88,25 +90,48 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Raised $16M Series A in May 2024 led by Accel; raised $37M Series B in September 2025 led by Kinnevik, bringing total funding to approximately $62.6M."
+      "keyDecisions": [
+        "Began by building internal algorithms for Mad Egg's demand prediction, staffing and ordering",
+        "Applied to Dogpatch Labs during the pandemic and hired the founding team",
+        "Initially integrated via APIs with incumbent restaurant tools — then chose to own the full operating system: 'These incumbents could block us strategically… To scale, we needed to own the workflows, the data gravity, and the account gravity.'",
+        "Bootstrapped initially, then raised £1.5M pre-seed (2021, Playfair + Cavalry Ventures), $16M Series A (May 2024, led by Accel) and $37M Series B (Sep 2025, led by Kinnevik)",
+        "Expanded into US, Europe and Middle East serving ~300 hospitality clients"
+      ],
+      "lessons": [
+        "Operator-founders building tools they wished they had during a prior business have unique product insight",
+        "Vertical AI for legacy industries (hospitality) is a wide-open European playing field where US-tooling is weak",
+        "Solo founder + Series B is achievable in Europe when the customer credibility comes from your own operating business",
+        "'Bootstrap your first startup to appreciate profitability' — finance background + hands-on Mad Egg P&L instilled this"
+      ],
+      "notes": "Total raised ≈ $62.6M. Reported ~$5M ARR at Series B. Customers across US, Europe, Middle East including restaurants associated with Jamie Oliver, Chopped, Viva Italia."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "10-100M",
     "exitEvents": [],
-    "currentStatus": "Founder & CEO of Nory; AI-native restaurant operating system with ~300 clients across US, Europe and Middle East, ~$5M ARR, $62.6M raised."
+    "currentStatus": "Founder & CEO of Nory (AI-native restaurant OS, ~300 clients globally, ~$5M ARR, ~$62.6M raised). Still director of Mad Egg."
   },
   "lessons": [
     {
-      "lesson": "Operator-founders building tools they wished they had during a prior business often have unique product insight (Nory was born from Mad Egg pain).",
+      "lesson": "Operator-founders who build tools for an industry they have personally run carry rare product instinct.",
       "source": "https://www.hospitalityireland.com/features/hunky-nory-which-came-first-202540"
+    },
+    {
+      "lesson": "European vertical AI is under-served — Irish/UK founders can win categories US incumbents ignore.",
+      "source": "https://www.samaipata.vc/podcast/nory-re-defining-hospitality-with-an-intelligent-system-of-action"
+    },
+    {
+      "lesson": "Bootstrap your first startup to appreciate profitability — the discipline carries into the VC-backed second.",
+      "source": "https://www.uktech.news/news/founder-interviews/nory-founder-conor-sheridan-20230929"
+    },
+    {
+      "lesson": "Own the workflows, data gravity and account gravity — integration-only plays are strategically blockable by incumbents.",
+      "source": "https://www.samaipata.vc/podcast/nory-re-defining-hospitality-with-an-intelligent-system-of-action"
     }
   ],
   "sources": [
     {
-      "title": "Conor Sheridan Discusses Nory - Hospitality Ireland",
+      "title": "Conor Sheridan Discusses Nory — Hospitality Ireland",
       "url": "https://www.hospitalityireland.com/features/hunky-nory-which-came-first-202540",
       "type": "interview"
     },
@@ -116,15 +141,29 @@
       "type": "interview"
     },
     {
-      "title": "Nory | Re-defining hospitality with an intelligent system of action - Samaipata Podcast",
+      "title": "Nory | Re-defining hospitality with an intelligent system of action — Samaipata Podcast",
       "url": "https://www.samaipata.vc/podcast/nory-re-defining-hospitality-with-an-intelligent-system-of-action",
       "type": "podcast"
     },
     {
-      "title": "Who Owns Nory AI Company? - CanvasBusinessModel",
-      "url": "https://canvasbusinessmodel.com/blogs/owners/nory-ai-who-owns",
+      "title": "Nory founder: Bootstrap your first startup to appreciate profitability — UKTech.news",
+      "url": "https://www.uktech.news/news/founder-interviews/nory-founder-conor-sheridan-20230929",
+      "type": "interview"
+    },
+    {
+      "title": "Dublin's Nory raises $2m to help restaurants with AI — Silicon Republic",
+      "url": "https://www.siliconrepublic.com/start-ups/nory-restaurants-ai",
       "type": "article"
     }
   ],
-  "notes": "AI-revolution era vertical SaaS founder; lessons directly applicable to modern operator-founders building AI tools for legacy industries."
+  "notes": "AI-revolution era Irish vertical-SaaS founder. Unusually clean operator → hustler → founder arc: finance (Davy/FAT/YPO) → real-world restaurant operator (Mad Egg) → AI-for-restaurants (Nory). European context: Dublin-based, raised from US (Accel) and European (Kinnevik) tier-1 investors without relocating, demonstrating that you can build a globally-relevant vertical-AI company from Ireland. Education years for DCU/Imperial not confirmed from public sources.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/sheridanconor/",
+    "company": "https://www.nory.ai/about",
+    "others": [
+      "https://www.samaipata.vc/podcast/nory-re-defining-hospitality-with-an-intelligent-system-of-action"
+    ],
+    "cluster": "",
+    "hint": "AI software for restaurants"
+  }
 }

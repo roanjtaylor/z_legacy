@@ -83,6 +83,14 @@ export type Source = {
   type: "article" | "book" | "interview" | "podcast" | "biography" | "other";
 };
 
+export type ResearchLinks = {
+  linkedin: string | null;
+  company: string | null;
+  others: string[];
+  cluster: string;
+  hint: string;
+};
+
 export type Person = {
   id: string;
   name: string;
@@ -98,6 +106,7 @@ export type Person = {
   lessons: Lesson[];
   sources: Source[];
   notes: string | null;
+  researchLinks?: ResearchLinks;
 };
 
 export type ConsideredPath = {

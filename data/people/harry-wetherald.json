@@ -1,7 +1,7 @@
 {
   "id": "harry-wetherald",
   "name": "Harry Wetherald",
-  "birthYear": 1990,
+  "birthYear": null,
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
   "imageUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFA6iy3ASnk3A/profile-displayphoto-scale_400_400/B4EZmAdxr0HEAg-/0/1758796913945?e=1780531200&v=beta&t=5llhhrsHIa2g7Q1BJ-8LHjBsWbsrLxruvXJpGBYYd9I",
@@ -12,10 +12,18 @@
     "Founder"
   ],
   "confidence": "medium",
-  "education": [],
+  "education": [
+    {
+      "school": "University of Oxford",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": "Oxford attendance reported in secondary sources (Crunchbase). Exact degree and dates not confirmed."
+    }
+  ],
   "careerSteps": [
     {
-      "role": "Product Management Lead",
+      "role": "Product Manager → Director of Product Management",
       "company": "Tessian",
       "archetype": "Operator",
       "startYear": null,
@@ -24,23 +32,37 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Led Product Management at Tessian before founding Maze"
+      "keyDecisions": [
+        "Joined Tessian very early (seed stage) and led product through the scale-up to the Proofpoint acquisition in 2023",
+        "Spent the pre-LLM era training ML models to spot security incidents in email — built AI product intuition before GenAI hype",
+        "Stayed for ~10 years across startups/AI/security per his own bio — long enough to develop sharp opinions on remediation vs prioritisation"
+      ],
+      "lessons": [
+        "Pre-LLM era at Tessian gave a front-row view of how attackers scale tactics (phishing kits, phishing-as-a-service) once unit economics flip — instinct now central to Maze's thesis",
+        "Leading product for VM-adjacent teams is the cheapest way to find your wedge: the unmet need is in remediation, not yet another prioritisation score",
+        "Building ML products before GenAI made him allergic to over-claimed AI demos"
+      ],
+      "notes": "Part of the Tessian alumni cluster (along with Omnea's Ben Freeman and Ben Allen). Tessian was acquired by Proofpoint in 2023; Harry left in 2024 to start Maze."
     },
     {
-      "role": "Student",
-      "company": "Undergraduate",
-      "archetype": "Student",
-      "startYear": 2008,
-      "endYear": 2012,
-      "estAgeStart": 18,
-      "estAgeEnd": 22,
+      "role": "Pre-Maze customer discovery",
+      "company": "Independent",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": 2024,
+      "estAgeStart": null,
+      "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "keyDecisions": [
+        "Spent 3-5 months on cold outreach to CISOs and security leaders before committing to the wedge: 'vulnerability's just killing us… 40% year-on-year growth in number of vulnerabilities'",
+        "Validated that the pain was remediation/triage, not prioritisation — sharpened the wedge before writing a line of product code"
+      ],
+      "lessons": [
+        "Cold-outreaching a few hundred buyers before building is the cheapest validation for a category-creation play",
+        "If a problem keeps coming up unprompted across 50+ CISO calls, the wedge is real"
+      ],
+      "notes": "Self-described discovery phase. Co-founders Adrian Jozwik and Santiago Castineira came from Tessian, Elastic and Amazon — design and engineering counterweights to Harry's product background."
     },
     {
       "role": "Co-founder & CEO",
@@ -52,43 +74,91 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Founded Maze in 2024 with Adrian Jozwik and Santiago Castineira; raised $6M seed led by Cherry Ventures, then $25M Series A led by Theory Ventures 9 months later, bringing total to $31M within first year."
+      "keyDecisions": [
+        "Co-founded Maze in 2024 with Adrian Jozwik (Elastic, Tessian) and Santiago Castineira (Amazon)",
+        "Bet on agentic AI for cloud vulnerability triage and remediation, not for prioritisation scoring",
+        "Started narrow on cloud CVEs (VMs, containers, infra) rather than chasing a broad 'AI for security' pitch",
+        "Raised $6M seed led by Cherry Ventures, then $25M Series A led by Theory Ventures within ~9 months — $31M total inside the first year",
+        "Came out of stealth mid-2025 with paying customers including two Fortune 200 enterprises"
+      ],
+      "lessons": [
+        "Treat AI agents like 'knowledgeable 16-17 year olds': they need tight tasks, guardrails and oversight — not vague open-ended prompts",
+        "In security, the right wedge is removing 90%+ of the deck of cards (false-positive vulns) rather than re-sorting them",
+        "Start at the root of the problem (is this exploitable?) before automating downstream remediation — auto-fixing 480 noise findings is worse than auto-fixing 5 real ones",
+        "Founders who lived the pain (PM/eng leads at a VM-adjacent scale-up) ship sharper wedges than outsiders",
+        "Reasoning in 5-year horizons (assume attackers scale 10-100x with AI) reframes what is 'good enough' security today",
+        "Don't try to one-for-one replace humans with AI. Instead ask: 'What would I do if my day was 100x longer?' — that's the long-tail value"
+      ],
+      "notes": "Maze deploys agents that interrogate vulnerabilities the way a senior security engineer would, at scale across millions of findings. Core insight: most vulns aren't actually exploitable in context, so the real product is intelligent triage + remediation, not another priority score."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "<1M",
     "exitEvents": [],
-    "currentStatus": "Co-founder & CEO of Maze, AI-native cloud security startup with agents deployed in production at 10+ organizations including two Fortune 200 companies."
+    "currentStatus": "Co-founder & CEO of Maze (London). $31M raised across Seed (Cherry) and Series A (Theory) within 12 months of founding. Agents in production at 10+ orgs, including two Fortune 200 enterprises."
   },
   "lessons": [
     {
-      "lesson": "Deep customer discovery (hundreds of interviews) before building can shape a sharper wedge into a crowded market like vulnerability management.",
-      "source": "inferred"
+      "lesson": "Founders should pick wedges where their last job gave them painful, tacit knowledge — Maze exists because Harry and his team hated VM workflows internally at Tessian.",
+      "source": "https://www.cloudsecuritypodcast.tv/videos/using-ai-agents-to-solve-cloud-vulnerability-overload"
+    },
+    {
+      "lesson": "AI agents are not autonomous senior engineers; they are knowledgeable juniors. Design products around tight, guard-railed tasks.",
+      "source": "Unsupervised Learning podcast — Daniel Miessler with Harry Wetherald"
+    },
+    {
+      "lesson": "Don't try to one-for-one replace humans with AI. Instead ask: 'What would I do if my day was 100x longer?' — that's the long-tail value.",
+      "source": "Unsupervised Learning podcast — Daniel Miessler with Harry Wetherald"
+    },
+    {
+      "lesson": "Strategic horizon-shifting: assume attackers become 10-100x more efficient with AI in 5 years and back-solve what your defences must look like today.",
+      "source": "Unsupervised Learning podcast — Daniel Miessler with Harry Wetherald"
+    },
+    {
+      "lesson": "3-5 months of cold-outreach to CISOs before writing code is the cheapest way to validate a category-creation play.",
+      "source": "https://www.cloudsecuritypodcast.tv/videos/using-ai-agents-to-solve-cloud-vulnerability-overload"
     }
   ],
   "sources": [
     {
-      "title": "Maze Launches With $31 Million for Its AI Agents (BusinessWire)",
+      "title": "Maze Launches With $31 Million for Its AI Agents That Stop Cloud Security Breaches",
       "url": "https://www.businesswire.com/news/home/20250610372428/en/Maze-Launches-With-$31-Million-for-Its-AI-Agents-That-Stop-Cloud-Security-Breaches",
       "type": "article"
     },
     {
-      "title": "London-based Maze secures €22.5M (Silicon Canals)",
+      "title": "London-based Maze secures €22.5M — Silicon Canals",
       "url": "https://siliconcanals.com/london-based-maze-secures-22-5m/",
       "type": "article"
     },
     {
-      "title": "Security Tales - Substack About page",
+      "title": "Using AI Agents to Solve Cloud Vulnerability Overload — Cloud Security Podcast",
+      "url": "https://www.cloudsecuritypodcast.tv/videos/using-ai-agents-to-solve-cloud-vulnerability-overload",
+      "type": "podcast"
+    },
+    {
+      "title": "Security Tales — Harry Wetherald's Substack (About)",
       "url": "https://harrywetherald.substack.com/about",
       "type": "article"
     },
     {
-      "title": "Unsupervised Learning podcast interview",
+      "title": "Unsupervised Learning — A conversation with Harry Wetherald, Co-Founder & CEO at Maze",
       "url": "https://omny.fm/shows/unsupervised-learning/a-conversation-with-harry-wetherald-co-founder-ceo-at-maze",
       "type": "podcast"
+    },
+    {
+      "title": "Maze Raises $25M in Series A Funding — Finsmes",
+      "url": "https://www.finsmes.com/2025/06/maze-raises-25m-in-series-a-funding.html",
+      "type": "article"
     }
   ],
-  "notes": "AI-revolution era founder (2024+), agentic AI applied to cybersecurity; lessons directly applicable to current AI-native B2B founders. ~10 years in cyber/AI/startups prior to founding suggests operator-to-founder path."
+  "notes": "AI-revolution era cybersecurity founder (2024+). Oxford-educated; Tessian alumnus; classic operator-to-founder path with deep domain pain. Note: hint in researchLinks mentions 'AI for product design decisions (like posthog?)' but this is incorrect — Maze is agentic AI for cloud vulnerability triage/remediation. European context: London-based, raised from Cherry (Berlin) and Theory (US) — another European cyber founder going US-VC route on AI-native security. Education years/degree at Oxford not confirmed from public sources.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/harrywetherald/",
+    "company": "https://maze.co/ai/",
+    "others": [
+      "Unsupervised Learning podcast transcript with Daniel Miessler — full conversation on Maze's agentic VM thesis, attacker scaling, and AI agent design philosophy (transcript embedded in researchLinks.others in source file)."
+    ],
+    "cluster": "",
+    "hint": "AI for product design decisions (like posthog?)"
+  }
 }

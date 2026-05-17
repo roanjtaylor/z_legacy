@@ -85,6 +85,23 @@ export const PersonSchema = z.object({
   lessons: z.array(LessonSchema),
   sources: z.array(SourceSchema).min(1, "at least one source is required"),
   notes: z.string().nullable(),
+  researchLinks: z
+    .object({
+      linkedin: z.string().nullable(),
+      company: z.string().nullable(),
+      others: z.array(z.string()),
+      cluster: z.string(),
+      hint: z.string(),
+    })
+    .optional(),
+});
+
+export const ResearchLinksSchema = z.object({
+  linkedin: z.string().nullable(),
+  company: z.string().nullable(),
+  others: z.array(z.string()),
+  cluster: z.string(),
+  hint: z.string(),
 });
 
 export function slugify(name: string): string {

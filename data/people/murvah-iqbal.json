@@ -5,9 +5,10 @@
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
   "tier": "tier1-admired",
+  "imageUrl": null,
   "archetypeArc": [
     "Student",
-    "Builder",
+    "Hustler",
     "Founder"
   ],
   "confidence": "medium",
@@ -17,40 +18,51 @@
       "degree": "BA Development Economics and International Development",
       "startYear": 2014,
       "endYear": 2017,
-      "notes": "Awarded North West Student of the Year by Young Enterprise Scheme"
+      "notes": "Awarded North West Student of the Year by Young Enterprise during/around this period. 2016 university trip to Silicon Valley was the load-bearing event — she met future co-founder Mathias Krieger there."
     }
   ],
   "careerSteps": [
     {
-      "role": "Youth Footballer",
-      "company": "Manchester City Women's Football Club",
+      "role": "Youth footballer (captain)",
+      "company": "Manchester City Women's FC academy",
       "archetype": "Other",
       "startYear": 2006,
       "endYear": 2013,
       "estAgeStart": 10,
       "estAgeEnd": 17,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Captain of youth team; competitive sports background shaped resilience."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Committed to elite youth football through teens — long-cycle competitive discipline before any business work."
+      ],
+      "lessons": [
+        "Sport at a serious level teaches tolerance for repeated public failure that translates directly to fundraising rejection.",
+        "Captaining a team in your teens is a cheap leadership reps — most graduate hires get their first real reps at 25+."
+      ],
+      "notes": "Working-class Manchester upbringing; captain of academy side."
     },
     {
-      "role": "Head of Brand Marketing",
-      "company": "Archie's",
-      "archetype": "Operator",
+      "role": "Marketing / family business operator",
+      "company": "Archie's (Manchester restaurant group)",
+      "archetype": "Hustler",
       "startYear": 2010,
       "endYear": 2015,
       "estAgeStart": 14,
       "estAgeEnd": 19,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Family/early business exposure — working-class entrepreneurial roots."
+      "keyDecisions": [
+        "Took on a real brand-marketing role inside a family-adjacent business from age 14 — operating reps before any classroom theory.",
+        "Did this in parallel with elite sport and school — high-density teenage years, not balanced ones."
+      ],
+      "lessons": [
+        "Early operating reps inside a small, profitable family business beat any classroom MBA content for pattern recognition.",
+        "Parallel pursuits in your teens (sport + business + school) train context-switching, which is the actual founder skill."
+      ],
+      "notes": "Title 'Head of Brand Marketing' is self-described and unusually senior for the age; treat as substantive entrepreneurial exposure rather than a formal executive role."
     },
     {
-      "role": "BA Development Economics and International Development",
+      "role": "BA student, Development Economics",
       "company": "King's College London",
       "archetype": "Student",
       "startYear": 2014,
@@ -58,13 +70,20 @@
       "estAgeStart": 18,
       "estAgeEnd": 21,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step from education[] entries."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Chose development economics rather than business/CS — kept a systems-and-incentives lens.",
+        "Signed up for the 2016 university trip to Silicon Valley — the single highest-leverage line item in the degree.",
+        "Used that trip to meet future co-founder Mathias Krieger — converted a tourist itinerary into a co-founder relationship."
+      ],
+      "lessons": [
+        "Optional university travel programmes can be the highest-leverage line item in a degree — that one trip set the co-founder relationship that built two companies.",
+        "Treat university not as the curriculum but as the connection-density it gives you access to."
+      ],
+      "notes": null
     },
     {
-      "role": "Co-CEO & Co-Founder",
+      "role": "Co-CEO & Co-founder",
       "company": "Vanvas Ltd",
       "archetype": "Founder",
       "startYear": 2019,
@@ -73,34 +92,63 @@
       "estAgeEnd": 24,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "First venture selling advertising on delivery vans; surfaced logistics inefficiencies that led to HIVED pivot."
+      "keyDecisions": [
+        "Started with the adjacent, simpler problem (advertising on delivery vans) rather than going straight at logistics — bought herself a way in without needing huge capital.",
+        "Wound it down cleanly when the model didn't work, instead of forcing a heroic pivot."
+      ],
+      "lessons": [
+        "A small failed/wound-down first venture in an adjacent niche can be the cheapest way to acquire the real insight — Vanvas got Iqbal and Krieger inside the delivery industry before HIVED.",
+        "Don't romanticise the pivot — Vanvas wasn't a heroic pivot, it was a wind-down with one good takeaway, which is fine.",
+        "First ventures are tuition, not identity."
+      ],
+      "notes": "Short-lived. Surfaced inefficiencies in the parcel-delivery industry that became the HIVED thesis."
     },
     {
-      "role": "Co-Founder & CEO",
+      "role": "Co-founder & CEO",
       "company": "HIVED",
       "archetype": "Founder",
       "startYear": 2021,
       "endYear": null,
-      "estAgeStart": 25,
+      "estAgeStart": 24,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Zero-emission parcel delivery network in London, serving ASOS, Zara, Nespresso; raised $12.4M Series A then $42M Series B; co-founded with Mathias Krieger met on 2016 university trip to Silicon Valley."
+      "keyDecisions": [
+        "Built all-electric from day one rather than retrofitting — turned regulation (London ULEZ, retailer net-zero targets) into a moat instead of a cost.",
+        "Targeted big retail brands (ASOS, Zara, Nespresso) early rather than the SME long-tail — bet the company on enterprise sales from week one.",
+        "Cold-outreached VCs without warm intros — replaced the network she didn't have with a sharper wedge.",
+        "Chose a 'schlep' market (logistics: capex-heavy, regulated, operationally brutal) that warm-network founders systematically avoid."
+      ],
+      "lessons": [
+        "If you have no warm-intro VC network, replace it with extreme specificity in cold outreach plus a defensible wedge (electric-only fleet) that the warm-intro founders can't match.",
+        "Pick a market where your customer's incentives (corporate ESG targets, ULEZ compliance) compound your sales pitch over time — regulation as a tailwind, not an obstacle.",
+        "Logistics is a 'schlep' market in PG's sense — high-capex, regulated, operationally brutal — which is exactly why it's underserved by the typical first-time founder.",
+        "Non-traditional founder background + sharp wedge can beat traditional background + generic wedge in late-stage fundraising."
+      ],
+      "notes": "Self-reports starting HIVED 'when I was 24' in Founders Everywhere interview — consistent with 2021 founding given 1996 birth year. Reported 22% MoM growth since inception. Raised ~$12.4M Series A (2023) and a ~$42M Series B (reported 2024). Forbes 30 Under 30 (2023). Co-founder Mathias Krieger met on the 2016 King's College Silicon Valley trip."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "1-10M",
     "exitEvents": [],
-    "currentStatus": "Co-Founder & CEO of HIVED; named to Times 30-under-30; scaling electric last-mile delivery across UK."
+    "currentStatus": "Co-founder & CEO of HIVED, scaling zero-emission last-mile parcel delivery across the UK. No exit; net worth is paper-only equity."
   },
   "lessons": [
     {
-      "lesson": "First venture (van advertising) surfaced the real logistics-pain insight that became HIVED — pivot from adjacent observation.",
-      "source": "https://me.sh/profile/murvah-iqbal"
+      "lesson": "First venture (van advertising) surfaced the real logistics-pain insight that became HIVED — adjacent-business probe rather than heroic pivot.",
+      "source": "Founders Everywhere interview"
+    },
+    {
+      "lesson": "Cold-outreach VC fundraising works if the wedge is sharp enough — warm intros are nice-to-have, not required.",
+      "source": "Founders Everywhere interview"
+    },
+    {
+      "lesson": "Use regulation (ULEZ, corporate net-zero pledges) as a tailwind, not an obstacle.",
+      "source": "City AM article"
+    },
+    {
+      "lesson": "Optional university travel programmes can be the highest-leverage line item in a degree — one Silicon Valley trip set the co-founder relationship.",
+      "source": "Founders Everywhere interview"
     }
   ],
   "sources": [
@@ -115,10 +163,19 @@
       "type": "interview"
     },
     {
-      "title": "The BAE HQ Profile",
+      "title": "The BAE HQ — Murvah Iqbal profile",
       "url": "https://www.thebaehq.com/profiles/murvah-iqbal",
       "type": "article"
     }
   ],
-  "notes": "Climate-tech / last-mile logistics era founder (2021+); lessons on cold-outreach VC fundraising without warm intros and pivot-from-adjacent-business are directly applicable to modern founders."
+  "notes": "Climate-tech / last-mile logistics era founder (2021+). Highly relevant template for a non-traditional European founder without elite-network access: adjacent-business probe → real insight → regulation-as-moat → cold-outreach fundraising. Caveat: HIVED is still pre-exit; the path is validated up to Series B, not to liquidity. Early-career years (Archie's, sport) are approximate, drawn from interview accounts.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/murvah",
+    "company": "Same as mattias",
+    "others": [
+      "mattias"
+    ],
+    "cluster": "",
+    "hint": ""
+  }
 }

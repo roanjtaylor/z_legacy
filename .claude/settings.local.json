@@ -11,6 +11,8 @@
       "Bash(mv ../cm-plan.bkp plan.md)",
       "Bash(mv ../cm-data.bkp data)",
       "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch",
+      "WebSearch",
       "Bash(node *)"
     ]
   }

@@ -5,6 +5,7 @@
   "countryOfOrigin": "Estonia",
   "currentCountry": "United Kingdom",
   "tier": "tier1-admired",
+  "imageUrl": null,
   "archetypeArc": [
     "Student",
     "Builder",
@@ -18,26 +19,12 @@
       "degree": "MEng Engineering Design (First Class Honours)",
       "startYear": 2007,
       "endYear": 2012,
-      "notes": "MEng in Engineering Design with First Class Honours from the University of Bristol"
+      "notes": "Five-year integrated masters; self-taught programming alongside an engineering-design curriculum rather than pure CS."
     }
   ],
   "careerSteps": [
     {
-      "role": "Software Engineering Intern",
-      "company": "Hewlett-Packard Laboratories / Motorola / UBS",
-      "archetype": "Builder",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Early-career internships and software engineering roles at HP Labs, Motorola, and UBS"
-    },
-    {
-      "role": "MEng Engineering Design (First Class Honours)",
+      "role": "MEng Engineering Design student",
       "company": "University of Bristol",
       "archetype": "Student",
       "startYear": 2007,
@@ -45,24 +32,57 @@
       "estAgeStart": 18,
       "estAgeEnd": 23,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step from education[] entries."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Left Estonia for the UK at 18 — chose a higher-prestige engineering programme over staying local.",
+        "Picked engineering design rather than pure CS — kept systems-thinking lens but had to self-teach code."
+      ],
+      "lessons": [
+        "A general engineering degree plus self-taught coding can be a stronger founder-prep mix than narrow CS — broader systems intuition with enough code to be dangerous.",
+        "Geographic mobility at 18 is a cheap option to take — relocation costs are low when you own nothing."
+      ],
+      "notes": "Graduated with First Class Honours."
     },
     {
-      "role": "Engineering Lead / Head of Engineering",
+      "role": "Software engineering intern (rotational)",
+      "company": "HP Labs / Motorola / UBS",
+      "archetype": "Builder",
+      "startYear": 2009,
+      "endYear": 2012,
+      "estAgeStart": 20,
+      "estAgeEnd": 23,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Sampled deep-tech (HP, Motorola) and finance (UBS) before committing to a domain — refused to pick early."
+      ],
+      "lessons": [
+        "Internships across very different industries are cheap optionality — you learn which culture you want to scale inside before you have to commit.",
+        "A finance internship is not 'selling out' if you treat it as an option you can let expire."
+      ],
+      "notes": "Approximate years inferred from undergraduate timeline; exact internship dates not public."
+    },
+    {
+      "role": "Engineering lead → Head of Engineering",
       "company": "Wise (formerly TransferWise)",
       "archetype": "Operator",
       "startYear": 2013,
       "endYear": 2019,
-      "estAgeStart": null,
-      "estAgeEnd": null,
+      "estAgeStart": 24,
+      "estAgeEnd": 30,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Served as Head of Engineering at Wise"
+      "keyDecisions": [
+        "Joined Wise pre-scale (~2013) rather than chasing a higher graduate salary — bet on equity and operating reps.",
+        "Stayed ~6 years through growth-stage to pre-IPO — built deep institutional knowledge of European fintech regulation.",
+        "Worked through enough seniority levels to become Head of Engineering before leaving — earned operator credibility, not just tenure."
+      ],
+      "lessons": [
+        "Operating at a category-leading scale-up in your target domain is a faster founder-school than a generic MBA — the network, the regulatory experience, and the equity all compound.",
+        "European-fintech 'mafias' (Wise, Skype, Stripe) form when many strong operators leave one company at similar life stages — being inside one when it scales is the cheapest way to acquire that network.",
+        "Optimise for the company's growth curve, not your title — a 6-year run at Wise produced more option value than a 6-year ladder at a bank."
+      ],
+      "notes": "Reported by FintechFutures, Crunchbase, and Lightyear press materials as a senior engineering lead and eventually Head of Engineering. Exact title-progression dates not public."
     },
     {
       "role": "Co-founder & CTO",
@@ -70,47 +90,82 @@
       "archetype": "Founder",
       "startYear": 2020,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 31,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Co-founded London-based Lightyear with Martin Sokk; platform lets users invest in over 5,000 stocks, ETFs, and money market funds across 25 countries"
+      "keyDecisions": [
+        "Co-founded with fellow ex-Wise alum Martin Sokk — pre-existing trust shortened partner vetting from months to zero.",
+        "Built for European retail investors specifically (multi-jurisdiction, EU regulatory) rather than cloning Robinhood — leaned on the exact regulatory expertise the team already had.",
+        "Raised first cheques from the Estonian / Wise-network angels (Hinrikus, Tallinn, Villig) before chasing brand-name VCs — used the mafia network as proof, not as a fallback.",
+        "Founded at 31 after operator depth — explicitly rejected the 'found in your 20s' script."
+      ],
+      "lessons": [
+        "Personal frustration as market signal: Aamer's own friends asked him which European broker to use and there was no clean answer — that gap became the company.",
+        "If your target market is regulated and multi-jurisdiction, a co-founder pair where both have operator credibility in that space is worth more than a deck.",
+        "Founder age is downstream of category — for regulated fintech, the 30+ founder with 5+ years of regulated-product experience beats the 22-year-old dropout."
+      ],
+      "notes": "Lightyear markets commission-free but earns on FX and money-market spread; expanded to 25 European countries and 5,000+ instruments. ~$23M round in 2025 with Richard Branson, Taavet Hinrikus, Jaan Tallinn, and Ahti Heinla / Villig family on the cap table."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "10-100M",
     "exitEvents": [],
-    "currentStatus": "Co-founder & CTO of Lightyear, a commission-free European retail investment platform that raised $23M in 2025 and expanded across European markets with backing from Richard Branson, Taavet Hinrikus, Jaan Tallinn, and Markus Villig."
+    "currentStatus": "Co-founder & CTO of Lightyear, a pan-European commission-free retail investing platform. No exit; equity value paper-only and dependent on next-round outcomes."
   },
   "lessons": [
     {
-      "lesson": "Identifying personal frustration as a market signal — Aamer's friends asking for investment platform recommendations he couldn't make exposed a real European retail-investing gap.",
+      "lesson": "Personal frustration as market signal — friends asking which broker to use, and Aamer not having a clean answer, exposed the European retail-investing gap.",
       "source": "https://techround.co.uk/startups/startup-of-the-week-lightyear/"
+    },
+    {
+      "lesson": "Spend 5+ years inside the regulated category you want to disrupt before founding in it.",
+      "source": "inferred from Wise → Lightyear arc"
+    },
+    {
+      "lesson": "Co-founder selection from the same operator alumni network compresses trust-building time from months to zero.",
+      "source": "inferred from Wise-mafia pattern"
+    },
+    {
+      "lesson": "Found at 31, not 21, when the category demands regulatory depth.",
+      "source": "inferred"
     }
   ],
   "sources": [
     {
-      "title": "Mihkel Aamer - Crunchbase Profile",
+      "title": "Mihkel Aamer — Crunchbase profile",
       "url": "https://www.crunchbase.com/person/mihkel-aamer",
       "type": "article"
     },
     {
-      "title": "Startup Of The Week: Lightyear - TechRound",
+      "title": "Startup Of The Week: Lightyear — TechRound",
       "url": "https://techround.co.uk/startups/startup-of-the-week-lightyear/",
       "type": "article"
     },
     {
-      "title": "Lightyear raises $23M to challenge Robinhood in Europe",
+      "title": "Lightyear raises $23M to challenge Robinhood in Europe — TechStartups",
       "url": "https://techstartups.com/2025/07/25/lightyear-raises-23m-to-challenge-robinhood-in-europe-with-ai-powered-investing-backed-by-estonias-tech-elite/",
       "type": "article"
     },
     {
-      "title": "Ex-Wise employees found commission-free trading app Lightyear",
+      "title": "Ex-Wise employees found commission-free trading app Lightyear — FintechFutures",
       "url": "https://www.fintechfutures.com/job-cuts-new-hires/ex-wise-employees-found-commission-free-trading-app-lightyear",
+      "type": "article"
+    },
+    {
+      "title": "Lightyear is a new stock trading app from early Wise employees — TechCrunch",
+      "url": "https://techcrunch.com/2021/06/03/lightyear-is-a-new-stock-trading-app-from-early-wise-employees/",
       "type": "article"
     }
   ],
-  "notes": "Post-2020 European fintech founder; Wise-mafia alumnus building in the retail-investing/neobroker era — lessons on regulatory-heavy multi-market expansion are highly applicable to current EU fintech."
+  "notes": "Post-2020 European fintech founder; Wise-mafia alumnus. Highly replicable template for a European technical operator: top engineering degree (with self-taught code on the side) → ~6 years at a category-defining scale-up in your target vertical → spin out at 30+ with a co-founder from the same alumni network and seed cheques from that network. Caveat: Lightyear has not yet had a liquidity event, so the financial outcome is unproven. Most years (Wise role progression, internship dates) inferred — confidence is medium overall.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/mihkel-aamer-9099b918",
+    "company": "Same as Martin stokk",
+    "others": [
+      "martin stokk"
+    ],
+    "cluster": "",
+    "hint": ""
+  }
 }

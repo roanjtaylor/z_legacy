@@ -1,60 +1,119 @@
 {
   "id": "ben-freeman",
   "name": "Ben Freeman",
-  "birthYear": 1988,
+  "birthYear": null,
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
   "imageUrl": "https://media.licdn.com/dms/image/v2/D4E03AQGN7Ue9N_w8Og/profile-displayphoto-scale_400_400/B4EZxG_nD8GcAk-/0/1770717610379?e=1780531200&v=beta&t=Thq6Y-6JJxD-7qT0uz4ktTGFSd-enaL8W3YlhDo08fs",
   "archetypeArc": [
     "Student",
+    "Hustler",
     "Operator",
     "Founder"
   ],
-  "confidence": "medium",
+  "confidence": "high",
   "education": [
     {
       "school": "University of Warwick",
-      "degree": null,
+      "degree": "Accounting and Finance (dropped out after 3.5 weeks)",
       "startYear": null,
       "endYear": null,
-      "notes": null
+      "notes": "Per Alejandro Cremades interview: dropped out of Warwick after about 3.5 weeks, found university tedious, continued running his Manchester events business."
     },
     {
       "school": "King's College London",
-      "degree": null,
+      "degree": "BSc Management",
       "startYear": null,
       "endYear": null,
-      "notes": null
+      "notes": "Returned to formal education at KCL while still running the events business, commuting between Manchester and London."
     }
   ],
   "careerSteps": [
+    {
+      "role": "Founder",
+      "company": "Manchester youth events / production business",
+      "archetype": "Hustler",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started running festivals/gigs while still in school (described himself as obsessed with money from age 11-12)",
+        "Kept the events business going through Warwick dropout and KCL years — turned it into the UK's largest youth events & production business as sole founder, grew to 100+ people",
+        "Built in-house security after discovering hired security had undisclosed ties to local drug dealers — operational hardening lesson"
+      ],
+      "lessons": [
+        "'Market selection is destiny — talent and effort cannot compensate for a structurally capped industry.' Realised that the most successful events-company owners' businesses are 'so much smaller than even a mid-tier tech company.'",
+        "Early non-tech, non-VC ventures build commercial instincts you cannot learn inside someone else's company"
+      ],
+      "notes": "Four-year venture run during school and university. Exited profitably. The structural-ceiling realisation pushed him toward VC-backed tech."
+    },
+    {
+      "role": "Investment Banking Analyst (left after 3 months)",
+      "company": "Lazard",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Tried banking at Lazard after exiting the events business — quit within three months",
+        "Also explored consulting applications, an alcohol brand, and a premium ice company before committing to tech"
+      ],
+      "lessons": [
+        "Prestige tracks (banking, consulting) optimise for the wrong things if your real instinct is operating",
+        "Quitting fast on a bad-fit role is cheaper than serving the full year for the CV"
+      ],
+      "notes": "Brief Lazard stint per Cremades interview. Used the gap to scan founder paths before joining Tessian."
+    },
     {
       "role": "US GM and Head of International Growth",
       "company": "Tessian",
       "archetype": "Operator",
       "startYear": null,
+      "endYear": 2020,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Joined Tessian just before its seed round — first exposure to VC-backed B2B SaaS, which he describes as 'totally alien… I had to be dragged through it, basically'",
+        "Built the US market from scratch, then led International Growth as the company scaled past ~300 staff",
+        "Relocated to New York for Tessian's US push; experienced ~14+ months of depression during that period",
+        "Left amicably post-Series B as 'a lot of decisions started to be made that I disagreed with… there was a deep sense of frustration'"
+      ],
+      "lessons": [
+        "Selling enterprise software at Tessian exposed the full procurement mess from the vendor side — including in 'shiny' procurement teams at banks/law/tech",
+        "Post-Series B 'halo' companies can hire-by-hype, dropping the talent bar and producing toxic mis-matches",
+        "Equity outcomes matter alongside mission alignment — being early but not co-founder caps the upside even when you scale the company"
+      ],
+      "notes": "5 years at Tessian, ~5 to 200+ people, ~$0 to $20m ARR, ~$130M raised from Sequoia, Accel, Balderton. Acquired by Proofpoint in 2023. Procurement pain observed firsthand from the seller's seat."
+    },
+    {
+      "role": "Pre-Omnea exploration (~18 months)",
+      "company": "Independent",
+      "archetype": "Founder",
+      "startYear": 2020,
       "endYear": 2022,
       "estAgeStart": null,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Experienced procurement challenges firsthand as US GM and Head of International Growth at cybersecurity leader Tessian, which was later acquired by Proofpoint in 2023."
-    },
-    {
-      "role": "Student",
-      "company": "University of Warwick → King's College London",
-      "archetype": "Student",
-      "startYear": 2006,
-      "endYear": 2010,
-      "estAgeStart": 18,
-      "estAgeEnd": 22,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step; education start/end years partly estimated from typical undergrad ages. Verify."
+      "keyDecisions": [
+        "Spent ~18 months exploring markets, turning down two term sheets for ideas he did not fully believe in",
+        "Did ~300 user interviews with procurement leaders before committing to the space",
+        "Originally fixated on SaaS price discrepancy (2019) before realising procurement was a horizontal orchestration problem (legal/finance/IT/exec/requester)"
+      ],
+      "lessons": [
+        "Optionality can paralyse — having investor offers for several ideas was harder than having none",
+        "Hundreds of customer conversations are the cheapest way to find a non-obvious wedge",
+        "Disqualifying ideas matters more than chasing the first that ships"
+      ],
+      "notes": "Self-described as 'existential' and 'frantic'. Eventually paired with Ben Allen (ex-Tessian) via Entrepreneur First to start Omnea."
     },
     {
       "role": "Co-founder & CEO",
@@ -66,30 +125,67 @@
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Omnea was founded in 2022 by Ben Freeman and Ben Allen to fix the broken procurement process with a scalable procurement platform."
+      "keyDecisions": [
+        "Founded Omnea in 2022 with CTO Ben Allen as an AI-native intake/orchestration platform for procurement",
+        "Held a hard line on talent density: ~10,500 interviews for the first ~45 roles",
+        "Chose efficiency over burn — total burn ≈ ARR, unusual for AI-era venture peers",
+        "Accepted being late to market in exchange for being 'best in market' on product quality",
+        "Re-used Accel as lead investor across both Tessian and Omnea"
+      ],
+      "lessons": [
+        "Talent density compounds: 10-20 hours per candidate with honest no-fit feedback beats fast-hiring at lower bar",
+        "Hire missionaries not mercenaries; do not 'hype' people into roles using a fresh fundraise as bait",
+        "In regulated enterprise, 'ship fast and break things' is wrong — you need to be best, not first",
+        "Capital efficiency becomes a moat when the market froth ends",
+        "Win rate on competitive RFPs is meaningless if brand awareness keeps you out of the top of the funnel"
+      ],
+      "notes": "Omnea: ~150 staff (London + NY) by late 2025; ~$75M raised across Seed, $20M Series A and $50M Series B (Sep 2025) led by Insight + Khosla, with Accel, Point Nine, First Round, Prosus. Customers include Spotify, Wise, Monzo, MongoDB, Synthesia, Adecco, Albertsons, NetApp. 5x revenue growth in the year to late 2025; 86% reported win-rate in competitive RFPs."
     }
   ],
   "outcomes": {
     "estNetWorthUsd": "1-10M",
     "exitEvents": [],
-    "currentStatus": "CEO of Omnea, which raised $50M Series B in September 2025 led by Insight Partners and Khosla Ventures (with Accel, Point Nine, First Round, Prosus), bringing total funding to over $75M; revenue grew 5x and headcount tripled in 12 months, with customers including Spotify, Wise, MongoDB, Adecco and Albertsons."
+    "currentStatus": "Co-founder & CEO of Omnea. Raised ~$75M cumulative; revenue 5x'd and headcount tripled in 12 months to ~150 across London/NY. Omnea ranked #1 in Startups 100 2026."
   },
   "lessons": [
     {
-      "lesson": "Hire missionaries not mercenaries — obsess over talent density and a lean team of high performers.",
+      "lesson": "Market selection is destiny — talent and effort cannot compensate for a structurally capped industry (lesson he took from running the largest UK youth events business and seeing the ceiling).",
+      "source": "https://alejandrocremades.com/ben-freeman/"
+    },
+    {
+      "lesson": "Hire missionaries not mercenaries — obsess over talent density even at the cost of slower hiring.",
       "source": "https://source.procuretech.ai/posts/procuretech-stars-with-ben-allen-co-founder-ceo-of-omnea"
+    },
+    {
+      "lesson": "Use ~300 user interviews to validate a market before committing — especially when you have prior VC credibility and risk picking the wrong shiny idea.",
+      "source": "Talent Talks Podcast with Ben Freeman (2025)"
+    },
+    {
+      "lesson": "Burn discipline (burn ≈ ARR) is a moat that re-prices in your favour when frothy markets correct.",
+      "source": "Talent Talks Podcast with Ben Freeman (2025)"
+    },
+    {
+      "lesson": "In enterprise, being best in market beats being first to market — patience on product quality compounds.",
+      "source": "Talent Talks Podcast with Ben Freeman (2025)"
+    },
+    {
+      "lesson": "Anti-cyclical industries (procurement, infosec) outperform when budgets tighten — useful pattern for picking a category.",
+      "source": "Talent Talks Podcast with Ben Freeman (2025)"
     }
   ],
   "sources": [
     {
-      "title": "Omnea raises $20M Series A | Omnea press release",
+      "title": "Ben Freeman On Raising ~$75 Million To Build An AI-Native Procurement Platform - Alejandro Cremades",
+      "url": "https://alejandrocremades.com/ben-freeman/",
+      "type": "interview"
+    },
+    {
+      "title": "Omnea raises $20M Series A — Omnea press release",
       "url": "https://www.omnea.co/press-releases/series-a-announcement",
       "type": "article"
     },
     {
-      "title": "Omnea raises $50M Series B | Omnea blog",
+      "title": "Omnea raises $50M Series B — Omnea blog",
       "url": "https://www.omnea.co/blog/series-b-announcement",
       "type": "article"
     },
@@ -102,7 +198,21 @@
       "title": "Startups 100 2026 — #1 Omnea",
       "url": "https://startups.co.uk/startups-100/2026/omnea/",
       "type": "article"
+    },
+    {
+      "title": "Talent Talks Podcast — Ben Freeman, CEO Omnea (full transcript, 2025)",
+      "url": null,
+      "type": "podcast"
     }
   ],
-  "notes": "AI-revolution era B2B SaaS founder (2022-present); lessons on talent density, category creation (AI-SRM), and operator-to-founder transition directly applicable to modern UK/EU enterprise software builders."
+  "notes": "AI-revolution era B2B SaaS founder. Third company, second VC-backed. European context: Cheshire/Manchester-born hustler who started running events at school, dropped out of Warwick, later finished at KCL while still operating, briefly tried banking (Lazard, 3 months), then spent 5 years scaling Tessian before an 18-month idea-search led to Omnea. Strong proof point that European founders can compete at the top of US enterprise SaaS using talent-density + efficiency rather than burn.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/ben-freeman-a8542166/",
+    "company": "https://www.omnea.co/our-story",
+    "others": [
+      "Today I'm joined by Ben Freeman, co-founder and CEO of Omnia, the leading AI native intake and orchestration platform that helps companies like Spotify, Wise, and the Adeka Group automate their procurement and supplier management processes using AI. Ben founded Omnia in 2022 and has built the business into one of Europe's fastest growing technology companies. He's raised over $75 million from some of the best investors in the world, including Excel, KLA, and Insight Partners. Before building Omnia, Ben built cyber security business Tessen, [music] which raised over $130 million from the likes of Sequoia, SL, and Boulderton before successful exit to Proof Point. Ben is from Manchester and his early businesses began there and were not VCbacked or tech companies."
+    ],
+    "cluster": "entrepreneurs first",
+    "hint": "AI for procurement making"
+  }
 }

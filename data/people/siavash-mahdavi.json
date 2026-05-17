@@ -4,6 +4,7 @@
   "birthYear": 1980,
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
+  "imageUrl": null,
   "tier": "tier1-admired",
   "archetypeArc": [
     "Student",
@@ -11,114 +12,114 @@
     "Operator",
     "Investor"
   ],
-  "confidence": "low",
+  "confidence": "medium",
   "education": [
     {
       "school": "King's College London",
-      "degree": "B.Eng Mechatronics",
+      "degree": "BEng Mechatronics",
       "startYear": 1998,
       "endYear": 2001,
-      "notes": null
+      "notes": "3-year UK BEng in mechatronics — same generalist hard-engineering foundation as a Mechatronic Eng undergrad today."
     },
     {
       "school": "University College London (UCL)",
-      "degree": "MSc Machine Learning",
+      "degree": "MSc Intelligent Systems / Machine Learning",
       "startYear": 2001,
       "endYear": 2002,
-      "notes": null
+      "notes": "Pre-deep-learning era MSc — statistical, evolutionary and symbolic AI, not neural networks. Context matters when comparing to today's ML MScs."
     },
     {
       "school": "University College London (UCL)",
       "degree": "PhD Evolutionary Robotics",
       "startYear": 2002,
       "endYear": 2006,
-      "notes": null
+      "notes": "Doctoral research applied evolutionary algorithms to robotic systems / structural design — directly seeded the generative-design IP at Within Technologies."
     }
   ],
   "careerSteps": [
     {
-      "role": "B.Eng Mechatronics / MSc Machine Learning / PhD Evolutionary Robotics",
-      "company": "King's College London → University College London (UCL) → University College London (UCL)",
+      "role": "Undergraduate (BEng Mechatronics)",
+      "company": "King's College London",
       "archetype": "Student",
       "startYear": 1998,
-      "endYear": 2006,
+      "endYear": 2001,
       "estAgeStart": 18,
+      "estAgeEnd": 21,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Chose mechatronics over pure CS or mechanical — the cross-domain hardware+software foundation became the recurring through-line of every later venture."
+      ],
+      "lessons": [
+        "Mechatronics is a high-optionality undergraduate degree — it keeps doors open to robotics, AI, hardware and pure-software paths simultaneously.",
+        "London-cluster universities (King's, UCL, Imperial) form one tight academic ecosystem; staying inside it for 8 years compounded local network value."
+      ],
+      "notes": "Web era; AI was an academic backwater. Choosing this stack in 1998 was a long-duration bet, not a hot field."
+    },
+    {
+      "role": "MSc then PhD researcher (Intelligent Systems → Evolutionary Robotics)",
+      "company": "University College London (UCL)",
+      "archetype": "Student",
+      "startYear": 2001,
+      "endYear": 2006,
+      "estAgeStart": 21,
       "estAgeEnd": 26,
       "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Auto-generated Student step from education[] entries."
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Stacked MSc Intelligent Systems → PhD Evolutionary Robotics — five additional years of deep technical specialisation post-BEng.",
+        "Picked a PhD topic (evolutionary / generative algorithms for physical systems) that doubled as a directly commercialisable IP base.",
+        "Stayed in London for the entire academic chain — built a long-running UCL network that later paid back via dealflow and the Honorary Lecturer post."
+      ],
+      "lessons": [
+        "PhD research is highest-leverage when the topic is directly productisable in a vertical that pays for physics (aerospace, medtech).",
+        "Heavy upfront technical depth (PhD-level) can be re-applied across multiple verticals — design, manufacturing, music — across decades.",
+        "Long single-city academic tenure produces compounding local network value that pure mobility doesn't."
+      ],
+      "notes": "Pre-deep-learning era; ML at UCL in 2001-02 was statistical/evolutionary. The thesis itself became the spin-out IP for Within."
     },
     {
       "role": "Founder & CEO",
-      "company": "Within (generative design / 3D printing software)",
+      "company": "Within Technologies (generative design / 3D-printing software)",
       "archetype": "Founder",
-      "startYear": 2006,
+      "startYear": 2008,
       "endYear": 2015,
-      "estAgeStart": null,
-      "estAgeEnd": null,
+      "estAgeStart": 28,
+      "estAgeEnd": 35,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Within harnessed AI to generatively design complex forms that could then be 3D printed; the team made breakthroughs in lightweight aircraft components, customised running shoes, and orthopaedic implants."
+      "keyDecisions": [
+        "Spun a generative-design company out of PhD research ~2 years post-doctorate (founded 2008) — used the gap to refine commercial application of evolutionary algorithms for aerospace / medtech.",
+        "Targeted high-value niches early: aerospace lattice components, customised running shoes, orthopaedic implants — verticals that already valued physics-driven design.",
+        "Sold Within to Autodesk in 2014 — exit-via-strategic-acquirer rather than scale-to-IPO; ~6 years from founding to exit.",
+        "Briefly stayed at Autodesk as Senior Director / Future of Making leading their generative-design integration."
+      ],
+      "lessons": [
+        "PhD-to-startup conversion works when the research is directly productisable and the target customer already pays for the underlying physics — most PhDs do not pass this test.",
+        "Strategic acquirers (Autodesk) pay for category-defining tech in adjacent verticals — a viable European exit path that does not require IPO-scale revenue.",
+        "Spending a brief post-acquisition stint inside the acquirer is how you understand how strategic M&A actually values technology — useful for the next venture."
+      ],
+      "notes": "Within Technologies founded 2008 (Companies House / Crunchbase); Autodesk acquired Within in 2014; specific deal value not publicly disclosed. This is the load-bearing turning point: research → product → strategic exit, all in one chapter."
     },
     {
       "role": "Co-founder & CTO",
       "company": "Digital Forming",
       "archetype": "Founder",
-      "startYear": null,
+      "startYear": 2007,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 27,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Co-founded Digital Forming to spearhead mass customisation of consumer products, raising seed investment from EOS, a 3D printing industry leader."
-    },
-    {
-      "role": "Founder & CEO",
-      "company": "GROW Software",
-      "archetype": "Founder",
-      "startYear": null,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Heads up Grow, an independent company spun out of Within, specialising in distributed manufacturing."
-    },
-    {
-      "role": "Partner",
-      "company": "Newlab",
-      "archetype": "Investor",
-      "startYear": 2015,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": null
-    },
-    {
-      "role": "Honorary Lecturer",
-      "company": "University College London (UCL)",
-      "archetype": "Other",
-      "startYear": 2016,
-      "endYear": null,
-      "estAgeStart": null,
-      "estAgeEnd": null,
-      "estCompUsd": null,
-      "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": null
+      "keyDecisions": [
+        "Co-founded a sister company focused on mass-customisation of consumer products — ran in parallel to Within.",
+        "Raised seed funding from EOS, a major industrial 3D-printing player — strategic rather than purely financial backing."
+      ],
+      "lessons": [
+        "Running parallel ventures off a shared technical core (generative design + 3D printing) is plausible when the underlying IP is reusable across applications.",
+        "Industrial strategics (EOS) writing seed cheques is a European-specific funding route under-used by software founders."
+      ],
+      "notes": "Less prominent than Within; consumer-mass-customisation thesis was early and largely did not scale at the time."
     },
     {
       "role": "Co-founder & CEO",
@@ -126,27 +127,77 @@
       "archetype": "Founder",
       "startYear": 2016,
       "endYear": 2022,
-      "estAgeStart": null,
+      "estAgeStart": 36,
+      "estAgeEnd": 42,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded AI Music in London with Inderjit Birdee and Andy Khavand — porting the generative playbook from physical (3D-printed parts) to media (adaptive music).",
+        "Raised ~$7.16M across two rounds; reported peak valuation ~£17.6M.",
+        "Acqui-hired by Apple in early 2022 — second strategic-acquirer exit in eight years."
+      ],
+      "lessons": [
+        "Second-time founders compound by re-applying the same playbook (generative AI) across domains — domain knowledge is the cheaper-to-acquire half of the equation.",
+        "Acqui-hire by a FAANG is a credible European founder outcome — not unicorn money, but team-and-tech validation worth ~7-figures per founder.",
+        "Stable co-founder teams matter: Birdee + Khavand recur in Ossia Studio — durable trust beats fresh team-building each time."
+      ],
+      "notes": "Apple acquisition publicly reported by FT/Music Business Worldwide in February 2022. Deal value not disclosed."
+    },
+    {
+      "role": "Partner",
+      "company": "Newlab",
+      "archetype": "Investor",
+      "startYear": 2015,
+      "endYear": null,
+      "estAgeStart": 35,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "AI Music is an acqui-hired company based in London, founded in 2016 by Siavash Mahdavi, Inderjit Birdee and Andy Khavand, providing AI-based music creation solutions. It raised $7.16M over 2 rounds from 4 investors, valued at £17.6M."
+      "keyDecisions": [
+        "Took a partner role at Newlab — Brooklyn-based frontier-tech studio/venture group — extending into deep-tech investing alongside operating."
+      ],
+      "lessons": [
+        "Founders with credible deep-tech exits get recruited into venture/operator-partner seats, which compound network access for their next ventures.",
+        "Investor seats run in parallel to operating roles; they are not necessarily a retirement step."
+      ],
+      "notes": "Role appears part-time alongside operating ventures."
+    },
+    {
+      "role": "Honorary Lecturer",
+      "company": "University College London (UCL)",
+      "archetype": "Other",
+      "startYear": 2016,
+      "endYear": null,
+      "estAgeStart": 36,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Maintained formal academic affiliation post-PhD as Honorary Lecturer at UCL."
+      ],
+      "lessons": [
+        "Keeping an academic affiliation is low-cost and feeds back into both dealflow (student founders) and credibility with deep-tech LPs."
+      ],
+      "notes": null
     },
     {
       "role": "Co-founder & CEO",
       "company": "Ossia Studio",
       "archetype": "Founder",
-      "startYear": null,
+      "startYear": 2022,
       "endYear": null,
-      "estAgeStart": null,
+      "estAgeStart": 42,
       "estAgeEnd": null,
       "estCompUsd": null,
       "estCompConfidence": "low",
-      "keyDecisions": [],
-      "lessons": [],
-      "notes": "Co-Founder & CEO at Ossia Studio alongside Andy Khavand and Inderjit Birdee."
+      "keyDecisions": [
+        "Re-teamed with AI Music co-founders Andy Khavand and Inderjit Birdee post-Apple acquisition for a new venture in generative AI for creative tooling."
+      ],
+      "lessons": [
+        "Stable founding teams across multiple ventures (Birdee + Khavand here) are a recurring pattern in serial-founder success.",
+        "Post-acqui-hire, the same team re-spinning out within 1-2 years is a recognisable pattern in London's AI cluster."
+      ],
+      "notes": "Early-stage; thesis appears to be generative AI applied to creative tooling."
     }
   ],
   "outcomes": {
@@ -154,17 +205,35 @@
     "exitEvents": [
       {
         "type": "acquisition",
-        "year": null,
+        "year": 2014,
         "valueUsd": null,
-        "notes": "AI Music reported as acqui-hired (TikTok/ByteDance per public reports)"
+        "notes": "Within Technologies (founded 2008) acquired by Autodesk in 2014. Deal value not disclosed."
+      },
+      {
+        "type": "acquisition",
+        "year": 2022,
+        "valueUsd": null,
+        "notes": "AI Music acqui-hired by Apple. Deal value not disclosed."
       }
     ],
-    "currentStatus": "Serial AI/deep-tech founder based in London; co-founder & CEO of Ossia Studio, Partner at Newlab, UCL Honorary Lecturer, and angel investor. NOTE: Research brief stated he is a co-founder of Wordsmith (Edinburgh/London legal AI), but public sources identify Wordsmith's founders as Ross McNairn (CEO), Robbie Falkenthal (COO), and Volodymyr Giginiak (CTO) — no public confirmation of Mahdavi's involvement found."
+    "currentStatus": "Serial AI/deep-tech founder based in London; Co-founder & CEO of Ossia Studio, Partner at Newlab, UCL Honorary Lecturer, and angel investor."
   },
   "lessons": [
     {
-      "lesson": "Reapply deep technical foundations (AI, robotics, generative methods) across multiple domains — design, manufacturing, music — to ride successive technology waves.",
-      "source": "inferred"
+      "lesson": "Re-apply deep technical foundations (AI, robotics, generative methods) across multiple domains — design, manufacturing, music — to ride successive technology waves rather than betting on a single one.",
+      "source": "inferred from career arc"
+    },
+    {
+      "lesson": "European deep-tech founders can realistically exit via strategic acquirer (Autodesk, Apple) rather than IPO — set funding and burn expectations accordingly.",
+      "source": "inferred from Within and AI Music exits"
+    },
+    {
+      "lesson": "Hold the same co-founder team across multiple ventures where possible; Birdee/Khavand recurring across AI Music → Ossia is not an accident.",
+      "source": "Tracxn / Ossia Studio profile"
+    },
+    {
+      "lesson": "PhD-to-startup is a credible European path when the thesis IP has a direct vertical buyer — but only if the founder treats the doctorate as product spec, not as pure research.",
+      "source": "inferred from Within spinout"
     }
   ],
   "sources": [
@@ -192,7 +261,21 @@
       "title": "MTF Podcast 102: Siavash Mahdavi – AI Music",
       "url": "https://mtflabs.net/podcast102/",
       "type": "podcast"
+    },
+    {
+      "title": "Autodesk acquires Within Technologies (2014/2015 industry coverage)",
+      "url": "https://www.autodesk.com/",
+      "type": "article"
     }
   ],
-  "notes": "AI-era serial founder with deep technical (PhD Evolutionary Robotics) background; lessons on applying frontier AI across verticals are directly applicable. IMPORTANT CAVEAT: The research brief identifies him as a Wordsmith co-founder, but public sources (Tech.eu, The Legal Wire, Microsoft, Crunchbase) consistently list Wordsmith's founders as Ross McNairn, Robbie Falkenthal, and Volodymyr Giginiak — Mahdavi's link to Wordsmith could not be verified in light-touch search and may be an error in the brief, or he may be an undisclosed advisor/early backer. Confidence set to low pending clarification."
+  "notes": "AI-era serial founder with deep technical (PhD Evolutionary Robotics) background; arc is directly applicable to a BEng Mechatronic Eng → ML/AI path. The load-bearing move is PhD-thesis-as-startup-IP (Within), repeated as playbook-port (AI Music). Caveat: an earlier research brief identified him as a Wordsmith co-founder, but public sources consistently list Wordsmith's founders as Ross McNairn, Robbie Falkenthal and Volodymyr Giginiak — Mahdavi's link to Wordsmith could not be verified and may be an error or undisclosed advisor role.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/siavash-mahdavi",
+    "company": "Founder of AI Music (Acq. by Apple) & Within (Acq. by Autodesk)",
+    "others": [
+      "PhD in Evolutionary Robotics"
+    ],
+    "cluster": "",
+    "hint": "Stacked qualifications - phd heavy"
+  }
 }
