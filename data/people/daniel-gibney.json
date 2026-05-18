@@ -4,8 +4,7 @@
   "birthYear": null,
   "countryOfOrigin": "United Kingdom",
   "currentCountry": "United Kingdom",
-  "imageUrl": null,
-  "tier": "tier1-admired",
+  "imageUrl": "https://media.licdn.com/dms/image/v2/C5603AQG2dm__8qpjQg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1541066223906?e=1780531200&v=beta&t=ORH5cdRiRRGmL6by7FqQ0lXzs7MxPIwLCX0qX312DXU",
   "archetypeArc": [
     "Student",
     "Operator",
@@ -156,5 +155,41 @@
     ],
     "cluster": "",
     "hint": "AI for drinks industry"
-  }
+  },
+  "studentEndYear": 2004,
+  "firstCompany": {
+    "name": "Ferovinum (rebranded Fero, 2025)",
+    "year": 2018,
+    "ageAtFounding": null,
+    "era": "mobile-cloud",
+    "country": "United Kingdom",
+    "oneLiner": "Structured-finance + warehousing for the wine & spirits industry. Self-funded in stealth for ~2 years; £17.5M Series A (2022); $550M asset-backed securitisation programme (2025) — positioned as the world's first ABS of wine and spirits.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "ICAEW",
+        "role": "ACA (Chartered Accountant)",
+        "startYear": 2001,
+        "endYear": 2004,
+        "notes": "Professional qualification rather than a university degree."
+      },
+      {
+        "type": "Operator",
+        "org": "Corporate finance / debt advisory firms",
+        "role": "Corporate finance / debt advisory (early career)",
+        "startYear": 2001,
+        "endYear": null,
+        "notes": "15+ years cumulative in corporate finance and debt advisory before founding."
+      },
+      {
+        "type": "Operator",
+        "org": "Moelis & Company",
+        "role": "Executive Director, Restructuring",
+        "startYear": null,
+        "endYear": 2018,
+        "notes": "Restructuring work brought him into contact with wine importers — the seed of Ferovinum."
+      }
+    ]
+  },
+  "nowSummary": "Co-founder & CFO of Fero (formerly Ferovinum). $550M ABS programme funded by private credit and commercial banks; 600+ clients across 30+ markets."
 }

@@ -169,6 +169,23 @@
     }
   ],
   "notes": "AI-revolution era UK B2B SaaS founder (2022-present). EF alum; classic operator-to-founder arc from Tessian, but with an unusual prior path through hard-engineering jobs (Q-Free, Dyson) and a first sub-scale founding attempt (Canary & Delta). Public profile is much lower than CEO co-founder Ben Freeman, so personal biographical detail (birth year, exact degree dates) remains unconfirmed.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Omnea",
+    "year": 2022,
+    "ageAtFounding": null,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "AI-native intake/orchestration platform for enterprise procurement; co-founded via Entrepreneur First with Ben Freeman. ~150 staff across London + NY by late 2025; ranked #1 in Startups 100 2026.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Bristol", "role": "BSc Computer Science", "startYear": null, "endYear": null, "notes": "Exact graduation year not pinned down." },
+      { "type": "Tech", "org": "Q-Free ASA", "role": "Software Engineer (intelligent traffic systems)", "startYear": null, "endYear": null, "notes": "AI-adjacent software for transportation infrastructure; Norwegian-HQ company." },
+      { "type": "Tech", "org": "Dyson", "role": "Software Engineer (robotics / AI)", "startYear": null, "endYear": null, "notes": "AI software inside Dyson's robotics arm." },
+      { "type": "Side-business", "org": "Canary & Delta", "role": "Co-founder & CTO (first founder attempt, pre-Omnea)", "startYear": null, "endYear": null, "notes": "Drove to seven-figure revenue; built/managed product and engineering teams." },
+      { "type": "Tech", "org": "Tessian", "role": "Senior engineering leader (scale-up)", "startYear": null, "endYear": 2021, "notes": "Tessian raised $130M+ from Sequoia/Accel/Balderton; acquired by Proofpoint in 2023." }
+    ]
+  },
+  "nowSummary": "Co-founder & CTO of Omnea (London/NY). Cumulative ~$75M raised including $50M Series B (Sep 2025, led by Insight Partners + Khosla). Pre-exit.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/benjaminjallen/",
     "company": "https://www.omnea.co/our-story",

@@ -202,6 +202,22 @@
     }
   ],
   "notes": "AI-revolution-era founder; 2017 MSc thesis pre-dated the public GPT moment by years and Genie AI survived the pre-LLM trough to ride the 2023+ wave. Highly relevant template for a European technical-ish founder going through Entrepreneur First rather than YC, especially one entering tech from a non-CS undergrad via a quantitative masters. Caveat: undergrad and trader-job years are inferred from interview context and the typical UK education timeline rather than directly verified; treat dates as ±1 year. No exit yet — path validated to Series A only.",
+  "studentEndYear": 2017,
+  "firstCompany": {
+    "name": "Genie AI",
+    "year": 2017,
+    "ageAtFounding": 27,
+    "era": "mobile-cloud",
+    "country": "United Kingdom",
+    "oneLiner": "Legal-AI agent for in-house lawyers and business professionals — co-founded via Entrepreneur First (EF9 cohort). Bet on generative AI applied to legal contracts years before LLMs went mainstream; survived the pre-LLM trough.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "London School of Economics", "role": "BSc Philosophy and Economics", "startYear": 2009, "endYear": 2012, "notes": "Optimised undergrad for the London trading-desk pipeline, not a CS career." },
+      { "type": "Operator", "org": "Japanese investment bank (London)", "role": "Bond and derivatives trader", "startYear": 2012, "endYear": 2016, "notes": "Day-job runway funded a serious side project by night." },
+      { "type": "Side-business", "org": "Viral charity-donation startup (with flatmate)", "role": "Side-project co-founder", "startYear": 2013, "endYear": 2016, "notes": "~10k users, ~£50k raised for charity. Proved he could ship and grow without committing to that idea." },
+      { "type": "Study", "org": "University College London", "role": "MSc Machine Learning (CS prize winner)", "startYear": 2016, "endYear": 2017, "notes": "Quit the trader salary to re-skill into ML. Thesis on generative AI applied to structured legal text — pre-dated the public GPT moment by ~5 years. Met co-founder Nitish Mutha here." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of Genie AI; legal-AI agent reportedly used by 130,000+ companies (~250 new joining daily). £13.3M Series A (Oct 2024, led by Google Ventures + Khosla). No exit yet.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/rfaruq",
     "company": "https://www.genieai.co/about-us",

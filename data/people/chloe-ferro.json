@@ -1,0 +1,126 @@
+{
+  "id": "chloe-ferro",
+  "name": "Chloe Ferro",
+  "birthYear": 2002,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Operator", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Tulane University",
+      "degree": "Undergraduate (US)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Studied at Tulane University in the US before joining the family-adjacent digital health world."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Product & Marketing",
+      "company": "Spot Pet Insurance",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a product/marketing role at a consumer digital-health-adjacent company before founding — first commercial reps."
+      ],
+      "lessons": [
+        "Working at a fast-moving consumer-adjacent insurance/healthtech business teaches commercial mechanics that pure-MBA paths don't."
+      ],
+      "notes": "Per Crunchbase / WeAreTechWomen interviews."
+    },
+    {
+      "role": "Co-Founder & President",
+      "company": "SheMed",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": 22,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded SheMed in April 2024 with her sister Olivia Ferro — sibling team built on a shared digital-health background.",
+        "Picked the women's-GLP-1 wedge — overlaying medical advice, data and personalised support on the weight-management protocol.",
+        "Scaled from launch to $1B valuation in ~18 months — among the fastest UK healthtech unicorn trajectories on record."
+      ],
+      "lessons": [
+        "Founder pairs from a domain-adjacent family/early-career base can move faster than first-principles founders — they pre-skip the customer-discovery cycle.",
+        "Specific demographic (women) + specific intervention (GLP-1 + monitoring) is a sharper wedge than generic health-tech.",
+        "Healthcare unicorn velocity is achievable in the UK when the buyer is the direct consumer (not the NHS) and the willingness-to-pay is regulatory-tailwind (GLP-1 demand spike)."
+      ],
+      "notes": "SheMed founded April 2024. $50M Series A October 2025 → $1B unicorn valuation. Chloe is President; sister Olivia is CEO. Forbes 30 Under 30 Europe 2026 (Science & Healthcare)."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & President of SheMed (London); $1B unicorn after $50M Series A in October 2025. Pre-exit; paper wealth."
+  },
+  "lessons": [
+    {
+      "lesson": "Sibling co-founder pair with a shared digital-health background can compress customer-discovery vs. first-principles founders.",
+      "source": "Inferred from SheMed founding pattern."
+    },
+    {
+      "lesson": "Women's GLP-1 weight-management is a high-willingness-to-pay consumer wedge with a regulatory tailwind.",
+      "source": "MobiHealthNews / Digital Health coverage."
+    },
+    {
+      "lesson": "Found at 22 with the right partner + the right wedge — age is not the constraint, market timing is.",
+      "source": "Inferred."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chloe Ferro — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/chloe-ferro",
+      "type": "article"
+    },
+    {
+      "title": "Inspirational Women: SheMed Founders Chloe & Olivia Ferro — WeAreTechWomen",
+      "url": "https://wearetechwomen.com/inspirational-women-shemed-founders-chloe-olivia-ferro/",
+      "type": "interview"
+    },
+    {
+      "title": "Female-founded UK HealthTech startup reaches unicorn status — Digital Health",
+      "url": "https://www.digitalhealth.net/2025/10/female-founded-uk-healthtech-startup-reaches-unicorn-status/",
+      "type": "article"
+    },
+    {
+      "title": "SheMed raises $50M to expand women's GLP-1 platform — MobiHealthNews",
+      "url": "https://www.mobihealthnews.com/news/shemed-raises-50m-expand-womens-glp-1-weight-management-platform",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era UK consumer-healthtech founder. 18-month founding-to-unicorn velocity is era-specific (GLP-1 demand spike + post-2024 UK consumer healthtech boom). Sibling co-founder structure is a defining feature. Birth year inferred from Forbes 'age 24' reference late 2026; treat as ±1.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "SheMed",
+    "year": 2024,
+    "ageAtFounding": 22,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Personalised women's GLP-1 weight-management platform — co-founded with sister Olivia in April 2024. $1B unicorn after $50M Series A (October 2025).",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Tulane University", "role": "Undergraduate", "startYear": null, "endYear": null, "notes": "US-based undergrad; exact years not pinned down." },
+      { "type": "Operator", "org": "Spot Pet Insurance", "role": "Product & Marketing", "startYear": null, "endYear": null, "notes": "First commercial reps inside a consumer-digital-health-adjacent business before founding." }
+    ]
+  },
+  "nowSummary": "Co-Founder & President of SheMed (London). $1B unicorn after $50M Series A in October 2025. Forbes 30 Under 30 Europe 2026 (Science & Healthcare).",
+  "researchLinks": {
+    "linkedin": "https://uk.linkedin.com/in/chloe-ferro",
+    "company": "https://www.shemed.com/",
+    "others": [
+      "https://wearetechwomen.com/inspirational-women-shemed-founders-chloe-olivia-ferro/"
+    ],
+    "cluster": "uk-healthtech, glp-1, sibling-founders",
+    "hint": "Sibling co-founder pair; consumer-healthtech unicorn velocity in 18 months."
+  }
+}

@@ -94,6 +94,38 @@ export const PersonSchema = z.object({
       hint: z.string(),
     })
     .optional(),
+  studentEndYear: z.number().nullable().optional(),
+  firstCompany: z
+    .object({
+      name: z.string(),
+      year: z.number(),
+      ageAtFounding: z.number().nullable(),
+      era: z.enum(["pre-pc", "pc", "web", "mobile-cloud", "ai-revolution"]),
+      country: z.string(),
+      oneLiner: z.string(),
+      preFounderRoles: z.array(
+        z.object({
+          type: z.enum([
+            "Study",
+            "VC",
+            "Tech",
+            "Consulting",
+            "Sales-BD",
+            "Side-business",
+            "Operator",
+            "Other",
+          ]),
+          org: z.string(),
+          role: z.string(),
+          startYear: z.number().nullable(),
+          endYear: z.number().nullable(),
+          notes: z.string().nullable(),
+        }),
+      ),
+    })
+    .nullable()
+    .optional(),
+  nowSummary: z.string().optional(),
 });
 
 export const ResearchLinksSchema = z.object({

@@ -269,6 +269,21 @@
     }
   ],
   "notes": "AI-era serial founder with deep technical (PhD Evolutionary Robotics) background; arc is directly applicable to a BEng Mechatronic Eng → ML/AI path. The load-bearing move is PhD-thesis-as-startup-IP (Within), repeated as playbook-port (AI Music). Caveat: an earlier research brief identified him as a Wordsmith co-founder, but public sources consistently list Wordsmith's founders as Ross McNairn, Robbie Falkenthal and Volodymyr Giginiak — Mahdavi's link to Wordsmith could not be verified and may be an error or undisclosed advisor role.",
+  "studentEndYear": 2006,
+  "firstCompany": {
+    "name": "Within Technologies",
+    "year": 2008,
+    "ageAtFounding": 28,
+    "era": "mobile-cloud",
+    "country": "United Kingdom",
+    "oneLiner": "Generative-design / 3D-printing software spun out of his UCL PhD in evolutionary robotics. Targeted aerospace lattice components, custom running shoes, orthopaedic implants. Acquired by Autodesk in 2014.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "King's College London", "role": "BEng Mechatronics", "startYear": 1998, "endYear": 2001, "notes": "3-year UK BEng — same generalist hard-engineering foundation as a Mechatronic Eng undergrad today." },
+      { "type": "Study", "org": "University College London", "role": "MSc Intelligent Systems / Machine Learning", "startYear": 2001, "endYear": 2002, "notes": "Pre-deep-learning era MSc — statistical, evolutionary and symbolic AI." },
+      { "type": "Study", "org": "University College London", "role": "PhD Evolutionary Robotics", "startYear": 2002, "endYear": 2006, "notes": "Doctoral research applied evolutionary algorithms to robotic systems / structural design — directly seeded Within's IP." }
+    ]
+  },
+  "nowSummary": "Serial AI/deep-tech founder; Co-founder & CEO of Ossia Studio (2022+), Partner at Newlab, UCL Honorary Lecturer. Two strategic-acquirer exits (Autodesk 2014, Apple acqui-hired AI Music 2022; values undisclosed).",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/siavash-mahdavi",
     "company": "Founder of AI Music (Acq. by Apple) & Within (Acq. by Autodesk)",

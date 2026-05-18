@@ -159,6 +159,21 @@
     }
   ],
   "notes": "Post-2020 European fintech founder; Wise-mafia alumnus. Highly replicable template for a European technical operator: top engineering degree (with self-taught code on the side) → ~6 years at a category-defining scale-up in your target vertical → spin out at 30+ with a co-founder from the same alumni network and seed cheques from that network. Caveat: Lightyear has not yet had a liquidity event, so the financial outcome is unproven. Most years (Wise role progression, internship dates) inferred — confidence is medium overall.",
+  "studentEndYear": 2012,
+  "firstCompany": {
+    "name": "Lightyear",
+    "year": 2020,
+    "ageAtFounding": 31,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Pan-European commission-free retail-investing platform — Wise-mafia spin-out built for multi-jurisdiction EU regulation. Co-founded with fellow ex-Wise alum Martin Sokk.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Bristol", "role": "MEng Engineering Design (First Class)", "startYear": 2007, "endYear": 2012, "notes": "Self-taught programming alongside an engineering-design curriculum rather than pure CS." },
+      { "type": "Tech", "org": "HP Labs / Motorola / UBS", "role": "Software engineering intern (rotational)", "startYear": 2009, "endYear": 2012, "notes": "Sampled deep-tech (HP, Motorola) and finance (UBS) before committing. Exact internship dates approximate." },
+      { "type": "Operator", "org": "Wise (formerly TransferWise)", "role": "Engineering lead → Head of Engineering", "startYear": 2013, "endYear": 2019, "notes": "Joined pre-scale; ~6 years through growth-stage to pre-IPO. Wise-mafia network became Lightyear's seed-cheque source." }
+    ]
+  },
+  "nowSummary": "Co-founder & CTO of Lightyear, operating across 25 European countries and 5,000+ instruments. ~$23M round (2025) with Branson, Hinrikus, Tallinn, Villig on cap table. Pre-exit.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/mihkel-aamer-9099b918",
     "company": "Same as Martin stokk",

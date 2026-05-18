@@ -1,0 +1,214 @@
+{
+  "id": "james-hawkins",
+  "name": "James Hawkins",
+  "birthYear": 1988,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": "https://media.licdn.com/dms/image/v2/D4E03AQGFJpsexzDPCQ/profile-displayphoto-scale_400_400/B4EZy49V49GgAg-/0/1772629614845?e=1780531200&v=beta&t=Bp-waPihKEY9AfG92jpMXgrJ0KZTfo-iZVvyRZL4JmE",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Cambridge",
+      "degree": "BA Economics",
+      "startYear": 2007,
+      "endYear": 2010,
+      "notes": "Cambridge BA Economics 2007–2010 per Crunchbase / The Org profiles. Y Combinator alum (W20)."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Head of Sales & Engineering",
+      "company": "Search Professionals Ltd",
+      "archetype": "Operator",
+      "startYear": 2009,
+      "endYear": 2013,
+      "estAgeStart": 21,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a hybrid sales-engineering role at a small UK firm immediately after Cambridge — combined hands-on technical work with commercial reps from the start."
+      ],
+      "lessons": [
+        "A 'hybrid' first job (technical + sales/commercial) is rare and high-leverage — it builds both skill stacks in parallel.",
+        "Working at smaller UK companies right after Cambridge gave him operating reps that pure-grad-scheme peers didn't get."
+      ],
+      "notes": "Per LinkedIn-derived summaries; overlap with Cambridge final year."
+    },
+    {
+      "role": "Founder (new division)",
+      "company": "c2o Media",
+      "archetype": "Operator",
+      "startYear": 2013,
+      "endYear": 2015,
+      "estAgeStart": 25,
+      "estAgeEnd": 27,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded a new profitable division inside a UK media company — first 'intrapreneur' reps before founding his own company.",
+        "Stayed inside a host company rather than spinning out — used the umbrella to validate without raising capital."
+      ],
+      "lessons": [
+        "Founding a division inside a company is a legitimate path to founder reps without the financial risk of a venture-backed startup.",
+        "Profitable intrapreneurship teaches commercial discipline that VC money often masks."
+      ],
+      "notes": "Per LinkedIn-derived summaries."
+    },
+    {
+      "role": "VP Sales & Channels",
+      "company": "UK B2B SaaS scale-up (and consulting at Arachnys)",
+      "archetype": "Operator",
+      "startYear": 2015,
+      "endYear": 2019,
+      "estAgeStart": 27,
+      "estAgeEnd": 31,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Spent four years selling 7–8 figure enterprise contracts at UK B2B scale-ups — earned the enterprise-sales reps that almost no technical-cofounder has.",
+        "Layered a marketing consultancy at Arachnys on the side — extended commercial pattern-recognition across multiple companies."
+      ],
+      "lessons": [
+        "Enterprise sales experience is rare and durable — the founder market favours technical CTOs, so a sales-trained CEO is the structurally undervalued half of the pairing.",
+        "Working at UK startups that 'just did OK' (rather than rockets) trains you to spot what's missing — the seed of his bigger founding ambition."
+      ],
+      "notes": "Per Sarah Drinkwater Medium fireside chat: 'background of working for UK startups that had just done OK before pursuing bigger ambitions.' Also describes earlier 'developer role (a very bad one)' followed by VP of Sales."
+    },
+    {
+      "role": "Co-founder & Co-CEO",
+      "company": "PostHog",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": 32,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded PostHog with technical co-founder Tim Glaser; joined Y Combinator W20 (Jan–Mar 2020).",
+        "Pivoted inside YC with four weeks until Demo Day — bet the company on a working open-source product analytics MVP.",
+        "Launched on Hacker News immediately after Demo Day — used the open-source artefact + HN to bootstrap distribution.",
+        "Sales-trained CEO + engineer CTO co-founder pairing — explicit complementary split unusual in dev-tools where both founders are often engineers.",
+        "Built a multiproduct platform (~16–17 products) on top of the analytics wedge — turned single-product PMF into a portfolio."
+      ],
+      "lessons": [
+        "Sales-trained CEO + engineering CTO is a structurally undervalued pairing in dev-tools (where both founders are usually engineers).",
+        "Open-source artefact + Hacker News launch is still a viable distribution wedge for European dev-tools founders raising US capital.",
+        "Pivoting inside YC at the last minute is survivable if your founders are sharp and your tech is shippable in weeks — speed of execution matters more than the original thesis.",
+        "Lifestyle is a strategy: building PostHog from a village outside Cambridge rather than relocating to SF — proves UK dev-tools companies can compete globally without geography sacrifice."
+      ],
+      "notes": "PostHog (YC W20) is a single platform for product engineers offering analytics, session recording, feature flags and a broader product suite. Per their own About page, 190,000+ teams use the platform and ~65% of every YC batch uses PostHog. Per the fireside chat, the company reached a mid-tens-of-millions revenue run rate. Publicly disclosed funding includes a Series B (~$15M, 2021, led by GV) and a Series C (~$70M+, 2023, led by Y Combinator alumni-network investors). James and Tim are both Co-CEOs."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & Co-CEO of PostHog (London / remote-first). Open-source product analytics platform used by 190k+ teams; ~65% of every YC batch uses PostHog. Mid-tens-of-millions revenue run rate per public interviews."
+  },
+  "lessons": [
+    {
+      "lesson": "Cambridge BA + UK B2B sales + 4 years selling 7–8 figure contracts → YC → founder is the 'sales-trained CEO' template — structurally undervalued vs. the technical-cofounder default.",
+      "source": "Synthesised from Sarah Drinkwater fireside chat + Crunchbase profile."
+    },
+    {
+      "lesson": "Found in your early 30s after a decade of enterprise-sales reps, not at 21 with no commercial reps. Sales experience is the half of founderships that doesn't get taught.",
+      "source": "Inferred from career arc."
+    },
+    {
+      "lesson": "Open-source + Hacker News is still a viable dev-tools wedge — PostHog launched MVP on HN immediately after YC Demo Day in 2020.",
+      "source": "PostHog About page + posthog.com community."
+    },
+    {
+      "lesson": "Sales CEO + engineer CTO is a structurally undervalued pairing in dev-tools where both founders are usually engineers.",
+      "source": "Inferred from PostHog leadership structure."
+    }
+  ],
+  "sources": [
+    {
+      "title": "James Hawkins — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/james-hawkins-52f0",
+      "type": "article"
+    },
+    {
+      "title": "James Hawkins — Co-founder at PostHog (The Org)",
+      "url": "https://theorg.com/org/posthog/org-chart/james-hawkins",
+      "type": "article"
+    },
+    {
+      "title": "You're the driver; a fireside chat with PostHog's co-CEO James Hawkins — Sarah Drinkwater (Medium)",
+      "url": "https://sarahdrinkwater.medium.com/youre-the-driver-a-fireside-chat-with-posthog-s-co-ceo-james-hawkins-c79afd611589",
+      "type": "interview"
+    },
+    {
+      "title": "About PostHog",
+      "url": "https://posthog.com/about",
+      "type": "article"
+    },
+    {
+      "title": "James Hawkins's PostHog community profile",
+      "url": "https://posthog.com/community/profiles/27732",
+      "type": "other"
+    }
+  ],
+  "notes": "AI-revolution era UK dev-tools founder. Directly relevant template for a Cambridge-to-sales-to-founder arc — important counterweight in the corpus to the technical-CTO-founders. Birth year inferred from Cambridge BA dates (2007–2010); LinkedIn-derived employment dates are reported in secondary sources rather than primary documents, treat tenure dates as ±1 year.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/j-hawkins/",
+    "company": "https://posthog.com/about",
+    "others": [
+      "https://www.crunchbase.com/person/james-hawkins-52f0",
+      "https://theorg.com/org/posthog/org-chart/james-hawkins"
+    ],
+    "cluster": "yc-w20, uk-dev-tools, sales-trained-ceo",
+    "hint": "Cambridge BA Economics → UK B2B sales → YC W20 → PostHog. The 'sales-trained CEO' template — counterweight to the technical-CTO default."
+  },
+  "studentEndYear": 2010,
+  "firstCompany": {
+    "name": "PostHog",
+    "year": 2020,
+    "ageAtFounding": 32,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Open-source product analytics platform; pivoted in YC W20 with technical co-founder Tim Glaser. ~190k+ teams use the platform; ~65% of every YC batch uses PostHog. Mid-tens-of-millions ARR run rate.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "University of Cambridge",
+        "role": "BA Economics",
+        "startYear": 2007,
+        "endYear": 2010,
+        "notes": "Cambridge undergrad."
+      },
+      {
+        "type": "Sales-BD",
+        "org": "Search Professionals Ltd",
+        "role": "Head of Sales & Engineering",
+        "startYear": 2009,
+        "endYear": 2013,
+        "notes": "Hybrid sales + engineering role from the final year of Cambridge through to ~25."
+      },
+      {
+        "type": "Operator",
+        "org": "c2o Media",
+        "role": "Founder (new profitable division — intrapreneur)",
+        "startYear": 2013,
+        "endYear": 2015,
+        "notes": "Founded a new division inside a UK media company — first founder reps without venture risk."
+      },
+      {
+        "type": "Sales-BD",
+        "org": "UK B2B SaaS scale-up + Arachnys (marketing consultant on the side)",
+        "role": "VP Sales & Channels",
+        "startYear": 2015,
+        "endYear": 2019,
+        "notes": "Four years selling 7–8 figure enterprise contracts; the load-bearing reps that made the sales-CEO half of PostHog credible."
+      }
+    ]
+  },
+  "nowSummary": "Co-founder & Co-CEO of PostHog (UK, remote-first). 190k+ teams using the platform, ~65% of every YC batch as customers, mid-tens-of-millions ARR run rate. Publicly disclosed funding includes a ~$15M Series B (2021, led by GV) and a ~$70M+ Series C (2023). Builds from a village outside Cambridge — explicit lifestyle-over-relocation choice."
+}

@@ -98,125 +98,237 @@ export function PersonDetail({
   );
 }
 
+const ROLE_TYPE_COLOR: Record<string, string> = {
+  Study: "#64748b",
+  VC: "#a855f7",
+  Tech: "#0d9488",
+  Consulting: "#f97316",
+  "Sales-BD": "#ec4899",
+  "Side-business": "#d97706",
+  Operator: "#2563eb",
+  Other: "#737373",
+};
+
 function ViewBody({ person }: { person: Person }) {
+  const [showFull, setShowFull] = useState(false);
+  const fc = person.firstCompany ?? null;
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="space-y-5">
-        <Section title="Current status">
-          <p className="text-sm">{person.outcomes.currentStatus}</p>
-          {person.outcomes.estNetWorthUsd && (
-            <p className="text-xs text-neutral-500 mt-1">
-              Est. net worth:{" "}
-              {typeof person.outcomes.estNetWorthUsd === "number"
-                ? `$${person.outcomes.estNetWorthUsd.toLocaleString()}`
-                : person.outcomes.estNetWorthUsd}
-            </p>
-          )}
-        </Section>
+    <div className="space-y-5">
+      {/* First company headline */}
+      {fc ? (
+        <div className="rounded-lg border border-neutral-900/10 bg-neutral-50 p-4">
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500 mb-1">
+            First company · the leap
+          </div>
+          <div className="text-base font-semibold text-neutral-900">
+            {fc.name} · {fc.year}
+            {fc.ageAtFounding !== null && (
+              <span className="text-neutral-500 font-normal">
+                {" "}
+                · age {fc.ageAtFounding}
+              </span>
+            )}
+          </div>
+          <div className="text-xs text-neutral-600 mt-0.5">
+            {fc.country} · {fc.era}
+          </div>
+          <p className="text-sm text-neutral-800 mt-2">{fc.oneLiner}</p>
+        </div>
+      ) : (
+        <div className="rounded-lg border border-amber-300 bg-amber-50/40 p-4 text-sm text-amber-900">
+          No firm founding date on file. Detail in &ldquo;Now&rdquo; below.
+        </div>
+      )}
 
-        <Section title="Education">
-          <ul className="space-y-2">
-            {person.education.map((ed, i) => (
-              <li key={i}>
-                <div className="text-sm font-medium">{ed.school}</div>
-                <div className="text-xs text-neutral-500">
-                  {ed.degree ?? "—"} · {ed.startYear ?? "?"}–
-                  {ed.endYear ?? "?"}
-                </div>
-                {ed.notes && (
-                  <div className="text-xs text-neutral-600 mt-1 italic">
-                    {ed.notes}
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-        </Section>
-
-        {person.lessons.length > 0 && (
-          <Section title="Lessons">
-            <ul className="space-y-2 list-disc list-inside text-sm">
-              {person.lessons.map((l, i) => (
-                <li key={i}>
-                  {l.lesson}
-                  {l.source && (
-                    <span className="text-xs text-neutral-500"> — {l.source}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </Section>
-        )}
-
-        <Section title="Sources">
-          <ul className="space-y-1 text-xs">
-            {person.sources.map((s, i) => (
-              <li key={i}>
-                {s.url ? (
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline hover:text-neutral-900"
-                  >
-                    {s.title}
-                  </a>
-                ) : (
-                  s.title
-                )}
-                <span className="text-neutral-400 ml-2">[{s.type}]</span>
-              </li>
-            ))}
-          </ul>
-        </Section>
-
-        {person.notes && (
-          <Section title="Notes">
-            <p className="text-xs italic text-neutral-700">{person.notes}</p>
-          </Section>
-        )}
-      </div>
-
-      <div>
-        <Section title="Career steps">
-          <ol className="space-y-3 relative border-l border-neutral-200 pl-4">
-            {person.careerSteps.map((step, i) => (
+      {/* Pre-founder roles timeline */}
+      {fc && fc.preFounderRoles.length > 0 && (
+        <Section title="Path to the leap">
+          <ol className="space-y-2 relative border-l border-neutral-200 pl-4">
+            {fc.preFounderRoles.map((r, i) => (
               <li key={i} className="relative">
-                <span className="absolute -left-[19px] top-1.5 w-2 h-2 rounded-full bg-neutral-400" />
-                <div className="text-sm font-medium">
-                  {step.role}
-                  <span className="font-normal text-neutral-600">
-                    {" "}
-                    · {step.company}
+                <span
+                  className="absolute -left-[20px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-white"
+                  style={{ background: ROLE_TYPE_COLOR[r.type] ?? "#737373" }}
+                />
+                <div className="text-sm">
+                  <span
+                    className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded mr-1.5"
+                    style={{
+                      background: (ROLE_TYPE_COLOR[r.type] ?? "#737373") + "22",
+                      color: ROLE_TYPE_COLOR[r.type] ?? "#737373",
+                    }}
+                  >
+                    {r.type}
                   </span>
+                  <span className="font-medium">{r.role}</span>
+                  <span className="text-neutral-600"> @ {r.org}</span>
                 </div>
                 <div className="text-xs text-neutral-500">
-                  [{step.archetype}] · {step.startYear ?? "?"}–
-                  {step.endYear ?? "now"}
-                  {step.estAgeStart !== null && (
-                    <>
-                      {" "}
-                      · age {step.estAgeStart}–{step.estAgeEnd ?? "now"}
-                    </>
-                  )}
+                  {r.startYear ?? "?"}–{r.endYear ?? "?"}
                 </div>
-                {step.lessons.length > 0 && (
-                  <ul className="mt-1 text-xs text-neutral-700 list-disc list-inside space-y-0.5">
-                    {step.lessons.map((l, j) => (
-                      <li key={j}>{l}</li>
-                    ))}
-                  </ul>
-                )}
-                {step.notes && (
-                  <p className="text-xs text-neutral-500 mt-1 italic">
-                    {step.notes}
+                {r.notes && (
+                  <p className="text-xs text-neutral-600 italic mt-0.5">
+                    {r.notes}
                   </p>
                 )}
               </li>
             ))}
           </ol>
         </Section>
-      </div>
+      )}
+
+      {/* Now */}
+      <Section title="Now">
+        <p className="text-sm">
+          {person.nowSummary || person.outcomes.currentStatus}
+        </p>
+        {person.outcomes.estNetWorthUsd && (
+          <p className="text-xs text-neutral-500 mt-1">
+            Est. net worth:{" "}
+            {typeof person.outcomes.estNetWorthUsd === "number"
+              ? `$${person.outcomes.estNetWorthUsd.toLocaleString()}`
+              : person.outcomes.estNetWorthUsd}
+          </p>
+        )}
+      </Section>
+
+      {/* Key lessons (top 3) */}
+      {person.lessons.length > 0 && (
+        <Section title="Key lessons">
+          <ul className="space-y-1.5 list-disc list-inside text-sm">
+            {person.lessons.slice(0, 3).map((l, i) => (
+              <li key={i}>
+                {l.lesson}
+                {l.source && (
+                  <span className="text-xs text-neutral-500"> — {l.source}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      <button
+        onClick={() => setShowFull((s) => !s)}
+        className="text-xs text-neutral-600 hover:text-neutral-900 underline"
+      >
+        {showFull ? "Hide full details" : "Show full details (education, all lessons, career steps, sources, notes)"}
+      </button>
+
+      {showFull && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-neutral-200">
+          <div className="space-y-5">
+            <Section title="Education">
+              <ul className="space-y-2">
+                {person.education.map((ed, i) => (
+                  <li key={i}>
+                    <div className="text-sm font-medium">{ed.school}</div>
+                    <div className="text-xs text-neutral-500">
+                      {ed.degree ?? "—"} · {ed.startYear ?? "?"}–
+                      {ed.endYear ?? "?"}
+                    </div>
+                    {ed.notes && (
+                      <div className="text-xs text-neutral-600 mt-1 italic">
+                        {ed.notes}
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </Section>
+
+            {person.lessons.length > 3 && (
+              <Section title="All lessons">
+                <ul className="space-y-2 list-disc list-inside text-sm">
+                  {person.lessons.map((l, i) => (
+                    <li key={i}>
+                      {l.lesson}
+                      {l.source && (
+                        <span className="text-xs text-neutral-500">
+                          {" "}
+                          — {l.source}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </Section>
+            )}
+
+            <Section title="Sources">
+              <ul className="space-y-1 text-xs">
+                {person.sources.map((s, i) => (
+                  <li key={i}>
+                    {s.url ? (
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline hover:text-neutral-900"
+                      >
+                        {s.title}
+                      </a>
+                    ) : (
+                      s.title
+                    )}
+                    <span className="text-neutral-400 ml-2">[{s.type}]</span>
+                  </li>
+                ))}
+              </ul>
+            </Section>
+
+            {person.notes && (
+              <Section title="Notes">
+                <p className="text-xs italic text-neutral-700">
+                  {person.notes}
+                </p>
+              </Section>
+            )}
+          </div>
+
+          <div>
+            <Section title="Career steps (full)">
+              <ol className="space-y-3 relative border-l border-neutral-200 pl-4">
+                {person.careerSteps.map((step, i) => (
+                  <li key={i} className="relative">
+                    <span className="absolute -left-[19px] top-1.5 w-2 h-2 rounded-full bg-neutral-400" />
+                    <div className="text-sm font-medium">
+                      {step.role}
+                      <span className="font-normal text-neutral-600">
+                        {" "}
+                        · {step.company}
+                      </span>
+                    </div>
+                    <div className="text-xs text-neutral-500">
+                      [{step.archetype}] · {step.startYear ?? "?"}–
+                      {step.endYear ?? "now"}
+                      {step.estAgeStart !== null && (
+                        <>
+                          {" "}
+                          · age {step.estAgeStart}–{step.estAgeEnd ?? "now"}
+                        </>
+                      )}
+                    </div>
+                    {step.lessons.length > 0 && (
+                      <ul className="mt-1 text-xs text-neutral-700 list-disc list-inside space-y-0.5">
+                        {step.lessons.map((l, j) => (
+                          <li key={j}>{l}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {step.notes && (
+                      <p className="text-xs text-neutral-500 mt-1 italic">
+                        {step.notes}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </Section>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -447,6 +559,15 @@ function EditForm({
               ...draft.outcomes,
               exitEvents: v as Person["outcomes"]["exitEvents"],
             })
+          }
+        />
+      </Field>
+
+      <Field label="First company (JSON — drives the timeline marker; null = hidden from timeline)">
+        <JsonEditor
+          value={draft.firstCompany ?? null}
+          onChange={(v) =>
+            update("firstCompany", v as Person["firstCompany"])
           }
         />
       </Field>

@@ -4,8 +4,7 @@
   "birthYear": 1985,
   "countryOfOrigin": "USA",
   "currentCountry": "USA",
-  "imageUrl": null,
-  "tier": "tier2-cautionary",
+  "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2023-02/230213-sam-altman-se-1051a-49a88b.jpg",
   "archetypeArc": [
     "Student",
     "Founder",
@@ -192,5 +191,33 @@
     "others": [],
     "cluster": "",
     "hint": "Similar to Paul Graham - celebrity level founder, supreme outlier, started young with loopt but bad idea that survived from YC fundraising environment"
-  }
+  },
+  "studentEndYear": 2005,
+  "firstCompany": {
+    "name": "Loopt",
+    "year": 2005,
+    "ageAtFounding": 20,
+    "era": "web",
+    "country": "USA",
+    "oneLiner": "Location-sharing app, YC's first-ever batch (Summer 2005). Raised ~$30M; acquired by Green Dot in March 2012 for $43.4M — roughly flat against total capital raised, not a real founder win.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "John Burroughs School (St. Louis, MO)",
+        "role": "High school diploma",
+        "startYear": 1999,
+        "endYear": 2003,
+        "notes": "Elite private K-12; staffed school computer lab; plugged into adult tech-mentor networks before college."
+      },
+      {
+        "type": "Study",
+        "org": "Stanford University",
+        "role": "Computer Science (dropped out after sophomore year)",
+        "startYear": 2003,
+        "endYear": 2005,
+        "notes": "Dropped out once YC accepted Loopt — dropout was downstream of YC acceptance, not a prerequisite."
+      }
+    ]
+  },
+  "nowSummary": "CEO of OpenAI since 2019; among the most powerful figures in tech globally. Wealth driven primarily by YC-era angel portfolio (Reddit, Stripe, Airbnb) and the OpenAI seat, not by Loopt or direct OpenAI equity."
 }

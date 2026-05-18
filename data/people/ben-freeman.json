@@ -206,6 +206,24 @@
     }
   ],
   "notes": "AI-revolution era B2B SaaS founder. Third company, second VC-backed. European context: Cheshire/Manchester-born hustler who started running events at school, dropped out of Warwick, later finished at KCL while still operating, briefly tried banking (Lazard, 3 months), then spent 5 years scaling Tessian before an 18-month idea-search led to Omnea. Strong proof point that European founders can compete at the top of US enterprise SaaS using talent-density + efficiency rather than burn.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Omnea",
+    "year": 2022,
+    "ageAtFounding": null,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "AI-native intake/orchestration platform for enterprise procurement — co-founded with CTO Ben Allen via Entrepreneur First. ~150 staff across London + NY; ranked #1 in Startups 100 2026.",
+    "preFounderRoles": [
+      { "type": "Side-business", "org": "Manchester youth events / production business", "role": "Sole founder (school + university years)", "startYear": null, "endYear": null, "notes": "Started running festivals/gigs in school; grew to UK's largest youth events & production business (100+ people). Four-year run; exited profitably. The structural-ceiling realisation pushed him toward VC-backed tech." },
+      { "type": "Study", "org": "University of Warwick", "role": "Accounting and Finance (dropped out after ~3.5 weeks)", "startYear": null, "endYear": null, "notes": "Found university tedious; kept the events business going." },
+      { "type": "Study", "org": "King's College London", "role": "BSc Management", "startYear": null, "endYear": null, "notes": "Returned to formal education while still running the events business." },
+      { "type": "Operator", "org": "Lazard", "role": "Investment Banking Analyst (left after ~3 months)", "startYear": null, "endYear": null, "notes": "Brief stint; tried banking after exiting events business. Quit fast on bad-fit role." },
+      { "type": "Operator", "org": "Tessian", "role": "US GM and Head of International Growth", "startYear": null, "endYear": 2020, "notes": "5 years; joined just before seed round, scaled past ~300 staff. Lived the enterprise-procurement mess from the vendor side — seed of Omnea's thesis." },
+      { "type": "Side-business", "org": "Independent (pre-Omnea exploration)", "role": "Idea-search / ~300 user interviews", "startYear": 2020, "endYear": 2022, "notes": "~18 months exploring markets; turned down two term sheets for ideas he didn't fully believe in." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of Omnea. ~$75M cumulative ($50M Series B Sep 2025, led by Insight + Khosla). 5x revenue growth and headcount tripled in 12 months to ~150 across London/NY.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/ben-freeman-a8542166/",
     "company": "https://www.omnea.co/our-story",

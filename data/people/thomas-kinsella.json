@@ -218,6 +218,23 @@
     }
   ],
   "notes": "AI/automation-era cybersecurity founder; operator-turned-founder archetype with a Dublin/Boston dual-HQ that is highly applicable as a model for European (incl. NI/Ireland) B2B SaaS founders building from domain expertise. The load-bearing turning point is the *cross-company* Hinchy partnership (Deloitte → eBay → DocuSign → Tines), not just a single SOC overlap. Kinsella was COO until Nov 2022 when he transitioned to Chief Customer Officer. Specific role start/end years are partly inferred from typical career timing.",
+  "studentEndYear": 2008,
+  "firstCompany": {
+    "name": "Tines",
+    "year": 2018,
+    "ageAtFounding": 32,
+    "era": "mobile-cloud",
+    "country": "Ireland",
+    "oneLiner": "No-code/low-code automation platform for security and IT teams; founded in Dublin with Eoin Hinchy after 10+ years of stacked context across Deloitte → eBay → DocuSign. Unicorn at $1.125B (May 2024).",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Gonzaga College SJ", "role": "Secondary (Leaving Certificate)", "startYear": 1998, "endYear": 2004, "notes": "Elite Dublin Jesuit secondary school." },
+      { "type": "Study", "org": "Trinity College Dublin", "role": "BA Management Science and Information Systems Studies (MSISS)", "startYear": 2004, "endYear": 2008, "notes": "Quantitative business/tech degree — strong Big-4 feeder." },
+      { "type": "Consulting", "org": "Deloitte (Dublin)", "role": "Senior Consultant — IT Security & Digital Forensics", "startYear": 2008, "endYear": 2011, "notes": "Met Eoin Hinchy on the same security team — 15+ year co-founder relationship started here." },
+      { "type": "Operator", "org": "eBay", "role": "eCrime Investigations Team Lead, EMEA", "startYear": 2011, "endYear": 2015, "notes": "Marketplace fraud at industrial scale; worked with FBI/Europol/Interpol; Dublin-based EMEA hub." },
+      { "type": "Operator", "org": "DocuSign", "role": "Senior Director, Security Operations", "startYear": 2015, "endYear": 2018, "notes": "Director-level seat at then-pre-IPO SaaS scale-up (IPO Apr 2018); re-united with Hinchy; lived the manual-SOC pain that became Tines." }
+    ]
+  },
+  "nowSummary": "Co-founder & Chief Customer Officer of Tines (Dublin/Boston). Unicorn at $1.125B (May 2024 Series C extension); cumulative funding >$146M. Hosts The Future of Security Operations podcast.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/thomas-kinsella/",
     "company": "https://www.tines.com/campaigns/about-tines/?utm_term=tines&utm_content=HR-tines&utm_source=google&utm_medium=cpc&utm_campaign=gg_emea_dg_search_brand&hsa_cam=21842841769&hsa_grp=170308942778&hsa_mt=e&hsa_src=g&hsa_ad=730987125565&hsa_acc=8712474542&hsa_net=adwords&hsa_kw=tines&hsa_tgt=kwd-568201160&hsa_ver=3&gad_source=1&gad_campaignid=21842841769&gbraid=0AAAAAC_UAPYAUMfrKUDy-40wG5acrtgLD&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_If3sN0VM_f9XgwtkHbMGNXdjA9iHNu6-_BzRGcEiIOgtvEv4mn74aAvnGEALw_wcB",

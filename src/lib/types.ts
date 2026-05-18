@@ -91,6 +91,35 @@ export type ResearchLinks = {
   hint: string;
 };
 
+export type PreFounderRoleType =
+  | "Study"
+  | "VC"
+  | "Tech"
+  | "Consulting"
+  | "Sales-BD"
+  | "Side-business"
+  | "Operator"
+  | "Other";
+
+export type PreFounderRole = {
+  type: PreFounderRoleType;
+  org: string;
+  role: string;
+  startYear: number | null;
+  endYear: number | null;
+  notes: string | null;
+};
+
+export type FirstCompany = {
+  name: string;
+  year: number;
+  ageAtFounding: number | null;
+  era: Era;
+  country: string;
+  oneLiner: string;
+  preFounderRoles: PreFounderRole[];
+};
+
 export type Person = {
   id: string;
   name: string;
@@ -107,6 +136,9 @@ export type Person = {
   sources: Source[];
   notes: string | null;
   researchLinks?: ResearchLinks;
+  studentEndYear?: number | null;
+  firstCompany?: FirstCompany | null;
+  nowSummary?: string;
 };
 
 export type ConsideredPath = {

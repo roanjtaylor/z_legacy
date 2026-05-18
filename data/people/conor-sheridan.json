@@ -157,6 +157,21 @@
     }
   ],
   "notes": "AI-revolution era Irish vertical-SaaS founder. Unusually clean operator → hustler → founder arc: finance (Davy/FAT/YPO) → real-world restaurant operator (Mad Egg) → AI-for-restaurants (Nory). European context: Dublin-based, raised from US (Accel) and European (Kinnevik) tier-1 investors without relocating, demonstrating that you can build a globally-relevant vertical-AI company from Ireland. Education years for DCU/Imperial not confirmed from public sources.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Mad Egg",
+    "year": 2018,
+    "ageAtFounding": null,
+    "era": "mobile-cloud",
+    "country": "Ireland",
+    "oneLiner": "Ireland's first dedicated fried-chicken-sandwich restaurant on Camden Street, Dublin. ~€5M revenue and 90 staff in year one; scaled to multiple locations. The operational pain of scaling it seeded Nory.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Dublin City University", "role": "BA Economics, Politics and Law", "startYear": null, "endYear": null, "notes": "Worked in restaurants during school and university — hospitality itch never left." },
+      { "type": "Study", "org": "Imperial College London", "role": "MSc Economics and Strategy for Business", "startYear": null, "endYear": null, "notes": "Bridged him from undergraduate economics into finance/consulting." },
+      { "type": "Operator", "org": "Davy / FAT Capital / YPO (Ireland)", "role": "Strategic consultant → Quantitative trader / fund manager", "startYear": null, "endYear": 2017, "notes": "Pre-founder career in Irish financial services. Researched franchise opportunities from the trading desk for years." }
+    ]
+  },
+  "nowSummary": "Founder & CEO of Nory (AI-native restaurant OS, ~300 clients globally, ~$5M ARR, ~$62.6M raised inc. $37M Series B Sep 2025 led by Kinnevik). Still director of Mad Egg.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/sheridanconor/",
     "company": "https://www.nory.ai/about",

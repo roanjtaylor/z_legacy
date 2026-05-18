@@ -169,6 +169,22 @@
     }
   ],
   "notes": "Climate-tech / last-mile logistics era founder (2021+). Highly relevant template for a non-traditional European founder without elite-network access: adjacent-business probe → real insight → regulation-as-moat → cold-outreach fundraising. Caveat: HIVED is still pre-exit; the path is validated up to Series B, not to liquidity. Early-career years (Archie's, sport) are approximate, drawn from interview accounts.",
+  "studentEndYear": 2017,
+  "firstCompany": {
+    "name": "HIVED",
+    "year": 2021,
+    "ageAtFounding": 24,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "All-electric last-mile parcel delivery in the UK; turned regulation (ULEZ, retailer net-zero) into a moat. Anchor customers ASOS, Zara, Nespresso. ~22% MoM growth since inception; Forbes 30 Under 30 (2023).",
+    "preFounderRoles": [
+      { "type": "Other", "org": "Manchester City Women's FC academy", "role": "Youth footballer (captain)", "startYear": 2006, "endYear": 2013, "notes": "Elite youth football through teens — long-cycle competitive discipline before any business work." },
+      { "type": "Side-business", "org": "Archie's (Manchester restaurant group)", "role": "Marketing / family-business operator", "startYear": 2010, "endYear": 2015, "notes": "Self-described 'Head of Brand Marketing' from age 14, in parallel with elite sport and school." },
+      { "type": "Study", "org": "King's College London", "role": "BA Development Economics and International Development", "startYear": 2014, "endYear": 2017, "notes": "2016 university trip to Silicon Valley was the load-bearing event — she met future co-founder Mathias Krieger there." },
+      { "type": "Side-business", "org": "Vanvas Ltd", "role": "Co-CEO & Co-founder (adjacent first venture, wound down)", "startYear": 2019, "endYear": 2020, "notes": "Advertising on delivery vans. Wound down cleanly — surfaced parcel-delivery inefficiencies that became the HIVED thesis." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of HIVED, scaling zero-emission last-mile parcel delivery across the UK. ~$54M+ raised inc. ~$42M Series B (2024). No exit; net worth is paper-only.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/murvah",
     "company": "Same as mattias",

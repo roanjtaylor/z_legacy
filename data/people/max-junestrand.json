@@ -181,6 +181,90 @@
     }
   ],
   "notes": "Most directly relevant role model for the AI-revolution era European-founder archetype. The structural story is now well verified: KTH Computer Engineering (2018–2023) + SSE Business & Economics (2020–2023, double-degree) → SWE at Abios (2020–2021) → six stacked roles in 2022 across Norrsken VC, McKinsey, Depict, Bemlo (YC W22), Norrsken Impact Accelerator → co-founded Legora in 2023 via the SSE Business Lab → YC → Benchmark / Index / ICONIQ → reported $5.55B valuation. This is the exact pattern Roan finds compelling.",
+  "studentEndYear": 2023,
+  "firstCompany": {
+    "name": "Legora (formerly Leya)",
+    "year": 2023,
+    "ageAtFounding": 23,
+    "era": "ai-revolution",
+    "country": "Sweden",
+    "oneLiner": "AI-native legal copilot for European law firms; reportedly the fastest enterprise SaaS to $100M ARR.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "KTH Royal Institute of Technology, Stockholm",
+        "role": "MSc Computer Engineering / CS (ML specialisation) — did not complete master's thesis",
+        "startYear": 2018,
+        "endYear": 2023,
+        "notes": "Left before thesis to build Legora. Includes an exchange / coursework component at UIUC."
+      },
+      {
+        "type": "Study",
+        "org": "Stockholm School of Economics (SSE)",
+        "role": "BSc Business & Economics (double-degree alongside KTH)",
+        "startYear": 2020,
+        "endYear": 2023,
+        "notes": "SSE affiliation was the binding constraint that created the Legora founding team (SSE Business Lab entry requirement)."
+      },
+      {
+        "type": "Tech",
+        "org": "Abios (Stockholm e-sports data company)",
+        "role": "Back End Engineer / Software Engineer",
+        "startYear": 2020,
+        "endYear": 2021,
+        "notes": "First real SWE job, started in his early KTH years."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken VC",
+        "role": "Investment Team",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jan–Apr 2022. First of two Norrsken stints — the gateway into the Swedish founder network."
+      },
+      {
+        "type": "Tech",
+        "org": "Depict",
+        "role": "Growth",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Mar–Apr 2022."
+      },
+      {
+        "type": "Consulting",
+        "org": "McKinsey & Company",
+        "role": "Business Analyst Intern",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Apr–Jun 2022."
+      },
+      {
+        "type": "Tech",
+        "org": "Bemlo (YC W22)",
+        "role": "Growth",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jun–Jul 2022. Working inside a YC company before founding gave him the YC application playbook from the inside."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken Impact Accelerator",
+        "role": "Accelerator team",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jul–Sep 2022."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken VC",
+        "role": "Visiting Analyst",
+        "startYear": 2022,
+        "endYear": 2023,
+        "notes": "Sep 2022 – Jan 2023. Second Norrsken stint; directly preceded the Legora founding."
+      }
+    ]
+  },
+  "nowSummary": "CEO of Legora in Stockholm; reported $5.55B valuation (2025); backed by Benchmark, Index, ICONIQ. Paper wealth only — no liquidity event yet.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/maxjunestrand",
     "company": "https://legora.com/?gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU-mf81rY-OuvbJkPfoEbxkYCZ7OZoAoFDKY-u7AFM12RGb__Fz2kdwaAkmLEALw_wcB&campaignid=22632109429&adgroupid=180295919213&adid=783219712953&device=c&placement=&utm_source=google&utm_medium=cpc&utm_campaign=S_Others_Brand_Dt-XX&utm_content=&utm_term=legora&hsa_acc=6341003195&hsa_cam=22632109429&hsa_grp=180295919213&hsa_ad=783219712953&hsa_src=g&hsa_tgt=kwd-748623054180&hsa_kw=legora&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22632109429&gbraid=0AAAAA-5K9xygA2iKlNN1IDAAns_dpqltv&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU-mf81rY-OuvbJkPfoEbxkYCZ7OZoAoFDKY-u7AFM12RGb__Fz2kdwaAkmLEALw_wcB",

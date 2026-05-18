@@ -195,6 +195,21 @@
     }
   ],
   "notes": "Post-2020 fintech / e-commerce era founder. The COVID tailwind is cycle-specific, but the UCD → PwC ACA → Highway1 → CFO co-founder → angel → second founder arc is the repeatable Irish-fintech ladder of the 2010s–2020s. Highly relevant for a NI student weighing finance-credential vs straight-to-startup routes.",
+  "studentEndYear": 2013,
+  "firstCompany": {
+    "name": "Wayflyer",
+    "year": 2019,
+    "ageAtFounding": 27,
+    "era": "ai-revolution",
+    "country": "Ireland",
+    "oneLiner": "Revenue-based financing for e-commerce; reached $1.6B+ valuation in ~29 months. Pierse was the CFO co-founder paired with commercial CEO Aidan Corbett.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University College Dublin", "role": "Accounting (undergraduate)", "startYear": null, "endYear": 2013, "notes": "Years approximate from 1992 birth year + standard UCD programme." },
+      { "type": "Operator", "org": "PwC Dublin", "role": "Graduate / ACA Trainee (Chartered Accountant)", "startYear": 2013, "endYear": null, "notes": "3-ish year apprenticeship in audit/finance — standard high-credibility Irish path." },
+      { "type": "VC", "org": "Highway1 (San Francisco hardware accelerator, PCH) and other VC-adjacent roles", "role": "Operator", "startYear": null, "endYear": 2019, "notes": "Used venture-side stint to build network and pattern-recognition that fed directly into Wayflyer." }
+    ]
+  },
+  "nowSummary": "Departed Wayflyer in July 2023. Building HappyStack (Dublin, e-commerce intelligence/software). Active angel investor in fintech (backed Arc's ~$20M Series A).",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/jack-pierse-53b51155/",
     "company": "https://www.happystack.com/",

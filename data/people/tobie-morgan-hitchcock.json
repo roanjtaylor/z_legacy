@@ -147,6 +147,21 @@
     }
   ],
   "notes": "AI-revolution era infra/database founder; lessons on developer-tools, masters-thesis-as-product-seed, and European-team-with-US-VC are directly applicable to today's builders. Per Sessionize bio he has 17 years of industry experience (career started ~2008 alongside or right after UCL BSc). SurrealDB founded 2021, open-sourced Aug 2022, seed round Nov 2022, $20M funding June 2024. Oxford MSc dates not publicly verifiable.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "SurrealDB",
+    "year": 2021,
+    "ageAtFounding": 33,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Rust-based multi-model database (document, graph, time-series, relational in one engine). Open-sourced August 2022 with a #1 Hacker News launch; positioned for the AI-data infrastructure wave.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University College London (UCL School of Management)", "role": "BSc Information Management for Business", "startYear": 2007, "endYear": 2010, "notes": "Business-flavoured information-management BSc — commercial framing on top of technical content." },
+      { "type": "Study", "org": "University of Oxford", "role": "MSc Software Engineering", "startYear": null, "endYear": null, "notes": "Part-time/modular; thesis on versioning in distributed databases — the conceptual seed of SurrealDB. Exact dates not publicly verifiable." },
+      { "type": "Side-business", "org": "Pre-SurrealDB venture (golf-course analytics SaaS with brother Jaime)", "role": "Co-founder / builder", "startYear": 2015, "endYear": 2020, "notes": "Bootstrapped. Used a polyglot persistence stack (InfluxDB, OrientDB, DynamoDB, MySQL) — the pain of stitching four databases became SurrealDB's wedge." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of SurrealDB (London). ~$26M+ raised from FirstMark, Georgian, Crew Capital. Pre-exit; betting on the multi-model + AI-data convergence as a category-defining play.",
   "researchLinks": {
     "linkedin": "https://uk.linkedin.com/in/tobiemorganhitchcock",
     "company": "https://surrealdb.com/",

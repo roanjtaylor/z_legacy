@@ -1,0 +1,147 @@
+{
+  "id": "batuhan-yumurtaci",
+  "name": "Batuhan Yumurtacı",
+  "birthYear": 1998,
+  "countryOfOrigin": "Turkey",
+  "currentCountry": "Germany",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Builder", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Istanbul Erkek Lisesi",
+      "degree": "High school diploma",
+      "startYear": null,
+      "endYear": 2015,
+      "notes": "Elite Istanbul lycée. Moved to Germany for university."
+    },
+    {
+      "school": "Technical University of Munich (TUM)",
+      "degree": "BEng Mechanical Engineering",
+      "startYear": 2015,
+      "endYear": null,
+      "notes": "Undergraduate at TUM with an exchange program in South Korea during the degree."
+    },
+    {
+      "school": "Imperial College London",
+      "degree": "MSc Robotics & AI (thesis at Imperial)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Master's degree in robotics and AI; thesis on autonomous drones and computer vision at Imperial College London."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Student intern (multiple)",
+      "company": "Airbus, MAN",
+      "archetype": "Builder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took internships at Airbus and MAN during his Munich TU degree — aerospace and heavy-industry exposure inside the German engineering ecosystem.",
+        "Used the TUM degree as a launchpad into Europe's defence-tech / aerospace cluster early, rather than going software-first."
+      ],
+      "lessons": [
+        "Defence/aerospace internships in your undergrad set you up for deep-tech founding in ways pure-software internships don't.",
+        "Geographic relocation (Turkey → Germany at 18) is a high-leverage option when your home market is weaker for your target vertical."
+      ],
+      "notes": "Per Anadolu Agency / Avrupa Olay coverage."
+    },
+    {
+      "role": "Co-Founder & CTO",
+      "company": "TYTAN Technologies",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 25,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded TYTAN Technologies in Munich in 2023 with Balazs Nagy (CEO) — defence-tech focus on autonomous interception systems against modern UAV threats.",
+        "Picked autonomous drones / counter-UAV — the exact intersection of his TUM mechanical + Imperial robotics/AI training.",
+        "Raised a €30M Series A — substantial round for a defence-tech company in Germany.",
+        "Built a 'bullet aerial vehicle' reaching 250 km/h to neutralise enemy drones — bet on speed-of-intercept as the defensible moat."
+      ],
+      "lessons": [
+        "Defence-tech is one of the few European deep-tech verticals where the buyer (NATO governments) has both budget and urgency post-2022 — a structural tailwind founders can ride.",
+        "Turkey → Germany → UK → Germany is a viable European mobility pattern for deep-tech founders chasing the best engineering education and the best venture market for the vertical.",
+        "Wartime-relevant defence-tech is one of the few sectors where a 25-year-old co-founder can credibly raise a €30M Series A on technical merit alone.",
+        "Pair a Mech + AI cross-trained CTO with a commercial CEO — the founder mix that defence procurement teams trust."
+      ],
+      "notes": "Founded 2023 in Munich. Per Forbes 30 Under 30 Europe 2026 AI and Anadolu coverage. €30M Series A 2026."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & CTO of TYTAN Technologies (Munich). €30M Series A defence-tech company building autonomous counter-UAV systems."
+  },
+  "lessons": [
+    {
+      "lesson": "Defence-tech is a structurally-tailwinded European deep-tech category post-2022 — NATO budgets + urgency align with founder velocity.",
+      "source": "Inferred from TYTAN trajectory."
+    },
+    {
+      "lesson": "Mechanical Eng undergrad + Robotics MSc + aerospace internships (Airbus / MAN) is a high-conviction deep-tech founder stack.",
+      "source": "Anadolu Agency / Forbes 30U30."
+    },
+    {
+      "lesson": "Cross-border mobility (Turkey → Germany → UK MSc → Germany again) is how non-EU founders break into the European deep-tech market.",
+      "source": "Avrupa Olay coverage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "TYTAN Technologies — TUM Venture Labs",
+      "url": "https://www.tum-venture-labs.de/teams/tytan-technologies/",
+      "type": "article"
+    },
+    {
+      "title": "Almanya'ya öğrenci olarak gitti, düşman İHA'ları etkisiz hale getiren teknoloji geliştirdi — Anadolu Agency",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/almanyaya-ogrenci-olarak-gitti-dusman-ihalari-etkisiz-hale-getiren-teknoloji-gelistirdi/3274043",
+      "type": "article"
+    },
+    {
+      "title": "TYTAN Technologies — Dealroom",
+      "url": "https://app.dealroom.co/companies/tytan_technologies",
+      "type": "other"
+    },
+    {
+      "title": "TYTAN Technologies — Tracxn",
+      "url": "https://tracxn.com/d/companies/tytan-technologies/__JFwRCRiak6CW7gHWy1Kdac4zeomjI5btRRTbKmlp4mI",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era European defence-tech founder. Cross-border education arc (Turkey → Germany → UK MSc → Germany founder) is a credible non-EU-citizen pattern for breaking into European deep-tech. Mechatronic-style cross-discipline stack (mech + robotics + AI) directly relevant to a NI Mechatronic Eng. undergrad. Forbes 30 Under 30 Europe 2026 AI honoree.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "TYTAN Technologies",
+    "year": 2023,
+    "ageAtFounding": 25,
+    "era": "ai-revolution",
+    "country": "Germany",
+    "oneLiner": "Munich-based defence-tech building autonomous counter-UAV systems. €30M Series A; targets NATO/democratic-nation infrastructure protection. Co-founded with Balazs Nagy (CEO).",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Istanbul Erkek Lisesi", "role": "High school", "startYear": null, "endYear": 2015, "notes": "Elite Istanbul lycée." },
+      { "type": "Study", "org": "Technical University of Munich (TUM)", "role": "BEng Mechanical Engineering (with S. Korea exchange)", "startYear": 2015, "endYear": null, "notes": "Cross-discipline mech-eng base." },
+      { "type": "Tech", "org": "Airbus", "role": "Student intern / engineer", "startYear": null, "endYear": null, "notes": "Aerospace internship during TUM degree." },
+      { "type": "Tech", "org": "MAN", "role": "Student intern / engineer", "startYear": null, "endYear": null, "notes": "Heavy-industry German engineering internship." },
+      { "type": "Study", "org": "Imperial College London", "role": "MSc Robotics & AI (thesis on autonomous drones)", "startYear": null, "endYear": null, "notes": "Master's thesis directly seeded TYTAN's tech." }
+    ]
+  },
+  "nowSummary": "Co-Founder & CTO of TYTAN Technologies (Munich). €30M Series A defence-tech building autonomous counter-UAV systems. Forbes 30 Under 30 Europe 2026 AI honoree.",
+  "researchLinks": {
+    "linkedin": null,
+    "company": "https://www.tum-venture-labs.de/teams/tytan-technologies/",
+    "others": [
+      "https://app.dealroom.co/companies/tytan_technologies"
+    ],
+    "cluster": "germany-defence, tum, deep-tech, counter-uav",
+    "hint": "Cross-border Mechatronic Eng founder: Turkey → TUM → Imperial → defence-tech in Munich."
+  }
+}

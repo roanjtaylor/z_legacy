@@ -4,8 +4,7 @@
   "birthYear": 1964,
   "countryOfOrigin": "England (raised in USA)",
   "currentCountry": "England",
-  "tier": "tier1-admired",
-  "imageUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paulgraham_240x320.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
   "archetypeArc": [
     "Student",
     "Builder",
@@ -340,5 +339,65 @@
     ],
     "cluster": "",
     "hint": "Godfather of startups. Excellent philosophy on making something people want. No get rich quick hacks- just doing work that benefits people, and ideally can be made to scale to lots (high growth startup - only have a startup if it is growing weekly). Advocates for young exploration (college, avenues) to develop as a person before startups (although amid AI may be naive- need to explore but be ready to pounce on an idea if it becomes clear- focusing on following the problems rather than the get rich quick hopes). Can get millionaire with hard work (viaweb), billionaire takes some luck (Y-Combinator)."
-  }
+  },
+  "studentEndYear": 1993,
+  "firstCompany": {
+    "name": "Viaweb",
+    "year": 1995,
+    "ageAtFounding": 31,
+    "era": "web",
+    "country": "USA",
+    "oneLiner": "Effectively the first online-store builder of its kind — a web app for non-technical merchants. Written in Common Lisp; acquired by Yahoo! in 1998 for ~$49M (became Yahoo! Store).",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "Cornell University",
+        "role": "BA Philosophy",
+        "startYear": 1982,
+        "endYear": 1986,
+        "notes": "Programmed in his spare time throughout; switched away from philosophy in spirit late in undergrad."
+      },
+      {
+        "type": "Study",
+        "org": "Harvard University",
+        "role": "MS Computer Science",
+        "startYear": 1986,
+        "endYear": 1988,
+        "notes": "Entered for AI under Tom Cheatham; pivoted from 80s symbolic AI to Lisp itself."
+      },
+      {
+        "type": "Study",
+        "org": "Harvard University",
+        "role": "PhD Computer Science",
+        "startYear": 1988,
+        "endYear": 1990,
+        "notes": "Thesis on extending Lisp (later published as 'On Lisp'); 5-week dissertation sprint on continuations in 1990."
+      },
+      {
+        "type": "Study",
+        "org": "Accademia di Belle Arti, Florence",
+        "role": "Painting (one academic year)",
+        "startYear": 1989,
+        "endYear": 1990,
+        "notes": "Overlapped with the Harvard PhD."
+      },
+      {
+        "type": "Study",
+        "org": "Rhode Island School of Design",
+        "role": "Painting (did not complete)",
+        "startYear": 1992,
+        "endYear": 1993,
+        "notes": "Dropped out when the BFA foundation programme didn't actually teach painting."
+      },
+      {
+        "type": "Tech",
+        "org": "Various (Lisp consulting, early web experiments)",
+        "role": "Consultant / independent builder",
+        "startYear": 1993,
+        "endYear": 1995,
+        "notes": "Stayed independent and broke rather than joining a big company — preserved optionality on his time."
+      }
+    ]
+  },
+  "nowSummary": "Stepped back from YC operations in 2014; lives in England writing long-form essays ('How To Do Great Work', 'Founder Mode'). YC has incubated companies whose aggregate valuation is reported above $600B."
 }

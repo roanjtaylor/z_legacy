@@ -1,0 +1,138 @@
+{
+  "id": "jack-cregan",
+  "name": "Jack Cregan",
+  "birthYear": 1997,
+  "countryOfOrigin": "Ireland",
+  "currentCountry": "Ireland",
+  "imageUrl": null,
+  "archetypeArc": ["Founder", "Founder"],
+  "confidence": "low",
+  "education": [
+    {
+      "school": "Unknown (Ireland)",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": "Early education / university not surfaced from public sources reviewed."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Co-founder",
+      "company": "Rebills.io",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": 2024,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Rebills — a payment-orchestration company — as his first founder reps in Irish fintech.",
+        "Sold Rebills for $10M in 2024 — a small but clean exit that established him as a 'proven founder' in the Dublin payments scene before Paymend."
+      ],
+      "lessons": [
+        "A small clean exit ($10M-scale) in your mid-20s is a credible founder credential — it doesn't have to be a unicorn to earn the next venture's tailwind.",
+        "Payment orchestration is a credible Irish fintech sub-niche — Dublin's regulatory access + ACA talent base support it."
+      ],
+      "notes": "Rebills.io acquired in 2024 for $10M per LinkedIn-derived coverage. Co-founder details and exact dates not publicly disclosed."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "Paymend",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": 27,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded Paymend in Dublin post-Rebills exit with co-founder Daniel Harding (COO) — same vertical (payments) but moved up-stack from orchestration to revenue recovery.",
+        "Acted as merchant of record and assumed transaction risk — a structurally harder model than pure SaaS that requires real domain credibility.",
+        "Stayed bootstrapped (no public VC) — used the Rebills exit proceeds to fund the next venture rather than raising.",
+        "Recovered $53M in failed card payments in 2025 with a 25-person team across six countries."
+      ],
+      "lessons": [
+        "Bootstrapped second venture funded by a small first-exit is a clean European founder pattern — avoids dilutive capital while you find PMF.",
+        "Repeat founder in the same vertical (payments) compounds faster than swap-vertical founder — domain knowledge is the cheaper-to-acquire half.",
+        "Acting as merchant of record (taking on risk) is the kind of move only an exited operator with conviction can credibly make.",
+        "Geographic spread (6 countries in year one) without raising VC is achievable when the product is a financial-infrastructure layer rather than a brand."
+      ],
+      "notes": "Forbes 30 Under 30 Europe 2026. Paymend recovered $53M in failed payments in 2025 with 25-person team across 6 countries; bootstrapped."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [
+      {
+        "type": "acquisition",
+        "year": 2024,
+        "valueUsd": 10000000,
+        "notes": "Rebills.io acquired for $10M in 2024."
+      }
+    ],
+    "currentStatus": "Co-Founder & CEO of Paymend (Dublin). Bootstrapped; recovered $53M in failed card payments in 2025 with 25-person team across 6 countries. Forbes 30 Under 30 Europe 2026."
+  },
+  "lessons": [
+    {
+      "lesson": "A small clean first exit ($10M-scale Rebills) is a credible founder credential — doesn't have to be a unicorn to earn the next venture's tailwind.",
+      "source": "Paymend About page + Forbes 30U30 coverage."
+    },
+    {
+      "lesson": "Repeat-founder-in-same-vertical (payments) compounds faster than swap-vertical — domain knowledge is the cheaper-to-acquire half of the equation.",
+      "source": "Inferred from Rebills → Paymend arc."
+    },
+    {
+      "lesson": "Bootstrapped second venture funded by a first exit is a clean European founder pattern — avoids dilutive capital while finding PMF.",
+      "source": "Paymend About page."
+    },
+    {
+      "lesson": "Ireland's ACA / fintech ladder produces a steady stream of payments-vertical founders — Wayflyer, Stripe, Paymend, Rebills are part of the same cluster.",
+      "source": "Inferred from Irish fintech scene."
+    }
+  ],
+  "sources": [
+    {
+      "title": "About Us — Paymend",
+      "url": "https://www.paymend.com/about-us",
+      "type": "article"
+    },
+    {
+      "title": "10 Irish businesses named in Forbes 30 Under 30 2026 list — RTÉ",
+      "url": "https://www.rte.ie/lifestyle/fashion/2026/0416/1568522-10-irish-businesses-named-in-forbes-30-under-30-2026-list/",
+      "type": "article"
+    },
+    {
+      "title": "Jack Cregan — LinkedIn",
+      "url": "https://www.linkedin.com/in/jack-cregan-paymend",
+      "type": "article"
+    },
+    {
+      "title": "Jack Cregan — Rebills.io (LinkedIn)",
+      "url": "https://ie.linkedin.com/in/jack-cregan-253263109",
+      "type": "article"
+    }
+  ],
+  "notes": "AI/payments-era Irish repeat-founder. Limited public early-career detail — birth year and university not surfaced in reviewed sources. Forbes 30U30 implies <30 in 2026; Rebills exit at $10M in 2024 + Paymend founding in 2024 suggest mid-20s at founding. Treat birth year as estimate.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Rebills.io",
+    "year": 2020,
+    "ageAtFounding": null,
+    "era": "ai-revolution",
+    "country": "Ireland",
+    "oneLiner": "Payment-orchestration company. Acquired in 2024 for $10M — small clean Irish fintech exit that became the funding base for Paymend.",
+    "preFounderRoles": []
+  },
+  "nowSummary": "Co-Founder & CEO of Paymend (Dublin). Bootstrapped revenue-recovery platform for failed card payments; recovered $53M in 2025 with 25-person team across 6 countries. Forbes 30 Under 30 Europe 2026. Paymend acts as merchant of record and assumes transaction risk.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/jack-cregan-paymend",
+    "company": "https://www.paymend.com/about-us",
+    "others": [
+      "https://www.rte.ie/lifestyle/fashion/2026/0416/1568522-10-irish-businesses-named-in-forbes-30-under-30-2026-list/"
+    ],
+    "cluster": "ireland-fintech, payments, bootstrapped, repeat-founder",
+    "hint": "Repeat Irish payments founder: Rebills exit ($10M, 2024) → Paymend (bootstrapped, $53M recovered in year one)."
+  }
+}

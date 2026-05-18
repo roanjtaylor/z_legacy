@@ -1,0 +1,125 @@
+{
+  "id": "olivia-ferro",
+  "name": "Olivia Ferro",
+  "birthYear": 2000,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Operator", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Southern California (USC)",
+      "degree": "Nutrition (and business / health sciences)",
+      "startYear": null,
+      "endYear": 2022,
+      "notes": "Graduated May 2022. Studied nutrition with business and health-sciences breadth."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Creative Director",
+      "company": "eMed Digital Healthcare",
+      "archetype": "Operator",
+      "startYear": 2022,
+      "endYear": 2024,
+      "estAgeStart": 22,
+      "estAgeEnd": 24,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a Creative Director role at a digital-health company right out of USC — design + brand reps inside a real healthtech operator."
+      ],
+      "lessons": [
+        "A creative/brand seat inside an operating digital-health company is a faster pre-founder track than a generic marketing CV.",
+        "Working inside a digital-health company before founding a digital-health company is the cheapest customer-discovery you can do."
+      ],
+      "notes": "Per Crunchbase / LinkedIn."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "SheMed",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": 24,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded SheMed in April 2024 with her sister Chloe Ferro — sibling team built on a shared digital-health background.",
+        "Took CEO seat alongside Chloe as President — clean role split between operators with overlapping but distinct skill stacks.",
+        "Scaled from launch to $1B valuation in ~18 months — among the fastest UK healthtech unicorn trajectories on record."
+      ],
+      "lessons": [
+        "Sibling co-founder pair is a high-trust structure that compresses early decision-making cycles.",
+        "Healthtech unicorn velocity is achievable in the UK when the buyer is direct consumer (not the NHS) and willingness-to-pay is regulatory-tailwind (GLP-1 demand).",
+        "Found at 24, two years post-degree, with one operator role in the right vertical — the 'short ramp' template."
+      ],
+      "notes": "SheMed founded April 2024. $50M Series A October 2025 → $1B unicorn valuation. Olivia is CEO; sister Chloe is President. Forbes 30 Under 30 Europe 2026 (Science & Healthcare)."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "10-100M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & CEO of SheMed (London); $1B unicorn after $50M Series A in October 2025. Pre-exit; paper wealth."
+  },
+  "lessons": [
+    {
+      "lesson": "Two-year ramp from graduating university to founding a unicorn is achievable when the prior operator job is inside the exact vertical.",
+      "source": "Inferred from USC → eMed → SheMed arc."
+    },
+    {
+      "lesson": "Sibling co-founder pair compresses trust-building and aligns founder incentives without contract gymnastics.",
+      "source": "Inferred from Ferro sisters."
+    },
+    {
+      "lesson": "Consumer-healthtech wedge with a regulatory tailwind (GLP-1) beats horizontal consumer health for early capture.",
+      "source": "MobiHealthNews / Digital Health coverage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Olivia Ferro — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/olivia-ferro-1dcf",
+      "type": "article"
+    },
+    {
+      "title": "Olivia Ferro — LinkedIn",
+      "url": "https://www.linkedin.com/in/oliviaferro/",
+      "type": "article"
+    },
+    {
+      "title": "Female-founded UK HealthTech startup reaches unicorn status — Digital Health",
+      "url": "https://www.digitalhealth.net/2025/10/female-founded-uk-healthtech-startup-reaches-unicorn-status/",
+      "type": "article"
+    },
+    {
+      "title": "SheMed Achieves Unicorn Status with $50M Raise — BeBeez International",
+      "url": "https://bebeez.eu/2025/10/27/shemed-achieves-unicorn-status-with-50m-raise-to-scale-personalised-womens-healthcare/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era UK consumer-healthtech founder. Two-year ramp from USC nutrition graduate → eMed Creative Director → SheMed CEO at 24 — short-ramp founder template enabled by the right vertical-adjacent first job. Sibling co-founder structure with Chloe is defining.",
+  "studentEndYear": 2022,
+  "firstCompany": {
+    "name": "SheMed",
+    "year": 2024,
+    "ageAtFounding": 24,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Personalised women's GLP-1 weight-management platform — co-founded April 2024 with sister Chloe. $1B unicorn after $50M Series A (October 2025).",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Southern California (USC)", "role": "Nutrition (with business / health sciences)", "startYear": null, "endYear": 2022, "notes": "May 2022 graduation." },
+      { "type": "Operator", "org": "eMed Digital Healthcare", "role": "Creative Director", "startYear": 2022, "endYear": 2024, "notes": "Two years inside a digital-health operating company immediately before founding SheMed." }
+    ]
+  },
+  "nowSummary": "Co-Founder & CEO of SheMed (London). $1B unicorn after $50M Series A in October 2025. Forbes 30 Under 30 Europe 2026 (Science & Healthcare).",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/oliviaferro/",
+    "company": "https://www.shemed.com/",
+    "others": [],
+    "cluster": "uk-healthtech, glp-1, sibling-founders, short-ramp",
+    "hint": "Two-year ramp from USC nutrition grad → eMed Creative Director → SheMed CEO at 24."
+  }
+}

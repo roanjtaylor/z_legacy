@@ -4,8 +4,7 @@
   "birthYear": 1994,
   "countryOfOrigin": "Germany",
   "currentCountry": "United Kingdom",
-  "imageUrl": null,
-  "tier": "tier1-admired",
+  "imageUrl": "https://media.licdn.com/dms/image/v2/C4D03AQEt4zYtyVh41Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1630427629939?e=1780531200&v=beta&t=LBdzkrYJpIe_SiVMQo3eZNPs-5tCJfiaHZTNHlWIV4g",
   "archetypeArc": [
     "Hustler",
     "Student",
@@ -163,5 +162,49 @@
     ],
     "cluster": "",
     "hint": "Imperial college london - entrepreneurial spirit"
-  }
+  },
+  "studentEndYear": 2018,
+  "firstCompany": {
+    "name": "HIVED",
+    "year": 2021,
+    "ageAtFounding": 27,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "London-based fully-electric parcel-delivery network, co-founded with Murvah Iqbal. Premium retail anchor customers (Zara, John Lewis, Nespresso). ~$56.8M raised inc. $42M Series B (July 2025).",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "Kardinal-von-Galen Gymnasium Mettingen",
+        "role": "Abitur (German secondary)",
+        "startYear": null,
+        "endYear": 2013,
+        "notes": "Mettingen, NRW."
+      },
+      {
+        "type": "Side-business",
+        "org": "Lust Auf Lebensart (German SME / lifestyle brand)",
+        "role": "Junior CEO / family-business operator",
+        "startYear": 2013,
+        "endYear": 2019,
+        "notes": "Ran a small operating business in parallel with KCL — got real P&L reps in his teens/early 20s instead of pure internships."
+      },
+      {
+        "type": "Study",
+        "org": "King's College London",
+        "role": "BSc Economics & Management",
+        "startYear": 2014,
+        "endYear": 2018,
+        "notes": "Met co-founder Murvah Iqbal on a KCL trip to Silicon Valley."
+      },
+      {
+        "type": "Side-business",
+        "org": "Vanvas",
+        "role": "Co-Founder & CEO (UK outdoor-advertising startup, wound down)",
+        "startYear": null,
+        "endYear": null,
+        "notes": "Monetised ad space on delivery vans — domain proximity to last-mile delivery became HIVED's lane."
+      }
+    ]
+  },
+  "nowSummary": "Co-Founder & Co-CEO (CPO-track) of HIVED. Forbes 30 Under 30 Europe (Technology). Pre-exit."
 }

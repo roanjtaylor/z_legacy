@@ -1,146 +1,37 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { scaleLinear, scalePoint } from "d3-scale";
-import type { Archetype, Era, Person } from "@/lib/types";
-import { ARCHETYPE_LANES, ERAS, eraOfYear } from "@/lib/types";
+import { scaleLinear } from "d3-scale";
+import type { Era, Person, PreFounderRoleType } from "@/lib/types";
+import { ERAS } from "@/lib/types";
 
+const X_MIN = 1980;
+const X_MAX = 2028;
 const WIDTH = 1200;
-const MARGIN = { top: 28, right: 40, bottom: 44, left: 110 };
-const AGE_MIN = 15;
-const AGE_MAX = 55;
+const ROW_HEIGHT = 38;
+const MARGIN = { top: 70, right: 60, bottom: 30, left: 230 };
 const CURRENT_YEAR = 2026;
-const YOU_AGE = 21;
-const LANE_HEIGHT = 56;
-const PANEL_HEIGHT =
-  MARGIN.top + ARCHETYPE_LANES.length * LANE_HEIGHT + MARGIN.bottom;
-const SUB_LANE_SPACING = 3; // px between parallel person tracks within a lane
 
-const ERA_META: Record<Era, { label: string; blurb: string; tint: string }> = {
-  "pre-pc": {
-    label: "Pre-PC",
-    blurb: "Mainframe / industrial — pre-1980",
-    tint: "#f5f5f4",
-  },
-  pc: {
-    label: "PC era",
-    blurb: "1980–1994 · personal computers, early software",
-    tint: "#fef3c7",
-  },
-  web: {
-    label: "Web / dot-com",
-    blurb: "1995–2006 · the web, dot-com, early SaaS",
-    tint: "#dbeafe",
-  },
-  "mobile-cloud": {
-    label: "Mobile + Cloud",
-    blurb: "2007–2018 · iPhone, AWS, mobile-first SaaS",
-    tint: "#dcfce7",
-  },
-  "ai-revolution": {
-    label: "AI revolution",
-    blurb: "2019–present · transformers, GPT, frontier labs",
-    tint: "#fae8ff",
-  },
+const ERA_TINT: Record<Era, string> = {
+  "pre-pc": "#f5f5f4",
+  pc: "#fef3c7",
+  web: "#dbeafe",
+  "mobile-cloud": "#dcfce7",
+  "ai-revolution": "#fae8ff",
 };
 
-function effectiveBirthYear(p: Person): number | null {
-  if (p.birthYear !== null) return p.birthYear;
-  for (const s of p.careerSteps) {
-    if (s.startYear !== null && s.estAgeStart !== null) {
-      return s.startYear - s.estAgeStart;
-    }
-  }
-  const fs = p.careerSteps.find(
-    (s) => s.archetype === "Founder" && s.startYear !== null
-  );
-  if (fs?.startYear) return fs.startYear - 28;
-  const any = p.careerSteps.find((s) => s.startYear !== null);
-  if (any?.startYear) return any.startYear - 28;
-  return null;
-}
+const ROLE_COLOR: Record<PreFounderRoleType, string> = {
+  Study: "#64748b",
+  VC: "#a855f7",
+  Tech: "#0d9488",
+  Consulting: "#f97316",
+  "Sales-BD": "#ec4899",
+  "Side-business": "#d97706",
+  Operator: "#2563eb",
+  Other: "#737373",
+};
 
-function flagshipEra(p: Person): Era | null {
-  const founders = p.careerSteps.filter(
-    (s) => s.archetype === "Founder" && s.startYear !== null
-  );
-  const pick =
-    founders.length > 0
-      ? founders[founders.length - 1]
-      : [...p.careerSteps]
-          .reverse()
-          .find((s) => s.startYear !== null) ?? null;
-  if (!pick || pick.startYear === null) return null;
-  const end = pick.endYear ?? CURRENT_YEAR;
-  const mid = Math.floor((pick.startYear + Math.min(end, CURRENT_YEAR)) / 2);
-  return eraOfYear(mid);
-}
-
-// Always prefer year-derived ages when we have birth + startYear.
-// This keeps step transitions vertical (Student endAge == Founder startAge
-// when the years match), instead of diagonal due to estAgeStart off-by-ones.
-type Seg = { startAge: number; endAge: number; archetype: Archetype };
-
-function segmentsFor(p: Person, birth: number | null): Seg[] {
-  const segs: Seg[] = [];
-  for (const step of p.careerSteps) {
-    let startAge: number | null = null;
-    let endAge: number | null = null;
-    if (birth !== null && step.startYear !== null) {
-      startAge = step.startYear - birth;
-      endAge = step.endYear !== null ? step.endYear - birth : null;
-    } else if (step.estAgeStart !== null) {
-      startAge = step.estAgeStart;
-      endAge = step.estAgeEnd;
-    }
-    if (startAge === null) continue;
-    const open = step.endYear === null && endAge === null;
-    const effEnd = open
-      ? birth !== null
-        ? Math.min(CURRENT_YEAR - birth, AGE_MAX)
-        : startAge + 1
-      : endAge ?? startAge;
-    segs.push({
-      startAge,
-      endAge: Math.max(effEnd, startAge),
-      archetype: step.archetype,
-    });
-  }
-  return segs;
-}
-
-// Build a stair-step SVG path:
-//   For each segment: horizontal at archetype-Y from startAge to endAge.
-//   For each transition i → i+1: horizontal continuation on prev lane until
-//   ageStart_{i+1}, then a vertical jump to the next lane.
-function stairPath(
-  segs: Seg[],
-  xScale: (n: number) => number,
-  yFor: (a: Archetype) => number
-): string {
-  if (segs.length === 0) return "";
-  const parts: string[] = [];
-  parts.push(`M ${xScale(segs[0].startAge)} ${yFor(segs[0].archetype)}`);
-  for (let i = 0; i < segs.length; i++) {
-    const s = segs[i];
-    parts.push(`L ${xScale(s.endAge)} ${yFor(s.archetype)}`);
-    const next = segs[i + 1];
-    if (next) {
-      // bridge any gap on current lane, then vertical to next lane
-      if (next.startAge !== s.endAge) {
-        parts.push(`L ${xScale(next.startAge)} ${yFor(s.archetype)}`);
-      }
-      parts.push(`L ${xScale(next.startAge)} ${yFor(next.archetype)}`);
-    }
-  }
-  return parts.join(" ");
-}
-
-// Stable distinct color per person within a panel.
-function colorFor(index: number, total: number): string {
-  const hue = Math.round((index * 360) / Math.max(total, 1));
-  return `hsl(${hue} 70% 42%)`;
-}
+const ROLE_LABELS = Object.entries(ROLE_COLOR) as [PreFounderRoleType, string][];
 
 export function CareerTimeline({
   people,
@@ -151,396 +42,384 @@ export function CareerTimeline({
   selectedId?: string;
   onSelect: (id: string) => void;
 }) {
-  const grouped = useMemo(() => {
-    const groups = new Map<Era, Person[]>();
-    for (const p of people) {
-      const era = flagshipEra(p);
-      if (!era) continue;
-      if (!groups.has(era)) groups.set(era, []);
-      groups.get(era)!.push(p);
-    }
-    return groups;
-  }, [people]);
+  const [europeOnly, setEuropeOnly] = useState(false);
+  const [hoverId, setHoverId] = useState<string | null>(null);
 
-  const orderedEras: Era[] = ERAS.map((e) => e.id).filter((id) =>
-    grouped.has(id)
-  );
+  const filtered = useMemo(() => {
+    if (!europeOnly) return people;
+    return people.filter((p) => isEuropean(p.countryOfOrigin));
+  }, [people, europeOnly]);
 
-  // Default to AI revolution if present, otherwise the era with most people.
-  const defaultEra = useMemo<Era>(() => {
-    if (grouped.has("ai-revolution")) return "ai-revolution";
-    let best: Era = orderedEras[0] ?? "ai-revolution";
-    let bestN = -1;
-    for (const e of orderedEras) {
-      const n = grouped.get(e)?.length ?? 0;
-      if (n > bestN) {
-        bestN = n;
-        best = e;
-      }
-    }
-    return best;
-  }, [grouped, orderedEras]);
+  // Sort by firstCompany.year ascending; nulls (no founding year) go last.
+  const rows = useMemo(() => {
+    return [...filtered].sort((a, b) => {
+      const ay = a.firstCompany?.year ?? Infinity;
+      const by = b.firstCompany?.year ?? Infinity;
+      if (ay !== by) return ay - by;
+      return a.name.localeCompare(b.name);
+    });
+  }, [filtered]);
 
-  const [activeEra, setActiveEra] = useState<Era>(defaultEra);
-  const safeActive = orderedEras.includes(activeEra) ? activeEra : defaultEra;
-  const activePeople = grouped.get(safeActive) ?? [];
+  const height = MARGIN.top + rows.length * ROW_HEIGHT + MARGIN.bottom;
+
+  const xScale = scaleLinear()
+    .domain([X_MIN, X_MAX])
+    .range([MARGIN.left, WIDTH - MARGIN.right]);
+
+  const yearTicks: number[] = [];
+  for (let y = 1980; y <= X_MAX; y += 5) yearTicks.push(y);
 
   return (
     <div className="rounded-xl border border-neutral-200 bg-white overflow-hidden">
-      <div
-        role="tablist"
-        className="flex flex-wrap gap-1 border-b border-neutral-200 bg-neutral-50 px-2 pt-2"
-      >
-        {orderedEras.map((era) => {
-          const meta = ERA_META[era];
-          const count = grouped.get(era)?.length ?? 0;
-          const isActive = era === safeActive;
-          return (
-            <button
-              key={era}
-              role="tab"
-              aria-selected={isActive}
-              onClick={() => setActiveEra(era)}
-              className={
-                "px-3 py-1.5 text-xs font-medium rounded-t-md border-b-2 transition " +
-                (isActive
-                  ? "border-neutral-900 text-neutral-900"
-                  : "border-transparent text-neutral-500 hover:text-neutral-800")
-              }
-              style={isActive ? { background: meta.tint } : undefined}
-            >
-              {meta.label}
-              <span className="ml-1.5 text-neutral-500 font-normal">
-                {count}
-              </span>
-            </button>
-          );
-        })}
+      <div className="px-4 py-3 border-b border-neutral-200 flex items-baseline justify-between gap-3 flex-wrap">
+        <div>
+          <h3 className="text-sm font-semibold tracking-tight text-neutral-900">
+            Founders by year of first company
+          </h3>
+          <p className="text-xs text-neutral-600 mt-0.5">
+            Pre-founder dots show their path to the leap. Solid line ends at first founded company; era bands shade the background.
+          </p>
+        </div>
+        <div className="flex items-center gap-3 text-xs">
+          <label className="flex items-center gap-1.5 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={europeOnly}
+              onChange={(e) => setEuropeOnly(e.target.checked)}
+            />
+            <span>Europe only</span>
+          </label>
+          <span className="text-neutral-500">{rows.length} founders</span>
+        </div>
       </div>
-      <EraPanel
-        key={safeActive}
-        era={safeActive}
-        people={activePeople}
-        selectedId={selectedId}
-        onSelect={onSelect}
-      />
+
+      <div className="overflow-x-auto">
+        <svg
+          viewBox={`0 0 ${WIDTH} ${height}`}
+          className="block min-w-[900px] w-full"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          {/* Era bands */}
+          {ERAS.map((era) => {
+            const x1 = xScale(Math.max(era.startYear, X_MIN));
+            const x2 = xScale(Math.min(era.endYear ?? X_MAX, X_MAX));
+            return (
+              <g key={era.id}>
+                <rect
+                  x={x1}
+                  y={MARGIN.top - 30}
+                  width={x2 - x1}
+                  height={height - MARGIN.top + 30 - MARGIN.bottom}
+                  fill={ERA_TINT[era.id]}
+                  opacity={0.5}
+                />
+                <text
+                  x={(x1 + x2) / 2}
+                  y={MARGIN.top - 36}
+                  textAnchor="middle"
+                  fontSize={10}
+                  fontWeight={600}
+                  className="fill-neutral-600 uppercase tracking-wider"
+                >
+                  {era.label}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* Year ticks */}
+          {yearTicks.map((y) => (
+            <g key={y}>
+              <line
+                x1={xScale(y)}
+                x2={xScale(y)}
+                y1={MARGIN.top - 6}
+                y2={height - MARGIN.bottom}
+                stroke="#fff"
+                strokeWidth={1}
+                opacity={0.6}
+              />
+              <text
+                x={xScale(y)}
+                y={MARGIN.top - 10}
+                textAnchor="middle"
+                fontSize={9}
+                className="fill-neutral-500"
+              >
+                {y}
+              </text>
+            </g>
+          ))}
+
+          {/* "You" marker — Roan, age 21 in 2026 */}
+          <line
+            x1={xScale(CURRENT_YEAR)}
+            x2={xScale(CURRENT_YEAR)}
+            y1={MARGIN.top - 4}
+            y2={height - MARGIN.bottom}
+            stroke="#16a34a"
+            strokeWidth={1.25}
+            strokeDasharray="4 4"
+          />
+          <text
+            x={xScale(CURRENT_YEAR)}
+            y={MARGIN.top - 18}
+            textAnchor="middle"
+            fontSize={9}
+            fontWeight={600}
+            className="fill-green-700"
+          >
+            you · 21
+          </text>
+
+          {/* Rows */}
+          {rows.map((p, i) => {
+            const y = MARGIN.top + i * ROW_HEIGHT + ROW_HEIGHT / 2;
+            const isSelected = selectedId === p.id;
+            const isHovered = hoverId === p.id;
+            const isAnyHovered = hoverId !== null;
+            const faded = isAnyHovered && !isHovered && !isSelected;
+
+            const fc = p.firstCompany ?? null;
+            const fcX = fc ? xScale(fc.year) : null;
+
+            // Collect pre-founder role dots that have a startYear we can plot.
+            const dots = (fc?.preFounderRoles ?? [])
+              .filter((r) => r.startYear !== null && r.startYear >= X_MIN)
+              .map((r) => ({
+                year: r.startYear as number,
+                color: ROLE_COLOR[r.type],
+                type: r.type,
+                label: `${r.role} @ ${r.org}`,
+              }));
+
+            const lineStart = dots.length > 0
+              ? Math.min(...dots.map((d) => d.year))
+              : p.studentEndYear ?? fc?.year ?? null;
+
+            return (
+              <g
+                key={p.id}
+                onMouseEnter={() => setHoverId(p.id)}
+                onMouseLeave={() => setHoverId(null)}
+                onClick={() => onSelect(p.id)}
+                className="cursor-pointer"
+                opacity={faded ? 0.35 : 1}
+              >
+                {/* Row hover background */}
+                <rect
+                  x={0}
+                  y={y - ROW_HEIGHT / 2}
+                  width={WIDTH}
+                  height={ROW_HEIGHT}
+                  fill={isSelected || isHovered ? "#0f172a" : "transparent"}
+                  opacity={isSelected || isHovered ? 0.04 : 0}
+                />
+
+                {/* Left label: avatar + name + meta */}
+                <foreignObject
+                  x={4}
+                  y={y - ROW_HEIGHT / 2 + 4}
+                  width={MARGIN.left - 12}
+                  height={ROW_HEIGHT - 8}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 8,
+                      height: "100%",
+                      fontFamily: "inherit",
+                    }}
+                  >
+                    {p.imageUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={p.imageUrl}
+                        alt=""
+                        style={{
+                          width: 22,
+                          height: 22,
+                          borderRadius: "50%",
+                          objectFit: "cover",
+                          border: "1px solid #e5e5e5",
+                        }}
+                      />
+                    ) : (
+                      <span
+                        style={{
+                          width: 22,
+                          height: 22,
+                          borderRadius: "50%",
+                          background: "#f5f5f5",
+                          border: "1px solid #e5e5e5",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontSize: 10,
+                          color: "#737373",
+                        }}
+                      >
+                        {p.name.charAt(0)}
+                      </span>
+                    )}
+                    <div style={{ minWidth: 0, lineHeight: 1.15 }}>
+                      <div
+                        style={{
+                          fontSize: 12,
+                          fontWeight: isSelected ? 700 : 500,
+                          color: "#0f172a",
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {p.name}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: 10,
+                          color: "#737373",
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {p.countryOfOrigin}
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+
+                {/* Connector line from earliest pre-founder dot to first company */}
+                {lineStart !== null && fc && (
+                  <line
+                    x1={xScale(Math.max(lineStart, X_MIN))}
+                    x2={fcX ?? 0}
+                    y1={y}
+                    y2={y}
+                    stroke="#cbd5e1"
+                    strokeWidth={1.5}
+                  />
+                )}
+
+                {/* Pre-founder dots */}
+                {dots.map((d, di) => (
+                  <circle
+                    key={di}
+                    cx={xScale(d.year)}
+                    cy={y}
+                    r={3}
+                    fill={d.color}
+                    stroke="#fff"
+                    strokeWidth={1}
+                  >
+                    <title>
+                      {d.year} · {d.type} · {d.label}
+                    </title>
+                  </circle>
+                ))}
+
+                {/* First-company marker */}
+                {fc && fcX !== null && (
+                  <g>
+                    <circle
+                      cx={fcX}
+                      cy={y}
+                      r={isHovered || isSelected ? 8 : 6}
+                      fill="#0f172a"
+                      stroke={ERA_TINT[fc.era]}
+                      strokeWidth={3}
+                    />
+                    <text
+                      x={fcX + 12}
+                      y={y + 4}
+                      fontSize={11}
+                      fontWeight={600}
+                      className="fill-neutral-900"
+                    >
+                      {fc.name} · {fc.year}
+                      {fc.ageAtFounding !== null && (
+                        <tspan className="fill-neutral-500" fontWeight={400}>
+                          {" "}
+                          (age {fc.ageAtFounding})
+                        </tspan>
+                      )}
+                    </text>
+                  </g>
+                )}
+
+                {/* No-data row */}
+                {!fc && (
+                  <text
+                    x={MARGIN.left + 6}
+                    y={y + 4}
+                    fontSize={11}
+                    className="fill-neutral-400 italic"
+                  >
+                    no firm founding date — see profile
+                  </text>
+                )}
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+
+      {/* Legend */}
+      <div className="px-4 py-2 border-t border-neutral-200 bg-neutral-50/40 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-neutral-700">
+        <span className="font-semibold text-neutral-600 uppercase tracking-wider text-[10px]">
+          Pre-founder role:
+        </span>
+        {ROLE_LABELS.map(([type, color]) => (
+          <span key={type} className="inline-flex items-center gap-1">
+            <span
+              className="inline-block w-2.5 h-2.5 rounded-full"
+              style={{ background: color }}
+            />
+            {type}
+          </span>
+        ))}
+        <span className="inline-flex items-center gap-1 ml-2">
+          <span className="inline-block w-3 h-3 rounded-full bg-neutral-900 border-2 border-fuchsia-200" />
+          First company (ring = era)
+        </span>
+      </div>
+
+      <CohortSummary people={filtered} onSelect={onSelect} />
     </div>
   );
 }
 
-function EraPanel({
-  era,
-  people,
-  selectedId,
-  onSelect,
-}: {
-  era: Era;
-  people: Person[];
-  selectedId?: string;
-  onSelect: (id: string) => void;
-}) {
-  const [hoverId, setHoverId] = useState<string | null>(null);
-
-  const meta = ERA_META[era];
-
-  // Stable order (by id) so colors and stagger don't jump on rerenders.
-  const ordered = useMemo(
-    () => [...people].sort((a, b) => a.id.localeCompare(b.id)),
-    [people]
-  );
-  const n = ordered.length;
-
-  const xScale = scaleLinear()
-    .domain([AGE_MIN, AGE_MAX])
-    .range([MARGIN.left, WIDTH - MARGIN.right]);
-
-  const yScale = scalePoint<Archetype>()
-    .domain(ARCHETYPE_LANES)
-    .range([MARGIN.top, PANEL_HEIGHT - MARGIN.bottom])
-    .padding(0.5);
-
-  // Within each lane, person i gets a sub-lane offset so lines run parallel.
-  const offsetFor = (i: number) => (i - (n - 1) / 2) * SUB_LANE_SPACING;
-
-  const tracks = useMemo(
-    () =>
-      ordered.map((p, i) => {
-        const birth = effectiveBirthYear(p);
-        const segs = segmentsFor(p, birth);
-        return {
-          person: p,
-          birth,
-          segs,
-          color: colorFor(i, n),
-          offset: offsetFor(i),
-          index: i,
-        };
-      }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [ordered, n]
-  );
-
-  const ageTicks: number[] = [];
-  for (let a = AGE_MIN; a <= AGE_MAX; a += 5) ageTicks.push(a);
-
-  return (
-    <div>
-      <div
-        className="px-4 py-2 flex items-baseline justify-between gap-3 border-b border-neutral-200"
-        style={{ background: meta.tint }}
-      >
-        <div className="flex items-baseline gap-3 min-w-0">
-          <h3 className="text-sm font-semibold tracking-tight text-neutral-900">
-            {meta.label}
-          </h3>
-          <span className="text-xs text-neutral-600 truncate">
-            {meta.blurb}
-          </span>
-        </div>
-        <span className="text-xs text-neutral-500 shrink-0">
-          {n} {n === 1 ? "founder" : "founders"}
-        </span>
-      </div>
-
-      <svg
-        viewBox={`0 0 ${WIDTH} ${PANEL_HEIGHT}`}
-        className="w-full block"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        {ARCHETYPE_LANES.map((arch) => (
-          <g key={arch}>
-            <line
-              x1={MARGIN.left}
-              x2={WIDTH - MARGIN.right}
-              y1={yScale(arch)!}
-              y2={yScale(arch)!}
-              stroke="#e5e5e5"
-              strokeDasharray="2 4"
-            />
-            <text
-              x={MARGIN.left - 10}
-              y={yScale(arch)!}
-              textAnchor="end"
-              dominantBaseline="middle"
-              className="fill-neutral-600"
-              fontSize={11}
-              fontWeight={500}
-            >
-              {arch}
-            </text>
-          </g>
-        ))}
-
-        {ageTicks.map((age) => (
-          <g key={age}>
-            <line
-              x1={xScale(age)}
-              x2={xScale(age)}
-              y1={MARGIN.top}
-              y2={PANEL_HEIGHT - MARGIN.bottom}
-              stroke="#f5f5f5"
-            />
-            <text
-              x={xScale(age)}
-              y={PANEL_HEIGHT - MARGIN.bottom + 14}
-              textAnchor="middle"
-              className="fill-neutral-500"
-              fontSize={10}
-            >
-              {age}
-            </text>
-          </g>
-        ))}
-        <text
-          x={(WIDTH - MARGIN.right + MARGIN.left) / 2}
-          y={PANEL_HEIGHT - 8}
-          textAnchor="middle"
-          className="fill-neutral-600"
-          fontSize={11}
-        >
-          age
-        </text>
-
-        <line
-          x1={xScale(YOU_AGE)}
-          x2={xScale(YOU_AGE)}
-          y1={MARGIN.top - 6}
-          y2={PANEL_HEIGHT - MARGIN.bottom}
-          stroke="#16a34a"
-          strokeWidth={1.25}
-          strokeDasharray="4 4"
-        />
-        <text
-          x={xScale(YOU_AGE)}
-          y={MARGIN.top - 10}
-          textAnchor="middle"
-          className="fill-green-700"
-          fontSize={10}
-          fontWeight={600}
-        >
-          you · {YOU_AGE}
-        </text>
-
-        {/* Per-person parallel thin lines */}
-        {tracks.map(({ person, segs, color, offset }) => {
-          if (segs.length === 0) return null;
-          const isHovered = hoverId === person.id;
-          const isSelected = selectedId === person.id;
-          const isAnyHovered = hoverId !== null;
-          const isFaded = isAnyHovered && !isHovered && !isSelected;
-          const dash: string | undefined = undefined;
-
-          const yFor = (a: Archetype) => yScale(a)! + offset;
-          const path = stairPath(segs, (n) => xScale(n), yFor);
-
-          return (
-            <g
-              key={person.id}
-              onMouseEnter={() => setHoverId(person.id)}
-              onMouseLeave={() => setHoverId(null)}
-              onClick={() => onSelect(person.id)}
-              className="cursor-pointer"
-            >
-              <path
-                d={path}
-                fill="none"
-                stroke={color}
-                strokeWidth={isHovered || isSelected ? 2.5 : 1.25}
-                strokeDasharray={dash}
-                opacity={isFaded ? 0.1 : isHovered || isSelected ? 1 : 0.85}
-                strokeLinejoin="round"
-                strokeLinecap="round"
-              />
-              {/* Endpoint marker at current age */}
-              {segs.length > 0 && (
-                <circle
-                  cx={xScale(segs[segs.length - 1].endAge)}
-                  cy={yFor(segs[segs.length - 1].archetype)}
-                  r={isHovered || isSelected ? 3.5 : 2}
-                  fill={color}
-                  opacity={isFaded ? 0.1 : 1}
-                />
-              )}
-            </g>
-          );
-        })}
-
-        {/* Hover overlay: highlight a single person's name above their endpoint */}
-        {hoverId &&
-          (() => {
-            const t = tracks.find((x) => x.person.id === hoverId);
-            if (!t || t.segs.length === 0) return null;
-            const last = t.segs[t.segs.length - 1];
-            const x = xScale(last.endAge);
-            const y = yScale(last.archetype)! + t.offset;
-            const label = `${t.person.name} · ${
-              t.birth !== null ? CURRENT_YEAR - t.birth : "?"
-            }`;
-            const w = label.length * 6.2 + 14;
-            return (
-              <g pointerEvents="none">
-                <rect
-                  x={x - w / 2}
-                  y={y - 24}
-                  width={w}
-                  height={18}
-                  rx={4}
-                  fill="#0f172a"
-                  opacity={0.92}
-                />
-                <text
-                  x={x}
-                  y={y - 12}
-                  textAnchor="middle"
-                  fontSize={11}
-                  fontWeight={600}
-                  fill="#fff"
-                >
-                  {label}
-                </text>
-              </g>
-            );
-          })()}
-      </svg>
-
-      {/* Per-panel legend: colored swatch + name, clickable, hover-highlight */}
-      <div className="px-4 py-3 border-t border-neutral-200 flex flex-wrap gap-x-4 gap-y-1.5">
-        {tracks.map(({ person, color, birth }) => {
-          const age = birth !== null ? CURRENT_YEAR - birth : null;
-          const isHovered = hoverId === person.id;
-          const isSelected = selectedId === person.id;
-          const dash: string | undefined = undefined;
-          return (
-            <button
-              key={person.id}
-              onMouseEnter={() => setHoverId(person.id)}
-              onMouseLeave={() => setHoverId(null)}
-              onClick={() => onSelect(person.id)}
-              className={
-                "flex items-center gap-2 text-xs " +
-                (isHovered || isSelected
-                  ? "text-neutral-900 font-medium"
-                  : "text-neutral-700 hover:text-neutral-900")
-              }
-            >
-              {person.imageUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={person.imageUrl}
-                  alt=""
-                  className="w-6 h-6 rounded-full object-cover border border-neutral-200"
-                />
-              ) : (
-                <span
-                  className="w-6 h-6 rounded-full border border-neutral-200 bg-neutral-100 flex items-center justify-center text-[10px] text-neutral-500"
-                  aria-hidden
-                >
-                  {person.name.charAt(0)}
-                </span>
-              )}
-              <svg width="22" height="6" aria-hidden>
-                <line
-                  x1="0"
-                  x2="22"
-                  y1="3"
-                  y2="3"
-                  stroke={color}
-                  strokeWidth={2}
-                  strokeDasharray={dash}
-                />
-              </svg>
-              <span>{person.name}</span>
-              {age !== null && (
-                <span className="text-neutral-400">· {age}</span>
-              )}
-            </button>
-          );
-        })}
-      </div>
-
-      <CohortSummary people={ordered} onSelect={onSelect} />
-    </div>
-  );
+function isEuropean(country: string): boolean {
+  const c = country.toLowerCase();
+  const exclude = ["usa", "united states", "canada", "australia"];
+  if (exclude.some((x) => c.includes(x))) return false;
+  // Anything with England/UK/NI/Ireland/Sweden/Estonia/Germany/Netherlands/France/Spain/Italy etc.
+  return true; // dataset is europe + USA; this covers everyone except USA
 }
 
 function normaliseSchool(raw: string): string {
   const s = raw.trim();
-  // Group common university spellings to a single label.
   const patterns: { match: RegExp; label: string }[] = [
     { match: /\bcambridge\b/i, label: "University of Cambridge" },
     { match: /\boxford\b/i, label: "University of Oxford" },
     { match: /\bstanford\b/i, label: "Stanford University" },
     { match: /\bharvard\b/i, label: "Harvard University" },
     { match: /\bmit\b/i, label: "MIT" },
-    { match: /\bimperial college\b|\bimperial\b/i, label: "Imperial College London" },
+    { match: /\bimperial\b/i, label: "Imperial College London" },
     { match: /\b(ucl|university college london)\b/i, label: "UCL" },
+    { match: /\bking'?s college london\b/i, label: "King's College London" },
     { match: /\blse\b|\blondon school of economics\b/i, label: "LSE" },
-    { match: /\bucla\b/i, label: "UCLA" },
     { match: /\b(uc berkeley|berkeley)\b/i, label: "UC Berkeley" },
     { match: /\beth\b/i, label: "ETH Zurich" },
     { match: /\bulster\b/i, label: "Ulster University" },
     { match: /\btrinity college dublin\b|\btcd\b/i, label: "Trinity College Dublin" },
     { match: /\bqueen's university belfast\b|\bqub\b/i, label: "Queen's University Belfast" },
+    { match: /\buniversity college dublin\b|\bucd\b/i, label: "University College Dublin" },
+    { match: /\bbristol\b/i, label: "University of Bristol" },
+    { match: /\bkth\b/i, label: "KTH Stockholm" },
+    { match: /\bstockholm school of economics\b|\bsse\b/i, label: "SSE Stockholm" },
   ];
   for (const { match, label } of patterns) {
     if (match.test(s)) return label;
@@ -647,7 +526,6 @@ function CohortSummary({
                 <button
                   onClick={() => onSelect(p.id)}
                   className="inline-flex items-center gap-2 text-xs px-2 py-1 rounded-full bg-white border border-neutral-200 hover:border-neutral-900 hover:bg-neutral-100"
-                  title="Open to view or edit"
                 >
                   {p.imageUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -657,10 +535,7 @@ function CohortSummary({
                       className="w-5 h-5 rounded-full object-cover border border-neutral-200"
                     />
                   ) : (
-                    <span
-                      className="w-5 h-5 rounded-full border border-neutral-200 bg-neutral-100 flex items-center justify-center text-[9px] text-neutral-500"
-                      aria-hidden
-                    >
+                    <span className="w-5 h-5 rounded-full border border-neutral-200 bg-neutral-100 flex items-center justify-center text-[9px] text-neutral-500">
                       {p.name.charAt(0)}
                     </span>
                   )}

@@ -152,6 +152,21 @@
     }
   ],
   "notes": "AI-revolution era cybersecurity founder (2024+). Oxford-educated; Tessian alumnus; classic operator-to-founder path with deep domain pain. Note: hint in researchLinks mentions 'AI for product design decisions (like posthog?)' but this is incorrect — Maze is agentic AI for cloud vulnerability triage/remediation. European context: London-based, raised from Cherry (Berlin) and Theory (US) — another European cyber founder going US-VC route on AI-native security. Education years/degree at Oxford not confirmed from public sources.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Maze",
+    "year": 2024,
+    "ageAtFounding": null,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Agentic AI for cloud vulnerability triage and remediation (not prioritisation scoring). Out of stealth mid-2025; paying Fortune 200 enterprise customers. Co-founded with Adrian Jozwik and Santiago Castineira.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Oxford", "role": "Degree details not publicly confirmed", "startYear": null, "endYear": null, "notes": "Oxford attendance reported in secondary sources; exact degree and dates not pinned down." },
+      { "type": "Operator", "org": "Tessian", "role": "Product Manager → Director of Product Management", "startYear": null, "endYear": 2024, "notes": "Joined very early (seed stage); led product through scale-up to Proofpoint acquisition (2023). ~10 years across startups/AI/security; pre-LLM ML product work." },
+      { "type": "Side-business", "org": "Independent (pre-Maze customer discovery)", "role": "Cold outreach to CISOs (~3–5 months)", "startYear": 2024, "endYear": 2024, "notes": "Validated that the pain was remediation/triage, not prioritisation — sharpened the wedge before writing a line of product code." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of Maze (London). $31M raised across Seed (Cherry) and Series A (Theory) within 12 months of founding. Agents in production at 10+ orgs incl. two Fortune 200 enterprises.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/harrywetherald/",
     "company": "https://maze.co/ai/",

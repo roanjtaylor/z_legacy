@@ -162,6 +162,22 @@
     }
   ],
   "notes": "Fintech-era founder (2020+). The IT Kolledž → Estonian incumbents → first product hire at Wise → own fintech path is one of the most repeatable European founder arcs of the 2020s and directly relevant to small-country EU founders like a NI student.",
+  "studentEndYear": 2010,
+  "firstCompany": {
+    "name": "Lightyear",
+    "year": 2020,
+    "ageAtFounding": 32,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Pan-European commission-free neobroker. London HQ for FCA access + Tallinn core team — Wise-mafia spin-out co-founded with Mihkel Aamer. Wise's customer-centric / transparent-pricing playbook applied to retail investing.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Estonian Information Technology College (IT Kolledž), Tallinn", "role": "BSc Information Systems Analysis", "startYear": 2007, "endYear": 2010, "notes": "Vocational/applied tech degree — typical Estonian product-engineer path." },
+      { "type": "Operator", "org": "Eesti Energia", "role": "Product / Analyst (Estonian state energy utility)", "startYear": null, "endYear": null, "notes": "First job inside a slow-moving incumbent — built product/process discipline." },
+      { "type": "Operator", "org": "Swedbank (Baltic operations)", "role": "Product / Analyst", "startYear": null, "endYear": null, "notes": "Got close to consumer financial products from inside the system he'd later disrupt." },
+      { "type": "Operator", "org": "TransferWise (Wise)", "role": "First Product Hire → Head of Product", "startYear": null, "endYear": 2020, "notes": "Generational-company apprenticeship; left in 2020 (pre-July 2021 direct listing) to found Lightyear." }
+    ]
+  },
+  "nowSummary": "Group CEO of Lightyear; operating across ~25 European countries. ~$25M Series A (Lightspeed, 2022) + ~$23M follow-on (2025); brought in Wander Rutgers as UK CEO post-FCA licence. Pre-exit.",
   "researchLinks": {
     "linkedin": "https://www.linkedin.com/in/martinsokk/",
     "company": "https://lightyear.com/en-gb/about",
