@@ -1,0 +1,45 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.app .map-wrapper {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.app.side-panel-open .map-wrapper {
+  margin-left: 320px;
+}
+
+.app-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+  background: #F9FAFB;
+}
+
+.app-error h2 {
+  color: #DC2626;
+  font-size: 1.5rem;
+}
+
+.app-error p {
+  color: #6B7280;
+}
+
+.app-error code {
+  background: #1F2937;
+  color: #22C55E;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}

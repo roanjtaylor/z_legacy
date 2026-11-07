@@ -1,0 +1,1 @@
+- [Taste-trainer direction](taste-trainer-direction.md) — what the app is for (internal taste-dev tool) + the mode×view model, judgment log, and dataset console

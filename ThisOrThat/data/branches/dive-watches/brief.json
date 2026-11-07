@@ -1,0 +1,43 @@
+{
+  "branch": "dive-watches",
+  "rubric": {
+    "requiredView": "A straight-on or only slightly-angled shot of the watch face with the WHOLE watch (case, dial, bezel, and hands) clearly visible and legible. A clean product/studio shot is ideal; an off-wrist shot is fine. Avoid wrist shots where the watch is small or angled away.",
+    "minLongEdgePx": 900,
+    "reject": [
+      "toy, replica, or homage of a different brand",
+      "3D render, CGI, or illustration (must be a real photograph)",
+      "heavy watermark, price tag, or dealer text overlay",
+      "movement-only, caseback-only, or box-and-papers shot",
+      "watch tiny in frame, cropped, or strongly angled so the dial is not legible",
+      "wrong model / reference / generation",
+      "blurry or low resolution"
+    ],
+    "prefer": [
+      "clean studio or product shot on a plain background",
+      "dial facing the camera, fully legible",
+      "sharp macro focus with the watch as the clear subject",
+      "shows the bezel and dial design clearly"
+    ]
+  },
+  "searchTemplates": [
+    "{maker} {name} watch dial",
+    "{maker} {name} diver wristwatch",
+    "{maker} {name} wikimedia commons"
+  ],
+  "items": [
+    { "id": "rolex-submariner", "name": "Submariner", "maker": "Rolex", "year": 1953, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 40 }, "tags": ["tool", "icon"] },
+    { "id": "blancpain-fifty-fathoms", "name": "Fifty Fathoms", "maker": "Blancpain", "year": 1953, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 41 }, "tags": ["tool", "vintage"] },
+    { "id": "omega-seamaster-300", "name": "Seamaster 300", "maker": "Omega", "year": 1957, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 41 }, "tags": ["tool", "icon"] },
+    { "id": "breitling-superocean", "name": "Superocean", "maker": "Breitling", "year": 1957, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 42 }, "tags": ["tool", "vintage"] },
+    { "id": "doxa-sub-300", "name": "SUB 300", "maker": "Doxa", "year": 1967, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 42 }, "tags": ["vintage", "colourful"] },
+    { "id": "iwc-aquatimer", "name": "Aquatimer", "maker": "IWC", "year": 1967, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 42 }, "tags": ["tool"] },
+    { "id": "omega-ploprof", "name": "Seamaster Ploprof", "maker": "Omega", "year": 1970, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 55 }, "tags": ["professional", "unconventional"] },
+    { "id": "seiko-tuna", "name": "Tuna (6159)", "maker": "Seiko", "year": 1975, "facts": { "country": "Japan", "movement": "Automatic", "caseMm": 49 }, "tags": ["professional", "unconventional"] },
+    { "id": "citizen-promaster-diver", "name": "Promaster Diver", "maker": "Citizen", "year": 1989, "facts": { "country": "Japan", "movement": "Quartz", "caseMm": 44 }, "tags": ["tool", "modern"] },
+    { "id": "seiko-skx007", "name": "SKX007", "maker": "Seiko", "year": 1996, "facts": { "country": "Japan", "movement": "Automatic", "caseMm": 42 }, "tags": ["tool", "everyman"] },
+    { "id": "panerai-luminor-submersible", "name": "Luminor Submersible", "maker": "Panerai", "year": 1998, "facts": { "country": "Italy", "movement": "Automatic", "caseMm": 44 }, "tags": ["bold", "modern"] },
+    { "id": "sinn-u1", "name": "U1", "maker": "Sinn", "year": 2005, "facts": { "country": "Germany", "movement": "Automatic", "caseMm": 44 }, "tags": ["tool", "modern"] },
+    { "id": "oris-aquis", "name": "Aquis", "maker": "Oris", "year": 2011, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 43 }, "tags": ["modern"] },
+    { "id": "tudor-black-bay", "name": "Black Bay", "maker": "Tudor", "year": 2012, "facts": { "country": "Switzerland", "movement": "Automatic", "caseMm": 41 }, "tags": ["vintage", "modern", "everyman"] }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "branch": "cars",
+  "rubric": {
+    "requiredView": "A clean side profile or 3/4 front angle showing the WHOLE car in frame, so its silhouette and proportions are clearly legible. Exterior only.",
+    "minLongEdgePx": 1200,
+    "reject": [
+      "toy, diecast, or scale model",
+      "3D render, CGI, or illustration (must be a real photograph)",
+      "heavy watermark, dealer text, or large logo overlay",
+      "interior-only or engine-bay-only shot",
+      "car cropped or partially out of frame",
+      "wrong make / model / generation / year",
+      "cluttered background dominated by people or other cars"
+    ],
+    "prefer": [
+      "neutral or plain background (studio, road, or simple landscape)",
+      "factory or press photograph",
+      "side or 3/4 view showing the full silhouette",
+      "good lighting, sharp focus, the car as the clear subject"
+    ]
+  },
+  "searchTemplates": [
+    "{year} {maker} {name} car side profile",
+    "{maker} {name} {year} press photo 3/4 front",
+    "{maker} {name} wikimedia commons"
+  ],
+  "items": [
+    {
+      "id": "ferrari-f40",
+      "name": "F40",
+      "maker": "Ferrari",
+      "year": 1987,
+      "facts": {
+        "country": "Italy",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "supercar"
+      ]
+    },
+    {
+      "id": "lamborghini-countach",
+      "name": "Countach",
+      "maker": "Lamborghini",
+      "year": 1974,
+      "facts": {
+        "country": "Italy",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "supercar",
+        "wedge"
+      ]
+    },
+    {
+      "id": "jaguar-e-type",
+      "name": "E-Type",
+      "maker": "Jaguar",
+      "year": 1961,
+      "facts": {
+        "country": "UK",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "grand-tourer",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "ford-gt40",
+      "name": "GT40",
+      "maker": "Ford",
+      "year": 1966,
+      "facts": {
+        "country": "USA",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "race"
+      ]
+    },
+    {
+      "id": "porsche-911-964",
+      "name": "911 (964)",
+      "maker": "Porsche",
+      "year": 1989,
+      "facts": {
+        "country": "Germany",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "sports"
+      ]
+    },
+    {
+      "id": "mercedes-300sl-gullwing",
+      "name": "300SL Gullwing",
+      "maker": "Mercedes-Benz",
+      "year": 1954,
+      "facts": {
+        "country": "Germany",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "grand-tourer",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "lamborghini-miura",
+      "name": "Miura",
+      "maker": "Lamborghini",
+      "year": 1966,
+      "facts": {
+        "country": "Italy",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "supercar",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "ferrari-250-gto",
+      "name": "250 GTO",
+      "maker": "Ferrari",
+      "year": 1962,
+      "facts": {
+        "country": "Italy",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "race",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "aston-martin-db5",
+      "name": "DB5",
+      "maker": "Aston Martin",
+      "year": 1963,
+      "facts": {
+        "country": "UK",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "grand-tourer"
+      ]
+    },
+    {
+      "id": "chevrolet-corvette-c2",
+      "name": "Corvette Sting Ray (C2)",
+      "maker": "Chevrolet",
+      "year": 1963,
+      "facts": {
+        "country": "USA",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "sports"
+      ]
+    },
+    {
+      "id": "ford-mustang-1965",
+      "name": "Mustang",
+      "maker": "Ford",
+      "year": 1965,
+      "facts": {
+        "country": "USA",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "muscle"
+      ]
+    },
+    {
+      "id": "mclaren-f1",
+      "name": "F1",
+      "maker": "McLaren",
+      "year": 1992,
+      "facts": {
+        "country": "UK",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "supercar"
+      ]
+    },
+    {
+      "id": "bugatti-veyron",
+      "name": "Veyron",
+      "maker": "Bugatti",
+      "year": 2005,
+      "facts": {
+        "country": "France",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "hypercar"
+      ]
+    },
+    {
+      "id": "bmw-m1",
+      "name": "M1",
+      "maker": "BMW",
+      "year": 1978,
+      "facts": {
+        "country": "Germany",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "supercar",
+        "wedge"
+      ]
+    },
+    {
+      "id": "lancia-stratos",
+      "name": "Stratos HF",
+      "maker": "Lancia",
+      "year": 1973,
+      "facts": {
+        "country": "Italy",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "rally",
+        "wedge"
+      ]
+    },
+    {
+      "id": "toyota-2000gt",
+      "name": "2000GT",
+      "maker": "Toyota",
+      "year": 1967,
+      "facts": {
+        "country": "Japan",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "grand-tourer",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "nissan-skyline-r34",
+      "name": "Skyline GT-R (R34)",
+      "maker": "Nissan",
+      "year": 1999,
+      "facts": {
+        "country": "Japan",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "sports"
+      ]
+    },
+    {
+      "id": "mazda-rx7-fd",
+      "name": "RX-7 (FD)",
+      "maker": "Mazda",
+      "year": 1992,
+      "facts": {
+        "country": "Japan",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "sports",
+        "curvaceous"
+      ]
+    },
+    {
+      "id": "dodge-charger-1969",
+      "name": "Charger",
+      "maker": "Dodge",
+      "year": 1969,
+      "facts": {
+        "country": "USA",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "muscle"
+      ]
+    },
+    {
+      "id": "audi-quattro",
+      "name": "Quattro",
+      "maker": "Audi",
+      "year": 1980,
+      "facts": {
+        "country": "Germany",
+        "bodyStyle": "Coupe"
+      },
+      "tags": [
+        "rally"
+      ]
+    }
+  ]
+}

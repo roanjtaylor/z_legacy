@@ -1,0 +1,4 @@
+[
+  { "id": "cars", "label": "Cars", "tagline": "Find the shape your eye loves.", "status": "ready", "itemCount": 20 },
+  { "id": "dive-watches", "label": "Dive Watches", "tagline": "Find the dial your eye keeps returning to.", "status": "ready", "itemCount": 10 }
+]
