@@ -1,0 +1,120 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --panel-2: #1d212b;
+  --text: #e7e9ee;
+  --muted: #9aa3b2;
+  --line: #2a2f3a;
+  --accent: #ff6b2c;
+  --green: #2ecc71;
+  --yellow: #f4c542;
+  --red: #e74c3c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app { max-width: 1100px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+.tagline { color: var(--muted); margin: 4px 0 28px; }
+
+.layout { display: grid; grid-template-columns: 1fr 240px; gap: 28px; align-items: start; }
+@media (max-width: 820px) { .layout { grid-template-columns: 1fr; } }
+
+/* Form */
+.form { display: flex; flex-direction: column; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field-label { font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.field-label em { font-weight: 400; text-transform: none; letter-spacing: 0; }
+.field-input {
+  background: var(--panel); border: 1px solid var(--line); color: var(--text);
+  border-radius: 10px; padding: 11px 13px; font: inherit; resize: vertical;
+}
+.field-input:focus { outline: none; border-color: var(--accent); }
+.field-textarea { min-height: 84px; }
+
+.submit {
+  margin-top: 6px; background: var(--accent); color: #1a1004; border: 0; font-weight: 700;
+  padding: 13px; border-radius: 10px; cursor: pointer; font-size: 15px;
+}
+.submit:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.error { margin: 16px 0; padding: 12px 14px; background: #3a1f1f; border: 1px solid #6b2b2b; border-radius: 10px; color: #ffb3b3; }
+
+/* Verdict */
+.report { margin-top: 30px; display: flex; flex-direction: column; gap: 26px; }
+.verdict { padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--panel); }
+.verdict-go { border-left: 5px solid var(--green); }
+.verdict-explore { border-left: 5px solid var(--yellow); }
+.verdict-reconsider { border-left: 5px solid var(--red); }
+.verdict-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.verdict-label { font-size: 30px; font-weight: 800; letter-spacing: 0.04em; }
+.verdict-go .verdict-label { color: var(--green); }
+.verdict-explore .verdict-label { color: var(--yellow); }
+.verdict-reconsider .verdict-label { color: var(--red); }
+.verdict-headline { margin: 12px 0 0; font-size: 17px; }
+.conviction { display: flex; align-items: center; gap: 10px; }
+.conviction-bar { width: 120px; height: 8px; background: var(--panel-2); border-radius: 99px; overflow: hidden; }
+.conviction-fill { height: 100%; background: var(--accent); }
+.conviction-num { font-weight: 700; }
+.conviction-num small { color: var(--muted); font-weight: 400; }
+
+/* Sections */
+.block h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 12px; }
+.section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.section-green { border-left: 4px solid var(--green); }
+.section-yellow { border-left: 4px solid var(--yellow); }
+.section-red { border-left: 4px solid var(--red); }
+.section-head { display: flex; justify-content: space-between; align-items: center; }
+.section-head h3 { margin: 0; font-size: 17px; }
+.grade { font-size: 11px; text-transform: uppercase; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+.grade-green { background: rgba(46,204,113,0.15); color: var(--green); }
+.grade-yellow { background: rgba(244,197,66,0.15); color: var(--yellow); }
+.grade-red { background: rgba(231,76,60,0.15); color: var(--red); }
+.section-analysis { margin: 10px 0; }
+
+.source-card { margin: 10px 0 0; padding: 10px 14px; background: var(--panel-2); border-radius: 8px; border-left: 3px solid var(--line); }
+.source-quote { margin: 0 0 6px; font-style: italic; color: #d4d8e0; }
+.source-link { color: var(--accent); font-size: 13px; text-decoration: none; }
+.source-link:hover { text-decoration: underline; }
+
+/* Comparables */
+.comparable { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; }
+.comparable-name { color: var(--text); font-weight: 700; text-decoration: none; margin-right: 10px; }
+.comparable-name:hover { color: var(--accent); }
+.outcome { font-size: 11px; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; background: var(--panel-2); color: var(--muted); }
+.outcome-dead { color: var(--red); }
+.outcome-public, .outcome-acquired { color: var(--green); }
+.comparable-lesson { margin: 8px 0 0; color: #d4d8e0; }
+
+/* Next steps */
+.next-step { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; }
+.next-text { margin: 0; font-weight: 600; }
+.next-why { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+
+.meta { color: var(--muted); font-size: 13px; }
+.meta summary { cursor: pointer; }
+.meta p { margin: 6px 0; }
+
+/* Sidebar */
+.sidebar h3 { font-size: 13px; text-transform: uppercase; color: var(--muted); }
+.history { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.history li { display: flex; align-items: center; gap: 8px; padding: 8px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.history li:hover { background: var(--panel); }
+.history li.active { background: var(--panel-2); }
+.history .empty { color: var(--muted); cursor: default; }
+.hist-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hist-del { flex-shrink: 0; visibility: hidden; background: none; border: none; color: var(--muted); font-size: 16px; line-height: 1; cursor: pointer; padding: 0 2px; }
+.hist-del:hover { color: var(--red); }
+.history li:hover .hist-del { visibility: visible; }
+.dot { width: 9px; height: 9px; border-radius: 99px; flex-shrink: 0; background: var(--muted); }
+.dot-go { background: var(--green); }
+.dot-explore { background: var(--yellow); }
+.dot-reconsider { background: var(--red); }

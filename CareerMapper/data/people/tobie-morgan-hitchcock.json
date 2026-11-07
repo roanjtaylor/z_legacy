@@ -1,0 +1,174 @@
+{
+  "id": "tobie-morgan-hitchcock",
+  "name": "Tobie Morgan Hitchcock",
+  "birthYear": 1988,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": null,
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Builder",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University College London (UCL School of Management)",
+      "degree": "BSc Information Management for Business",
+      "startYear": 2007,
+      "endYear": 2010,
+      "notes": "Graduated 2010 from UCL SoM's BSc IMB programme."
+    },
+    {
+      "school": "University of Oxford",
+      "degree": "MSc Software Engineering",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Thesis focused on versioning within distributed databases — directly seeded SurrealDB's multi-model design."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Undergraduate (BSc IMB) then MSc Software Engineering",
+      "company": "UCL School of Management → University of Oxford",
+      "archetype": "Student",
+      "startYear": 2007,
+      "endYear": 2014,
+      "estAgeStart": 19,
+      "estAgeEnd": 26,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Picked a business-flavoured information-management BSc at UCL rather than pure CS — gave commercial framing on top of technical content.",
+        "Followed with an Oxford MSc in Software Engineering, with a thesis on versioning in distributed databases — the seed of SurrealDB."
+      ],
+      "lessons": [
+        "A business-info degree plus a CS masters can be a credible founder path — the masters thesis is where the founding idea can crystallise.",
+        "Picking a thesis topic that doubles as future product spec is high-leverage."
+      ],
+      "notes": "Oxford MSc Software Engineering is part-time/modular (typical 2-4 years), often done alongside industry work — exact start/end years not public; the thesis on versioning in distributed databases was the conceptual seed of SurrealDB."
+    },
+    {
+      "role": "Co-founder (golf-course analytics SaaS) / SurrealDB conception",
+      "company": "Pre-SurrealDB venture (with brother Jaime Morgan Hitchcock)",
+      "archetype": "Builder",
+      "startYear": 2015,
+      "endYear": 2020,
+      "estAgeStart": 27,
+      "estAgeEnd": 32,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Built a golf-course analytics platform with brother Jaime as technical co-founder.",
+        "Used a polyglot persistence stack — InfluxDB (time-series), OrientDB (graph), DynamoDB (KV/doc) and MySQL (relational) — all in one product.",
+        "Lived the operational pain of stitching together four databases; that pain became SurrealDB's wedge."
+      ],
+      "lessons": [
+        "Build-something-small-first is undervalued: a niche SaaS (golf analytics) gave the founders enough real production scar tissue to see the multi-model database opportunity.",
+        "Build the tool you needed yourself — SurrealDB is literally the product the founders wished existed during this period.",
+        "Brother-as-co-founder pattern: deep, durable trust accelerates risk-taking but constrains team-scaling later."
+      ],
+      "notes": "Pre-venture era of the duo's career; bootstrapped/under-the-radar. Mobile-cloud era infrastructure choices directly shaped the product hypothesis for the next chapter."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "SurrealDB",
+      "archetype": "Founder",
+      "startYear": 2021,
+      "endYear": null,
+      "estAgeStart": 33,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded SurrealDB in 2021; open-sourced in August 2022 with a launch on Hacker News that hit #1 — Rust-based multi-model database (document, graph, time-series, relational in one engine).",
+        "Raised ~$6M seed in Nov 2022 led by FirstMark Capital; follow-on rounds taking total funding to ~$26M+ from FirstMark, Georgian, Crew Capital and others.",
+        "Positioned heavily around the AI-data infrastructure narrative — single store for vector + relational + graph queries.",
+        "Built in Rust to bet on performance and the dev-tools cohort that respects systems-language choices."
+      ],
+      "lessons": [
+        "Open-source dev-tools require a credible technical artefact before fundraising — SurrealDB launched on Hacker News with working code first, then raised.",
+        "Single-engine multi-model is a contrarian bet against the polyglot-persistence orthodoxy; the wedge is the operational pain the founders personally felt.",
+        "European (London) infra startups can raise from top US infra investors (FirstMark) when the technical narrative is strong — geography is not the blocker it once was.",
+        "Pick the language for the cohort you want to recruit — Rust signals seriousness to systems engineers."
+      ],
+      "notes": "AI-revolution era; database market is being reshuffled by vector/AI workloads. SurrealDB's bet is that the multi-model + AI-data convergence makes it a category-defining play. Still early; no exit, valuation undisclosed publicly."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "<1M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CEO of SurrealDB, London-based Rust multi-model database company; well-funded venture-backed startup positioning for the AI-data infrastructure wave. Pre-exit; paper wealth tied to private equity."
+  },
+  "lessons": [
+    {
+      "lesson": "Build the tool you needed yourself — SurrealDB came directly from the pain of stitching together four databases for an earlier product.",
+      "source": "https://medium.com/authority-magazine/the-future-is-now-tobie-morgan-hitchcock-of-surrealdb-on-how-their-technological-innovations-will-de8926375fb6"
+    },
+    {
+      "lesson": "Open-source first, fundraise second. A working artefact with GitHub stars is the strongest fundraising signal for dev-tools.",
+      "source": "inferred from SurrealDB launch sequence"
+    },
+    {
+      "lesson": "A masters thesis on a niche technical problem can directly become a fundable startup if the problem is recurring at industry scale.",
+      "source": "inferred from Oxford MSc → SurrealDB link"
+    },
+    {
+      "lesson": "European infra founders should pursue US infra VCs (FirstMark, Crew, Georgian) — they price differently and are comfortable with global teams.",
+      "source": "SurrealDB funding history"
+    }
+  ],
+  "sources": [
+    {
+      "title": "UCL SoM alumnus secures $20 million investment for SurrealDB",
+      "url": "https://www.mgmt.ucl.ac.uk/news/ucl-som-alumnus-raises-staggering-20-million-tech-start-surrealdb",
+      "type": "article"
+    },
+    {
+      "title": "Meet Tobie Morgan Hitchcock, CEO & Co-Founder of SurrealDB — TechRound",
+      "url": "https://techround.co.uk/interviews/meet-tobie-morgan-hitchcock-ceo-co-founder-of-surrealdb/",
+      "type": "interview"
+    },
+    {
+      "title": "The Future Is Now: Tobie Morgan Hitchcock of SurrealDB — Authority Magazine",
+      "url": "https://medium.com/authority-magazine/the-future-is-now-tobie-morgan-hitchcock-of-surrealdb-on-how-their-technological-innovations-will-de8926375fb6",
+      "type": "interview"
+    },
+    {
+      "title": "Tobie Morgan Hitchcock Speaker Profile — Sessionize",
+      "url": "https://sessionize.com/tobie-morgan-hitchcock/",
+      "type": "article"
+    },
+    {
+      "title": "SurrealDB 3.0 and Building Event-Driven AI Applications — Software Engineering Daily",
+      "url": "https://softwareengineeringdaily.com/2025/09/16/surrealdb-3-0-and-building-event-driven-ai-applications-with-tobie-morgan-hitchcock/",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI-revolution era infra/database founder; lessons on developer-tools, masters-thesis-as-product-seed, and European-team-with-US-VC are directly applicable to today's builders. Per Sessionize bio he has 17 years of industry experience (career started ~2008 alongside or right after UCL BSc). SurrealDB founded 2021, open-sourced Aug 2022, seed round Nov 2022, $20M funding June 2024. Oxford MSc dates not publicly verifiable.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "SurrealDB",
+    "year": 2021,
+    "ageAtFounding": 33,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Rust-based multi-model database (document, graph, time-series, relational in one engine). Open-sourced August 2022 with a #1 Hacker News launch; positioned for the AI-data infrastructure wave.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University College London (UCL School of Management)", "role": "BSc Information Management for Business", "startYear": 2007, "endYear": 2010, "notes": "Business-flavoured information-management BSc — commercial framing on top of technical content." },
+      { "type": "Study", "org": "University of Oxford", "role": "MSc Software Engineering", "startYear": null, "endYear": null, "notes": "Part-time/modular; thesis on versioning in distributed databases — the conceptual seed of SurrealDB. Exact dates not publicly verifiable." },
+      { "type": "Side-business", "org": "Pre-SurrealDB venture (golf-course analytics SaaS with brother Jaime)", "role": "Co-founder / builder", "startYear": 2015, "endYear": 2020, "notes": "Bootstrapped. Used a polyglot persistence stack (InfluxDB, OrientDB, DynamoDB, MySQL) — the pain of stitching four databases became SurrealDB's wedge." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of SurrealDB (London). ~$26M+ raised from FirstMark, Georgian, Crew Capital. Pre-exit; betting on the multi-model + AI-data convergence as a category-defining play.",
+  "researchLinks": {
+    "linkedin": "https://uk.linkedin.com/in/tobiemorganhitchcock",
+    "company": "https://surrealdb.com/",
+    "others": [
+      "https://medium.com/featurepreneur/surreal-db-the-ultimate-cloud-database-78f0c2dfde1d"
+    ],
+    "cluster": "",
+    "hint": "UCL bsc, Oxford msc"
+  }
+}

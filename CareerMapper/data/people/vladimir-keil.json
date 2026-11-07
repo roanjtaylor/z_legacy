@@ -1,0 +1,181 @@
+{
+  "id": "vladimir-keil",
+  "name": "Vladimir Keil",
+  "birthYear": 1999,
+  "countryOfOrigin": "Germany",
+  "currentCountry": "Germany",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Operator", "Founder", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Duisburg-Essen",
+      "degree": "Undergraduate (Germany)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Studied at the University of Duisburg-Essen. Exact dates not publicly confirmed."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Intern",
+      "company": "Lab 1886 (Daimler)",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took an intern role inside Daimler's corporate innovation lab (Lab 1886) — product management, strategy, market research exposure inside a top-tier German industrial."
+      ],
+      "lessons": [
+        "Corporate innovation labs (Lab 1886, Audi Denkwerkstatt etc) are an underrated German entry point — they give early-career operators exposure to enterprise procurement pain.",
+        "Procurement pain inside Daimler later became Lio's founding insight."
+      ],
+      "notes": "Per Y Combinator / Crunchbase coverage."
+    },
+    {
+      "role": "Founder",
+      "company": "EdTech startup (Munich, with roommate)",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded an EdTech business with his roommate in Munich — reached profitability by age 22."
+      ],
+      "lessons": [
+        "A profitable side venture during university is the cheapest possible founder-school — it filters whether you can ship under constraints.",
+        "Roommate co-founder is high-trust, fast-iterate — a credible structure when neither founder has a track record yet."
+      ],
+      "notes": "Achieved profitability at age 22 per public coverage. Exact company name not in surfaced sources."
+    },
+    {
+      "role": "Co-founder",
+      "company": "Gabriel (AI startup, partnered with German federal police)",
+      "archetype": "Founder",
+      "startYear": 2021,
+      "endYear": null,
+      "estAgeStart": 22,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Gabriel in 2021 — an AI startup that partnered with the German federal police (BKA / 'German FBI').",
+        "Built government / law-enforcement credibility early — the same trust profile that later helped Lio close enterprise procurement deals."
+      ],
+      "lessons": [
+        "German public-sector partnerships are a credible early venture-builder credential.",
+        "Stacking multiple founder reps before your breakthrough company is becoming standard — Keil had at least two before askLio."
+      ],
+      "notes": "Per Y Combinator company profile / public talks."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Lio (formerly askLio)",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 24,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Lio (originally askLio) in 2023 in Munich with Lukas Heinzmann and Till Wagner — friends from prior contexts.",
+        "Got into YC Summer 2023 batch — German-team founder route into the US accelerator network.",
+        "Picked agentic AI for enterprise procurement — the exact pain Keil hit at both Daimler (employee) and at his earlier startup (founder).",
+        "Raised a $30M Series A in March 2026 led by Andreessen Horowitz, with SV Angel, Harry Stebbings and YC participating — $33M cumulative.",
+        "Built dual offices in New York and Munich — kept German operating base while planting US revenue flag."
+      ],
+      "lessons": [
+        "Personal-pain market signal: Keil hit procurement bottlenecks at both Daimler and his EdTech — building the tool that already failed him twice is the cleanest founding wedge.",
+        "YC Summer 2023 → a16z Series A within 2.5 years is the canonical AI-revolution velocity arc.",
+        "Dual-HQ (Munich operating + NY revenue) is the German fintech / enterprise SaaS template now — keep European cost base, plant US flag.",
+        "Multi-time founder before 25 is becoming the new normal — at least two prior ventures before the breakthrough is a recurring pattern."
+      ],
+      "notes": "Lio (askLio) was YC S23. $30M Series A March 2026 led by a16z, total funding ~$33M. Forbes 30 Under 30 Europe 2026 AI. CEO of agentic-AI procurement platform spanning sourcing, negotiations, approvals."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CEO of Lio (Munich + NY). $30M Series A led by Andreessen Horowitz (March 2026). Agentic AI for enterprise procurement; YC S23 alum."
+  },
+  "lessons": [
+    {
+      "lesson": "Three-stack founder reps before the breakthrough (Lab 1886 intern → EdTech profitable → Gabriel AI / German police partner → Lio) is the new normal.",
+      "source": "Y Combinator company profile + Crunchbase."
+    },
+    {
+      "lesson": "Personal-pain market signal: build the procurement tool that already failed you twice (at Daimler and your EdTech).",
+      "source": "askLio founding story per TechCrunch / CPOstrategy."
+    },
+    {
+      "lesson": "YC Summer 2023 → a16z Series A within 2.5 years is the canonical AI-revolution velocity arc — pick a wedge where the AI agent capability is the unlock.",
+      "source": "TechCrunch (March 2026)."
+    },
+    {
+      "lesson": "Dual-HQ (Munich operating + NY revenue) is the standard structure for German fintech / enterprise SaaS founders chasing US revenue.",
+      "source": "Inferred from Lio's structure."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lio (formerly askLio) — Y Combinator company profile",
+      "url": "https://www.ycombinator.com/companies/lio",
+      "type": "article"
+    },
+    {
+      "title": "Lio raises $30M from Andreessen Horowitz — TechCrunch (March 2026)",
+      "url": "https://techcrunch.com/2026/03/05/lio-ai-series-a-a16z-30m-raise-automate-enterprise-procurement/",
+      "type": "article"
+    },
+    {
+      "title": "askLio: Redefining procurement with AI — CPOstrategy",
+      "url": "https://cpostrategy.media/blog/2025/11/25/asklio-redefining-procurement-with-ai/",
+      "type": "interview"
+    },
+    {
+      "title": "Vladimir Keil — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/vladimir-keil",
+      "type": "article"
+    },
+    {
+      "title": "Learn from another successful entrepreneur, Vladimir Keil from askLio — Entrepreneurial Realities Podcast",
+      "url": "https://creators.spotify.com/pod/profile/entrepreneurial-realities/episodes/65---Learn-from-another-successful-entrepreneur--Vladimir-Keil-from-Asklio-e2mfiqm",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI-revolution era German enterprise-SaaS founder. Three-stack founder reps before Lio (Lab 1886 intern → EdTech → Gabriel AI) — pattern of multi-time founder velocity that is becoming common in 2023+. Birth year inferred from 'profitable startup at 22' (~2021) and 'currently late-20s' framing; treat as ±1.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Lio (formerly askLio)",
+    "year": 2023,
+    "ageAtFounding": 24,
+    "era": "ai-revolution",
+    "country": "Germany",
+    "oneLiner": "Agentic AI for enterprise procurement (sourcing, negotiations, approvals). YC S23 alum; $30M Series A led by Andreessen Horowitz (March 2026); $33M total funding. Munich + NY dual-HQ.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Duisburg-Essen", "role": "Undergraduate", "startYear": null, "endYear": null, "notes": "Dates not publicly confirmed." },
+      { "type": "Operator", "org": "Lab 1886 (Daimler corporate innovation)", "role": "Intern (PM / strategy / market research)", "startYear": null, "endYear": null, "notes": "Hit procurement pain firsthand — seed of the Lio thesis." },
+      { "type": "Side-business", "org": "EdTech (Munich, with roommate)", "role": "Co-founder; profitable by age 22", "startYear": null, "endYear": null, "notes": "First profitable venture; founder reps before Lio." },
+      { "type": "Side-business", "org": "Gabriel (AI startup)", "role": "Co-founder; partnered with German federal police (BKA)", "startYear": 2021, "endYear": null, "notes": "Public-sector AI credibility before Lio." }
+    ]
+  },
+  "nowSummary": "Co-founder & CEO of Lio (Munich + NY). $30M Series A led by Andreessen Horowitz in March 2026 (cumulative ~$33M). Agentic AI for enterprise procurement. YC S23 alum; Forbes 30 Under 30 Europe 2026 AI.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/vladimir-keil/",
+    "company": "https://www.ycombinator.com/companies/lio",
+    "others": [
+      "https://cpostrategy.media/blog/2025/11/25/asklio-redefining-procurement-with-ai/",
+      "https://techcrunch.com/2026/03/05/lio-ai-series-a-a16z-30m-raise-automate-enterprise-procurement/"
+    ],
+    "cluster": "germany-ai, yc-s23, procurement, three-stack-founder",
+    "hint": "German three-stack founder: Daimler intern → profitable EdTech → AI / federal police → YC S23 → a16z Series A."
+  }
+}

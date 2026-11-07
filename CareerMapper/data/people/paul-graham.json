@@ -1,0 +1,403 @@
+{
+  "id": "paul-graham",
+  "name": "Paul Graham",
+  "birthYear": 1964,
+  "countryOfOrigin": "England (raised in USA)",
+  "currentCountry": "England",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paulgraham_240x320.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+  "archetypeArc": [
+    "Student",
+    "Builder",
+    "Founder",
+    "Investor"
+  ],
+  "confidence": "high",
+  "education": [
+    {
+      "school": "Cornell University",
+      "degree": "BA Philosophy",
+      "startYear": 1982,
+      "endYear": 1986,
+      "notes": "Switched away from philosophy in spirit late in undergrad after deciding it was 'isolated from the rest of intellectual life'. Programmed in his spare time throughout — first IBM 1401 then a TRS-80 at home as a teenager."
+    },
+    {
+      "school": "Harvard University",
+      "degree": "MS, Computer Science",
+      "startYear": 1986,
+      "endYear": 1988,
+      "notes": "Entered Harvard for AI under Tom Cheatham. Realised AI as practised in the early 80s ('expert systems' in Lisp) was a dead end — pivoted to using Lisp itself as the subject."
+    },
+    {
+      "school": "Harvard University",
+      "degree": "PhD Computer Science",
+      "startYear": 1988,
+      "endYear": 1990,
+      "notes": "PhD thesis on extending Lisp (later published as 'On Lisp')."
+    },
+    {
+      "school": "Rhode Island School of Design",
+      "degree": "Painting (did not complete)",
+      "startYear": 1992,
+      "endYear": 1993,
+      "notes": "Started RISD in fall 1992 after a stint at the Accademia di Belle Arti in Florence. Dropped out in 1993 because the BFA foundation programme didn't actually teach painting (his own words in 'What I Worked On')."
+    },
+    {
+      "school": "Accademia di Belle Arti, Florence",
+      "degree": "Painting (one academic year)",
+      "startYear": 1989,
+      "endYear": 1990,
+      "notes": "Confirmed in 'What I Worked On': accepted via entrance exam, started fall 1989, returned to US at the end of the first year. Overlapped with his Harvard PhD which he finished in June 1990 (5-week dissertation sprint on continuations). Canonical example of his 'wide 20s compound' thesis."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Undergraduate, then CS grad student",
+      "company": "Cornell → Harvard",
+      "archetype": "Student",
+      "startYear": 1982,
+      "endYear": 1990,
+      "estAgeStart": 18,
+      "estAgeEnd": 26,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Studied philosophy first, not CS — built a first-principles thinking habit before going technical, then realised philosophy was hollow and bailed.",
+        "Switched to AI/CS for grad school but quickly identified that 80s-era symbolic AI was a dead end — pivoted his thesis to Lisp itself, not AI built on Lisp.",
+        "Refused to specialise narrowly inside Harvard CS — stayed broad enough to still consider art school."
+      ],
+      "lessons": [
+        "Width before depth in your 20s compounds — a liberal-arts foundation sharpens the kind of thinking pure technical training doesn't.",
+        "If your field has a dead end at its core (80s AI), don't follow the herd off it — change the subject of your own work.",
+        "Notice when you've outgrown the official curriculum."
+      ],
+      "notes": "Programmed since teens (IBM 1401 in junior high, then TRS-80). Always technically capable; the philosophy degree was the unusual choice, not the code."
+    },
+    {
+      "role": "Art student / independent",
+      "company": "Accademia di Belle Arti, Florence; RISD; freelance",
+      "archetype": "Student",
+      "startYear": 1990,
+      "endYear": 1993,
+      "estAgeStart": 26,
+      "estAgeEnd": 29,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Took years to study painting after the PhD — explicit choice to broaden rather than monetise early.",
+        "Quit RISD when it stopped teaching — refused to stay in a credential for its own sake.",
+        "Wrote 'On Lisp' in parallel — kept compounding the technical asset while exploring."
+      ],
+      "lessons": [
+        "Painting (and writing) trains 'how to see' — the perceptual habit that later let him spot good founders.",
+        "Credentials are tools, not identities — exit them when they stop teaching."
+      ],
+      "notes": "This phase looks like wasted time on a CV but is the load-bearing one for the rest of the arc — gave him the writer/observer identity that powered the essays and YC."
+    },
+    {
+      "role": "Consultant / independent builder",
+      "company": "Various (Lisp consulting, early web experiments)",
+      "archetype": "Builder",
+      "startYear": 1993,
+      "endYear": 1995,
+      "estAgeStart": 29,
+      "estAgeEnd": 31,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stayed independent and broke rather than joining a big company — preserved optionality on his time.",
+        "Spotted the commercial web in 1995 — the precise moment Netscape made browser-as-runtime viable."
+      ],
+      "lessons": [
+        "The pre-founding 'wandering' phase is often where the founding idea actually germinates.",
+        "Being technically deep AND between jobs at the moment a new platform appears is how you become the first mover on it."
+      ],
+      "notes": "Built deep Lisp and early-web technical chops; broke enough that the move to start Viaweb was partly economic."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Viaweb",
+      "archetype": "Founder",
+      "startYear": 1995,
+      "endYear": 1998,
+      "estAgeStart": 31,
+      "estAgeEnd": 34,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded at 31, not in his early 20s — disproved his own later trope before he wrote it.",
+        "Bet the company on the browser as runtime — 'web app' was barely a concept in 1995; building one for non-technical merchants was a contrarian wager on what HTTP could do.",
+        "Wrote Viaweb in Common Lisp despite industry norm being C/C++/Perl — bet on technical leverage (macros, fast iteration) over hireability.",
+        "Co-founded with Robert Morris and Trevor Blackwell — Harvard CS relationships, high trust from day one, no co-founder search needed.",
+        "Took the Yahoo! acquisition at peak dot-com stock value rather than holding out — converted paper to real wealth at the right moment."
+      ],
+      "lessons": [
+        "First-mover on a new platform compounds — Viaweb was effectively the first online store builder of its kind.",
+        "Founding age does not have to be 19–22; technical depth and the right wave matter more than youth.",
+        "Choose tools for leverage, not for the hiring market — small teams with sharp tools beat large teams with conventional ones.",
+        "Sell at the top of the cycle when offered; ego-holding for a higher number is how founders end up with zero."
+      ],
+      "notes": "Started summer 1995 (first working web-app prototype on Aug 12, 1995 per 'What I Worked On'). Acquired by Yahoo! in summer 1998 for ~$49M in Yahoo stock; became Yahoo! Store. PG documented the entire Lisp-as-secret-weapon argument in 'Beating the Averages'."
+    },
+    {
+      "role": "Post-acquisition engineer",
+      "company": "Yahoo!",
+      "archetype": "Builder",
+      "startYear": 1998,
+      "endYear": 1999,
+      "estAgeStart": 34,
+      "estAgeEnd": 35,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Served short post-acquisition tenure, then left — refused to become a long-term employee of his own acquirer."
+      ],
+      "lessons": [
+        "Founders rarely thrive long inside acquirers; cash in the lock-up and leave.",
+        "An exit is a release, not a new job."
+      ],
+      "notes": null
+    },
+    {
+      "role": "Essayist, Hacker News builder, language designer",
+      "company": "Independent (paulgraham.com)",
+      "archetype": "Builder",
+      "startYear": 1999,
+      "endYear": 2005,
+      "estAgeStart": 35,
+      "estAgeEnd": 40,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started publishing essays at paulgraham.com — built personal brand and audience before founding YC.",
+        "Wrote 'Hackers & Painters' (2004), which became founder-canon reading and pre-loaded the YC brand with credibility.",
+        "Designed Arc, a new Lisp dialect — kept doing technical work even after the exit, refusing to drift into pundit-only mode.",
+        "Lived off Viaweb money rather than chasing a second startup immediately — bought himself six years of unscheduled thinking."
+      ],
+      "lessons": [
+        "Writing publicly builds a network passively. By the time YC launched, PG had a built-in audience of exactly the right people.",
+        "Six years 'between things' is not wasted if you're producing thought work that compounds.",
+        "Wealth converts into time better than into more wealth."
+      ],
+      "notes": "Essays went viral in spring 2001 when a Lisp talk hit 30,000 page views in a day via Slashdot — the moment the public audience formed. This is the load-bearing period — the essays and the book created the conditions for YC to launch into a ready audience."
+    },
+    {
+      "role": "Co-founder & partner",
+      "company": "Y Combinator",
+      "archetype": "Investor",
+      "startYear": 2005,
+      "endYear": 2014,
+      "estAgeStart": 41,
+      "estAgeEnd": 49,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded YC with Jessica Livingston (later wife), Robert Morris, and Trevor Blackwell — re-used the Viaweb trust pair plus added Jessica's people-judgement.",
+        "Invented the batch-style seed accelerator model — cohort + standard terms + intense mentorship + Demo Day, when seed investing was bespoke and slow.",
+        "Wrote 'How to Start a Startup' and other essays that doubled as YC's top-of-funnel marketing — turned the essay habit into a deal-flow machine.",
+        "Funded teams, not ideas — let founders pivot freely, which made YC robust to any single thesis being wrong."
+      ],
+      "lessons": [
+        "Find a model others haven't tried. Pre-YC, seed investing was bespoke; YC standardised it.",
+        "Density of founders beats density of capital. YC's edge is the network among founders, not cheque size.",
+        "Distribution can be free if you've already built the audience — YC's marketing was essays PG was going to write anyway.",
+        "Bet on people, not theses — it's the only way to be antifragile to your own being wrong about markets."
+      ],
+      "notes": "Founded March 2005 (per 'What I Worked On', born from a conversation at the corner of Garden and Walker streets in Cambridge). Stepped back from active president role in 2014, handed to Sam Altman."
+    },
+    {
+      "role": "Essayist, occasional advisor",
+      "company": "Independent",
+      "archetype": "Investor",
+      "startYear": 2014,
+      "endYear": null,
+      "estAgeStart": 49,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Moved back to England with family — explicit lifestyle choice over remaining in the SV epicentre.",
+        "Stopped operating; focused on writing long-form essays ('How To Do Great Work', 'Founder Mode').",
+        "Refused to start a fund or take a board seat — kept influence high, obligations low."
+      ],
+      "lessons": [
+        "After accumulating power and wealth, the long-tail value is in the writing, not in another operating role.",
+        "Influence without obligation is the rare end state — most successful operators trade their freedom for one more title."
+      ],
+      "notes": "Continues writing influential essays on paulgraham.com."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "100M+",
+    "exitEvents": [
+      {
+        "type": "acquisition",
+        "year": 1998,
+        "valueUsd": 49000000,
+        "notes": "Viaweb → Yahoo! Paid in Yahoo stock near dot-com peak values; PG held some through the crash but exit was effectively priced at this level."
+      }
+    ],
+    "currentStatus": "Investor, essayist, cultural architect of the startup world. Y Combinator has incubated companies whose aggregate valuation is reported above $600B."
+  },
+  "lessons": [
+    {
+      "lesson": "Make something people want.",
+      "source": "YC motto / PG essays"
+    },
+    {
+      "lesson": "Best founders are determined and flexible.",
+      "source": "What We Look For in Founders"
+    },
+    {
+      "lesson": "Wide exploration in your 20s compounds — don't optimise too early.",
+      "source": "How to Lose Time and Money and others"
+    },
+    {
+      "lesson": "Write to clarify your thinking.",
+      "source": "Putting Ideas Into Words"
+    },
+    {
+      "lesson": "Live in the right city — ambition is contagious.",
+      "source": "Cities and Ambition"
+    },
+    {
+      "lesson": "Schlep blindness: the most valuable startup ideas hide in unglamorous problems.",
+      "source": "Schlep Blindness"
+    },
+    {
+      "lesson": "Only have a startup if it is growing weekly — high-growth is the definition, not a feature.",
+      "source": "Startup = Growth"
+    },
+    {
+      "lesson": "Millionaire is achievable by hard work (Viaweb); billionaire requires some luck (Y Combinator).",
+      "source": "user hint synthesising PG's essays"
+    },
+    {
+      "lesson": "Choose tools for leverage, not for the hiring market — small teams with sharp tools beat large teams with conventional ones.",
+      "source": "Beating the Averages"
+    },
+    {
+      "lesson": "Bet on people, not theses — the only way to be antifragile to your own being wrong about markets.",
+      "source": "inferred from YC strategy"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Paul Graham's essays",
+      "url": "https://www.paulgraham.com/articles.html",
+      "type": "article"
+    },
+    {
+      "title": "What I Worked On (autobiographical essay)",
+      "url": "https://www.paulgraham.com/worked.html",
+      "type": "article"
+    },
+    {
+      "title": "Beating the Averages (Lisp / Viaweb)",
+      "url": "https://www.paulgraham.com/avg.html",
+      "type": "article"
+    },
+    {
+      "title": "How to Make Wealth",
+      "url": "https://www.paulgraham.com/wealth.html",
+      "type": "article"
+    },
+    {
+      "title": "Viaweb FAQ",
+      "url": "https://www.paulgraham.com/vwfaq.html",
+      "type": "article"
+    },
+    {
+      "title": "How to Start a Startup",
+      "url": "https://paulgraham.com/start.html",
+      "type": "article"
+    },
+    {
+      "title": "How To Do Great Work",
+      "url": "https://paulgraham.com/greatwork.html",
+      "type": "article"
+    },
+    {
+      "title": "Hackers & Painters (book, 2004)",
+      "url": null,
+      "type": "book"
+    },
+    {
+      "title": "Y Combinator — about",
+      "url": "https://www.ycombinator.com/about",
+      "type": "article"
+    }
+  ],
+  "notes": "Older-era role model — pre-AI tech revolution. Viaweb (1995) was a web-era startup and YC (2005) was a mobile/cloud-era institution; tactical specifics (Lisp as competitive edge, paying $0 office in Cambridge, batch model when nothing batched) DO NOT pattern-match cleanly to the AI era and should be treated as era-locked. His structural lessons (write to build audience and clarity; broaden in your 20s; found later than you think; choose tools for leverage; bet on people not theses) translate strongly. Weight: HIGH for principles, MODERATE for tactical timing. Education years for the painting phase overlap and are approximate from 'What I Worked On'.",
+  "researchLinks": {
+    "linkedin": "None",
+    "company": "Y Combinator",
+    "others": [
+      "https://www.paulgraham.com/avg.html",
+      "https://www.paulgraham.com/vwfaq.html",
+      "https://paulgraham.com/start.html",
+      "https://paulgraham.com/greatwork.html"
+    ],
+    "cluster": "",
+    "hint": "Godfather of startups. Excellent philosophy on making something people want. No get rich quick hacks- just doing work that benefits people, and ideally can be made to scale to lots (high growth startup - only have a startup if it is growing weekly). Advocates for young exploration (college, avenues) to develop as a person before startups (although amid AI may be naive- need to explore but be ready to pounce on an idea if it becomes clear- focusing on following the problems rather than the get rich quick hopes). Can get millionaire with hard work (viaweb), billionaire takes some luck (Y-Combinator)."
+  },
+  "studentEndYear": 1993,
+  "firstCompany": {
+    "name": "Viaweb",
+    "year": 1995,
+    "ageAtFounding": 31,
+    "era": "web",
+    "country": "USA",
+    "oneLiner": "Effectively the first online-store builder of its kind — a web app for non-technical merchants. Written in Common Lisp; acquired by Yahoo! in 1998 for ~$49M (became Yahoo! Store).",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "Cornell University",
+        "role": "BA Philosophy",
+        "startYear": 1982,
+        "endYear": 1986,
+        "notes": "Programmed in his spare time throughout; switched away from philosophy in spirit late in undergrad."
+      },
+      {
+        "type": "Study",
+        "org": "Harvard University",
+        "role": "MS Computer Science",
+        "startYear": 1986,
+        "endYear": 1988,
+        "notes": "Entered for AI under Tom Cheatham; pivoted from 80s symbolic AI to Lisp itself."
+      },
+      {
+        "type": "Study",
+        "org": "Harvard University",
+        "role": "PhD Computer Science",
+        "startYear": 1988,
+        "endYear": 1990,
+        "notes": "Thesis on extending Lisp (later published as 'On Lisp'); 5-week dissertation sprint on continuations in 1990."
+      },
+      {
+        "type": "Study",
+        "org": "Accademia di Belle Arti, Florence",
+        "role": "Painting (one academic year)",
+        "startYear": 1989,
+        "endYear": 1990,
+        "notes": "Overlapped with the Harvard PhD."
+      },
+      {
+        "type": "Study",
+        "org": "Rhode Island School of Design",
+        "role": "Painting (did not complete)",
+        "startYear": 1992,
+        "endYear": 1993,
+        "notes": "Dropped out when the BFA foundation programme didn't actually teach painting."
+      },
+      {
+        "type": "Tech",
+        "org": "Various (Lisp consulting, early web experiments)",
+        "role": "Consultant / independent builder",
+        "startYear": 1993,
+        "endYear": 1995,
+        "notes": "Stayed independent and broke rather than joining a big company — preserved optionality on his time."
+      }
+    ]
+  },
+  "nowSummary": "Stepped back from YC operations in 2014; lives in England writing long-form essays ('How To Do Great Work', 'Founder Mode'). YC has incubated companies whose aggregate valuation is reported above $600B."
+}

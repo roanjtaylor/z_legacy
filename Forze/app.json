@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Forze",
+    "slug": "Forze",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/Forze Logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.jpg",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ]
+    ],
+    "extra": {
+      "firebaseConfig": {
+        "apiKey": "AIzaSyBQGkSBzyG8asRLBZptqzanh1JSNtRrhTI",
+        "authDomain": "kickabout-system.firebaseapp.com",
+        "projectId": "kickabout-system",
+        "storageBucket": "kickabout-system.firebasestorage.app",
+        "messagingSenderId": "118280029913",
+        "appId": "1:118280029913:web:60a640d82a433cc225a0c8"
+      },
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1b4a2eaf-6198-41ec-b638-af71e79773bf"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1b4a2eaf-6198-41ec-b638-af71e79773bf"
+    },
+    "owner": "roanjtaylor"
+  }
+}

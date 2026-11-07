@@ -1,0 +1,183 @@
+{
+  "id": "fabian-hedin",
+  "name": "Fabian Hedin",
+  "birthYear": 1999,
+  "countryOfOrigin": "Sweden",
+  "currentCountry": "Sweden",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Builder", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "KTH Royal Institute of Technology, Stockholm",
+      "degree": "BSc Industrial Engineering and Management",
+      "startYear": null,
+      "endYear": 2021,
+      "notes": "Graduated 2021. Started coding at age 12; earned thousands of dollars from Minecraft as an 11-year-old."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Algorithm Engineer",
+      "company": "VIKON Vibrationkonsult AB",
+      "archetype": "Builder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took an Algorithm Engineer role pre-university — engineering-applied software work, not generic dev internship."
+      ],
+      "lessons": [
+        "Pre-university algorithm-engineering reps compound — Hedin entered KTH already shipping production code."
+      ],
+      "notes": "Per Neon River CTO profile."
+    },
+    {
+      "role": "Web Developer + Robotics intern",
+      "company": "Sjukvårdskonsulterna; ABB Robotics",
+      "archetype": "Builder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stacked web dev + an ABB Robotics internship during/around KTH — mixed software and hardware-adjacent reps before founding."
+      ],
+      "lessons": [
+        "Combining web dev (fast iteration) and robotics (constraint-heavy systems) is unusual and compounds well — the foundation for system-level AI products."
+      ],
+      "notes": "Per LinkedIn-derived sources / Neon River profile."
+    },
+    {
+      "role": "Engineer (Depict.ai era / Sana Labs context)",
+      "company": "Stockholm AI / e-commerce engineering",
+      "archetype": "Builder",
+      "startYear": 2021,
+      "endYear": 2023,
+      "estAgeStart": 22,
+      "estAgeEnd": 24,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Worked alongside Anton Osika in the Stockholm AI scene (Depict.ai / Sana Labs alumni context) — co-founder pairing pre-dated Lovable.",
+        "Built engineering reps inside fast-scaling Swedish AI companies before founding."
+      ],
+      "lessons": [
+        "Co-founder pairings that pre-date the company by years compress trust-building from months to zero — Osika and Hedin had history before Lovable.",
+        "Stockholm's tight AI scene (Sana Labs / Depict / Klarna / Spotify alumni) is the Swedish equivalent of the Wise-mafia for AI-native founders."
+      ],
+      "notes": "Osika invited Hedin to co-found Lovable based on prior working relationship. Specific titles in this period not fully pinned down."
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Lovable",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 24,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Lovable in Stockholm in 2023 with Anton Osika — natural-language-to-software platform.",
+        "Built the technical core of what became the fastest-growing software startup in history ($100M ARR in 8 months; $200M ARR by Nov 2025; $400M ARR by ~2 years in).",
+        "Pledged to donate 50% of exit proceeds to charity (with Osika) — public commitment to giving alongside building.",
+        "Stayed Sweden-based rather than relocating to SF — proved AI-native unicorns can be built from Stockholm."
+      ],
+      "lessons": [
+        "Vibe-coding / natural-language-to-software is the canonical AI-revolution wedge — Lovable is the European exemplar.",
+        "$100M ARR in 8 months is achievable when the product turns AI capability directly into shippable software for non-coders.",
+        "Founded at 24 with 5+ years of pre-founder engineering reps — the technical-CTO version of the 'short ramp' pattern.",
+        "Swedish capital + Swedish talent + global distribution is a complete European AI-unicorn stack. No US relocation required."
+      ],
+      "notes": "Founded 2023 in Stockholm. $200M Series A (mid-2025) at ~$1.8B valuation; further rounds taking valuation to $6.6B by late 2025. Hedin became a $1.6B+ net worth billionaire at age 26 — one of world's 13 self-made billionaires under 30."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1B+",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CTO of Lovable (Stockholm). $6.6B+ valuation by late 2025; $400M+ ARR in ~2 years; world's 13 self-made billionaires under 30. Pledged 50% of future exit to charity."
+  },
+  "lessons": [
+    {
+      "lesson": "Vibe-coding / natural-language-to-software is the canonical AI-revolution founding wedge — Lovable is the European billion-dollar exemplar.",
+      "source": "Forbes / Inc / 36kr coverage."
+    },
+    {
+      "lesson": "Pre-existing co-founder trust (Osika + Hedin worked together at Sana/Depict era) compresses founding to weeks instead of months.",
+      "source": "Inc coverage (Five Things to Know)."
+    },
+    {
+      "lesson": "Swedish AI-native unicorn stack: KTH talent + Stockholm AI alumni network + Swedish patient capital + global English-language distribution. No SF required.",
+      "source": "Inferred from Lovable trajectory."
+    },
+    {
+      "lesson": "Found at 24 with 5+ years of pre-founder engineering reps (algorithm eng → web dev → robotics → AI eng) is the 'technical-CTO short ramp' template.",
+      "source": "Inferred from Hedin's CV."
+    },
+    {
+      "lesson": "$1.6B net worth at 26 is achievable in the AI revolution era — once a generation, not a target, but a real data point.",
+      "source": "Forbes Billionaires List + 36kr."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fabian Hedin — Lovable CTO | Top 30 CTOs in EMEA 2025 — Neon River",
+      "url": "https://www.neonriver.com/fabian-hedin-2025/",
+      "type": "article"
+    },
+    {
+      "title": "Europe's Youngest Self-Made Billionaire Emerges at 26 — 36kr",
+      "url": "https://eu.36kr.com/en/p/3613625099469827",
+      "type": "article"
+    },
+    {
+      "title": "AI startup Lovable's rapid rise turns its founders into billionaires — VnExpress International",
+      "url": "https://e.vnexpress.net/news/tech/personalities/ai-startup-lovable-s-rapid-rise-turns-its-founders-into-billionaires-with-one-among-europe-s-youngest-self-made-billionaires-4996134.html",
+      "type": "article"
+    },
+    {
+      "title": "Forbes Billionaires List 2026 — Fabian Hedin debut",
+      "url": "https://x.com/Forbes/status/2052401981801824341",
+      "type": "article"
+    },
+    {
+      "title": "First Block: Interview with Fabian Hedin — Notion Podcast",
+      "url": "https://creators.spotify.com/pod/profile/notion-pioneers/episodes/First-Block-Interview-with-Fabian-Hedin--Co-Founder-and-CTO-of-Lovable-e3a6a8n",
+      "type": "podcast"
+    }
+  ],
+  "notes": "AI-revolution era Swedish AI-native founder. Lovable is the European billion-dollar exemplar of the natural-language-to-software category. KTH + Stockholm AI alumni cluster (Sana Labs / Depict era) is the European equivalent of the Wise-mafia for AI-native founders. Pre-founder engineering reps are unusually deep (algorithm eng at school age, ABB Robotics, web dev, then Sana/Depict-era engineer). Pledged 50% of exit to charity (notable signal).",
+  "studentEndYear": 2021,
+  "firstCompany": {
+    "name": "Lovable",
+    "year": 2023,
+    "ageAtFounding": 24,
+    "era": "ai-revolution",
+    "country": "Sweden",
+    "oneLiner": "Natural-language-to-software platform; turns prompts into working apps. The fastest-growing software startup in history per public reporting — $100M ARR in 8 months, $400M ARR by ~2 years. $6.6B valuation by late 2025.",
+    "preFounderRoles": [
+      { "type": "Tech", "org": "VIKON Vibrationkonsult AB", "role": "Algorithm Engineer (pre-university)", "startYear": null, "endYear": null, "notes": "Engineering-applied software role before KTH." },
+      { "type": "Tech", "org": "Sjukvårdskonsulterna", "role": "Web Developer", "startYear": null, "endYear": null, "notes": "Web-dev reps during/around school." },
+      { "type": "Tech", "org": "ABB Robotics", "role": "Intern", "startYear": null, "endYear": null, "notes": "Robotics / hardware-adjacent internship." },
+      { "type": "Study", "org": "KTH Royal Institute of Technology", "role": "BSc Industrial Engineering and Management", "startYear": null, "endYear": 2021, "notes": "Stockholm-based engineering undergrad." },
+      { "type": "Tech", "org": "Stockholm AI scene (Sana Labs / Depict.ai context)", "role": "AI engineer / colleague of Anton Osika", "startYear": 2021, "endYear": 2023, "notes": "Built the pre-existing trust with Osika that became Lovable's co-founder pairing." }
+    ]
+  },
+  "nowSummary": "Co-founder & CTO of Lovable (Stockholm). $6.6B+ valuation by late 2025; $400M+ ARR within ~2 years of founding. One of the world's 13 self-made billionaires under 30 ($1.6B net worth at 26). Pledged 50% of any exit to charity.",
+  "researchLinks": {
+    "linkedin": "https://se.linkedin.com/in/fabianhedin",
+    "company": "https://lovable.dev/",
+    "others": [
+      "https://eu.36kr.com/en/p/3613625099469827",
+      "https://www.neonriver.com/fabian-hedin-2025/"
+    ],
+    "cluster": "sweden-ai, kth, lovable, vibe-coding, billionaire-under-30",
+    "hint": "KTH engineering grad → algorithm/web/robotics reps → Sana/Depict alumni network → Lovable co-founder & CTO at 24; billionaire at 26."
+  }
+}

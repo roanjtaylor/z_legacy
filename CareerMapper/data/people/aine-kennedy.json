@@ -1,0 +1,162 @@
+{
+  "id": "aine-kennedy",
+  "name": "Áine Kennedy",
+  "birthYear": 1997,
+  "countryOfOrigin": "Ireland",
+  "currentCountry": "Ireland",
+  "imageUrl": null,
+  "archetypeArc": ["Operator", "Student", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Maynooth University",
+      "degree": "Entrepreneurship",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Studied entrepreneurship at Maynooth alongside running retail beauty jobs."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Retail beauty associate → counter",
+      "company": "Boots, Benefit Cosmetics, Tanorganic",
+      "archetype": "Operator",
+      "startYear": 2013,
+      "endYear": 2021,
+      "estAgeStart": 16,
+      "estAgeEnd": 24,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started working in beauty retail at 16 (Boots) and stacked Benefit Cosmetics + Tanorganic — eight years of front-line consumer-beauty reps before founding.",
+        "Studied entrepreneurship at Maynooth in parallel — academic credentials layered onto operating reps, not the other way round."
+      ],
+      "lessons": [
+        "Front-line retail reps in your eventual category are the cheapest possible customer-research — you know what customers actually buy because you sold to them in person.",
+        "Beauty is one of few categories where you can be a credible founder with sales-floor experience instead of a CV.",
+        "Stacking real jobs across multiple beauty brands (Boots, Benefit, Tanorganic) compounds pattern-recognition cheaply in your late teens."
+      ],
+      "notes": "Per Goss / Irish Times / Beauty Independent coverage."
+    },
+    {
+      "role": "TikTok creator (with grandad Billy Kennedy)",
+      "company": "Independent (Covid pandemic)",
+      "archetype": "Hustler",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": 23,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started making TikTok videos with her grandad during Covid — accidentally built a consumer-brand-ready distribution channel before having a product."
+      ],
+      "lessons": [
+        "Personal audience built during downtime (Covid) is the cheapest pre-product distribution asset a consumer founder can have.",
+        "Family creative collaborations (grandad on camera) are credible and durable — they don't churn like influencer arrangements."
+      ],
+      "notes": "Still ongoing alongside the company."
+    },
+    {
+      "role": "Founder & CEO",
+      "company": "The Smooth Company",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": 25,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Invested her $12k house deposit to launch The Smooth Company from her attic in 2022 — explicit bet of personal capital instead of raising.",
+        "Stayed bootstrapped — profitable from the start, reinvesting profits rather than chasing dilutive capital.",
+        "Targeted the slick-back / hair-taming niche on TikTok before going global — used existing audience as launch lever.",
+        "Expanded into 92 countries via retailer relationships (Brown Thomas, De Bijenkorf, H&M) rather than relying purely on DTC ads."
+      ],
+      "lessons": [
+        "Bootstrapped + profitable + viral-distribution is a complete consumer-brand playbook — does not require VC.",
+        "Multi-channel retail (DTC + premium department stores + H&M-tier) gives revenue stability and credibility that DTC-only brands lack.",
+        "Tripling revenue year-over-year while staying profitable is the operating signal that makes investors come to you, not the other way round.",
+        "Self-funded with a $12k house deposit is a viable founding capital base — capital efficiency is the moat, not the deck."
+      ],
+      "notes": "Founded 2022. Products sold in 92 countries; stocked by Brown Thomas, De Bijenkorf, H&M and others. Revenue tripled 2023→2024 per Irish Times. EY Emerging Entrepreneur of the Year (Nov 2025); Future Leader at Irish Times Business Awards. Forbes 30 Under 30 Europe 2026."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Founder & CEO of The Smooth Company (Dublin). Bootstrapped DTC haircare brand sold in 92 countries; tripled revenue 2023→2024; profitable from start. EY Emerging Entrepreneur 2025."
+  },
+  "lessons": [
+    {
+      "lesson": "Bootstrapped + profitable + 92-country retail distribution is a complete consumer-brand playbook with no VC required.",
+      "source": "Irish Times interview (June 2025)."
+    },
+    {
+      "lesson": "Eight years of front-line beauty retail (Boots, Benefit, Tanorganic) starting at 16 is the cheapest customer-research possible — beauty-floor reps beat any MBA.",
+      "source": "Goss / Beauty Independent profiles."
+    },
+    {
+      "lesson": "Personal TikTok audience built during Covid (with grandad on camera) became the pre-product distribution asset that launched the brand.",
+      "source": "Irish Times / Dropout Diaries podcast."
+    },
+    {
+      "lesson": "A $12k house deposit can be a viable founding capital base — capital efficiency is the moat, not the deck.",
+      "source": "Irish Times interview."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Áine Kennedy — Founder & CEO of The Smooth Company (LinkedIn)",
+      "url": "https://www.linkedin.com/in/ainekennedythesmoothcompany/",
+      "type": "article"
+    },
+    {
+      "title": "Smooth Company's Áine Kennedy interview — Irish Times (June 2025)",
+      "url": "https://www.irishtimes.com/business/2025/06/13/smooth-companys-aine-kennedy-my-screen-time-is-outrageous-i-dont-have-a-work-life-balance-at-the-moment/",
+      "type": "interview"
+    },
+    {
+      "title": "Smooth Company founder Áine Kennedy wins EY Emerging Entrepreneur of the Year — Irish Times",
+      "url": "https://www.irishtimes.com/business/2025/11/27/smooth-company-founder-aine-kennedy-wins-ey-emerging-entrepreneur-of-the-year-award/",
+      "type": "article"
+    },
+    {
+      "title": "Spotlight On: TikTok star and The Smooth Company founder Áine Kennedy — Goss.ie",
+      "url": "https://goss.ie/features/spotlight-on-tiktok-star-and-the-smooth-company-founder-aine-kennedy-293852",
+      "type": "interview"
+    },
+    {
+      "title": "The Viral Irish Brand Helping Customers Perfect Slick-Backed Hair — Beauty Independent",
+      "url": "https://www.beautyindependent.com/viral-irish-haircare-brand-helping-customers-perfect-slickback-the-smooth-company/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era Irish bootstrapped DTC beauty founder. Counterweight in the corpus to the VC-backed-AI default — proves that 'bootstrapped + profitable + viral' is a complete playbook in 2022+. Birth year inferred from 'started at Boots at 16' (~2013) and 'launched at 25' (2022).",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "The Smooth Company",
+    "year": 2022,
+    "ageAtFounding": 25,
+    "era": "ai-revolution",
+    "country": "Ireland",
+    "oneLiner": "Bootstrapped DTC haircare brand built from a $12k house deposit and a TikTok audience with her grandad. Sold in 92 countries; stocked by Brown Thomas / H&M / De Bijenkorf; profitable from day one; revenue tripled 2023→2024.",
+    "preFounderRoles": [
+      { "type": "Sales-BD", "org": "Boots", "role": "Retail beauty associate (from age 16)", "startYear": 2013, "endYear": null, "notes": "First job; start of 8-year front-line beauty career." },
+      { "type": "Sales-BD", "org": "Benefit Cosmetics", "role": "Counter / brand associate", "startYear": null, "endYear": null, "notes": "Premium beauty counter reps." },
+      { "type": "Sales-BD", "org": "Tanorganic", "role": "Brand-side beauty operator", "startYear": null, "endYear": null, "notes": "Irish indie beauty brand." },
+      { "type": "Study", "org": "Maynooth University", "role": "Entrepreneurship", "startYear": null, "endYear": null, "notes": "Studied alongside the retail jobs." },
+      { "type": "Side-business", "org": "TikTok with grandad Billy Kennedy", "role": "Creator (Covid era)", "startYear": 2020, "endYear": null, "notes": "Built an audience before having a product." }
+    ]
+  },
+  "nowSummary": "Founder & CEO of The Smooth Company (Dublin). Bootstrapped DTC haircare brand sold in 92 countries with major retailer distribution (Brown Thomas, De Bijenkorf, H&M). Profitable from day one; tripled revenue 2023→2024. EY Emerging Entrepreneur 2025, Forbes 30 Under 30 Europe 2026.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/ainekennedythesmoothcompany/",
+    "company": "https://www.thesmoothcompany.com/",
+    "others": [
+      "https://www.irishtimes.com/business/2025/06/13/smooth-companys-aine-kennedy-my-screen-time-is-outrageous-i-dont-have-a-work-life-balance-at-the-moment/"
+    ],
+    "cluster": "ireland-dtc, bootstrapped, beauty, tiktok",
+    "hint": "Bootstrapped Irish DTC beauty brand built from retail-floor reps + TikTok-with-grandad audience."
+  }
+}

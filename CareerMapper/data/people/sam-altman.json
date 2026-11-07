@@ -1,0 +1,223 @@
+{
+  "id": "sam-altman",
+  "name": "Sam Altman",
+  "birthYear": 1985,
+  "countryOfOrigin": "USA",
+  "currentCountry": "USA",
+  "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2023-02/230213-sam-altman-se-1051a-49a88b.jpg",
+  "archetypeArc": [
+    "Student",
+    "Founder",
+    "Investor",
+    "Operator"
+  ],
+  "confidence": "high",
+  "education": [
+    {
+      "school": "John Burroughs School (St. Louis, MO)",
+      "degree": "High school diploma",
+      "startYear": 1999,
+      "endYear": 2003,
+      "notes": "Elite private K-12 in St. Louis. Came out as gay at 17; staffed school computer lab. Already plugged into adult tech-mentor networks before college."
+    },
+    {
+      "school": "Stanford University",
+      "degree": "Computer Science (dropped out)",
+      "startYear": 2003,
+      "endYear": 2005,
+      "notes": "Dropped out after sophomore year to take Loopt full-time in YC's inaugural Summer 2005 batch. Canonical 'Stanford CS dropout' narrative."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Undergraduate (CS, did not finish)",
+      "company": "Stanford University",
+      "archetype": "Student",
+      "startYear": 2003,
+      "endYear": 2005,
+      "estAgeStart": 18,
+      "estAgeEnd": 20,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Enrolled at Stanford CS — the credentialing event that anchored the entire downstream network.",
+        "Built a college dorm-room app idea (location-sharing) and applied to Y Combinator's first-ever batch in 2005.",
+        "Dropped out after sophomore year once YC accepted Loopt — the dropout was downstream of YC acceptance, not a prerequisite."
+      ],
+      "lessons": [
+        "The Stanford CS cohort and its adjacency to the forming YC Bay-Area network was the durable asset, not the degree itself.",
+        "Dropping out only worked because YC's $20K + Paul Graham's mentorship gave a credible alternative anchor — do not invert the causality.",
+        "Being in the right physical place (Stanford / Bay Area) at the right time (YC batch 1) was structurally non-replicable."
+      ],
+      "notes": "Pre-iPhone era; YC was brand new and Bay-Area founder culture was still forming. Altman was 19 when Loopt entered YC."
+    },
+    {
+      "role": "Co-founder & CEO",
+      "company": "Loopt",
+      "archetype": "Founder",
+      "startYear": 2005,
+      "endYear": 2012,
+      "estAgeStart": 20,
+      "estAgeEnd": 27,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded location-sharing app at 19 with Stanford classmates in YC's first batch (Summer 2005).",
+        "Raised ~$30M+ across the company's life from Sequoia, NEA, New Enterprise Associates — top-tier VCs despite weak product traction.",
+        "Cut carrier-deal partnerships with Sprint, Verizon, AT&T — bet on pre-iPhone BREW distribution, which then evaporated when iPhone arrived (2007).",
+        "Persisted through seven years and a full platform shift (feature phones → smartphones) without ever finding real PMF.",
+        "Sold to Green Dot Corporation in March 2012 for $43.4M — roughly flat against total capital raised."
+      ],
+      "lessons": [
+        "High-profile funding from top VCs is not a proxy for product-market fit. Loopt looked successful while burning ~$30M on a product nobody really wanted.",
+        "Network access (YC batch 1, top-tier VCs) bought multi-year runway despite weak underlying demand — most founders do not get this margin for error.",
+        "The exit headline ('acquired') masked a roughly flat outcome vs. total capital raised — neither a clean founder win nor an investor win.",
+        "Betting on a platform (carrier deals) that a new platform (iPhone) will obsolete is a common pre-mobile-cloud-era trap."
+      ],
+      "notes": "Acquired by Green Dot for ~$43.4M (March 2012). Altman has publicly downplayed Loopt's success in retrospect; he's said he learned more from things going wrong than from things going well."
+    },
+    {
+      "role": "Part-time Partner, then President",
+      "company": "Y Combinator",
+      "archetype": "Investor",
+      "startYear": 2011,
+      "endYear": 2019,
+      "estAgeStart": 26,
+      "estAgeEnd": 34,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Joined YC as part-time partner in 2011 — before the Loopt exit — based on Paul Graham's personal trust, not on Loopt's results.",
+        "Named YC President in February 2014, succeeding Paul Graham at age 28.",
+        "Launched YC Research in 2015 (the funding vehicle that incubated OpenAI later that year).",
+        "Built a personal angel portfolio during the YC years with positions in Reddit, Stripe, Airbnb, Asana, Pinterest and others — these stakes are the real engine of his current personal wealth.",
+        "Stepped down as YC President in 2019 to focus on OpenAI."
+      ],
+      "lessons": [
+        "The YC presidency was the highest-leverage seat in early-stage startups for a decade — and access to it came via PG's personal trust, not via Loopt's results.",
+        "Personal angel portfolio compounded by seat-driven dealflow — this is where the wealth actually came from, not the founding chapter.",
+        "Patron-style mentorship (PG → Altman) is one of the highest-impact career mechanics in tech; it is also rare and not a strategy you can plan for.",
+        "An operator with a mediocre founder track record can credibly become a top-tier allocator if the network is there."
+      ],
+      "notes": "Stripping out the YC presidency, Loopt alone would not have produced the platform he has today. This is the load-bearing transition in his story."
+    },
+    {
+      "role": "CEO",
+      "company": "OpenAI",
+      "archetype": "Operator",
+      "startYear": 2019,
+      "endYear": null,
+      "estAgeStart": 33,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded OpenAI in December 2015 as a non-profit research lab alongside Musk, Brockman, Sutskever and others.",
+        "Took CEO role in 2019; structured the capped-profit subsidiary (OpenAI LP) to enable commercial fundraising while preserving non-profit governance.",
+        "Engineered the Microsoft partnership: ~$1B in 2019, expanded to ~$10B+ in January 2023 — locking in compute access ahead of competitors.",
+        "Survived the November 17, 2023 board firing and was reinstated within five days via coordinated employee and Microsoft pressure.",
+        "Continued capped-profit → fully for-profit restructuring conversations through 2024-2026."
+      ],
+      "lessons": [
+        "Coalitional power (Microsoft + employees + press) was the actual moat in the 2023 board crisis — formal governance was thinner than it looked on paper.",
+        "Operating a frontier-AI lab in the AI-revolution era is currently the single highest-leverage CEO seat in tech.",
+        "Holding zero direct OpenAI equity (publicly stated, until later indirect exposure) is unusual and creates governance optics; it did not prevent the 2023 crisis.",
+        "Capital structure engineering (capped-profit, Microsoft compute commitments) can matter more than product engineering at frontier-lab scale."
+      ],
+      "notes": "Has publicly stated he held no direct OpenAI equity for years; reported to have since taken some indirect exposure. Net worth surge is driven primarily by Reddit + Stripe + adjacent angel stakes, not by OpenAI comp directly."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1B+",
+    "exitEvents": [
+      {
+        "type": "acquisition",
+        "year": 2012,
+        "valueUsd": 43400000,
+        "notes": "Loopt → Green Dot. Roughly flat versus ~$30M+ raised — not a real founder win."
+      }
+    ],
+    "currentStatus": "CEO of OpenAI. Among the most powerful figures in tech globally. Wealth and platform derive primarily from YC-era angel portfolio (Reddit, Stripe, Airbnb) and the OpenAI seat, not from Loopt."
+  },
+  "lessons": [
+    {
+      "lesson": "Headline founder success can disguise where wealth actually came from. Altman's wealth comes from network access (YC → OpenAI) and an angel portfolio, not from being a great founder of Loopt.",
+      "source": "Inferred from public funding + exit data."
+    },
+    {
+      "lesson": "Capital raised is a vanity metric. Loopt raised ~$30M+ and exited flat. Do not pattern-match 'raised a lot' as success.",
+      "source": "Public funding history."
+    },
+    {
+      "lesson": "The structural advantage was: Stanford CS + YC batch 1 + Paul Graham's personal trust → YC presidency → OpenAI seat. The path is not replicable without something equivalent in the AI era.",
+      "source": "Inferred."
+    },
+    {
+      "lesson": "Patron-style mentorship transitions (PG → Altman) are among the highest-impact career moves in tech, but they cannot be engineered — only positioned for by being in the right room.",
+      "source": "Inferred."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loopt sells to Green Dot for $43.4M (TechCrunch, 2012)",
+      "url": "https://techcrunch.com/2012/03/09/loopt-green-dot/",
+      "type": "article"
+    },
+    {
+      "title": "Sam Altman — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sam_Altman",
+      "type": "article"
+    },
+    {
+      "title": "Sam Altman is Y Combinator's new president (TechCrunch, Feb 2014)",
+      "url": "https://techcrunch.com/2014/02/21/sam-altman-yc-president/",
+      "type": "article"
+    },
+    {
+      "title": "Removal of Sam Altman from OpenAI — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI",
+      "type": "article"
+    },
+    {
+      "title": "Y Combinator — Wikipedia (history of presidency and YC Research)",
+      "url": "https://en.wikipedia.org/wiki/Y_Combinator",
+      "type": "article"
+    }
+  ],
+  "notes": "TIER 2 — CAUTIONARY TALE. The narrative 'Altman is a successful young founder' obscures the actual mechanism (YC presidency → OpenAI CEO, both granted through network access, not Loopt's product success). Pattern-matching to him is dangerous without equivalent network access. He is in the corpus as the canonical example of how to read founder careers in 3D rather than 2D.",
+  "researchLinks": {
+    "linkedin": null,
+    "company": "openai",
+    "others": [],
+    "cluster": "",
+    "hint": "Similar to Paul Graham - celebrity level founder, supreme outlier, started young with loopt but bad idea that survived from YC fundraising environment"
+  },
+  "studentEndYear": 2005,
+  "firstCompany": {
+    "name": "Loopt",
+    "year": 2005,
+    "ageAtFounding": 20,
+    "era": "web",
+    "country": "USA",
+    "oneLiner": "Location-sharing app, YC's first-ever batch (Summer 2005). Raised ~$30M; acquired by Green Dot in March 2012 for $43.4M — roughly flat against total capital raised, not a real founder win.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "John Burroughs School (St. Louis, MO)",
+        "role": "High school diploma",
+        "startYear": 1999,
+        "endYear": 2003,
+        "notes": "Elite private K-12; staffed school computer lab; plugged into adult tech-mentor networks before college."
+      },
+      {
+        "type": "Study",
+        "org": "Stanford University",
+        "role": "Computer Science (dropped out after sophomore year)",
+        "startYear": 2003,
+        "endYear": 2005,
+        "notes": "Dropped out once YC accepted Loopt — dropout was downstream of YC acceptance, not a prerequisite."
+      }
+    ]
+  },
+  "nowSummary": "CEO of OpenAI since 2019; among the most powerful figures in tech globally. Wealth driven primarily by YC-era angel portfolio (Reddit, Stripe, Airbnb) and the OpenAI seat, not by Loopt or direct OpenAI equity."
+}

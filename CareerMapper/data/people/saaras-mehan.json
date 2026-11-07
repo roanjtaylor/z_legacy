@@ -1,0 +1,137 @@
+{
+  "id": "saaras-mehan",
+  "name": "Saaras Mehan",
+  "birthYear": 1999,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Founder", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Cambridge",
+      "degree": "BSc Computer Science",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Cambridge CS undergrad. Patented a machine-learning algorithm at age 20. Former member of the England Chess Team."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Founder",
+      "company": "Kular.ai",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": 23,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded Kular.ai in his early 20s; went through Y Combinator (W22-ish) — first founder reps before Jack & Jill.",
+        "Built and scaled Kular to 'significant revenue' (per public coverage)."
+      ],
+      "lessons": [
+        "A patented ML algorithm at 20 is the kind of artefact that converts Cambridge networks into a founder pipeline.",
+        "YC remains a legitimate UK→US route for technical founders without a US college credential."
+      ],
+      "notes": "Kular.ai is an AI business-development team (sales / outbound AI). Public sources describe it as scaled to significant revenue; exact ARR not disclosed."
+    },
+    {
+      "role": "Co-Founder & CTO",
+      "company": "Jack & Jill AI",
+      "archetype": "Founder",
+      "startYear": 2025,
+      "endYear": null,
+      "estAgeStart": 26,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Jack & Jill AI (AI recruitment platform with agents for job seekers and businesses) with Matt Wilson in 2025.",
+        "Raised $20M seed led by Creandum within six months of founding — exceptional commercial validation pace.",
+        "Drew on the YC playbook + Kular's product velocity to ship Jack & Jill at speed."
+      ],
+      "lessons": [
+        "Second-time founders compound — YC + Kular gave him the product discipline to scale Jack & Jill faster than a first venture.",
+        "AI-native recruitment is a wedge where the operator-pain (both founders frustrated by hiring at prior companies) maps directly onto product specs.",
+        "Tier-1 European VCs (Creandum) will write $20M cheques to repeat founders within six months — second-time velocity is real."
+      ],
+      "notes": "Forbes 30 Under 30 Europe 2026 AI. Jack & Jill launched 2025; $20M Creandum-led seed October 2025."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & CTO of Jack & Jill AI (UK). $20M seed (Creandum) October 2025 within six months of founding."
+  },
+  "lessons": [
+    {
+      "lesson": "Cambridge CS + a patent at 20 + YC + a first venture scaled to revenue (Kular) is the cleanest UK-founder-pipeline template of the AI era.",
+      "source": "Synthesised from Crunchbase, The Org, Forbes, Made in Shoreditch interview."
+    },
+    {
+      "lesson": "Second-time founder velocity is real — $20M seed within 6 months of founding only happens when the prior venture earned the network.",
+      "source": "Made in Shoreditch interview (Sep 2025)."
+    },
+    {
+      "lesson": "AI-native recruitment is an underserved wedge where the founder's own hiring frustration maps onto the product.",
+      "source": "Forbes 30 Under 30 Europe 2026."
+    },
+    {
+      "lesson": "Extracurricular intensity (England Chess Team) is a credible signal of the operating temperament founder networks pattern-match on.",
+      "source": "Inferred from public coverage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Saaras Mehan — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/saaras-mehan",
+      "type": "article"
+    },
+    {
+      "title": "Saaras Mehan — The BAE HQ profile",
+      "url": "https://www.thebaehq.com/profiles/saaras-mehan",
+      "type": "article"
+    },
+    {
+      "title": "Saaras Mehan — Entrepreneur First profile",
+      "url": "https://www.joinef.com/people/saaras-mehan/",
+      "type": "article"
+    },
+    {
+      "title": "Matt Wilson and Saaras Mehan on Jack & Jill AI Vision — Made in Shoreditch",
+      "url": "https://madeinshoreditch.co.uk/2025/09/02/jack-and-jill-interview/",
+      "type": "interview"
+    },
+    {
+      "title": "Kular — Entrepreneur First portfolio",
+      "url": "https://www.joinef.com/companies/kular/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era UK serial founder; Cambridge CS + YC + back-to-back AI ventures. The cleanest 'Cambridge → patent → YC → repeat founder' template in the corpus. Birth year confirmed from Forbes / LinkedIn data points (27 in Aug 2025).",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Kular.ai",
+    "year": 2022,
+    "ageAtFounding": 23,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "AI business-development team / outbound-AI product; went through Y Combinator (~W22). Scaled to 'significant revenue' before Mehan started Jack & Jill in 2025.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Cambridge", "role": "BSc Computer Science (patented ML algorithm at age 20)", "startYear": null, "endYear": null, "notes": "Former member of the England Chess Team — extracurricular intensity signal." }
+    ]
+  },
+  "nowSummary": "Co-Founder & CTO of Jack & Jill AI (UK). $20M seed (Creandum-led) in October 2025, six months after founding. Forbes 30 Under 30 Europe 2026 AI.",
+  "researchLinks": {
+    "linkedin": "https://uk.linkedin.com/in/saaras-mehan",
+    "company": "https://www.jackjill.ai/",
+    "others": [
+      "https://www.joinef.com/companies/kular/",
+      "https://madeinshoreditch.co.uk/2025/09/02/jack-and-jill-interview/"
+    ],
+    "cluster": "yc-w22, uk-ai, cambridge, repeat-founder",
+    "hint": "Cambridge CS → patent at 20 → Kular.ai (YC) → Jack & Jill ($20M seed in 6 months)."
+  }
+}

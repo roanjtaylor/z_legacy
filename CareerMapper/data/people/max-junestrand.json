@@ -1,0 +1,277 @@
+{
+  "id": "max-junestrand",
+  "name": "Max Junestrand",
+  "birthYear": 1999,
+  "countryOfOrigin": "Sweden",
+  "currentCountry": "Sweden",
+  "imageUrl": "https://www.hhs.se/contentassets/731ef448980b4be8ae5bdebb82dbfcc4/max-legora-1080.jpg?width=782&mode=crop&format=jpg&quality=90",
+  "tier": "tier1-admired",
+  "archetypeArc": [
+    "Student",
+    "Hustler",
+    "Founder"
+  ],
+  "confidence": "high",
+  "education": [
+    {
+      "school": "KTH Royal Institute of Technology, Stockholm",
+      "degree": "MSc Computer Engineering / Computer Science (ML specialisation) — did not complete master's thesis",
+      "startYear": 2018,
+      "endYear": 2023,
+      "notes": "Per the SSE alumni profile: studied Computer Engineering at KTH from 2018 in parallel with the SSE BSc. Did not complete his master's thesis at KTH (left to build Legora)."
+    },
+    {
+      "school": "Stockholm School of Economics (SSE / Handelshögskolan)",
+      "degree": "BSc Business & Economics",
+      "startYear": 2020,
+      "endYear": 2023,
+      "notes": "Double-degree alongside KTH. SSE affiliation became the trigger for founding Legora — SSE Business Lab required an SSE-affiliated founder, and the co-founders didn't have one, so Max joined them."
+    },
+    {
+      "school": "University of Illinois Urbana-Champaign (exchange)",
+      "degree": "MEng Computer Science (exchange / coursework)",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Reported across search-derived bios; exact dates not in the SSE profile. Likely an exchange / semester component of the KTH degree rather than a standalone master's."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Back End Engineer / Software Engineer",
+      "company": "Abios (Stockholm e-sports data company)",
+      "archetype": "Hustler",
+      "startYear": 2020,
+      "endYear": 2021,
+      "estAgeStart": 20,
+      "estAgeEnd": 21,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a full-time software engineering job in his early KTH years while continuing studies — a former competitive e-sports player going to work at an e-sports data company.",
+        "Optimised for shipping production code as a teenager / 20-year-old, not for grades."
+      ],
+      "lessons": [
+        "Real shipping reps in your first programming job dwarf coursework — Junestrand was a working SWE before he was a founder.",
+        "Your hobbies (e-sports) can be your first employer — it cuts onboarding cost and gives you irrational motivation."
+      ],
+      "notes": "Per LinkedIn-derived bios: Back End Engineer June–July 2020, then Software Engineer July 2020 – May 2021."
+    },
+    {
+      "role": "Stacked VC / Consulting / Startup Internships (the 'six roles in one year')",
+      "company": "Norrsken VC, Norrsken Impact Accelerator, McKinsey & Company, Depict, Bemlo (YC W22)",
+      "archetype": "Hustler",
+      "startYear": 2022,
+      "endYear": 2023,
+      "estAgeStart": 22,
+      "estAgeEnd": 23,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Stacked six roles in a single year across VC, consulting and YC startups: Norrsken (Investment Team Jan–Apr 2022), Depict (Growth, Mar–Apr 2022), McKinsey (Business Analyst Intern, Apr–Jun 2022), Bemlo / YC W22 (Growth, Jun–Jul 2022), Norrsken Impact Accelerator (Jul–Sep 2022), Norrsken VC (Visiting Analyst, Sep 2022 – Jan 2023).",
+          "Treated VC + accelerator exposure as a prerequisite, not a destination — Norrsken specifically was the gateway into the Swedish founder network.",
+          "Worked directly inside a YC-backed startup (Bemlo, W22) so the YC application playbook was a known quantity by the time Legora applied."
+      ],
+      "lessons": [
+        "VC internships are a fast way to acquire pattern recognition for what wins in tech — and the network density that fundraises later.",
+        "European VC scenes are small enough that 1–2 stints (Norrsken in Sweden's case) materially open doors.",
+        "Working inside a YC company (Bemlo) before founding gives you the YC playbook from the inside — Legora applied with that asymmetric info.",
+        "Stacking roles in one year is a legitimate Swedish-student speedrun strategy when degrees are part-time / double-tracked."
+      ],
+      "notes": "All six roles confirmed via LinkedIn-derived summaries; Norrsken Impact Week 2025 talk title is literally 'From Norrsken intern to unicorn founder in 2 years.' SSE alumni profile confirms 'six different roles in a single year.'"
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "Legora (formerly Leya)",
+      "archetype": "Founder",
+      "startYear": 2023,
+      "endYear": null,
+      "estAgeStart": 23,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Two friends approached Max with the idea; he joined as third co-founder because SSE Business Lab required an SSE-affiliated founder and Max was the only one with that affiliation — the credential literally created the team.",
+        "Got into SSE Business Lab as the launch ramp, then pushed the team to apply to Y Combinator (initially rejected, later accepted).",
+        "Picked legal AI — a vertical with clear willingness-to-pay and underserved by AI-native tools as of 2023.",
+        "Built in Stockholm rather than relocating to SF — proved frontier-AI startups don't require Silicon Valley HQ.",
+        "Shaped the product around feedback from working lawyers rather than founder intuition.",
+        "Raised aggressively from tier-1 investors: Index, Benchmark, ICONIQ — public reporting describes a 7-day fundraise with ~15 term sheets en route to choosing Benchmark."
+      ],
+      "lessons": [
+        "Vertical AI (a specific profession) beats horizontal AI for early capture in the AI-revolution era.",
+        "Founding at 23 with VC-side experience > founding at 19 without it — Max literally needed two of the six roles above to credibly raise.",
+        "An academic affiliation can be a binding-constraint that creates the team (SSE Business Lab requirement).",
+        "Lawyer-in-the-loop product development outperforms pure founder instinct for regulated knowledge-work tools.",
+        "European legal-tech is a viable AI-revolution founding market — buyers are large, fragmented, and ready to pay; Legora reached a reported $5.55B valuation."
+      ],
+      "notes": "Co-founders include Sigge Labor (CTO) and Anton Qvarfordt. Legora is an AI-native platform for legal professionals. Public reporting (Bessemer Atlas, Global Legal Post, 20VC) places it as the fastest enterprise business to reach $100M ARR; valuation reported at $5.55B as of 2025; Jude Law fronted a 2025 global brand campaign."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "100M+",
+    "exitEvents": [],
+    "currentStatus": "Building Legora as CEO from Stockholm. Backed by Benchmark, Index, ICONIQ. Reported valuation $5.55B (2025). Paper wealth only — no liquidity event yet."
+  },
+  "lessons": [
+    {
+      "lesson": "Earn the right to found by working on the capital/strategy side first — Norrsken VC twice, McKinsey, and inside a YC company, all before founding.",
+      "source": "SSE alumni profile + Norrsken Impact Week 2025 talk title."
+    },
+    {
+      "lesson": "Vertical AI for specific professions captures faster than horizontal AI in 2023–2026.",
+      "source": "Inferred from Legora's positioning and reported traction."
+    },
+    {
+      "lesson": "European legal-tech is a viable AI-revolution founding market.",
+      "source": "Inferred from Legora's reported valuation trajectory."
+    },
+    {
+      "lesson": "Real users (lawyers) shaping the product beats founder-only intuition in regulated knowledge-work verticals.",
+      "source": "Y Combinator library piece on Junestrand."
+    },
+    {
+      "lesson": "An academic affiliation (SSE Business Lab requirement) can be the binding constraint that creates the team — a credential's most valuable use is sometimes the door it opens, not the knowledge inside.",
+      "source": "SSE alumni profile."
+    },
+    {
+      "lesson": "Six-stacked-roles-in-a-year is a viable Swedish-student strategy when degrees are part-time / double-tracked.",
+      "source": "SSE alumni profile."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Max Junestrand — Stockholm School of Economics alumni profile",
+      "url": "https://www.hhs.se/en/education/study-at-sse/after-graduation/meet-our-graduates/bsc-graduates/max-junestrand/",
+      "type": "interview"
+    },
+    {
+      "title": "How this 25-year-old built a $675M legal AI startup with no legal experience — Y Combinator Library",
+      "url": "https://www.ycombinator.com/library/Mq-how-this-25-year-old-built-a-675m-legal-ai-startup-with-no-legal-experience",
+      "type": "article"
+    },
+    {
+      "title": "Legora: The fastest enterprise business to reach $100M ARR — Bessemer Venture Partners Atlas",
+      "url": "https://www.bvp.com/atlas/legora-the-fastest-enterprise-business-to-reach-100m-arr",
+      "type": "article"
+    },
+    {
+      "title": "Max Junestrand: From Norrsken intern to unicorn founder in 2 years — Impact Week 2025 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=r0mJXOWxjn4",
+      "type": "interview"
+    },
+    {
+      "title": "20VC podcast: 15 Term Sheets in 7 Days and Choosing Benchmark — with Max Junestrand",
+      "url": "https://podscan.fm/podcasts/the-twenty-minute-vc-20vc-venture-capital-startup-funding-the-pitch/episodes/20vc-15-term-sheets-in-7-days-and-choosing-benchmark-harvey-vs-legora-who-wins-legal-and-how-to-play-when-you-have-600m-less-funding-are-ai-models-plateauing-today-building-a-9-9-6-culture-from-stockholm-with-max-junestrand",
+      "type": "interview"
+    },
+    {
+      "title": "Max Junestrand — The Org (Legora org chart)",
+      "url": "https://theorg.com/org/legora/org-chart/max-junestrand",
+      "type": "other"
+    },
+    {
+      "title": "Hollywood star Jude Law hired by Legora — Global Legal Post",
+      "url": "https://www.globallegalpost.com/news/hollywood-star-jude-law-hired-by-legora-to-front-its-new-global-brand-campaign-1313429133",
+      "type": "article"
+    },
+    {
+      "title": "Legora — company website",
+      "url": "https://www.legora.com",
+      "type": "other"
+    }
+  ],
+  "notes": "Most directly relevant role model for the AI-revolution era European-founder archetype. The structural story is now well verified: KTH Computer Engineering (2018–2023) + SSE Business & Economics (2020–2023, double-degree) → SWE at Abios (2020–2021) → six stacked roles in 2022 across Norrsken VC, McKinsey, Depict, Bemlo (YC W22), Norrsken Impact Accelerator → co-founded Legora in 2023 via the SSE Business Lab → YC → Benchmark / Index / ICONIQ → reported $5.55B valuation. This is the exact pattern Roan finds compelling.",
+  "studentEndYear": 2023,
+  "firstCompany": {
+    "name": "Legora (formerly Leya)",
+    "year": 2023,
+    "ageAtFounding": 23,
+    "era": "ai-revolution",
+    "country": "Sweden",
+    "oneLiner": "AI-native legal copilot for European law firms; reportedly the fastest enterprise SaaS to $100M ARR.",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "KTH Royal Institute of Technology, Stockholm",
+        "role": "MSc Computer Engineering / CS (ML specialisation) — did not complete master's thesis",
+        "startYear": 2018,
+        "endYear": 2023,
+        "notes": "Left before thesis to build Legora. Includes an exchange / coursework component at UIUC."
+      },
+      {
+        "type": "Study",
+        "org": "Stockholm School of Economics (SSE)",
+        "role": "BSc Business & Economics (double-degree alongside KTH)",
+        "startYear": 2020,
+        "endYear": 2023,
+        "notes": "SSE affiliation was the binding constraint that created the Legora founding team (SSE Business Lab entry requirement)."
+      },
+      {
+        "type": "Tech",
+        "org": "Abios (Stockholm e-sports data company)",
+        "role": "Back End Engineer / Software Engineer",
+        "startYear": 2020,
+        "endYear": 2021,
+        "notes": "First real SWE job, started in his early KTH years."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken VC",
+        "role": "Investment Team",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jan–Apr 2022. First of two Norrsken stints — the gateway into the Swedish founder network."
+      },
+      {
+        "type": "Tech",
+        "org": "Depict",
+        "role": "Growth",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Mar–Apr 2022."
+      },
+      {
+        "type": "Consulting",
+        "org": "McKinsey & Company",
+        "role": "Business Analyst Intern",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Apr–Jun 2022."
+      },
+      {
+        "type": "Tech",
+        "org": "Bemlo (YC W22)",
+        "role": "Growth",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jun–Jul 2022. Working inside a YC company before founding gave him the YC application playbook from the inside."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken Impact Accelerator",
+        "role": "Accelerator team",
+        "startYear": 2022,
+        "endYear": 2022,
+        "notes": "Jul–Sep 2022."
+      },
+      {
+        "type": "VC",
+        "org": "Norrsken VC",
+        "role": "Visiting Analyst",
+        "startYear": 2022,
+        "endYear": 2023,
+        "notes": "Sep 2022 – Jan 2023. Second Norrsken stint; directly preceded the Legora founding."
+      }
+    ]
+  },
+  "nowSummary": "CEO of Legora in Stockholm; reported $5.55B valuation (2025); backed by Benchmark, Index, ICONIQ. Paper wealth only — no liquidity event yet.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/maxjunestrand",
+    "company": "https://legora.com/?gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU-mf81rY-OuvbJkPfoEbxkYCZ7OZoAoFDKY-u7AFM12RGb__Fz2kdwaAkmLEALw_wcB&campaignid=22632109429&adgroupid=180295919213&adid=783219712953&device=c&placement=&utm_source=google&utm_medium=cpc&utm_campaign=S_Others_Brand_Dt-XX&utm_content=&utm_term=legora&hsa_acc=6341003195&hsa_cam=22632109429&hsa_grp=180295919213&hsa_ad=783219712953&hsa_src=g&hsa_tgt=kwd-748623054180&hsa_kw=legora&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22632109429&gbraid=0AAAAA-5K9xygA2iKlNN1IDAAns_dpqltv&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU-mf81rY-OuvbJkPfoEbxkYCZ7OZoAoFDKY-u7AFM12RGb__Fz2kdwaAkmLEALw_wcB",
+    "others": [
+      "https://www.ycombinator.com/library/Mq-how-this-25-year-old-built-a-675m-legal-ai-startup-with-no-legal-experience"
+    ],
+    "cluster": "",
+    "hint": "Initially VC experience in Sweden, worked relentlessly 23 with cofounders, got YC, focused on product by working with real lawyers shape it."
+  }
+}

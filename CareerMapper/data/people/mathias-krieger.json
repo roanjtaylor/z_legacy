@@ -1,0 +1,210 @@
+{
+  "id": "mathias-krieger",
+  "name": "Mathias Krieger",
+  "birthYear": 1994,
+  "countryOfOrigin": "Germany",
+  "currentCountry": "United Kingdom",
+  "imageUrl": "https://media.licdn.com/dms/image/v2/C4D03AQEt4zYtyVh41Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1630427629939?e=1780531200&v=beta&t=LBdzkrYJpIe_SiVMQo3eZNPs-5tCJfiaHZTNHlWIV4g",
+  "archetypeArc": [
+    "Hustler",
+    "Student",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Kardinal-von-Galen Gymnasium Mettingen",
+      "degree": "Abitur",
+      "startYear": null,
+      "endYear": 2013,
+      "notes": "German secondary school in Mettingen, NRW."
+    },
+    {
+      "school": "King's College London",
+      "degree": "BSc Economics & Management",
+      "startYear": 2014,
+      "endYear": 2018,
+      "notes": "Confirmed across The Org / search-derived summaries. Roan's hint mentioned Imperial College London but verified records point to KCL."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Junior CEO / Family-business operator",
+      "company": "Lust Auf Lebensart",
+      "archetype": "Hustler",
+      "startYear": 2013,
+      "endYear": 2019,
+      "estAgeStart": 19,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Ran a small operating business in parallel with his KCL undergrad — got real P&L reps in his teens / early 20s instead of doing pure internships."
+      ],
+      "lessons": [
+        "Running anything with a P&L during student years builds founder instinct that pure internships do not.",
+        "A German SME background is a legitimate substitute for VC / consulting CV polish — operating reps compound."
+      ],
+      "notes": "German SME / lifestyle brand. Overlapped with his BSc at KCL (2014–2018) and ran ~1 year post-graduation."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "Vanvas",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started an outdoor-advertising venture (selling ad space on the side of delivery vans) in London — first venture-track attempt before HIVED.",
+        "Used Vanvas to learn the UK startup ecosystem and the logistics-adjacent space that became HIVED's domain."
+      ],
+      "lessons": [
+        "An early venture that doesn't break out can still be the dataset for picking the next one — Vanvas literally taught Krieger about vans as a delivery surface.",
+        "First ventures are mostly about acquiring the right adjacencies for the second one."
+      ],
+      "notes": "UK outdoor advertising startup that monetised the sides of delivery vans. Exact dates and outcome not publicly disclosed; Crunchbase entry exists. Domain proximity to last-mile delivery is the throughline into HIVED."
+    },
+    {
+      "role": "Co-Founder & Co-CEO (CPO)",
+      "company": "HIVED",
+      "archetype": "Founder",
+      "startYear": 2021,
+      "endYear": null,
+      "estAgeStart": 27,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded HIVED in 2021 with Murvah Iqbal — a London-based fully-electric parcel-delivery network competing with incumbent couriers.",
+        "Met co-founder Iqbal on a university trip to Silicon Valley — the geography that produced the network density mattered.",
+        "Started by literally delivering parcels themselves on bikes to learn the operations before scaling — founder-as-operator wedge.",
+        "Targeted premium retail brands (Zara, John Lewis, Nespresso) first, where sustainability mandates create willingness-to-pay.",
+        "Took Co-CEO + CPO seat alongside Iqbal — specialised on product / tech stack underpinning the fleet."
+      ],
+      "lessons": [
+        "Climate-tech in a commoditised market (parcels) wins by being a tech-driven logistics operator, not just an EV-fleet operator.",
+        "Anchor enterprise customers with sustainability mandates are the wedge that funds the harder logistics-tech build.",
+        "Germany → KCL → London-founder is a viable early-career path for European founders chasing capital and customer density.",
+        "Doing the gritty operations yourself first (delivering on bikes) earns the right to automate / scale later."
+      ],
+      "notes": "Founded 2021. Raised approximately $56.8M cumulative, including a $42M Series B in July 2025. Serves enterprise retail clients in the UK. Forbes 30 Under 30 Europe (Technology) class."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-Founder & Co-CEO (CPO-track) of HIVED, a London-based sustainable parcel-delivery network. Raised ~$56.8M to date including a $42M Series B in July 2025."
+  },
+  "lessons": [
+    {
+      "lesson": "Germany → KCL undergrad → first venture that fails-forward (Vanvas) → second venture in the adjacency (HIVED) is a clean European founder ladder.",
+      "source": "Synthesised from Crunchbase, The Org, Tech.eu and Startups.co.uk coverage."
+    },
+    {
+      "lesson": "Proprietary tech-driven logistics differentiates in a commoditised delivery market while serving corporate sustainability mandates.",
+      "source": "Inferred from HIVED positioning."
+    },
+    {
+      "lesson": "Operator reps in a small family/SME business during university are a legitimate substitute for VC or consulting CV polish.",
+      "source": "Inferred from Lust Auf Lebensart overlap with KCL."
+    },
+    {
+      "lesson": "Meeting your co-founder on a university trip beats a cold intro — concentrated time abroad with peers is one of the highest-yield co-founder-discovery formats.",
+      "source": "Krieger / Iqbal met on a KCL trip to Silicon Valley."
+    }
+  ],
+  "sources": [
+    {
+      "title": "HIVED — Crunchbase Company Profile",
+      "url": "https://www.crunchbase.com/organization/hived",
+      "type": "article"
+    },
+    {
+      "title": "Mathias Krieger — The Org",
+      "url": "https://theorg.com/org/hived/org-chart/mathias-krieger",
+      "type": "article"
+    },
+    {
+      "title": "Mathias Krieger — Crunchbase Person Profile",
+      "url": "https://www.crunchbase.com/person/mathias-krieger",
+      "type": "article"
+    },
+    {
+      "title": "Hived is bringing a 'green' buzz to parcel delivery in the UK as it raises £10 million — Tech.eu",
+      "url": "https://tech.eu/2023/04/27/hived-is-bringing-a-green-buzz-to-parcel-delivery-in-the-uk-as-it-raises-10-million/",
+      "type": "article"
+    },
+    {
+      "title": "HIVED — taking the sting out of courier emissions — Startups.co.uk",
+      "url": "https://startups.co.uk/startups-100/2025/hived/",
+      "type": "article"
+    },
+    {
+      "title": "Marunouchi Innovation Partners invests in HIVED",
+      "url": "https://marunouchi-innovation.com/en/news/detail/20250703.html",
+      "type": "article"
+    },
+    {
+      "title": "Vanvas — Crunchbase",
+      "url": "https://www.crunchbase.com/organization/vanvas",
+      "type": "article"
+    }
+  ],
+  "notes": "Post-2020 climate-tech / sustainable-logistics era founder. EV-fleet + enterprise-retail GTM is specific to the 2020s decarbonisation cycle but the Germany → KCL → London-founder arc is broadly applicable for EU founders. Hint mentioned Imperial but verified records point to King's College London.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/mathiaskrieger/",
+    "company": "https://www.hived.space/about-us",
+    "others": [
+      "https://www.crunchbase.com/organization/vanvas"
+    ],
+    "cluster": "",
+    "hint": "Imperial college london - entrepreneurial spirit"
+  },
+  "studentEndYear": 2018,
+  "firstCompany": {
+    "name": "HIVED",
+    "year": 2021,
+    "ageAtFounding": 27,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "London-based fully-electric parcel-delivery network, co-founded with Murvah Iqbal. Premium retail anchor customers (Zara, John Lewis, Nespresso). ~$56.8M raised inc. $42M Series B (July 2025).",
+    "preFounderRoles": [
+      {
+        "type": "Study",
+        "org": "Kardinal-von-Galen Gymnasium Mettingen",
+        "role": "Abitur (German secondary)",
+        "startYear": null,
+        "endYear": 2013,
+        "notes": "Mettingen, NRW."
+      },
+      {
+        "type": "Side-business",
+        "org": "Lust Auf Lebensart (German SME / lifestyle brand)",
+        "role": "Junior CEO / family-business operator",
+        "startYear": 2013,
+        "endYear": 2019,
+        "notes": "Ran a small operating business in parallel with KCL — got real P&L reps in his teens/early 20s instead of pure internships."
+      },
+      {
+        "type": "Study",
+        "org": "King's College London",
+        "role": "BSc Economics & Management",
+        "startYear": 2014,
+        "endYear": 2018,
+        "notes": "Met co-founder Murvah Iqbal on a KCL trip to Silicon Valley."
+      },
+      {
+        "type": "Side-business",
+        "org": "Vanvas",
+        "role": "Co-Founder & CEO (UK outdoor-advertising startup, wound down)",
+        "startYear": null,
+        "endYear": null,
+        "notes": "Monetised ad space on delivery vans — domain proximity to last-mile delivery became HIVED's lane."
+      }
+    ]
+  },
+  "nowSummary": "Co-Founder & Co-CEO (CPO-track) of HIVED. Forbes 30 Under 30 Europe (Technology). Pre-exit."
+}

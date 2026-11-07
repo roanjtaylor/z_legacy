@@ -1,0 +1,307 @@
+{
+  "id": "ian-browne",
+  "name": "Ian Browne",
+  "birthYear": null,
+  "countryOfOrigin": "Northern Ireland",
+  "currentCountry": "Northern Ireland",
+  "imageUrl": "https://static1.squarespace.com/static/595be8396b8f5ba9a83056e4/5c83778f104c7b7f30133fef/646f5b4d26ebb66c9a77abc3/1685019630558/436F2BB0-8DAD-4BA5-A779-9A125918B909_1_105_c%2B-%2BIan%2BBrowne.jpg?format=1500w",
+  "archetypeArc": [
+    "Operator",
+    "Founder",
+    "Operator",
+    "Investor",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Unknown (Northern Ireland)",
+      "degree": null,
+      "startYear": null,
+      "endYear": null,
+      "notes": "School and degree not disclosed on LinkedIn or in ThinkBusiness interview. Earliest verified role is MSD Quality Control Manager from Apr 2003 — implies tertiary education completed by ~2003."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Quality Control Manager",
+      "company": "MSD (Merck Sharp & Dohme)",
+      "archetype": "Operator",
+      "startYear": 2003,
+      "endYear": 2006,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Started inside Big Pharma (MSD) managing the software testing and support team for national primary care services — first job sat at the intersection of healthcare and software, not pure pharma.",
+        "Spent ~3 years building healthcare-domain credibility before founding."
+      ],
+      "lessons": [
+        "A first job inside the industry you later disrupt is a legitimate substitute for a tech or VC CV — especially in regulated verticals like healthcare.",
+        "Even inside Big Pharma, gravitating toward the software/IT-adjacent function pre-positions you for a SaaS founding."
+      ],
+      "notes": "Apr 2003 – Apr 2006 (3 yrs 1 mo) per LinkedIn. Managed software testing and support team for national primary care services — directly foreshadows My Surgery Website. This is the 'Big Pharma in London' role referenced in the ThinkBusiness interview."
+    },
+    {
+      "role": "Co-Founder & CEO",
+      "company": "My Surgery Website",
+      "archetype": "Founder",
+      "startYear": 2007,
+      "endYear": 2014,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Left MSD ~Apr 2006; founded My Surgery Website ~Jan 2007 — short gap from corporate to founder, not a long incubation.",
+        "Targeted a fragmented, software-underserved buyer (UK & Ireland GP practices) where willingness-to-pay was small but recurring and defensible.",
+        "Scaled to 4,000+ GP-surgery customers and ~20m patient users across UK & Ireland over 8 years before exit."
+      ],
+      "lessons": [
+        "Healthcare SaaS into a fragmented buyer base can compound to a multi-thousand-customer book without needing a global hub.",
+        "A small geography is not a barrier if your buyers are also distributed (every GP practice is its own buyer).",
+        "An 8-year founder run is a normal duration — not the 3-year hype cycle — for a category-defining vertical SaaS exit."
+      ],
+      "notes": "Jan 2007 – Dec 2014 (8 yrs) per LinkedIn. 'Started, developed, designed and sold a software as a service (SAAS) healthcare IT business.' 4,000+ customers, 20m+ patients across UK & Ireland. Acquired by NASDAQ-listed Stericycle; exit value not publicly disclosed."
+    },
+    {
+      "role": "General Manager, Healthcare IT",
+      "company": "ERS Medical",
+      "archetype": "Operator",
+      "startYear": 2015,
+      "endYear": 2015,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a short (10-month) post-acquisition operator role at ERS Medical helping 'define and deliver Healthcare IT services in current and future markets' — likely earn-out / transition work tied to the acquirer.",
+        "Used the Leeds-based GM role as a bridge year rather than immediately starting a second venture."
+      ],
+      "lessons": [
+        "Post-exit founders often have a contractual or transition-period operator role at the acquirer — it isn't a separate career chapter, it's a tail of the founder chapter.",
+        "Short stints (<12 months) right after an exit are normal and shouldn't be read as failure."
+      ],
+      "notes": "Jan 2015 – Oct 2015 (10 mos) in Greater Leeds Area per LinkedIn. Almost certainly the transition role following the Stericycle acquisition of My Surgery Website."
+    },
+    {
+      "role": "Entrepreneur In Residence → COO",
+      "company": "Ignite Accelerator (Belfast)",
+      "archetype": "Operator",
+      "startYear": 2018,
+      "endYear": 2022,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Post-exit, returned to Northern Ireland and joined Ignite as Entrepreneur In Residence (Jan 2018 – Sep 2020) rather than relocating to London / starting a second venture.",
+        "Stepped up to Chief Operating Officer (Oct 2020 – Jan 2022) — moved from advisor to operational leadership of NI's flagship pre-seed accelerator.",
+        "Optimised for ecosystem leverage — Ignite founders collectively raised £100m+ in venture capital."
+      ],
+      "lessons": [
+        "Post-exit, building local founder infrastructure compounds the next generation rather than competing with it.",
+        "EIR → COO is a credible 'soft re-entry' pattern: start as advisor, escalate to operator once the fit is proven.",
+        "In a small ecosystem an exited founder who stays disproportionately shapes the next cohort."
+      ],
+      "notes": "Two consecutive Ignite roles per LinkedIn: EIR Jan 2018 – Sep 2020 (2 yrs 9 mos) then COO Oct 2020 – Jan 2022 (1 yr 4 mos), 4 yrs 1 mo total. Belfast, NI."
+    },
+    {
+      "role": "Non-Executive Director",
+      "company": "Locate a Locum",
+      "archetype": "Investor",
+      "startYear": 2017,
+      "endYear": 2020,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took first publicly visible NED seat on a NI healthcare-staffing software company — replays the My Surgery Website thesis (healthcare + SaaS + UK/Ireland buyers) as a board member rather than founder."
+      ],
+      "lessons": [
+        "Post-exit, NED seats in your domain of strength (healthcare SaaS) are an early way to stay in the game without being CEO again.",
+        "Board seats stack — they are part-time and accumulate alongside an operator role."
+      ],
+      "notes": "Jan 2017 – Feb 2020 (3 yrs 2 mos) per LinkedIn. Overlaps with Ignite EIR — confirms NED + EIR + COO can run in parallel."
+    },
+    {
+      "role": "Non-Executive Director",
+      "company": "loyalBe",
+      "archetype": "Investor",
+      "startYear": 2019,
+      "endYear": 2025,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a second NED seat on a NI consumer/loyalty fintech — diversified board portfolio beyond healthcare into NI tech more broadly."
+      ],
+      "lessons": [
+        "Second NED is signal that the first one went well — boards beget boards.",
+        "Multi-year board seats (5+ yrs) are normal; they aren't quick rotations."
+      ],
+      "notes": "Aug 2019 – Jan 2025 (5 yrs 6 mos) per LinkedIn. Belfast Metropolitan Area."
+    },
+    {
+      "role": "NDRC Managing Director",
+      "company": "Dogpatch Labs / NDRC",
+      "archetype": "Operator",
+      "startYear": 2022,
+      "endYear": 2025,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Left Ignite COO (Jan 2022) and took NDRC MD (May 2022) — a step up from NI-only to all-island Irish ecosystem leadership.",
+        "Ran the 5-year, €17m NDRC accelerator across Dogpatch Labs (Dublin), Portershed (Galway), Republic of Work (Cork), RDI Hub (Kerry)."
+      ],
+      "lessons": [
+        "An exited founder is highly hireable into national ecosystem-leadership roles — operator credibility transfers to programme leadership.",
+        "The NI → all-Ireland step is a real career ladder rung for ecosystem builders, not just for founders."
+      ],
+      "notes": "May 2022 – Apr 2025 (3 yrs) per LinkedIn. Dublin-based. €17m / 5-year NDRC contract per ThinkBusiness."
+    },
+    {
+      "role": "Non-Executive Director",
+      "company": "Eolas Medical",
+      "archetype": "Investor",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took NED seat at Eolas Medical (Belfast healthcare-SaaS) the same month he founded Founder Labs — explicitly returning to a healthcare-SaaS board now that there's bandwidth."
+      ],
+      "lessons": [
+        "Board portfolios cycle — as one NED ends (Locate a Locum 2020, loyalBe 2025) another begins.",
+        "Re-entering healthcare via the board, not the founder seat, lets you keep optionality while running a new venture."
+      ],
+      "notes": "Jan 2024 – Present per LinkedIn. Started concurrently with Founder Labs CEO role."
+    },
+    {
+      "role": "CEO / Founder",
+      "company": "Founder Labs",
+      "archetype": "Founder",
+      "startYear": 2024,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded Founder Labs (Jan 2024) ~16 months before stepping out of NDRC (Apr 2025) — built the next thing inside the safety of the day job rather than burning a bridge.",
+        "Building a NI-based programme helping founders 'build, sell, scale and raise' with global ambition — productising ~17 years of post-exit ecosystem work.",
+        "Continues to be NI-based rather than relocating after exit / ecosystem roles."
+      ],
+      "lessons": [
+        "A career can layer founder → ecosystem operator → second founder of ecosystem infrastructure itself.",
+        "Overlap the new venture with the old role — Jan 2024 founding + Apr 2025 NDRC exit shows 15 months of paid runway while building the next thing.",
+        "Geographic loyalty is a viable career thesis — staying somewhere compounds soft power that relocating burns."
+      ],
+      "notes": "Jan 2024 – Present per LinkedIn. Belfast Metropolitan Area. Full-time CEO since Apr 2025 (post-NDRC exit). Programme positioning per landing page: 'global ambition from Northern Ireland.'"
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": null,
+    "exitEvents": [
+      {
+        "type": "acquisition",
+        "year": null,
+        "valueUsd": null,
+        "notes": "My Surgery Website acquired by NASDAQ-listed Stericycle. Likely late 2014 / early 2015 given the LinkedIn handover (My Surgery Website ended Dec 2014, ERS Medical 'General Manager, Healthcare IT' started Jan 2015). Exit value not publicly disclosed."
+      }
+    ],
+    "currentStatus": "Belfast-based. CEO of Founder Labs (full-time since Apr 2025). NED at Eolas Medical. Earlier: 3 yrs MD of NDRC (€17m all-island Irish accelerator), 4 yrs at Ignite (EIR then COO), exited My Surgery Website to Stericycle."
+  },
+  "lessons": [
+    {
+      "lesson": "You can build a real outcome from Northern Ireland if your buyer base is also distributed (e.g. GP surgeries across UK & Ireland).",
+      "source": "Inferred from My Surgery Website trajectory — ThinkBusiness interview + LinkedIn dates."
+    },
+    {
+      "lesson": "Big Pharma (MSD) → healthcare-SaaS founder is a credible NI-to-exit path; ~3 years inside the industry buys you the domain credibility a tech-hub CV would otherwise provide.",
+      "source": "LinkedIn (MSD Apr 2003 – Apr 2006 → My Surgery Website Jan 2007)."
+    },
+    {
+      "lesson": "Post-exit, ecosystem-building in your home region (Ignite, NDRC, Founder Labs) can be a multi-decade career — 10+ years and counting since the 2014 exit.",
+      "source": "LinkedIn trajectory across Ignite (2018-2022), NDRC (2022-2025), Founder Labs (2024-)."
+    },
+    {
+      "lesson": "Overlap your next thing with your current paid role — Browne founded Founder Labs in Jan 2024 while still running NDRC until Apr 2025.",
+      "source": "LinkedIn date overlap between NDRC MD and Founder Labs CEO."
+    },
+    {
+      "lesson": "Stack NED seats alongside the day job — they compound network, cash, and optionality without being a separate career.",
+      "source": "LinkedIn: Locate a Locum (2017-2020), loyalBe (2019-2025), Eolas Medical (2024-) all ran during Ignite/NDRC tenure."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ian Browne — LinkedIn",
+      "url": "https://www.linkedin.com/in/ijbrowne/",
+      "type": "other"
+    },
+    {
+      "title": "My Business Life: Ian Browne, NDRC — ThinkBusiness",
+      "url": "https://www.thinkbusiness.ie/articles/my-business-life-ian-browne-ndrc/",
+      "type": "interview"
+    },
+    {
+      "title": "An Ambitious State of Mind — Ian J Browne (Medium)",
+      "url": "https://ianjbrowne.medium.com/an-ambitious-state-of-mind-c14ca518d297",
+      "type": "article"
+    },
+    {
+      "title": "Founder Labs (landing page)",
+      "url": "https://founder-labs-landing.netlify.app/#/",
+      "type": "other"
+    },
+    {
+      "title": "MY SURGERY WEBSITE LIMITED — UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07214802/officers",
+      "type": "other"
+    },
+    {
+      "title": "Founder, Funder & Talent Spotter — Ian Browne (The Entrepreneur Experiment podcast)",
+      "url": "https://podcasts.apple.com/ie/podcast/founder-funder-talent-spotter-ian-browne/id1455026112?i=1000614450848",
+      "type": "interview"
+    }
+  ],
+  "notes": "Load-bearing role model for the 'is NI viable?' question. LinkedIn now provides clear dates: MSD Quality Control Manager (2003-2006, software testing for primary care — already healthcare+software) → My Surgery Website founder (2007-2014, 8-year run) → ERS Medical GM (2015, 10-month post-acquisition transition) → Locate a Locum NED (2017-2020) → Ignite EIR then COO (2018-2022) → loyalBe NED (2019-2025) → NDRC MD (2022-2025) → Founder Labs CEO + Eolas Medical NED (2024-). Era: mid-2000s SaaS founder, now in Altman-era ecosystem-builder phase.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/ijbrowne/",
+    "company": "https://founder-labs-landing.netlify.app/#/",
+    "others": [
+      "https://ianjbrowne.medium.com/an-ambitious-state-of-mind-c14ca518d297"
+    ],
+    "cluster": "",
+    "hint": "A different era of founders - maybe sam altman era."
+  },
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "My Surgery Website",
+    "year": 2007,
+    "ageAtFounding": null,
+    "era": "web",
+    "country": "United Kingdom / Northern Ireland",
+    "oneLiner": "Healthcare SaaS for UK & Ireland GP surgeries — websites + patient tools. Scaled to 4,000+ practices and 20m+ patients over 8 years; acquired by NASDAQ-listed Stericycle.",
+    "preFounderRoles": [
+      {
+        "type": "Operator",
+        "org": "MSD (Merck Sharp & Dohme)",
+        "role": "Quality Control Manager — software testing & support for national primary care services",
+        "startYear": 2003,
+        "endYear": 2006,
+        "notes": "3 years inside Big Pharma at the software/IT interface — built healthcare-domain credibility and a software-delivery skill set directly applicable to My Surgery Website."
+      }
+    ]
+  },
+  "nowSummary": "Belfast-based ecosystem builder. CEO of Founder Labs (NI, founded Jan 2024, full-time since Apr 2025) and NED at Eolas Medical. Earlier: MSD Quality Control Manager 2003-2006 (managed software testing for primary care) → Co-Founder & CEO My Surgery Website 2007-2014 (UK/Ireland GP-surgery SaaS, 4,000+ customer practices, 20m+ patients, acquired by NASDAQ-listed Stericycle; exit value not publicly disclosed) → ERS Medical GM Healthcare IT 2015 (10-month post-acquisition role) → Ignite EIR then COO 2018-2022 → NDRC MD 2022-2025 (€17M all-island Irish accelerator). Concurrent NED seats: Locate a Locum (2017-2020), loyalBe (2019-2025), Eolas Medical (2024-)."
+}

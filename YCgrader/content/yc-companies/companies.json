@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Airbnb",
+    "batch": "W09",
+    "outcome": "public",
+    "one_liner": "Marketplace for short-term lodging in other people's homes.",
+    "tags": ["marketplace", "two-sided", "consumer", "do-things-that-dont-scale", "cold-start"],
+    "what_they_did": "With near-zero demand and ugly listings, the founders flew to New York repeatedly, knocked on hosts' doors, photographed their apartments themselves, and rewrote the listings. They funded the gap by selling novelty cereal boxes during the 2008 election.",
+    "lesson": "Marketplaces require heroic, unscalable supply-side work at the start. The founders manually fixed the listing quality that no algorithm could fix yet.",
+    "url": "https://www.ycombinator.com/companies/airbnb"
+  },
+  {
+    "name": "Stripe",
+    "batch": "S09",
+    "outcome": "active",
+    "one_liner": "Payments infrastructure and APIs for internet businesses.",
+    "tags": ["developer-tools", "payments", "narrow-wedge", "b2b", "workflow-depth-moat"],
+    "what_they_did": "Targeted developers who hated existing payment integrations. The founders would set up the API on a prospect's laptop on the spot ('the Collison installation'). Won a wedge — developers at small startups — before expanding to enterprises.",
+    "lesson": "A 10x-better experience for an acute, narrow user (developers) becomes a wedge into a giant market. Distribution by founder hustle precedes scalable sales.",
+    "url": "https://www.ycombinator.com/companies/stripe"
+  },
+  {
+    "name": "DoorDash",
+    "batch": "S13",
+    "outcome": "public",
+    "one_liner": "On-demand local food delivery marketplace.",
+    "tags": ["marketplace", "logistics", "do-things-that-dont-scale", "consumer"],
+    "what_they_did": "Started as PaloAltoDelivery.com — a static page with menu PDFs. The founders delivered the food themselves and used Google Voice for the phone number, validating demand before building any logistics software.",
+    "lesson": "Test demand with a fake-door MVP and your own two hands before building infrastructure. Software came only after the manual version was overwhelmed.",
+    "url": "https://www.ycombinator.com/companies/doordash"
+  },
+  {
+    "name": "Coinbase",
+    "batch": "S12",
+    "outcome": "public",
+    "one_liner": "Consumer-friendly platform to buy, sell, and store crypto.",
+    "tags": ["fintech", "crypto", "trust", "regulatory", "consumer"],
+    "what_they_did": "Bet on being the simple, compliant, trusted on-ramp while competitors cut corners. Invested early in regulatory relationships and security as the moat in a low-trust category.",
+    "lesson": "In high-stakes domains, trust and compliance are a durable moat that survives the cloneability test. Being the boring, safe option wins regulated markets.",
+    "url": "https://www.ycombinator.com/companies/coinbase"
+  },
+  {
+    "name": "Gusto",
+    "batch": "W12",
+    "outcome": "active",
+    "one_liner": "Payroll, benefits, and HR for small businesses.",
+    "tags": ["b2b", "smb", "payroll", "workflow-depth-moat", "narrow-wedge"],
+    "what_they_did": "Picked the unglamorous, painful schlep of small-business payroll — a problem with deep compliance complexity and high switching cost once embedded in a company's operations.",
+    "lesson": "Schlep blindness is an opportunity: hard, boring problems repel competitors and create deep workflow moats. Embedded financial workflows are sticky.",
+    "url": "https://www.ycombinator.com/companies/gusto"
+  },
+  {
+    "name": "Brex",
+    "batch": "W17",
+    "outcome": "active",
+    "one_liner": "Corporate cards and spend management for startups.",
+    "tags": ["fintech", "b2b", "narrow-wedge", "underwriting"],
+    "what_they_did": "Targeted the narrow wedge of venture-backed startups that legacy banks wouldn't underwrite, using cash balances rather than credit history to extend limits.",
+    "lesson": "A narrow, underserved customer the incumbents reject is a defensible beachhead. Underwriting differently is a structural, not cosmetic, advantage.",
+    "url": "https://www.ycombinator.com/companies/brex"
+  },
+  {
+    "name": "Twitch",
+    "batch": "n/a (Justin.tv pivot)",
+    "outcome": "acquired",
+    "one_liner": "Live-streaming platform, originally for gaming.",
+    "tags": ["pivot", "consumer", "network-effects", "video"],
+    "what_they_did": "Justin.tv was a broad lifecasting site that never found a durable audience. The team noticed gaming streams were the one segment with real engagement and rebuilt the company entirely around it. Acquired by Amazon for ~$970M.",
+    "lesson": "When one narrow segment shows disproportionate engagement, follow it and abandon the broad platform. The pivot to a wedge saved the company.",
+    "url": "https://en.wikipedia.org/wiki/Twitch_(service)"
+  },
+  {
+    "name": "Instacart",
+    "batch": "S12",
+    "outcome": "public",
+    "one_liner": "Same-day grocery delivery marketplace.",
+    "tags": ["marketplace", "logistics", "do-things-that-dont-scale", "consumer"],
+    "what_they_did": "The founder personally shopped and delivered the first orders to prove unit demand. Grew supply (shoppers) and demand together in one city before expanding.",
+    "lesson": "Even capital-intensive logistics marketplaces start by doing the unscalable thing in one geography until demand is undeniable.",
+    "url": "https://www.ycombinator.com/companies/instacart"
+  },
+  {
+    "name": "Homejoy",
+    "batch": "S10 (as Pathjoy)",
+    "outcome": "dead",
+    "one_liner": "On-demand home cleaning marketplace.",
+    "tags": ["marketplace", "two-sided", "supply-leakage", "retention", "premature-scale"],
+    "what_they_did": "Scaled to 30+ cities fast on cheap-coupon demand. But cleaners and customers had every incentive to transact off-platform after the first match, and retention was poor. Shut down in 2015 amid worker-classification lawsuits.",
+    "lesson": "A marketplace with no defense against disintermediation and weak retention dies no matter how fast it grows. Coupon-driven demand is not real demand.",
+    "url": "https://en.wikipedia.org/wiki/Homejoy"
+  },
+  {
+    "name": "Quibi",
+    "batch": "n/a",
+    "outcome": "dead",
+    "one_liner": "Short-form premium mobile video for on-the-go viewing.",
+    "tags": ["consumer", "media", "no-demand", "premature-scale", "false-premise"],
+    "what_they_did": "Raised $1.75B and launched with Hollywood content and a polished app, betting people wanted premium 10-minute episodes during commutes. The premise was wrong; it shut down ~6 months after launch.",
+    "lesson": "No amount of capital or production value rescues a product built on an unvalidated premise about what users want. They scaled before testing demand.",
+    "url": "https://en.wikipedia.org/wiki/Quibi"
+  },
+  {
+    "name": "Webvan",
+    "batch": "n/a",
+    "outcome": "dead",
+    "one_liner": "Online grocery delivery with automated warehouses (dot-com era).",
+    "tags": ["logistics", "premature-scale", "burn-funded-growth", "capital-intensive"],
+    "what_they_did": "Raised ~$800M and built automated warehouses and a delivery fleet across multiple cities before proving the unit economics or density worked. Burned through capital and folded in 2001.",
+    "lesson": "Building expensive infrastructure ahead of proven, dense demand is the canonical premature-scale death. Capital extended the runway over the same cliff.",
+    "url": "https://en.wikipedia.org/wiki/Webvan"
+  },
+  {
+    "name": "Reddit",
+    "batch": "S05",
+    "outcome": "public",
+    "one_liner": "Network of community-driven discussion forums.",
+    "tags": ["consumer", "network-effects", "cold-start", "community"],
+    "what_they_did": "To solve the cold-start problem the founders seeded the site with fake accounts they controlled, posting and submitting links to create the impression and habit of activity until real users arrived.",
+    "lesson": "Faking the early supply of content is a legitimate unscalable tactic to break a community's cold-start problem. Networks need a critical mass to feel alive.",
+    "url": "https://www.ycombinator.com/companies/reddit"
+  },
+  {
+    "name": "Dropbox",
+    "batch": "S07",
+    "outcome": "public",
+    "one_liner": "File sync and storage that just works across devices.",
+    "tags": ["consumer", "developer-founder", "demand-validation", "mvp"],
+    "what_they_did": "Before building the hard sync engine, the founder posted a demo video showing the product working. The waitlist jumped from 5,000 to 75,000 overnight, validating demand for a product that didn't fully exist yet.",
+    "lesson": "A demo video can be a valid MVP to test demand cheaply before building hard technology. Validate the want before paying the engineering cost.",
+    "url": "https://www.ycombinator.com/companies/dropbox"
+  },
+  {
+    "name": "Zenefits",
+    "batch": "n/a",
+    "outcome": "dead",
+    "one_liner": "Free HR software monetized via insurance brokerage commissions.",
+    "tags": ["b2b", "smb", "compliance", "false-pmf", "hyper-growth"],
+    "what_they_did": "Grew explosively on a free-software-plus-broker-commission model, but cut compliance corners (a tool to fake insurance-broker training hours) and the business model strained. Valuation collapsed from ~$4.5B amid regulatory scandal.",
+    "lesson": "Hyper-growth on a regulatory-arbitrage model is fragile. In compliance-heavy domains, cutting corners is an existential risk, not a growth hack.",
+    "url": "https://en.wikipedia.org/wiki/Zenefits"
+  },
+  {
+    "name": "Segment",
+    "batch": "S11",
+    "outcome": "acquired",
+    "one_liner": "Customer-data infrastructure: collect once, route everywhere.",
+    "tags": ["developer-tools", "b2b", "pivot", "infrastructure", "workflow-depth-moat"],
+    "what_they_did": "Started as a classroom-analytics tool that failed. The team open-sourced a small library (analytics.js) they'd built as a side-effect; its traction revealed the real product — a data-routing layer for developers. Acquired by Twilio for ~$3.2B.",
+    "lesson": "The real product is sometimes the tool you built on the way to the wrong product. Watch what users actually adopt, not what you pitched.",
+    "url": "https://www.ycombinator.com/companies/segment"
+  },
+  {
+    "name": "Optimizely",
+    "batch": "W10",
+    "outcome": "acquired",
+    "one_liner": "A/B testing and experimentation platform for websites.",
+    "tags": ["b2b", "saas", "narrow-wedge", "self-serve"],
+    "what_they_did": "Made A/B testing something a marketer could set up without engineering, turning a developer chore into a self-serve product. Won the wedge of conversion-focused marketers.",
+    "lesson": "Removing the engineering bottleneck for a non-technical buyer opens a self-serve wedge. Make the painful thing one click.",
+    "url": "https://en.wikipedia.org/wiki/Optimizely"
+  },
+  {
+    "name": "Cruise",
+    "batch": "W14",
+    "outcome": "acquired",
+    "one_liner": "Self-driving vehicle technology.",
+    "tags": ["deep-tech", "hardware", "capital-intensive", "regulatory", "timing-dependence"],
+    "what_they_did": "Began with a retrofit autonomy kit for existing cars — a tractable wedge — then was acquired by GM for ~$1B to pursue full autonomy. Faced years of capital burn and heavy regulatory and safety scrutiny.",
+    "lesson": "Deep-tech with long timelines needs a near-term wedge and a patient capital structure; outcomes hinge on timing and regulation the founder can't fully control.",
+    "url": "https://en.wikipedia.org/wiki/Cruise_(autonomous_vehicle)"
+  },
+  {
+    "name": "Loom",
+    "batch": "n/a",
+    "outcome": "acquired",
+    "one_liner": "Async video messaging for work.",
+    "tags": ["b2b", "consumer", "narrow-wedge", "habit", "viral-loop"],
+    "what_they_did": "Pivoted from a failing edutech idea (Opentest) to a simple screen-and-camera recorder. The shared video link created a built-in viral loop — every recipient saw the product. Acquired by Atlassian for ~$975M.",
+    "lesson": "A product whose core action distributes itself (a shared link) has organic growth built in. Pivot toward the feature people actually used.",
+    "url": "https://en.wikipedia.org/wiki/Loom_(company)"
+  },
+  {
+    "name": "Pebble",
+    "batch": "n/a",
+    "outcome": "dead",
+    "one_liner": "Smartwatch with an e-paper display, Kickstarter-funded.",
+    "tags": ["hardware", "consumer", "competition", "scale-disadvantage"],
+    "what_they_did": "Pioneered the smartwatch category with a record Kickstarter, but once Apple and Google entered, Pebble couldn't match their scale, ecosystem, or capital. Sold its assets to Fitbit in 2016.",
+    "lesson": "Being first in a category you can't defend against platform giants is fatal. First-mover advantage is worthless without a moat that survives the incumbents arriving.",
+    "url": "https://en.wikipedia.org/wiki/Pebble_(watch)"
+  },
+  {
+    "name": "Flexport",
+    "batch": "W14",
+    "outcome": "active",
+    "one_liner": "Software-driven freight forwarding and logistics.",
+    "tags": ["b2b", "logistics", "schlep", "workflow-depth-moat", "incumbent-disruption"],
+    "what_they_did": "Attacked the deeply unglamorous, paperwork-heavy world of freight forwarding with software, embedding into shippers' operations rather than just offering a marketplace.",
+    "lesson": "Old, schlep-heavy industries with entrenched manual workflows are ripe for software that integrates deeply — the integration itself becomes the moat.",
+    "url": "https://www.ycombinator.com/companies/flexport"
+  }
+]

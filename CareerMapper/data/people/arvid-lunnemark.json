@@ -1,0 +1,135 @@
+{
+  "id": "arvid-lunnemark",
+  "name": "Arvid Lunnemark",
+  "birthYear": 2000,
+  "countryOfOrigin": "Sweden",
+  "currentCountry": "USA",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Founder", "Other"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "Massachusetts Institute of Technology (MIT)",
+      "degree": "Computer Science and Mathematics",
+      "startYear": null,
+      "endYear": null,
+      "notes": "Met his three Cursor co-founders (Michael Truell, Sualeh Asif, Aman Sanger) while studying CS and mathematics at MIT."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Co-founder",
+      "company": "Anysphere (Cursor)",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": 2025,
+      "estAgeStart": 21,
+      "estAgeEnd": 25,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Anysphere / Cursor in 2022 while at MIT with three classmates — student-cohort founding pattern.",
+        "Built an AI-native code editor at the exact moment large language models became viable for code generation.",
+        "Scaled to $29.3B valuation and $2B+ ARR by early 2026 — one of the fastest software company growth arcs ever recorded.",
+        "Departed Cursor in October 2025 to start Integrous Research — a safety-focused AI research lab."
+      ],
+      "lessons": [
+        "MIT CS classmate cohort is one of the few founding-team structures with both technical depth and pre-existing trust.",
+        "Founding at 21 in the AI revolution is viable only if you and your co-founders are at the technical frontier — not as a general template.",
+        "Stepping away from a $29B company at 25 to start a safety lab is a credible second-act when the first venture was a generational outcome.",
+        "Swedish-origin founders can compete at the frontier from the US — but the path requires elite-US-CS-cohort access (MIT), not just talent."
+      ],
+      "notes": "Cursor / Anysphere founded 2022 at MIT. Scaled to $29.3B valuation and $2B+ ARR by early 2026 per Forbes / Inc / The Information. Lunnemark left in October 2025 to found Integrous Research."
+    },
+    {
+      "role": "Founder",
+      "company": "Integrous Research",
+      "archetype": "Founder",
+      "startYear": 2025,
+      "endYear": null,
+      "estAgeStart": 25,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded Integrous Research in October 2025 — a safety-focused AI research lab.",
+        "Chose research / alignment over operating a $29B company — explicit values-driven second act."
+      ],
+      "lessons": [
+        "Second-act founders post-mega-outcome can credibly start research labs — the rare exit-path when the first venture is a $1B+ outcome.",
+        "Values-driven pivots (safety / alignment) are becoming a credible second-venture pattern among AI billionaires under 30."
+      ],
+      "notes": "Per The Information / Entrepreneur Loop coverage of his October 2025 departure."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1B+",
+    "exitEvents": [],
+    "currentStatus": "Founder of Integrous Research (safety-focused AI research lab, started October 2025). Previously co-founded Anysphere (Cursor) at MIT in 2022 — scaled to $29.3B valuation and $2B+ ARR; he became a billionaire at 26. Among world's youngest self-made billionaires."
+  },
+  "lessons": [
+    {
+      "lesson": "Swedish-origin → MIT CS → AI-native code editor at 21 is the rarest end of the founder pipeline — extremely high signal but not a replicable template.",
+      "source": "Inferred from Cursor / Anysphere trajectory."
+    },
+    {
+      "lesson": "Cursor's MIT classmate cohort (Truell, Asif, Sanger, Lunnemark) is the modern version of the Stanford-PayPal-mafia pattern — pre-existing trust + technical depth + frontier timing.",
+      "source": "Forbes / Wikipedia (Anysphere)."
+    },
+    {
+      "lesson": "Stepping away from a $29B company at 25 to start a safety-focused research lab is the rare values-driven second act when your first venture was generational.",
+      "source": "The Information (October 2025)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cursor (company) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anysphere",
+      "type": "article"
+    },
+    {
+      "title": "Cursor Co-Founder Departs — The Information",
+      "url": "https://www.theinformation.com/briefings/cursor-co-founder-departs",
+      "type": "article"
+    },
+    {
+      "title": "Co-founder Arvid Lunnemark Leaves Cursor as AI Coding Revolution Reaches New Heights — Entrepreneur Loop",
+      "url": "https://entrepreneurloop.com/arvid-lunnemark-departure-cursor-ai-coding-startup/",
+      "type": "article"
+    },
+    {
+      "title": "Cursor Founders: The MIT Team Behind the AI Code Editor Revolution — We Are Founders UK",
+      "url": "https://www.wearefounders.uk/cursor-founders-the-mit-team-behind-the-400-million-ai-code-editor-revolution/",
+      "type": "article"
+    },
+    {
+      "title": "Leaving — Arvid Lunnemark blog",
+      "url": "https://arvid.xyz/posts/leaving/",
+      "type": "article"
+    }
+  ],
+  "notes": "Caveat: Cursor / Anysphere is a US-based company (SF), even though Lunnemark is Swedish-origin. Included in this corpus as a 'European-origin → US elite-cohort → frontier-AI founder' edge case — useful as an upper-bound data point but NOT a directly replicable European-founder path. Birth year inferred from 'mid-20s in 2025' framing and college timing; treat as ±1.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Anysphere (Cursor)",
+    "year": 2022,
+    "ageAtFounding": 21,
+    "era": "ai-revolution",
+    "country": "USA",
+    "oneLiner": "AI-native code editor; co-founded at MIT in 2022 with classmates Michael Truell, Sualeh Asif and Aman Sanger. Scaled to $29.3B valuation and $2B+ ARR by early 2026 — one of the fastest software company growth arcs ever recorded.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "Massachusetts Institute of Technology (MIT)", "role": "Computer Science and Mathematics", "startYear": null, "endYear": null, "notes": "Met all three Cursor co-founders at MIT — student-cohort founding pattern." }
+    ]
+  },
+  "nowSummary": "Founder of Integrous Research (safety-focused AI research lab, started October 2025). Previously co-founded Anysphere / Cursor at MIT — scaled to $29.3B valuation and $2B+ ARR by early 2026. Became a billionaire at age 26.",
+  "researchLinks": {
+    "linkedin": null,
+    "company": "https://www.cursor.com/",
+    "others": [
+      "https://arvid.xyz/posts/leaving/",
+      "https://github.com/arvid220u"
+    ],
+    "cluster": "swedish-origin, mit-cohort, cursor, frontier-ai",
+    "hint": "Edge-case data point — Swedish-origin founder via MIT classmate cohort. Upper-bound outcome, not directly replicable European path."
+  }
+}

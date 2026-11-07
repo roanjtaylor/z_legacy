@@ -1,0 +1,198 @@
+{
+  "id": "ben-allen",
+  "name": "Ben Allen",
+  "birthYear": null,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFOyLGbWqLvvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1664816641629?e=1780531200&v=beta&t=WiXtUdQnCLE2dUyhC8PVAkcHLrdCe3AdQQA_2l8g0ps",
+  "archetypeArc": [
+    "Student",
+    "Operator",
+    "Founder"
+  ],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Bristol",
+      "degree": "BSc Computer Science",
+      "startYear": null,
+      "endYear": null,
+      "notes": "BSc Computer Science confirmed via multiple secondary sources; exact graduation year not pinned down from public sources."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "Software Engineer",
+      "company": "Q-Free ASA",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Took a software engineering role in transportation / intelligent traffic systems straight after Bristol, rather than going into a big bank or consultancy"
+      ],
+      "lessons": [
+        "Working on hard-real-world systems (transport infrastructure) early teaches you to ship to constraints that pure web SaaS never enforces"
+      ],
+      "notes": "Q-Free is a Norwegian-headquartered intelligent transport systems company; Ben worked on AI-adjacent software for transportation."
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Dyson",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Moved from transport software into robotics / AI software at Dyson — pattern of seeking hard technical problems before B2B SaaS"
+      ],
+      "lessons": [
+        "Hardware-adjacent engineering forces deep ownership: there is no 'just push a hotfix' when your code touches physical things"
+      ],
+      "notes": "Worked on AI software for Dyson's robotics arm before pivoting into pure software / B2B SaaS."
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Canary & Delta",
+      "archetype": "Founder",
+      "startYear": null,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "First founder attempt before Omnea — built and ran product / engineering teams as CTO"
+      ],
+      "lessons": [
+        "A first founding experience (even sub-scale) is the cheapest tuition for the second one — you learn what 'CTO' actually means in practice"
+      ],
+      "notes": "Drove Canary & Delta to seven-figure revenue and built / managed the product and engineering teams; an underrated pre-Tessian founder reps cycle."
+    },
+    {
+      "role": "Senior engineering leader",
+      "company": "Tessian",
+      "archetype": "Operator",
+      "startYear": null,
+      "endYear": 2021,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Joined Tessian during its scale-up phase as a senior technical leader",
+        "Left Tessian in 2021 to start Omnea via Entrepreneur First with Ben Freeman, ahead of the Proofpoint acquisition"
+      ],
+      "lessons": [
+        "An operator role at a Sequoia/Accel-backed UK scale-up is a fast credibility track for raising tier-1 capital on the next venture",
+        "Selling into enterprise from the vendor side teaches you firsthand how broken procurement is — the seed of Omnea's thesis"
+      ],
+      "notes": "Tessian (UK email security) raised $130M+ from Sequoia, Accel, Balderton and others; acquired by Proofpoint in 2023. Ben Allen and Ben Freeman were both Tessian alumni."
+    },
+    {
+      "role": "Co-founder & CTO",
+      "company": "Omnea",
+      "archetype": "Founder",
+      "startYear": 2022,
+      "endYear": null,
+      "estAgeStart": null,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Co-founded Omnea via Entrepreneur First (EF) with Ben Freeman, having met him through the Tessian alumni network",
+        "Bet on procurement orchestration as a horizontal, AI-native category rather than a point solution",
+        "Built engineering org with a hard talent-density bar (~10,500 interviews for first ~45 hires across the company)"
+      ],
+      "lessons": [
+        "Vertical SaaS works best when founders have lived the customer pain (procurement seen from the vendor side at Tessian)",
+        "EF can be a credible launchpad for technical co-founders in the UK who lack a pre-existing co-founder",
+        "Pairing a technical co-founder with a hustler-operator CEO (Freeman) shortens the path to enterprise revenue"
+      ],
+      "notes": "Omnea: AI-native intake/orchestration platform for enterprise procurement. ~150 staff (London + NY) by late 2025. Backed by Accel, Khosla, Insight, Point Nine, First Round, Prosus. Customers include Spotify, Wise, MongoDB, Adecco, Albertsons. Ranked #1 in Startups 100 2026."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Co-founder & CTO of Omnea (London/NY). Omnea has raised ~$75M cumulative (Seed, $20M Series A, $50M Series B in Sep 2025 led by Insight Partners and Khosla Ventures). Ranked #1 in Startups 100 2026."
+  },
+  "lessons": [
+    {
+      "lesson": "Hardware/AI-adjacent engineering jobs (Q-Free, Dyson) before B2B SaaS build a technical depth that pure-web CTOs often lack.",
+      "source": "https://theorg.com/org/omnea/org-chart/ben-allen"
+    },
+    {
+      "lesson": "A sub-scale first founding attempt (Canary & Delta) is cheap tuition for the second, VC-backed one.",
+      "source": "https://getprog.ai/profile/6401526"
+    },
+    {
+      "lesson": "Operator-to-founder: deep operator experience at a scale-up (Tessian) gave both Bens credibility to raise from tier-1 VCs.",
+      "source": "https://www.omnea.co/our-story"
+    },
+    {
+      "lesson": "EF is a viable route for UK technical founders without an existing co-founder.",
+      "source": "https://www.joinef.com/companies/omnea/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ben Allen - Co-founder & CTO at Omnea | The Org",
+      "url": "https://theorg.com/org/omnea/org-chart/ben-allen",
+      "type": "article"
+    },
+    {
+      "title": "Ben Allen - Co-Founder CTO at Omnea (Getprog)",
+      "url": "https://getprog.ai/profile/6401526",
+      "type": "article"
+    },
+    {
+      "title": "Omnea raises $25M to tackle the painfully annoying procurement market - TechCrunch",
+      "url": "https://techcrunch.com/2024/10/14/omnea-raises-25m-to-tackle-the-painfully-annoying-procurement-market/",
+      "type": "article"
+    },
+    {
+      "title": "Omnea | Portfolio | Entrepreneur First",
+      "url": "https://www.joinef.com/companies/omnea/",
+      "type": "article"
+    },
+    {
+      "title": "Omnea tops London-dominated 2026 Startups 100 Index",
+      "url": "https://businesscloud.co.uk/news/omnea-tops-london-dominated-2026-startups-100-index/",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era UK B2B SaaS founder (2022-present). EF alum; classic operator-to-founder arc from Tessian, but with an unusual prior path through hard-engineering jobs (Q-Free, Dyson) and a first sub-scale founding attempt (Canary & Delta). Public profile is much lower than CEO co-founder Ben Freeman, so personal biographical detail (birth year, exact degree dates) remains unconfirmed.",
+  "studentEndYear": null,
+  "firstCompany": {
+    "name": "Omnea",
+    "year": 2022,
+    "ageAtFounding": null,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "AI-native intake/orchestration platform for enterprise procurement; co-founded via Entrepreneur First with Ben Freeman. ~150 staff across London + NY by late 2025; ranked #1 in Startups 100 2026.",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Bristol", "role": "BSc Computer Science", "startYear": null, "endYear": null, "notes": "Exact graduation year not pinned down." },
+      { "type": "Tech", "org": "Q-Free ASA", "role": "Software Engineer (intelligent traffic systems)", "startYear": null, "endYear": null, "notes": "AI-adjacent software for transportation infrastructure; Norwegian-HQ company." },
+      { "type": "Tech", "org": "Dyson", "role": "Software Engineer (robotics / AI)", "startYear": null, "endYear": null, "notes": "AI software inside Dyson's robotics arm." },
+      { "type": "Side-business", "org": "Canary & Delta", "role": "Co-founder & CTO (first founder attempt, pre-Omnea)", "startYear": null, "endYear": null, "notes": "Drove to seven-figure revenue; built/managed product and engineering teams." },
+      { "type": "Tech", "org": "Tessian", "role": "Senior engineering leader (scale-up)", "startYear": null, "endYear": 2021, "notes": "Tessian raised $130M+ from Sequoia/Accel/Balderton; acquired by Proofpoint in 2023." }
+    ]
+  },
+  "nowSummary": "Co-founder & CTO of Omnea (London/NY). Cumulative ~$75M raised including $50M Series B (Sep 2025, led by Insight Partners + Khosla). Pre-exit.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/benjaminjallen/",
+    "company": "https://www.omnea.co/our-story",
+    "others": [
+      "https://startups.co.uk/startups-100/2026/omnea/"
+    ],
+    "cluster": "ef-2021, procurement tech, English founder",
+    "hint": "profile image: https://media.licdn.com/dms/image/v2/D4E03AQFOyLGbWqLvvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1664816641629?e=1780531200&v=beta&t=WiXtUdQnCLE2dUyhC8PVAkcHLrdCe3AdQQA_2l8g0ps"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "hannah-chappatte",
+  "name": "Hannah Chappatte",
+  "birthYear": 1998,
+  "countryOfOrigin": "United Kingdom",
+  "currentCountry": "United Kingdom",
+  "imageUrl": null,
+  "archetypeArc": ["Student", "Founder"],
+  "confidence": "medium",
+  "education": [
+    {
+      "school": "University of Bristol",
+      "degree": "BA Liberal Arts",
+      "startYear": 2016,
+      "endYear": 2019,
+      "notes": "Graduated 2019. Founded Hybr while experiencing the student rental market firsthand in her final year."
+    }
+  ],
+  "careerSteps": [
+    {
+      "role": "BA Liberal Arts student (and rental-market reluctant operator)",
+      "company": "University of Bristol",
+      "archetype": "Student",
+      "startYear": 2016,
+      "endYear": 2019,
+      "estAgeStart": 18,
+      "estAgeEnd": 21,
+      "estCompUsd": null,
+      "estCompConfidence": "high",
+      "keyDecisions": [
+        "Chose Liberal Arts (a non-vocational degree) rather than a business or CS path — broadened her lens before going deep.",
+        "Got 'fixated' with how broken the student rental experience was in her final year — turned personal pain into product hypothesis.",
+        "Stayed in Bristol post-graduation to launch Hybr there before expanding — built where she had the most density of users."
+      ],
+      "lessons": [
+        "A non-vocational undergrad (Liberal Arts) is NOT a disqualifier for founding — Hybr's wedge is operational, not technical.",
+        "Personal-pain market signal is a faster route to PMF than methodical customer interviews when you're young: your own life is the user research.",
+        "Found where you have density (Bristol students) before going broad — the cheapest GTM is your own network."
+      ],
+      "notes": "Per Property Week / Estates Gazette / Bristol University coverage."
+    },
+    {
+      "role": "Founder & CEO",
+      "company": "Hybr",
+      "archetype": "Founder",
+      "startYear": 2020,
+      "endYear": null,
+      "estAgeStart": 22,
+      "estAgeEnd": null,
+      "estCompUsd": null,
+      "estCompConfidence": "low",
+      "keyDecisions": [
+        "Founded Hybr in 2020 — student-accommodation matching platform connecting students with vetted private landlords, agents and PBSA providers.",
+        "Built a marketplace that works for both sides: students get verified listings + referencing, landlords get pre-qualified tenants who pass checks.",
+        "Expanded 18-fold in 12 months between 2022 and 2023 — sustained hypergrowth without raising large early rounds.",
+        "Raised a £3.24M seed round led by BlackWood Ventures in 2024 — selectively after traction proved itself, not before.",
+        "Grew to ~150,000 rooms on the platform across Bristol, Liverpool, London and Manchester by 2025."
+      ],
+      "lessons": [
+        "Marketplace business → raise selectively AFTER demonstrating non-linear growth, not before — investors compete to back you, not the other way round.",
+        "Geographic-cluster expansion (Bristol → Liverpool → London → Manchester) compounds operating learnings before chasing scale.",
+        "Building infrastructure for an industry (private landlords + PBSA + agents) that lacks coordination is a sticky moat — fragmented industries are where marketplaces win.",
+        "Found at 22 from a Liberal Arts degree — neither technical-CS nor business-school background is a prerequisite for proptech founding."
+      ],
+      "notes": "Founded 2020 in Bristol. 20 staff by 2025; ~150,000 rooms on the platform. £3.24M seed BlackWood Ventures 2024. 18-fold expansion in 12 months reported (2022-2023)."
+    }
+  ],
+  "outcomes": {
+    "estNetWorthUsd": "1-10M",
+    "exitEvents": [],
+    "currentStatus": "Founder & CEO of Hybr (UK). ~150,000 rooms on the platform; 20 staff; expanded 18-fold in 12 months 2022→2023. £3.24M seed led by BlackWood Ventures (2024)."
+  },
+  "lessons": [
+    {
+      "lesson": "Personal-pain market signal — Chappatte's own awful student rental experience in her final year at Bristol became the founding hypothesis.",
+      "source": "Property Week / Estates Gazette interviews."
+    },
+    {
+      "lesson": "A non-vocational undergrad (Liberal Arts) is not a disqualifier for proptech / marketplace founding — operational wedges don't require CS or MBA.",
+      "source": "Inferred from Hybr trajectory."
+    },
+    {
+      "lesson": "Raise selectively AFTER traction (18x growth, then a £3.24M seed) — marketplace founders should let traction draw investors rather than chasing rounds early.",
+      "source": "Hybr funding history."
+    },
+    {
+      "lesson": "Geographic-cluster expansion (Bristol → Liverpool → London → Manchester) compounds operating learnings cheaply.",
+      "source": "PropTech Connect coverage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Big interview with Hannah Chappatte, founder of Hybr — Property Week",
+      "url": "https://www.propertyweek.com/insight/big-interview-with-hannah-chappatte-founder-of-hybr-there-shouldnt-be-any-empty-student-rooms",
+      "type": "interview"
+    },
+    {
+      "title": "In conversation with… Hybr's Hannah Chappatte — Estates Gazette",
+      "url": "https://www.estatesgazette.co.uk/news/in-conversation-with-hybrs-hannah-chappatte/",
+      "type": "interview"
+    },
+    {
+      "title": "Explosive growth: Student accommodation platform Hybr expands 18-fold in 12 months — PropTech Connect",
+      "url": "https://proptechconnect.com/explosive-growth-student-accommodation-platform-hybr-expands-18-fold-in-12-months/",
+      "type": "article"
+    },
+    {
+      "title": "Graduate's student accommodation platform expands 18-fold in 12 months — University of Bristol News",
+      "url": "https://www.bristol.ac.uk/news/2023/february/student-platform-expands.html",
+      "type": "article"
+    },
+    {
+      "title": "Hannah Chappatte at General Assembly",
+      "url": "https://generalassemb.ly/instructors/hannah-chappatte/26265",
+      "type": "article"
+    }
+  ],
+  "notes": "AI-revolution era UK proptech founder. Counterweight to the technical-CTO default — Liberal Arts grad solving an operational marketplace problem with personal-pain insight. Founded at 22; raised selectively after traction; geographic-cluster expansion model. Birth year derived from 'founded Hybr in 2020 at age 22'.",
+  "studentEndYear": 2019,
+  "firstCompany": {
+    "name": "Hybr",
+    "year": 2020,
+    "ageAtFounding": 22,
+    "era": "ai-revolution",
+    "country": "United Kingdom",
+    "oneLiner": "Student-accommodation matching platform connecting students with vetted private landlords, agents and PBSA. ~150,000 rooms on the platform; 20 staff; 18x growth in 12 months; £3.24M seed 2024 (BlackWood Ventures).",
+    "preFounderRoles": [
+      { "type": "Study", "org": "University of Bristol", "role": "BA Liberal Arts", "startYear": 2016, "endYear": 2019, "notes": "Personal-pain market signal — her own awful student rental experience in final year became the founding hypothesis." }
+    ]
+  },
+  "nowSummary": "Founder & CEO of Hybr (UK). Student accommodation marketplace with ~150,000 rooms; 20 staff; expanded 18x in 12 months (2022-23). £3.24M seed led by BlackWood Ventures (2024). Personal-pain founding from her Bristol final year.",
+  "researchLinks": {
+    "linkedin": "https://www.linkedin.com/in/hannahchappatte/",
+    "company": "https://www.hybr.co.uk/",
+    "others": [
+      "https://www.propertyweek.com/insight/big-interview-with-hannah-chappatte-founder-of-hybr-there-shouldnt-be-any-empty-student-rooms",
+      "https://proptechconnect.com/explosive-growth-student-accommodation-platform-hybr-expands-18-fold-in-12-months/"
+    ],
+    "cluster": "uk-proptech, bristol, marketplace, personal-pain",
+    "hint": "Bristol Liberal Arts grad → founded Hybr at 22 from personal pain → 18x growth in 12 months → £3.24M seed 2024."
+  }
+}
