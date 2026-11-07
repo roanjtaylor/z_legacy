@@ -1,103 +1,329 @@
-import { useMemo, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import type { CompareMode, CompareView } from '../types';
-import { useBranchData } from '../hooks/useBranchData';
-import { applyFacets, type FacetState } from '../lib/facets';
-import { useSession } from '../context/SessionContext';
-import { PageContainer } from '../components/layout/PageContainer';
-import { FacetFilters } from '../components/filters/FacetFilters';
+import { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
+import { Toggle } from '../components/common/Toggle';
+import { useGame } from '../context/GameContext';
+import {
+  filterCars,
+  getAvailableDecades,
+  getUniqueCountries,
+  getUniqueBrands,
+  getAvailableDrivetrains,
+  getAvailableRarityTiers,
+  emptyFilters,
+} from '../utils/filters';
+import { useCuratedCars } from '../hooks/useCuratedCars';
+import type { FilterState } from '../types';
+import landingBg from '../assets/Landing-Background.jpg';
+
+// Rarity tier display config
+const RARITY_STYLES: Record<string, { bg: string; text: string; activeBg: string }> = {
+  common: { bg: 'bg-white/60', text: 'text-gray-700', activeBg: 'bg-gray-600' },
+  uncommon: { bg: 'bg-blue-100/80', text: 'text-blue-700', activeBg: 'bg-blue-600' },
+  rare: { bg: 'bg-purple-100/80', text: 'text-purple-700', activeBg: 'bg-purple-600' },
+  legendary: { bg: 'bg-yellow-100/80', text: 'text-yellow-700', activeBg: 'bg-yellow-500' },
+};
 
 export function SetupPage() {
-  const { branch: branchId } = useParams();
-  const { data, loading, error } = useBranchData(branchId);
-  const { start } = useSession();
   const navigate = useNavigate();
+  const { state, setMode, startGame } = useGame();
+  const { cars, isLoading, error } = useCuratedCars();
 
-  const [facetState, setFacetState] = useState<FacetState>({});
-  const [mode, setMode] = useState<CompareMode>('elo');
-  const [view, setView] = useState<CompareView>('pair');
+  const [filters, setFilters] = useState<FilterState>(emptyFilters);
 
-  const filtered = useMemo(() => {
-    if (!data) return [];
-    return applyFacets(data.items, data.branch.filterFacets, facetState);
-  }, [data, facetState]);
+  const availableDecades = useMemo(() => getAvailableDecades(cars), [cars]);
+  const availableCountries = useMemo(() => getUniqueCountries(cars), [cars]);
+  const availableBrands = useMemo(() => getUniqueBrands(cars), [cars]);
+  const availableDrivetrains = useMemo(() => getAvailableDrivetrains(cars), [cars]);
+  const availableRarityTiers = useMemo(() => getAvailableRarityTiers(cars), [cars]);
 
-  if (loading) return <PageContainer><p className="text-neutral-500">Loading…</p></PageContainer>;
-  if (error || !data)
+  const filteredCars = useMemo(() => filterCars(cars, filters), [cars, filters]);
+
+  const hasActiveFilters =
+    filters.decades.length > 0 ||
+    filters.countries.length > 0 ||
+    filters.brands.length > 0 ||
+    filters.drivetrains.length > 0 ||
+    filters.rarityTiers.length > 0;
+
+  // Loading state
+  if (isLoading) {
     return (
-      <PageContainer>
-        <p className="text-red-400">{error ?? 'Branch not found.'}</p>
-        <button onClick={() => navigate('/')} className="mt-4 underline">← Back</button>
-      </PageContainer>
+      <div
+        className="min-h-screen w-full relative"
+        style={{
+          backgroundImage: `url(${landingBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="text-center bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
+            <div className="text-4xl mb-4">Loading...</div>
+            <p className="text-gray-600">Loading your curated cars...</p>
+          </div>
+        </div>
+      </div>
     );
-
-  const { branch } = data;
-
-  function startGame() {
-    if (filtered.length < 2) return;
-    start(branch, mode, view, filtered);
-    navigate(`/${branch.id}/play`);
   }
 
+  // Error or no cars
+  if (error || cars.length === 0) {
+    return (
+      <div
+        className="min-h-screen w-full relative"
+        style={{
+          backgroundImage: `url(${landingBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
+          <div className="text-center max-w-md bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
+            <div className="text-6xl mb-4">🚗</div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">No Cars Available</h2>
+            <p className="text-gray-600 mb-6">
+              {error || 'No curated cars found. Visit /curate to add cars to your dataset.'}
+            </p>
+            <Button onClick={() => navigate('/curate')}>Go to Curation Tool</Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const toggleFilter = (key: keyof FilterState, value: string) => {
+    setFilters((prev) => ({
+      ...prev,
+      [key]: prev[key].includes(value)
+        ? prev[key].filter((v) => v !== value)
+        : [...prev[key], value],
+    }));
+  };
+
+  const clearFilters = () => {
+    setFilters(emptyFilters);
+  };
+
+  const handleStart = () => {
+    if (filteredCars.length >= 2) {
+      startGame(filteredCars);
+      navigate('/game');
+    }
+  };
+
+  const handleModeToggle = (value: 'left' | 'right') => {
+    setMode(value === 'left' ? 'tournament' : 'elo');
+  };
+
+  const canStart = filteredCars.length >= 2;
+
   return (
-    <PageContainer>
-      <button onClick={() => navigate('/')} className="text-sm text-neutral-400 hover:text-neutral-200">
-        ← All branches
-      </button>
+    <div
+      className="min-h-screen w-full relative"
+      style={{
+        backgroundImage: `url(${landingBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Dark overlay for better readability */}
+      <div className="absolute inset-0 bg-black/30" />
 
-      <header className="mt-4 mb-8">
-        <h1 className="text-3xl font-black">{branch.label}</h1>
-        <p className="text-neutral-400">{branch.tagline}</p>
-      </header>
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Header */}
+        <div className="bg-white/80 backdrop-blur-md border-b border-white/20 sticky top-0 z-20">
+          <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <button
+              onClick={() => navigate('/')}
+              className="text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-2 font-medium"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Home
+            </button>
+            <h1 className="text-xl font-bold text-gray-900">Game Setup</h1>
+            <div className="w-16" />
+          </div>
+        </div>
 
-      <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
-        <section>
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">Filter the pool</h2>
-          <FacetFilters items={data.items} facets={branch.filterFacets} state={facetState} onChange={setFacetState} />
-        </section>
-
-        <aside className="space-y-6 lg:sticky lg:top-8 lg:self-start">
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">Mode</div>
-            <div className="grid grid-cols-2 gap-2">
-              <ModeButton active={mode === 'elo'} onClick={() => setMode('elo')} title="Ranking" subtitle="Rate them all (ELO)" />
-              <ModeButton active={mode === 'tournament'} onClick={() => setMode('tournament')} title="Bracket" subtitle="One winner" />
-            </div>
-
-            <div className="mt-5 mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">View</div>
-            <div className="grid grid-cols-2 gap-2">
-              <ModeButton active={view === 'pair'} onClick={() => setView('pair')} title="1 v 1" subtitle="Two at a time" />
-              <ModeButton active={view === 'quad'} onClick={() => setView('quad')} title="4 up" subtitle="Tap the best of 4" />
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          {/* Mode Toggle Section */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900 mb-1">Game Mode</h2>
+                <p className="text-gray-600 text-sm">
+                  {state.mode === 'tournament'
+                    ? 'Single elimination bracket to find your #1 favorite'
+                    : 'Rate all cars to create a complete ranking'}
+                </p>
+              </div>
+              <Toggle
+                leftLabel="Tournament"
+                rightLabel="ELO"
+                value={state.mode === 'tournament' ? 'left' : 'right'}
+                onChange={handleModeToggle}
+              />
             </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5 text-center">
-            <div className="text-4xl font-black text-emerald-400">{filtered.length}</div>
-            <div className="text-sm text-neutral-400">{branch.itemNoun.plural} match your filters</div>
-            <Button onClick={startGame} disabled={filtered.length < 2} className="mt-4 w-full">
-              Start
-            </Button>
-            {filtered.length < 2 && (
-              <p className="mt-2 text-xs text-neutral-500">Need at least 2 to play.</p>
+          {/* Filters Section */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 mb-6">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-lg font-semibold text-gray-900">Filter Cars</h2>
+              {hasActiveFilters && (
+                <button
+                  onClick={clearFilters}
+                  className="text-sm text-blue-600 hover:text-blue-700 transition-colors font-medium"
+                >
+                  Clear all filters
+                </button>
+              )}
+            </div>
+
+            {/* Decades */}
+            <div className="mb-6">
+              <h3 className="text-sm font-medium text-gray-700 mb-3">Decade</h3>
+              <div className="flex flex-wrap gap-2">
+                {availableDecades.map((decade) => (
+                  <button
+                    key={decade}
+                    onClick={() => toggleFilter('decades', decade)}
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                      filters.decades.includes(decade)
+                        ? 'bg-blue-600 text-white shadow-lg'
+                        : 'bg-white/60 text-gray-700 hover:bg-white/80'
+                    }`}
+                  >
+                    {decade}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Countries */}
+            <div className="mb-6">
+              <h3 className="text-sm font-medium text-gray-700 mb-3">Country</h3>
+              <div className="flex flex-wrap gap-2">
+                {availableCountries.map((country) => (
+                  <button
+                    key={country}
+                    onClick={() => toggleFilter('countries', country)}
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                      filters.countries.includes(country)
+                        ? 'bg-blue-600 text-white shadow-lg'
+                        : 'bg-white/60 text-gray-700 hover:bg-white/80'
+                    }`}
+                  >
+                    {country}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Brands */}
+            <div className="mb-6">
+              <h3 className="text-sm font-medium text-gray-700 mb-3">Brand</h3>
+              <div className="flex flex-wrap gap-2">
+                {availableBrands.map((brand) => (
+                  <button
+                    key={brand}
+                    onClick={() => toggleFilter('brands', brand)}
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                      filters.brands.includes(brand)
+                        ? 'bg-blue-600 text-white shadow-lg'
+                        : 'bg-white/60 text-gray-700 hover:bg-white/80'
+                    }`}
+                  >
+                    {brand}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Drivetrain */}
+            {availableDrivetrains.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-sm font-medium text-gray-700 mb-3">Drivetrain</h3>
+                <div className="flex flex-wrap gap-2">
+                  {availableDrivetrains.map((drivetrain) => (
+                    <button
+                      key={drivetrain}
+                      onClick={() => toggleFilter('drivetrains', drivetrain)}
+                      className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                        filters.drivetrains.includes(drivetrain)
+                          ? 'bg-blue-600 text-white shadow-lg'
+                          : 'bg-white/60 text-gray-700 hover:bg-white/80'
+                      }`}
+                    >
+                      {drivetrain}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Rarity Tier */}
+            {availableRarityTiers.length > 0 && (
+              <div>
+                <h3 className="text-sm font-medium text-gray-700 mb-3">Rarity</h3>
+                <div className="flex flex-wrap gap-2">
+                  {availableRarityTiers.map((tier) => {
+                    const style = RARITY_STYLES[tier] || RARITY_STYLES.common;
+                    const isActive = filters.rarityTiers.includes(tier);
+                    return (
+                      <button
+                        key={tier}
+                        onClick={() => toggleFilter('rarityTiers', tier)}
+                        className={`px-4 py-2 rounded-lg font-medium capitalize transition-all ${
+                          isActive
+                            ? `${style.activeBg} text-white shadow-lg`
+                            : `${style.bg} ${style.text} hover:opacity-90`
+                        }`}
+                      >
+                        {tier}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             )}
           </div>
-        </aside>
-      </div>
-    </PageContainer>
-  );
-}
 
-function ModeButton({ active, onClick, title, subtitle }: { active: boolean; onClick: () => void; title: string; subtitle: string }) {
-  return (
-    <button
-      onClick={onClick}
-      className={`rounded-xl border p-3 text-left transition-colors ${
-        active ? 'border-emerald-500 bg-emerald-500/10' : 'border-neutral-800 bg-neutral-800/40 hover:bg-neutral-800'
-      }`}
-    >
-      <div className="font-bold">{title}</div>
-      <div className="text-xs text-neutral-400">{subtitle}</div>
-    </button>
+          {/* Car Count & Start */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 text-center">
+            <div className="mb-4">
+              <span className="text-4xl font-bold text-blue-600">{filteredCars.length}</span>
+              <span className="text-lg text-gray-600 ml-2">
+                {filteredCars.length === 1 ? 'car' : 'cars'} selected
+              </span>
+            </div>
+
+            {!canStart && (
+              <p className="text-red-500 mb-4 font-medium">
+                Select at least 2 cars to start the game
+              </p>
+            )}
+
+            <div className="flex items-center justify-center gap-4">
+              <Button variant="outline" onClick={() => navigate('/')}>
+                Back
+              </Button>
+              <Button size="lg" onClick={handleStart} disabled={!canStart}>
+                Start {state.mode === 'tournament' ? 'Tournament' : 'ELO Rating'}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

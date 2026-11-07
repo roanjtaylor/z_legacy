@@ -1,23 +1,48 @@
-import type { ButtonHTMLAttributes } from 'react';
-
-type Variant = 'primary' | 'secondary' | 'ghost';
-
-const variants: Record<Variant, string> = {
-  primary:
-    'bg-emerald-500 hover:bg-emerald-400 text-white shadow-lg shadow-emerald-500/30 disabled:bg-neutral-700 disabled:shadow-none disabled:text-neutral-500',
-  secondary: 'bg-neutral-800 hover:bg-neutral-700 text-neutral-100 border border-neutral-700',
-  ghost: 'bg-transparent hover:bg-neutral-800 text-neutral-300',
-};
-
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: Variant;
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  variant?: 'primary' | 'secondary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+  disabled?: boolean;
+  className?: string;
+  type?: 'button' | 'submit';
 }
 
-export function Button({ variant = 'primary', className = '', ...props }: Props) {
+export function Button({
+  children,
+  onClick,
+  variant = 'primary',
+  size = 'md',
+  disabled = false,
+  className = '',
+  type = 'button',
+}: ButtonProps) {
+  const baseStyles =
+    'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+
+  const variants = {
+    primary:
+      'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
+    secondary:
+      'bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500',
+    outline:
+      'border-2 border-blue-600 text-blue-600 hover:bg-blue-50 focus:ring-blue-500',
+  };
+
+  const sizes = {
+    sm: 'px-3 py-1.5 text-sm',
+    md: 'px-4 py-2 text-base',
+    lg: 'px-6 py-3 text-lg',
+  };
+
   return (
     <button
-      className={`rounded-full px-6 py-3 font-semibold transition-all duration-150 disabled:cursor-not-allowed ${variants[variant]} ${className}`}
-      {...props}
-    />
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+    >
+      {children}
+    </button>
   );
 }

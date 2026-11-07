@@ -1,0 +1,901 @@
+[
+  {
+    "id": "1957-chevrolet-bel-air",
+    "name": "Bel Air",
+    "brand": "Chevrolet",
+    "year": 1957,
+    "country": "USA",
+    "decade": "1950s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1957_Chevrolet_Bel_Air_sport_sedan.JPG",
+    "imageAttribution": "GTHO, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 283,
+      "topSpeedMph": 115,
+      "zeroToSixty": 9.5,
+      "engineDisplacementL": 4.6,
+      "weightLbs": 3409
+    },
+    "extendedStats": {
+      "torqueLbFt": 290,
+      "fuelEconomyMpg": 14,
+      "transmission": "3-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 166426,
+      "rarityTier": "common",
+      "originalMsrp": 2511,
+      "estimatedCurrentValue": 65000
+    }
+  },
+  {
+    "id": "1957-ford-thunderbird",
+    "name": "Thunderbird",
+    "brand": "Ford",
+    "year": 1957,
+    "country": "USA",
+    "decade": "1950s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1957_Ford_Thunderbird_red.JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 245,
+      "topSpeedMph": 120,
+      "zeroToSixty": 9,
+      "engineDisplacementL": 4.8,
+      "weightLbs": 3145
+    },
+    "extendedStats": {
+      "torqueLbFt": 286,
+      "fuelEconomyMpg": 13,
+      "transmission": "3-speed automatic",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 21380,
+      "rarityTier": "uncommon",
+      "originalMsrp": 3408,
+      "estimatedCurrentValue": 75000
+    }
+  },
+  {
+    "id": "1955-porsche-356",
+    "name": "356 Speedster",
+    "brand": "Porsche",
+    "year": 1955,
+    "country": "Germany",
+    "decade": "1950s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stuttgart_Jul_2012_15_(Porsche_Museum_-_1955_Porsche_356_A_1500_GS_Carrera_Speedster).JPG",
+    "imageAttribution": "Michael Barera, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 70,
+      "topSpeedMph": 100,
+      "zeroToSixty": 13,
+      "engineDisplacementL": 1.5,
+      "weightLbs": 1675
+    },
+    "extendedStats": {
+      "torqueLbFt": 76,
+      "fuelEconomyMpg": 28,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 4145,
+      "rarityTier": "rare",
+      "originalMsrp": 2995,
+      "estimatedCurrentValue": 450000
+    }
+  },
+  {
+    "id": "1967-ford-mustang-gt",
+    "name": "Mustang GT Fastback",
+    "brand": "Ford",
+    "year": 1967,
+    "country": "USA",
+    "decade": "1960s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1967_Ford_Mustang_fastback.JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA 2.5, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 320,
+      "topSpeedMph": 128,
+      "zeroToSixty": 6.5,
+      "engineDisplacementL": 6.4,
+      "weightLbs": 3000
+    },
+    "extendedStats": {
+      "torqueLbFt": 427,
+      "fuelEconomyMpg": 11,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 472121,
+      "rarityTier": "common",
+      "originalMsrp": 2692,
+      "estimatedCurrentValue": 85000
+    }
+  },
+  {
+    "id": "1963-chevrolet-corvette",
+    "name": "Corvette Sting Ray",
+    "brand": "Chevrolet",
+    "year": 1963,
+    "country": "USA",
+    "decade": "1960s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1963_Chevrolet_Corvette_Sting_Ray_Split_Window_250hp_5.4_liter_V8_184kmh_pic3.JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 360,
+      "topSpeedMph": 142,
+      "zeroToSixty": 5.9,
+      "engineDisplacementL": 5.4,
+      "weightLbs": 2859
+    },
+    "extendedStats": {
+      "torqueLbFt": 352,
+      "fuelEconomyMpg": 12,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 21513,
+      "rarityTier": "uncommon",
+      "originalMsrp": 4252,
+      "estimatedCurrentValue": 175000
+    }
+  },
+  {
+    "id": "1961-jaguar-e-type",
+    "name": "E-Type",
+    "brand": "Jaguar",
+    "year": 1961,
+    "country": "UK",
+    "decade": "1960s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaguar_E-Type_Series_1_4.2_Coupe.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 265,
+      "topSpeedMph": 150,
+      "zeroToSixty": 6.9,
+      "engineDisplacementL": 3.8,
+      "weightLbs": 2520
+    },
+    "extendedStats": {
+      "torqueLbFt": 260,
+      "fuelEconomyMpg": 18,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 38419,
+      "rarityTier": "uncommon",
+      "originalMsrp": 5595,
+      "estimatedCurrentValue": 250000
+    }
+  },
+  {
+    "id": "1969-dodge-charger",
+    "name": "Charger R/T",
+    "brand": "Dodge",
+    "year": 1969,
+    "country": "USA",
+    "decade": "1960s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/'69_Dodge_Charger_R-T_(Auto_classique).JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 440,
+      "topSpeedMph": 140,
+      "zeroToSixty": 5.7,
+      "engineDisplacementL": 7.2,
+      "weightLbs": 3671
+    },
+    "extendedStats": {
+      "torqueLbFt": 490,
+      "fuelEconomyMpg": 10,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 18402,
+      "rarityTier": "uncommon",
+      "originalMsrp": 3592,
+      "estimatedCurrentValue": 150000
+    }
+  },
+  {
+    "id": "1973-porsche-911-carrera-rs",
+    "name": "911 Carrera RS 2.7",
+    "brand": "Porsche",
+    "year": 1973,
+    "country": "Germany",
+    "decade": "1970s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Carrera_RS,_Bj._1972-73,_Front_(2016-07-02_02_Sp).JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA 2.0 DE, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 210,
+      "topSpeedMph": 152,
+      "zeroToSixty": 5.5,
+      "engineDisplacementL": 2.7,
+      "weightLbs": 2150
+    },
+    "extendedStats": {
+      "torqueLbFt": 188,
+      "fuelEconomyMpg": 20,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 1580,
+      "rarityTier": "legendary",
+      "originalMsrp": 11000,
+      "estimatedCurrentValue": 1500000
+    }
+  },
+  {
+    "id": "1974-lamborghini-countach",
+    "name": "Countach LP400",
+    "brand": "Lamborghini",
+    "year": 1974,
+    "country": "Italy",
+    "decade": "1970s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1974_Lamborghini_Countach_LP400_at_Grand_basel_2018_(Ank_Kumar)_01.jpg",
+    "imageAttribution": "Ank Kumar, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 375,
+      "topSpeedMph": 179,
+      "zeroToSixty": 5.4,
+      "engineDisplacementL": 4,
+      "weightLbs": 2915
+    },
+    "extendedStats": {
+      "torqueLbFt": 268,
+      "fuelEconomyMpg": 10,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 150,
+      "rarityTier": "legendary",
+      "originalMsrp": 52000,
+      "estimatedCurrentValue": 2000000
+    }
+  },
+  {
+    "id": "1974-bmw-2002-turbo",
+    "name": "2002 Turbo",
+    "brand": "BMW",
+    "year": 1974,
+    "country": "Germany",
+    "decade": "1970s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/1974_BMW_2002_Turbo.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 170,
+      "topSpeedMph": 130,
+      "zeroToSixty": 6.9,
+      "engineDisplacementL": 2,
+      "weightLbs": 2381
+    },
+    "extendedStats": {
+      "torqueLbFt": 177,
+      "fuelEconomyMpg": 22,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 1672,
+      "rarityTier": "rare",
+      "originalMsrp": 11800,
+      "estimatedCurrentValue": 150000
+    }
+  },
+  {
+    "id": "1970-datsun-240z",
+    "name": "240Z",
+    "brand": "Datsun",
+    "year": 1970,
+    "country": "Japan",
+    "decade": "1970s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Datsun_Fairlady_240Z_001.JPG",
+    "imageAttribution": "Tennen-Gas, CC BY-SA 3.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 151,
+      "topSpeedMph": 125,
+      "zeroToSixty": 8,
+      "engineDisplacementL": 2.4,
+      "weightLbs": 2355
+    },
+    "extendedStats": {
+      "torqueLbFt": 146,
+      "fuelEconomyMpg": 21,
+      "transmission": "4-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 169749,
+      "rarityTier": "common",
+      "originalMsrp": 3526,
+      "estimatedCurrentValue": 45000
+    }
+  },
+  {
+    "id": "1987-ferrari-f40",
+    "name": "F40",
+    "brand": "Ferrari",
+    "year": 1987,
+    "country": "Italy",
+    "decade": "1980s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/F40_Ferrari_20090509.jpg",
+    "imageAttribution": "Artiom Vasile, CC BY-SA 3.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 478,
+      "topSpeedMph": 201,
+      "zeroToSixty": 3.8,
+      "engineDisplacementL": 2.9,
+      "weightLbs": 2425
+    },
+    "extendedStats": {
+      "torqueLbFt": 424,
+      "fuelEconomyMpg": 12,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 1311,
+      "rarityTier": "legendary",
+      "originalMsrp": 400000,
+      "estimatedCurrentValue": 3000000
+    }
+  },
+  {
+    "id": "1988-porsche-959",
+    "name": "959",
+    "brand": "Porsche",
+    "year": 1988,
+    "country": "Germany",
+    "decade": "1980s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_959_-_Flickr_-_Alexandre_Pr%C3%A9vot_(4)_(cropped).jpg",
+    "imageAttribution": "Alexandre Prevot, CC BY-SA 2.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 450,
+      "topSpeedMph": 197,
+      "zeroToSixty": 3.7,
+      "engineDisplacementL": 2.8,
+      "weightLbs": 3197
+    },
+    "extendedStats": {
+      "torqueLbFt": 369,
+      "fuelEconomyMpg": 15,
+      "transmission": "6-speed manual",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 337,
+      "rarityTier": "legendary",
+      "originalMsrp": 225000,
+      "estimatedCurrentValue": 2000000
+    }
+  },
+  {
+    "id": "1988-bmw-m3-e30",
+    "name": "M3 E30",
+    "brand": "BMW",
+    "year": 1988,
+    "country": "Germany",
+    "decade": "1980s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW_E30_M3_Sport_Evolution_front.JPG",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 195,
+      "topSpeedMph": 146,
+      "zeroToSixty": 6.5,
+      "engineDisplacementL": 2.3,
+      "weightLbs": 2857
+    },
+    "extendedStats": {
+      "torqueLbFt": 170,
+      "fuelEconomyMpg": 22,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 17970,
+      "rarityTier": "uncommon",
+      "originalMsrp": 34950,
+      "estimatedCurrentValue": 100000
+    }
+  },
+  {
+    "id": "1985-toyota-ae86",
+    "name": "AE86 Sprinter Trueno",
+    "brand": "Toyota",
+    "year": 1985,
+    "country": "Japan",
+    "decade": "1980s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_AE86_coupe.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 128,
+      "topSpeedMph": 122,
+      "zeroToSixty": 8.5,
+      "engineDisplacementL": 1.6,
+      "weightLbs": 2161
+    },
+    "extendedStats": {
+      "torqueLbFt": 105,
+      "fuelEconomyMpg": 30,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 280000,
+      "rarityTier": "uncommon",
+      "originalMsrp": 8995,
+      "estimatedCurrentValue": 50000
+    }
+  },
+  {
+    "id": "1992-mclaren-f1",
+    "name": "F1",
+    "brand": "McLaren",
+    "year": 1992,
+    "country": "UK",
+    "decade": "1990s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MclarenF1.JPG",
+    "imageAttribution": "Wikimedia Commons, Public domain, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 627,
+      "topSpeedMph": 240,
+      "zeroToSixty": 3.2,
+      "engineDisplacementL": 6.1,
+      "weightLbs": 2509
+    },
+    "extendedStats": {
+      "torqueLbFt": 480,
+      "fuelEconomyMpg": 15,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 106,
+      "rarityTier": "legendary",
+      "originalMsrp": 815000,
+      "estimatedCurrentValue": 20000000
+    }
+  },
+  {
+    "id": "1989-mazda-mx5",
+    "name": "MX-5 Miata NA",
+    "brand": "Mazda",
+    "year": 1989,
+    "country": "Japan",
+    "decade": "1980s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mazda_MX5_NA.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 116,
+      "topSpeedMph": 116,
+      "zeroToSixty": 9.2,
+      "engineDisplacementL": 1.6,
+      "weightLbs": 2116
+    },
+    "extendedStats": {
+      "torqueLbFt": 100,
+      "fuelEconomyMpg": 30,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 435000,
+      "rarityTier": "common",
+      "originalMsrp": 13995,
+      "estimatedCurrentValue": 15000
+    }
+  },
+  {
+    "id": "1999-nissan-skyline-gtr-r34",
+    "name": "Skyline GT-R R34",
+    "brand": "Nissan",
+    "year": 1999,
+    "country": "Japan",
+    "decade": "1990s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg",
+    "imageAttribution": "Tokumeigakarinoaoshima, CC0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 280,
+      "topSpeedMph": 165,
+      "zeroToSixty": 4.6,
+      "engineDisplacementL": 2.6,
+      "weightLbs": 3450
+    },
+    "extendedStats": {
+      "torqueLbFt": 293,
+      "fuelEconomyMpg": 18,
+      "transmission": "6-speed manual",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 11578,
+      "rarityTier": "rare",
+      "originalMsrp": 48000,
+      "estimatedCurrentValue": 250000
+    }
+  },
+  {
+    "id": "1993-toyota-supra-mk4",
+    "name": "Supra Turbo MK4",
+    "brand": "Toyota",
+    "year": 1993,
+    "country": "Japan",
+    "decade": "1990s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Supra_JZA80.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 320,
+      "topSpeedMph": 155,
+      "zeroToSixty": 4.6,
+      "engineDisplacementL": 3,
+      "weightLbs": 3505
+    },
+    "extendedStats": {
+      "torqueLbFt": 315,
+      "fuelEconomyMpg": 19,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 11239,
+      "rarityTier": "rare",
+      "originalMsrp": 39900,
+      "estimatedCurrentValue": 175000
+    }
+  },
+  {
+    "id": "1995-honda-nsx",
+    "name": "NSX",
+    "brand": "Honda",
+    "year": 1995,
+    "country": "Japan",
+    "decade": "1990s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Honda_NSX_red.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 290,
+      "topSpeedMph": 168,
+      "zeroToSixty": 5,
+      "engineDisplacementL": 3.2,
+      "weightLbs": 2712
+    },
+    "extendedStats": {
+      "torqueLbFt": 224,
+      "fuelEconomyMpg": 22,
+      "transmission": "5-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 483,
+      "rarityTier": "legendary",
+      "originalMsrp": 86650,
+      "estimatedCurrentValue": 350000
+    }
+  },
+  {
+    "id": "2005-bugatti-veyron",
+    "name": "Veyron 16.4",
+    "brand": "Bugatti",
+    "year": 2005,
+    "country": "France",
+    "decade": "2000s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_(2),_5._April_2012,_D%C3%BCsseldorf.jpg",
+    "imageAttribution": "M 93, CC BY-SA 3.0 DE, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 1001,
+      "topSpeedMph": 253,
+      "zeroToSixty": 2.5,
+      "engineDisplacementL": 8,
+      "weightLbs": 4162
+    },
+    "extendedStats": {
+      "torqueLbFt": 922,
+      "fuelEconomyMpg": 10,
+      "transmission": "7-speed dual-clutch",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 450,
+      "rarityTier": "legendary",
+      "originalMsrp": 1700000,
+      "estimatedCurrentValue": 2500000
+    }
+  },
+  {
+    "id": "2004-porsche-carrera-gt",
+    "name": "Carrera GT",
+    "brand": "Porsche",
+    "year": 2004,
+    "country": "Germany",
+    "decade": "2000s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Carrera_GT_at_PEC.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 612,
+      "topSpeedMph": 205,
+      "zeroToSixty": 3.5,
+      "engineDisplacementL": 5.7,
+      "weightLbs": 3043
+    },
+    "extendedStats": {
+      "torqueLbFt": 435,
+      "fuelEconomyMpg": 12,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 1270,
+      "rarityTier": "legendary",
+      "originalMsrp": 440000,
+      "estimatedCurrentValue": 1800000
+    }
+  },
+  {
+    "id": "2007-audi-r8",
+    "name": "R8 V8",
+    "brand": "Audi",
+    "year": 2007,
+    "country": "Germany",
+    "decade": "2000s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Audi_R8_-_Flickr_-_Alexandre_Pr%C3%A9vot_(2).jpg",
+    "imageAttribution": "Alexandre Prevot, CC BY-SA 2.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 420,
+      "topSpeedMph": 187,
+      "zeroToSixty": 4.4,
+      "engineDisplacementL": 4.2,
+      "weightLbs": 3594
+    },
+    "extendedStats": {
+      "torqueLbFt": 317,
+      "fuelEconomyMpg": 16,
+      "transmission": "6-speed manual",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 26446,
+      "rarityTier": "uncommon",
+      "originalMsrp": 109000,
+      "estimatedCurrentValue": 80000
+    }
+  },
+  {
+    "id": "2003-dodge-viper-srt10",
+    "name": "Viper SRT-10",
+    "brand": "Dodge",
+    "year": 2003,
+    "country": "USA",
+    "decade": "2000s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dodge_Viper_SRT-10_-_Flickr_-_Alexandre_Pr%C3%A9vot_(3).jpg",
+    "imageAttribution": "Alexandre Prevot, CC BY-SA 2.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 500,
+      "topSpeedMph": 190,
+      "zeroToSixty": 3.9,
+      "engineDisplacementL": 8.3,
+      "weightLbs": 3410
+    },
+    "extendedStats": {
+      "torqueLbFt": 525,
+      "fuelEconomyMpg": 14,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 9092,
+      "rarityTier": "uncommon",
+      "originalMsrp": 81795,
+      "estimatedCurrentValue": 75000
+    }
+  },
+  {
+    "id": "2012-tesla-model-s",
+    "name": "Model S",
+    "brand": "Tesla",
+    "year": 2012,
+    "country": "USA",
+    "decade": "2010s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesla_Model_S_(Facelift_ab_04-2016)_trimmed.jpg",
+    "imageAttribution": "Norsk Elbilforening, CC BY 2.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 416,
+      "topSpeedMph": 130,
+      "zeroToSixty": 4.2,
+      "engineDisplacementL": 0,
+      "weightLbs": 4647
+    },
+    "extendedStats": {
+      "torqueLbFt": 443,
+      "fuelEconomyMpg": 89,
+      "transmission": "Single-speed",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 500000,
+      "rarityTier": "common",
+      "originalMsrp": 87400,
+      "estimatedCurrentValue": 35000
+    }
+  },
+  {
+    "id": "2013-mclaren-p1",
+    "name": "P1",
+    "brand": "McLaren",
+    "year": 2013,
+    "country": "UK",
+    "decade": "2010s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/McLaren_P1,_Paris_Motor_Show_2018,_IMG_0710.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 903,
+      "topSpeedMph": 217,
+      "zeroToSixty": 2.7,
+      "engineDisplacementL": 3.8,
+      "weightLbs": 3075
+    },
+    "extendedStats": {
+      "torqueLbFt": 664,
+      "fuelEconomyMpg": 34,
+      "transmission": "7-speed dual-clutch",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 375,
+      "rarityTier": "legendary",
+      "originalMsrp": 1150000,
+      "estimatedCurrentValue": 2200000
+    }
+  },
+  {
+    "id": "2011-lamborghini-aventador",
+    "name": "Aventador LP700-4",
+    "brand": "Lamborghini",
+    "year": 2011,
+    "country": "Italy",
+    "decade": "2010s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamborghini_Aventador_LP_700-4_-_Mondial_de_l%27Automobile_de_Paris_2014_-_001.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 700,
+      "topSpeedMph": 217,
+      "zeroToSixty": 2.9,
+      "engineDisplacementL": 6.5,
+      "weightLbs": 3472
+    },
+    "extendedStats": {
+      "torqueLbFt": 509,
+      "fuelEconomyMpg": 14,
+      "transmission": "7-speed automated manual",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 10000,
+      "rarityTier": "uncommon",
+      "originalMsrp": 379700,
+      "estimatedCurrentValue": 400000
+    }
+  },
+  {
+    "id": "2014-ferrari-laferrari",
+    "name": "LaFerrari",
+    "brand": "Ferrari",
+    "year": 2014,
+    "country": "Italy",
+    "decade": "2010s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_LaFerrari_-_Flickr_-_Alexandre_Pr%C3%A9vot_(3).jpg",
+    "imageAttribution": "Alexandre Prevot, CC BY-SA 2.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 950,
+      "topSpeedMph": 217,
+      "zeroToSixty": 2.4,
+      "engineDisplacementL": 6.3,
+      "weightLbs": 2767
+    },
+    "extendedStats": {
+      "torqueLbFt": 664,
+      "fuelEconomyMpg": 14,
+      "transmission": "7-speed dual-clutch",
+      "drivetrain": "RWD"
+    },
+    "collectorStats": {
+      "productionCount": 499,
+      "rarityTier": "legendary",
+      "originalMsrp": 1416000,
+      "estimatedCurrentValue": 5000000
+    }
+  },
+  {
+    "id": "2019-porsche-taycan-turbo-s",
+    "name": "Taycan Turbo S",
+    "brand": "Porsche",
+    "year": 2019,
+    "country": "Germany",
+    "decade": "2010s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Taycan_Turbo_S_(IAA_2019)_IMG_0251.jpg",
+    "imageAttribution": "Alexander Migl, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 761,
+      "topSpeedMph": 162,
+      "zeroToSixty": 2.6,
+      "engineDisplacementL": 0,
+      "weightLbs": 5132
+    },
+    "extendedStats": {
+      "torqueLbFt": 774,
+      "fuelEconomyMpg": 68,
+      "transmission": "2-speed automatic",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 41296,
+      "rarityTier": "uncommon",
+      "originalMsrp": 185000,
+      "estimatedCurrentValue": 130000
+    }
+  },
+  {
+    "id": "2021-rimac-nevera",
+    "name": "Nevera",
+    "brand": "Rimac",
+    "year": 2021,
+    "country": "Croatia",
+    "decade": "2020s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rimac_Nevera_IAA_2021_1X7A0104.jpg",
+    "imageAttribution": "Alexander Migl, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 1914,
+      "topSpeedMph": 258,
+      "zeroToSixty": 1.85,
+      "engineDisplacementL": 0,
+      "weightLbs": 4740
+    },
+    "extendedStats": {
+      "torqueLbFt": 1740,
+      "fuelEconomyMpg": 75,
+      "transmission": "Single-speed",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 150,
+      "rarityTier": "legendary",
+      "originalMsrp": 2400000,
+      "estimatedCurrentValue": 2600000
+    }
+  },
+  {
+    "id": "2021-ford-mustang-mach-e-gt",
+    "name": "Mustang Mach-E GT",
+    "brand": "Ford",
+    "year": 2021,
+    "country": "USA",
+    "decade": "2020s",
+    "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2021_Ford_Mustang_Mach-E_front_NYIAS_2021.jpg",
+    "imageAttribution": "Wikimedia Commons, CC BY-SA 4.0, via Wikimedia Commons",
+    "stats": {
+      "horsepower": 480,
+      "topSpeedMph": 124,
+      "zeroToSixty": 3.5,
+      "engineDisplacementL": 0,
+      "weightLbs": 4895
+    },
+    "extendedStats": {
+      "torqueLbFt": 634,
+      "fuelEconomyMpg": 87,
+      "transmission": "Single-speed",
+      "drivetrain": "AWD"
+    },
+    "collectorStats": {
+      "productionCount": 150000,
+      "rarityTier": "common",
+      "originalMsrp": 61995,
+      "estimatedCurrentValue": 45000
+    }
+  }
+]

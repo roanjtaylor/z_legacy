@@ -17,9 +17,6 @@ dist
 dist-ssr
 *.local
 
-# Curation temp workspace (candidate downloads, manifests, decisions)
-data/.tmp/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
