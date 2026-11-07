@@ -1,0 +1,19 @@
+# Downloaded dependencies - restored by build.ps1
+libs/
+
+# Compiled output
+out/
+
+# Saved worlds are yours; keep them out of version control by default.
+# Delete this line if you want to commit your worlds.
+saves/
+
+# Screenshots (F2)
+screenshots/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.gradle/
+build/
