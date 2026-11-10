@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Car } from '../types';
+import { fetchCuratedCars } from '../utils/curatedCarsSource';
 
 export function useCuratedCars() {
   const [cars, setCars] = useState<Car[]>([]);
@@ -9,12 +10,7 @@ export function useCuratedCars() {
   useEffect(() => {
     async function loadCars() {
       try {
-        const response = await fetch('/curated-cars.json');
-        if (!response.ok) {
-          throw new Error(`Failed to load cars: ${response.status}`);
-        }
-        const data = await response.json();
-        setCars(data as Car[]);
+        setCars(await fetchCuratedCars<Car>());
       } catch (e) {
         console.error('Failed to load curated cars:', e);
         setError(e instanceof Error ? e.message : 'Unknown error');

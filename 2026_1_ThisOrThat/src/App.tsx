@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { GameProvider } from './context/GameContext';
 import { MusicProvider } from './context/MusicContext';
 import { MiniMusicPlayer } from './components/common/MiniMusicPlayer';
@@ -13,7 +13,7 @@ function App() {
     <MusicProvider>
       <MiniMusicPlayer />
       <GameProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/setup" element={<SetupPage />} />
@@ -21,7 +21,7 @@ function App() {
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/curate" element={<CurationPage />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </GameProvider>
     </MusicProvider>
   );

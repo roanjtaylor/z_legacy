@@ -1,5 +1,6 @@
 import type { CurationState, CuratedCar, BrandData, ModelData } from '../types';
 import { BRANDS } from './brands';
+import { fetchCuratedCars } from '../utils/curatedCarsSource';
 
 const STORAGE_KEY = 'thisorthat-curation-state';
 
@@ -17,11 +18,8 @@ let existingCuratedCars: CuratedCar[] = [];
 
 export async function loadExistingCuratedCars(): Promise<CuratedCar[]> {
   try {
-    const response = await fetch('/curated-cars.json');
-    if (response.ok) {
-      existingCuratedCars = await response.json();
-      return existingCuratedCars;
-    }
+    existingCuratedCars = await fetchCuratedCars<CuratedCar>();
+    return existingCuratedCars;
   } catch (e) {
     console.error('Failed to load existing curated cars:', e);
   }
